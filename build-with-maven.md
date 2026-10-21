@@ -83,8 +83,11 @@ Jenkins, кафедральный Nexus и внешний каталог Eclipse
 [GitHub Actions](.github/workflows/legacy-build.yml) выполняет `verify` с пустым кэшем
 на Windows Server 2022 и сохраняет ZIP, логи и JUnit. UI вынесен в отдельный job,
 включаемый параметром `run_ui` при `workflow_dispatch`. Workflow не использует secrets,
-Jenkins или Nexus; токен имеет только `contents: read`. Подготовка YAML сама по себе
-не является подтверждением запуска на GitHub.
+Jenkins или Nexus; токен имеет только `contents: read`.
+[Контрольный run](https://github.com/Propinbo/raox/actions/runs/39588936426) прошёл
+холодную и offline-сборку на Windows Server 2022, по 32 JUnit. UI job в этом run
+пропущен по условию; 42 RCPTT проверены локально. Ручной workflow_dispatch станет
+доступен после попадания workflow в default branch; код оставлен в отдельной ветке fork.
 
 ## Исторические инструкции
 

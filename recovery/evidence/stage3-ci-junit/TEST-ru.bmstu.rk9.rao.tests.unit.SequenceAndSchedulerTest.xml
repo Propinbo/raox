@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest" time="0.016" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\bin"/>
+    <property name="java.vm.version" value="25.504-b01"/>
+    <property name="java.vm.vendor" value="Temurin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\a\raox\raox"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\a\raox\raox"/>
+    <property name="java.runtime.version" value="1.8.0_504-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\RUNNER~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="org.eclipse.ecf.provider.filetransfer.httpclient4.retrieve.readTimeout" value="60000"/>
+    <property name="p2.userAgent" value="tycho/0.23.0"/>
+    <property name="os.name" value="Windows Server 2022"/>
+    <property name="classworlds.conf" value="D:\a\raox\raox\.build\m2\.wrapper\wrapper\dists\apache-maven-3.3.9\210e000f43c8d062585a12c8c8cc3aac62ec85cde75a0b6ad7b99328ad7a4327\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="org.eclipse.ecf.provider.filetransfer.httpclient4.browse.connectTimeout" value="20000"/>
+    <property name="java.library.path" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\PowerShell\7;C:\Program Files\MongoDB\Server\7.0\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\3.11.1\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\R\R-4.6.1\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\1.24.13\x64\bin;C:\hostedtoolcache\windows\Python\3.12.10\x64\Scripts;C:\hostedtoolcache\windows\Python\3.12.10\x64;C:\hostedtoolcache\windows\Ruby\3.3.12\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\8.0.504-1\x64\bin;C:\Program Files\ImageMagick-7.1.2-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\170\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.16\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\ucrt64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\mongosh\;C:\Program Files\LLVM\bin;C:\Program Files (x86)\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.wagon.http.retryHandler.count" value="3"/>
+    <property name="org.eclipse.ecf.provider.filetransfer.httpclient4.retrieve.connectTimeout" value="20000"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\a\raox\raox\.build\m2"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\runneradmin"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="runneradmin"/>
+    <property name="java.class.path" value="D:\a\raox\raox\.build\m2\.wrapper\wrapper\dists\apache-maven-3.3.9\210e000f43c8d062585a12c8c8cc3aac62ec85cde75a0b6ad7b99328ad7a4327\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="maven.wagon.http.readTimeout" value="60000"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -e -s D:\a\raox\raox\recovery\maven-settings.xml -gs D:\a\raox\raox\recovery\maven-settings.xml -Dmaven.repo.local=D:\a\raox\raox\.build\m2 -o clean verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="eclipse.p2.atomic.composite.loading.default" value="true"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_504"/>
+    <property name="java.ext.dirs" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\resources.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\rt.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\sunrsasign.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\jsse.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\jce.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\charsets.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\lib\jfr.jar;D:\a\raox\raox\.build\tools\jdk8u504-b01\jre\classes"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="maven.home" value="D:\a\raox\raox\.build\m2\.wrapper\wrapper\dists\apache-maven-3.3.9\210e000f43c8d062585a12c8c8cc3aac62ec85cde75a0b6ad7b99328ad7a4327\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="osgi.framework.useSystemProperties" value="false"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="maven.wagon.http.connectionTimeout" value="20000"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="org.eclipse.equinox.p2.transport.ecf.retry" value="3"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="fixedSeedsReproduceEveryDistribution" classname="ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest" time="0"/>
+  <testcase name="schedulerOrdersDifferentTimesAndPreservesAllTies" classname="ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest" time="0"/>
+  <testcase name="uniformStatisticsMeetAnIndependentTolerance" classname="ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest" time="0.016"/>
+</testsuite>

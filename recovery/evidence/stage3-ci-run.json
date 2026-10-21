@@ -1,0 +1,72 @@
+{
+  "id": 39588936426,
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/Propinbo/raox/actions/runs/39588936426",
+  "head_sha": "e591a1ea943fbbfc35bdb3d59646acfc6e07d4ca",
+  "created_at": "2026-10-21T11:02:05Z",
+  "updated_at": "2026-10-21T11:07:45Z",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "status": "completed",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Download and verify JDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build from an empty Maven, p2 and wrapper cache",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Rebuild with Maven offline",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload plugins, JUnit reports and build evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "id": 119184727581,
+      "name": "build",
+      "labels": [
+        "windows-2022"
+      ]
+    },
+    {
+      "conclusion": "skipped",
+      "status": "completed",
+      "steps": [],
+      "id": 119187093224,
+      "name": "ui",
+      "labels": [
+        "windows-2022"
+      ]
+    }
+  ]
+}

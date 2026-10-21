@@ -1,7 +1,7 @@
 # Rao X: состояние для продолжения
 
-Обновлено 21 октября 2026 года. Этапы 1 и 2 завершены. Локальная часть этапа 3
-выполнена; завершающий GitHub Actions run в fork готовится. Подробности —
+Обновлено 21 октября 2026 года. **Этапы 1, 2 и 3 завершены.** GitHub Actions
+подтвердил холодную и offline-сборку на отдельном Windows Server 2022 runner. Подробности —
 [STAGE3.md](STAGE3.md), история проверок — [STAGE1.md](STAGE1.md) и [STAGE2.md](STAGE2.md).
 
 ## Репозиторий и исходная точка
@@ -12,7 +12,11 @@
 - Пользователь поручил создать fork: создан `https://github.com/Propinbo/raox`,
   сохранены все шесть веток и 34 тега. [Подтверждение](evidence/stage3-fork.jpg).
 - Исходная рабочая ветка восстановления: `recovery/initial-audit`.
-  Изменения этапов 1–3 подготавливаются к отправке в отдельную ветку `codex/stage3-reproducibility`.
+  Изменения этапов 1–3 опубликованы в отдельной ветке `codex/stage3-reproducibility`.
+  Она отслеживает `fork/codex/stage3-reproducibility`; `origin` сохранён как upstream.
+- Проверенный CI коммит: `e591a1ea943fbbfc35bdb3d59646acfc6e07d4ca`;
+  [успешный run](https://github.com/Propinbo/raox/actions/runs/39588936426).
+  Следующий коммит содержит только отчёты и статус завершения этапа.
 
 ## Изменения этапа 3
 
@@ -22,6 +26,8 @@
    `Initialize-Toolchains.ps1` получает Temurin 8u504-b01, при `-IncludeUi` — Eclipse/RCPTT.
 3. Зафиксированы SHA-256 152 p2-bundle, 354 Maven-бинарников, четырёх metadata p2,
    1296 файлов плагинов UI Eclipse и 935 файлов runner.
+   Для перепаковки p2/Pack200 допускается только идентичность полного содержимого JAR;
+   изменение данных записи отвергается. Это проверено отдельной фикстурой.
 4. `Invoke-LegacyBuild.ps1` изолирует кэши и settings, проверяет JDK/Maven, 32 теста,
    ZIP и зависимости; сохраняет результат каждой транспортной попытки, поддерживает
    `-RequireEmptyCache` и `-Offline`, восстанавливает переменные окружения.
@@ -46,7 +52,8 @@ ANTLR без тайм-аута, упаковка runtime, Unicode/модельн
 | Полный UI-прогон | Код 0; 42/42 RCPTT, без ошибок/пропусков. [JUnit](evidence/stage3-rcptt/results.junit.xml), [HTML](evidence/stage3-rcptt/results.html) |
 | CSV/JSON | Пять одинаковых правильных точек; остановка трассы при t=3. [Проверка](evidence/stage3-rcptt/export-validation.json) |
 | Классы новой сборки | 858 `.class` побайтово совпали с архивом, прошедшим UI. [Сравнение](evidence/stage3-class-comparison.json) |
-| Отдельная машина / GitHub CI | Пока не подтверждено; fork создан, workflow подготовлен. |
+| Отдельная машина / GitHub CI | Windows Server 2022: код 0, холодная + offline-сборка, по 32 JUnit; 152 p2 и 354 Maven-бинарника проверены. [Cold](evidence/stage3-ci-cold-build.json), [offline](evidence/stage3-ci-offline-build.json), [run](evidence/stage3-ci-run.json) |
+| Классы с GitHub runner | 858 `.class` побайтово совпали с локальной сборкой, прошедшей UI. [Сравнение](evidence/stage3-ci-class-comparison.json) |
 
 Исходники копировались в `.build/clean source` без `target`/`.class`;
 [манифест](evidence/stage3-source-snapshot.json). Новый кэш — `.build/final-m2`;
@@ -78,7 +85,8 @@ ANTLR без тайм-аута, упаковка runtime, Unicode/модельн
 
 ## Следующий проверяемый шаг
 
-Отправить изменения в fork `Propinbo/raox`, выполнить GitHub Actions `build` с
-пустым кэшем и сохранить ссылку/отчёты. При успехе закрыть внешний критерий этапа 3,
-обновить этот файл и roadmap. Этап 4 — согласованный перенос платформы с прежними
-32 JUnit и 42 RCPTT; не обновлять одновременно JDK/Xtext и математические библиотеки.
+Этап 4 — выбрать согласованную матрицу JDK/Eclipse/Xtext/Tycho и начать перенос
+с прежними 32 JUnit и 42 RCPTT. Не обновлять одновременно платформу и математические
+библиотеки. Работать от ветки `codex/stage3-reproducibility` или её следующего потомка.
+UI job в GitHub подготовлен, но удалённо не запускался; для ручного workflow_dispatch
+файл должен попасть в default branch. Локальные 42 RCPTT подтверждены.

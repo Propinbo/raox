@@ -19,8 +19,11 @@ of all 17 historical RCPTT models with exact trace/result comparisons.
 See [the behavior verification report](recovery/STAGE2.md) for the separate RCPTT UI command.
 The [GitHub Actions workflow](.github/workflows/legacy-build.yml) starts each build with
 an empty Maven/p2 cache and retains the ZIP, logs and JUnit reports. Its manual
-`run_ui` option runs the 42 RCPTT checks in a separate job. The remote run status is
-recorded in [STATE.md](recovery/STATE.md).
+`run_ui` option runs the 42 RCPTT checks in a separate job once the workflow is in the default branch.
+The [verified Windows Server 2022 run](https://github.com/Propinbo/raox/actions/runs/39588936426)
+passed both the empty-cache build and an offline rebuild, with 32 JUnit checks each.
+All 858 compiled classes match the local build that passed 42 RCPTT checks.
+The recovery branch is in [the Propinbo fork](https://github.com/Propinbo/raox/tree/codex/stage3-reproducibility).
 Use an ASCII path for the source checkout; spaces are supported. The legacy ANTLR generator
 cannot process non-ASCII source paths. Unicode identifiers in models are tested separately.
 

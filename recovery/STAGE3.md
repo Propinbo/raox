@@ -3,11 +3,13 @@
 21 октября 2026 года. Базовый HEAD `80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc`,
 исходная рабочая ветка `recovery/initial-audit`.
 
-**Статус: локальные критерии выполнены, удалённый CI-прогон готовится.**
+**Статус: выполнен.** Локальная сборка и отдельный GitHub runner Windows Server 2022
+прошли `clean verify` с пустым кэшем и повтор offline. В каждом прогоне — 32 JUnit
+без ошибок и пропусков. [Успешный CI run, 5 мин 40 с](https://github.com/Propinbo/raox/actions/runs/39588936426).
 После проверки доступа к исходному репозиторию пользователь поручил создать
 fork. Создан [Propinbo/raox](https://github.com/Propinbo/raox) от
 [LeKaitoW/raox](https://github.com/LeKaitoW/raox), с шестью ветками и 34 тегами.
-Внешний критерий roadmap пока остаётся открытым до успешного GitHub Actions run.
+Критерий roadmap о другой машине подтверждён этим CI run.
 [Первичная проверка доступа](evidence/stage3-github-access.json),
 [подтверждение fork](evidence/stage3-fork.jpg).
 
@@ -19,6 +21,11 @@ fork. Создан [Propinbo/raox](https://github.com/Propinbo/raox) от
 target явно перечисляет 152 точных IU, без версии `0.0.0`.
 122 bundle взяты из Mars `201506241002`, 30 — из релиза Xtext `2.9.2`.
 Их версии и SHA-256 находятся в [p2-bundles.lock.json](p2-bundles.lock.json).
+Для p2 сохраняются SHA-256 целого эталонного JAR и SHA-256 его полного содержимого.
+Если Pack200 восстановил другой ZIP-контейнер, допускается только полное совпадение
+имён и байтов всех файлов внутри. Записи сортируются ordinal; хешируется UTF-8
+`имя + NUL + SHA-256 данных + LF`. Изменение записи, добавление файла или дубликат
+отвергаются. Алгоритм — [Get-JarContentHash.ps1](Get-JarContentHash.ps1).
 
 | Компонент Maven/p2-платформы | Версия |
 | --- | --- |
@@ -90,9 +97,11 @@ ANTLR и проверки Unicode-имён сохранены. Нужен дос
 
 | Проверка | Результат |
 | --- | --- |
+| GitHub Windows Server 2022, 14:02–14:07 МСК | Холодная сборка и offline-повтор: код 0, по 32 JUnit. [Холодный JSON](evidence/stage3-ci-cold-build.json), [offline JSON](evidence/stage3-ci-offline-build.json), [JUnit](evidence/stage3-ci-junit/), [статусы шагов](evidence/stage3-ci-run.json) |
 | Холодный `clean verify`, 13:29–13:39 МСК | Код 0, 10 модулей, 32 JUnit; две сохранённые сетевые ошибки и успешная третья попытка в одной команде с изначально пустым кэшем. [JSON](evidence/stage3-cold-build.json), [лог](evidence/stage3-cold-build.log) |
 | `clean verify -Offline`, 13:47–13:48 МСК | Код 0, 32 JUnit, без ошибок/пропусков. Все 152 p2-bundle и 354 Maven-бинарника совпали с lock-файлами. [JSON](evidence/stage3-offline-build.json), [лог](evidence/stage3-offline-build.log) |
 | Скомпилированные классы | Все 858 `.class` в четырёх плагинах холодной сборки побайтово совпали со сборкой, прошедшей UI-прогон. [Сравнение](evidence/stage3-class-comparison.json) |
+| Классы с другой машины | Все 858 `.class` в артефакте CI побайтово совпали с локальной сборкой, прошедшей UI. [Сравнение](evidence/stage3-ci-class-comparison.json) |
 
 После холодной сборки обнаружен дефект offline-кэша Tycho 0.23: Mars metadata
 скачивается в XZ, а fallback offline ищет только `content/artifacts + URI.hashCode()
@@ -119,6 +128,9 @@ Offline-режим только проверяет эти файлы, без з�
   [проверка](evidence/stage3-cache-guard.json).
 - Проверка p2 отвергает повреждённый JAR, PowerShell-файлы успешно разобраны;
   [проверка](evidence/stage3-script-validation.json).
+- Полная проверка набора принимает перепаковку JAR с неизменными данными и
+  отвергает изменение данных записи;
+  [проверка](evidence/stage3-jar-content-guard.json).
 - YAML workflow разобран, оба job и три триггера на месте, все Actions закреплены
   SHA коммитов; [проверка](evidence/stage3-workflow-validation.json).
 
@@ -132,7 +144,7 @@ IPv4 и отдельные тайм-ауты/повторы ECF. Новый хо
 бинарные зависимости и повторяемые результаты сборки/моделей. Побитовая
 идентичность ZIP/JAR не заявляется: старые упаковщики записывают время сборки.
 
-## CI и оставшийся внешний критерий
+## Выполненный CI и передача
 
 [`legacy-build.yml`](../.github/workflows/legacy-build.yml) заменяет неработающий
 Travis-файл. На `push`, `pull_request` и `workflow_dispatch` job `build` использует
@@ -145,11 +157,28 @@ Windows Server 2022, скачивает JDK и выполняет `clean verify`
 и проверяет содержимое экспортов. Его HTML/JUnit/логи/экспорты сохраняются отдельно.
 Команды ручного UI-прогона есть в [инструкции сборки](../build-with-maven.md).
 
-Для полного закрытия этапа осталось отправить в fork текущие изменения этапов 1–3
-и получить успешный run `build` на другом компьютере.
-Затем сохранить URL run/артефакты в этом отчёте и обновить `STATE.md`/roadmap.
-Не следует объявлять этап полностью закрытым только по наличию YAML или локальных
-проверок. Создание fork устраняет первоначальное отсутствие права записи в upstream.
+Изменения опубликованы в ветке `codex/stage3-reproducibility` fork. Первый внешний
+[run](https://github.com/Propinbo/raox/actions/runs/39587840773) прошёл Maven/JUnit,
+но обнаружил отличие ZIP-представления p2 JAR при строгой проверке целого архива.
+После добавления проверки полного содержимого
+[повторный run](https://github.com/Propinbo/raox/actions/runs/39588936426) завершился успешно.
+Проверенный коммит: `e591a1ea943fbbfc35bdb3d59646acfc6e07d4ca`.
+На runner три p2 JAR получили иное ZIP-представление, но полное содержимое всех
+152 JAR совпало; все 354 Maven-бинарника совпали побайтово. Имена трёх JAR есть
+в `dependency_verification` обоих JSON CI.
+
+Артефакт `legacy-windows-build` скачан, его SHA-256 совпал с опубликованной GitHub:
+`af96907d1e63c805c50677beb58768429b3b3af8cfa6be613a9cf76eb7293cc1`.
+[Метаданные артефакта](evidence/stage3-ci-artifacts.json),
+[успешный экран CI](evidence/stage3-ci-success.jpg). Полные журналы сохранены как
+[cold](evidence/stage3-ci-cold-build.log) и [offline](evidence/stage3-ci-offline-build.log).
+Упаковка, генерация и проверки работают без старого Jenkins/Nexus и установленного Eclipse.
+
+В этом push-прогоне UI job пропущен по условию; 42 RCPTT выполнены локально.
+Ручной `workflow_dispatch` требует присутствия workflow в default branch GitHub;
+изменения оставлены в отдельной рабочей ветке для просмотра. CI сохранил предупреждение
+о Node 20 у закреплённых Actions и успешно выполнил их на принудительном Node 24.
+Следующий этап — перенос платформы по этапу 4 с прежними проверками поведения.
 
 Конфигурация target соответствует
 [документации Tycho](https://wiki.eclipse.org/Tycho/Target_Platform/),

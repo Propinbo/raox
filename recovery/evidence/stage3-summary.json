@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "date": "2026-10-21",
+  "repository": "https://github.com/Propinbo/raox",
+  "parent": "https://github.com/LeKaitoW/raox",
+  "branch": "codex/stage3-reproducibility",
+  "verified_code_commit": "e591a1ea943fbbfc35bdb3d59646acfc6e07d4ca",
+  "ci_run": "https://github.com/Propinbo/raox/actions/runs/39588936426",
+  "ci_conclusion": "success",
+  "ci_platform": "Windows Server 2022 x64",
+  "ci_cache_initially_empty": true,
+  "ci_cold_tests": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "ci_offline_tests": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "ui_local_tests": {
+    "tests": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "p2_bundles": 152,
+  "p2_equivalent_zip_representations": [
+    "org.eclipse.equinox.p2.metadata.repository/1.2.200.v20150428-1613",
+    "org.eclipse.jdt.debug/3.9.0.v20150528-1838",
+    "org.eclipse.jdt.launching/3.8.0.v20150527-0946"
+  ],
+  "maven_binaries": 354,
+  "compiled_classes_equal": true,
+  "compiled_class_entries": 858,
+  "downloaded_artifact_sha256_verified": true,
+  "artifact_digest": "sha256:af96907d1e63c805c50677beb58768429b3b3af8cfa6be613a9cf76eb7293cc1",
+  "next_stage": 4
+}
