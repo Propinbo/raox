@@ -1,0 +1,6 @@
+Exception in thread "Timer-2" java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1469)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1493)
+	at ru.bmstu.rk9.rao.ui.notification.RealTimeUpdater$4.run(RealTimeUpdater.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)

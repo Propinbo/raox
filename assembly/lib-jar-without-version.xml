@@ -6,7 +6,7 @@
 	<files>
 		<file>
 			<source>${basedir}/target/plugins/ru.bmstu.rk9.rao.lib-${project.version}.jar</source>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>./</outputDirectory>
 			<destName>ru.bmstu.rk9.rao.lib.jar</destName>
 		</file>
 	</files>

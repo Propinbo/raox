@@ -1,0 +1,276 @@
+Started at Tue Oct 20 19:58:37 MSK 2026
+RCPTT Runner version: 2.2.0
+Initializing target platform...
+Begin task: Resolving null
+progress: Resolving Target Contents...
+progress: Reading plug-ins
+progress: Fetching p2.index from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+Begin task: Apply injection plugins
+progress: Fetching p2.index from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching p2.index from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Downloading org.antlr.runtime
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Downloading org.aspectj.runtime
+progress: Downloading org.eclipse.equinox.weaving.hook
+progress: Downloading org.eclipse.equinox.weaving.aspectj
+progress: Downloading org.aspectj.weaver
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Downloading org.eclipse.emf.transaction
+progress: Downloading org.eclipse.emf.validation_root
+progress: Downloading org.eclipse.emf.transaction_root
+progress: Downloading org.eclipse.emf.transaction.ui
+progress: Downloading org.eclipse.emf.validation.ui.ide
+progress: Downloading org.eclipse.emf.validation
+progress: Downloading org.eclipse.emf.validation.ui
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Adding repository platform:///plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Downloading org.apache.poi.ooxml
+progress: Downloading org.apache.poi.ooxml.schemas
+progress: Downloading org.dom4j
+progress: Downloading org.apache.xmlbeans
+progress: Downloading org.apache.poi
+Begin task: Resolving AUT
+progress: Resolving Target Contents...
+progress: Reading plug-ins
+progress: Fetching p2.index from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Fetching content.jar from platform:/plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Fetching p2.index from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.runtime.e4x/q7/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.module.testrail.updates/runtime/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.kepler/dependencies/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.module.nebula.updates/runtime/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.aspectj.e44x/dependencies/
+progress: Fetching artifacts.jar from platform:/plugin/org.eclipse.rcptt.updates.extra/dependencies/
+progress: Downloading org.eclipse.emf.validation_root
+progress: Downloading org.eclipse.emf.transaction_root
+progress: Installing org.eclipse.rcptt.tesla.properties.view
+progress: Installing org.eclipse.rcptt.tesla.workbench.aspects.e4x
+progress: Installing org.eclipse.rcptt.tesla.core.am
+progress: Installing org.eclipse.rcptt.tesla.gmf.aspects
+progress: Installing org.eclipse.rcptt.watson.aspects.swt
+progress: Installing org.eclipse.rcptt.ecl.client.tcp
+progress: Installing org.eclipse.rcptt.tesla.jdt.aspects
+progress: Installing org.eclipse.rcptt.verifications.log.impl
+progress: Installing org.eclipse.emf.validation_root
+progress: Installing file:/jobs/genie.rcptt/rcptt-all/workspace/modules/nebula/runtime-site/target/site/site.xml.rcptt
+progress: Installing org.eclipse.rcptt.tesla.ecl.feature.group
+progress: Installing org.eclipse.rcptt.tesla.feature.group
+progress: Installing org.eclipse.rcptt.runtime.ui
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.forms
+progress: Installing org.eclipse.rcptt.watson.jface
+progress: Installing org.eclipse.rcptt.runtime.feature.group
+progress: Installing org.eclipse.rcptt.verifications
+progress: Installing org.eclipse.rcptt.tesla.ui.ide
+progress: Installing org.eclipse.rcptt.tesla.gef.aspects
+progress: Installing org.eclipse.rcptt.core.swt
+progress: Installing org.eclipse.rcptt.tesla.jface.fragment
+progress: Installing org.eclipse.rcptt.ctx.resources.impl
+progress: Installing org.eclipse.rcptt.ctx.parameters
+progress: Installing org.dom4j
+progress: Installing org.eclipse.rcptt.testrail.ecl
+progress: Installing org.eclipse.rcptt.verifications.log
+progress: Installing org.eclipse.rcptt.ecl.dispatch
+progress: Installing org.eclipse.rcptt.tesla.variables
+progress: Installing org.eclipse.rcptt.watson.jobs
+progress: Installing org.eclipse.rcptt.tesla.runtime.feature.jar
+progress: Installing org.eclipse.rcptt.verifications.tree
+progress: Installing org.eclipse.rcptt.reporting
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.jface.text
+progress: Installing org.eclipse.rcptt.forms.impl
+progress: Installing org.eclipse.rcptt.tesla.workbench.texteditor.aspects
+progress: Installing org.eclipse.rcptt.verifications.text.impl
+progress: Installing org.eclipse.rcptt.tesla.recording.jface.text
+progress: Installing org.eclipse.emf.transaction
+progress: Installing org.eclipse.rcptt.ecl.operations
+progress: Installing org.eclipse.rcptt.tesla.jface.text.reconciler.aspects
+progress: Installing org.eclipse.rcptt.ecl.perf
+progress: Installing org.eclipse.rcptt.expandbar.runtime
+progress: Installing org.eclipse.rcptt.tesla.recording.draw2d
+progress: Installing org.eclipse.rcptt.util.swt
+progress: Installing org.eclipse.rcptt.ecl.debug.runtime
+progress: Installing org.eclipse.rcptt.ecl.platform.ui.feature.jar
+progress: Installing org.eclipse.rcptt.tesla.swt
+progress: Installing org.eclipse.rcptt.ctx.debug
+progress: Installing org.eclipse.rcptt.module.nebula.runtime.feature.group
+progress: Installing org.eclipse.rcptt.tesla.nebula
+progress: Installing org.eclipse.rcptt.tesla.jface.databinding
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.workbench
+progress: Installing org.eclipse.rcptt.watson.core
+progress: Installing org.eclipse.rcptt.tesla.core.context
+progress: Installing org.eclipse.rcptt.core
+progress: Installing org.eclipse.rcptt.core.ecl.debug
+progress: Installing org.eclipse.rcptt.verifications.time.impl
+progress: Installing file:/jobs/genie.rcptt/rcptt-all/workspace/modules/testrail/runtime-site/target/site/site.xml.rcptt
+progress: Installing org.eclipse.rcptt.tesla.canvas
+progress: Installing org.eclipse.rcptt.tesla.jface.databinding.aspects
+progress: Installing org.eclipse.emf.transaction.feature.jar
+progress: Installing org.eclipse.emf.transaction_root
+progress: Installing org.eclipse.rcptt.tesla.recording.workbench.texteditor
+progress: Installing org.eclipse.rcptt.tesla.core
+progress: Installing org.eclipse.rcptt.verifications.time
+progress: Installing org.eclipse.rcptt.tesla.nebula.impl
+progress: Installing org.eclipse.rcptt.ctx.group
+progress: Installing org.eclipse.rcptt.ecl.platform.feature.jar
+progress: Installing org.eclipse.rcptt.tesla.jface.databinding.observable.aspects
+progress: Installing org.eclipse.rcptt.runtime.feature.jar
+progress: Installing org.eclipse.emf.validation
+progress: Installing org.eclipse.rcptt.ecl.platform.ui.feature.group
+progress: Installing 201706090642.Default
+progress: Installing org.eclipse.rcptt.tesla.workbench.texteditor
+progress: Installing org.eclipse.rcptt.tesla.jface.aspects
+progress: Installing org.aspectj.runtime
+progress: Installing org.eclipse.equinox.weaving.aspectj
+progress: Installing org.apache.poi
+progress: Installing org.eclipse.emf.transaction.feature.group
+progress: Installing org.eclipse.emf.validation.ui.ide
+progress: Installing org.eclipse.rcptt.ctx.workbench.impl
+progress: Installing org.eclipse.rcptt.core.swt.win32
+progress: Installing org.eclipse.rcptt.testrail.ecl.impl
+progress: Installing org.eclipse.rcptt.ecl.platform
+progress: Installing org.eclipse.rcptt.tesla.ecl.impl
+progress: Installing org.eclipse.rcptt.tesla.gef
+progress: Installing org.eclipse.rcptt.ecl.interop
+progress: Installing org.eclipse.rcptt.tesla.ecl.runtime.feature.jar
+progress: Installing org.eclipse.rcptt.ctx.workbench
+progress: Installing org.eclipse.rcptt.ecl.data.apache.poi
+progress: Installing org.eclipse.rcptt.ecl.platform.feature.group
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.draw2d
+progress: Installing org.eclipse.rcptt.ecl.data.apache.poi.impl
+progress: Installing org.eclipse.rcptt.verifications.text
+progress: Installing org.eclipse.emf.transaction.ui
+progress: Installing org.eclipse.emf.validation.feature.jar
+progress: Installing org.eclipse.rcptt.logging
+progress: Installing org.eclipse.rcptt.ctx.resources
+progress: Installing org.eclipse.rcptt.core.launching
+progress: Installing org.eclipse.rcptt.module.testrail.runtime.feature.group
+progress: Installing org.eclipse.rcptt.tesla.recording.core.ecl
+progress: Installing org.eclipse.rcptt.ctx.group.impl
+progress: Installing org.eclipse.rcptt.watson.feature.jar
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.jface
+progress: Installing org.apache.poi.ooxml.schemas
+progress: Installing org.eclipse.rcptt.ecl.core.feature.group
+progress: Installing org.eclipse.rcptt.core.scenario
+progress: Installing org.antlr.runtime
+progress: Installing org.eclipse.rcptt.module.testrail.runtime.feature.jar
+progress: Installing org.eclipse.rcptt.ctx.preferences
+progress: Installing org.eclipse.rcptt.watson.aspects.jobs
+progress: Installing org.eclipse.rcptt.ctx.filesystem.impl
+progress: Installing org.eclipse.rcptt.ctx.debug.impl
+progress: Installing org.eclipse.rcptt.ecl.platform.ui
+progress: Installing org.apache.poi.ooxml
+progress: Installing org.eclipse.rcptt.tesla.swt.e4x
+progress: Installing org.eclipse.rcptt.ecl.filesystem
+progress: Installing org.eclipse.rcptt.tesla.jobs.aspects
+progress: Installing org.eclipse.rcptt.tesla.ecl.feature.jar
+progress: Installing org.eclipse.rcptt.verifications.tree.impl
+progress: Installing org.eclipse.rcptt.ecl.server.feature.jar
+progress: Installing org.eclipse.rcptt.watson.runtime.feature.jar
+progress: Installing org.eclipse.rcptt.ecl.server.feature.group
+progress: Installing org.eclipse.rcptt.ecl.parser
+progress: Installing org.eclipse.rcptt.ctx.workbench.aspect
+progress: Installing org.eclipse.rcptt.tesla.recording.canvas
+progress: Installing org.eclipse.rcptt.tesla.jface.text
+progress: Installing org.eclipse.rcptt.watson.runtime.feature.group
+progress: Installing org.eclipse.rcptt.ecl.doc
+progress: Installing org.eclipse.rcptt.tesla.swt.aspects
+progress: Installing org.eclipse.rcptt.ctx.filesystem
+progress: Installing org.eclipse.emf.validation.ui
+progress: Installing org.eclipse.rcptt.tesla.recording.nebula
+progress: Installing org.eclipse.rcptt.tesla.ecl
+progress: Installing org.eclipse.rcptt.tesla.runtime.feature.group
+progress: Installing org.eclipse.rcptt.tesla.ecl.runtime.feature.group
+progress: Installing org.eclipse.rcptt.ctx.preferences.aspects
+progress: Installing org.eclipse.rcptt.tesla.nebula.ecl.impl
+progress: Installing org.apache.xmlbeans
+progress: Installing org.eclipse.rcptt.ctx.script.impl
+progress: Installing org.eclipse.rcptt.ecl.core.feature.jar
+progress: Installing org.eclipse.rcptt.tesla.recording.core
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.swt
+progress: Installing org.aspectj.weaver
+progress: Installing org.eclipse.rcptt.watson.feature.group
+progress: Installing org.eclipse.rcptt.tesla.recording.gmf
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.gmf
+progress: Installing org.eclipse.equinox.weaving.hook
+progress: Installing org.eclipse.rcptt.tesla.swt.fragment
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.gef
+progress: Installing org.eclipse.emf.validation.feature.group
+progress: Installing org.eclipse.rcptt.util
+progress: Installing org.eclipse.rcptt.tesla.jface.text.aspects
+progress: Installing org.eclipse.rcptt.module.nebula.runtime.feature.jar
+progress: Installing org.eclipse.rcptt.tesla.jdt
+progress: Installing org.eclipse.rcptt.ctx.preferences.impl
+progress: Installing org.eclipse.rcptt.tesla.nebula.ecl
+progress: Installing org.eclipse.rcptt.ecl.data
+progress: Installing org.eclipse.rcptt.tesla.gmf
+progress: Installing org.eclipse.rcptt.util.resources
+progress: Installing org.eclipse.rcptt.tesla.ui.ide.aspects
+progress: Installing org.eclipse.rcptt.expandbar
+progress: Installing org.eclipse.rcptt.tesla.recording.gef
+progress: Installing org.eclipse.rcptt.tesla.feature.jar
+progress: Installing org.eclipse.rcptt.core.swt.win64
+progress: Installing org.eclipse.rcptt.ecl.server.tcp
+progress: Installing org.eclipse.rcptt.ecl.core
+progress: Installing org.eclipse.rcptt.core.ecl.core
+progress: Installing org.eclipse.rcptt.ctx.parameters.impl
+progress: Installing org.eclipse.rcptt.ctx.script
+progress: Installing org.eclipse.rcptt.tesla.recording.swt
+progress: Installing org.eclipse.rcptt.tesla.recording.aspects.workbench.texteditor
+progress: Downloading org.eclipse.emf.validation_root
+progress: Downloading org.eclipse.emf.transaction_root
+progress: Preparing to commit the provisioning operation.
+progress: Committing the provisioning operation.
+progress: Reading plug-ins
+Target platform is valid.
+Looking for tests...
+Existing projects in workspace:
+    <none>
+Importing projects to workspace:
+Refreshing projects:
+    C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.rcptt... OK
+Refreshing projects:
+    ru.bmtsu.rk9.rao.rcptt... OK
+Searching for tests in projects:
+    ru.bmtsu.rk9.rao.rcptt... 
+Complete OK
+Testcase Artifacts:4
+AUT-0:Launching
+AUT-0:Product: org.eclipse.epp.package.dsl.product
+AUT-0:Application: org.eclipse.ui.ide.workbench
+AUT-0:Architecture: x86_64
+64bit arch is selected because AUT uses launcher library
+	"plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.550.v20170928-1359" specified in config file: eclipse.ini
+C:\Users\propinbo\Documents\Codex\2026-10-20\https-www-google-com-url-q\work\stage2-ui\release-tests\20261020-195836-435-rcptt\aut-workspace-0: AUT arguments: -os ${target.os} -arch ${target.arch} -consoleLog
+C:\Users\propinbo\Documents\Codex\2026-10-20\https-www-google-com-url-q\work\stage2-ui\release-tests\20261020-195836-435-rcptt\aut-workspace-0: AUT VM arguments: -Dosgi.requiredJavaVersion=1.8 -Dosgi.instance.area.default=@user.home/eclipse-workspace -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=1.8 -Xms256m -Xmx2024m -XX:MaxPermSize=128m
+Pass 1 (4) processed. 0 failed. spent: 0:08, 0:05 mins remaining. empty_model. time: 7604ms 
+Pass 2 (4) processed. 0 failed. spent: 0:14, 0:03 mins remaining. model_uniform_sequence. time: 5680ms 
+Pass 3 (4) processed. 0 failed. spent: 0:18, 0:00 mins remaining. model_uniform_sequence_notrace. time: 4181ms 
+Pass 4 (4) processed. 0 failed. spent: 0:19, 0:00 mins remaining. rao_perspective. time: 726ms 
+Process terminated. Shut down AUTs
+Finished at Tue Oct 20 19:59:25 MSK 2026

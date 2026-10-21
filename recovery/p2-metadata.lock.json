@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://download.eclipse.org/releases/mars/201506241002/content.jar",
+    "cache_file": "content-624457536.jar",
+    "sha256": "6b5a2ce5b11f31d7721aee9e39e19db344f42f9cd9fce76544d3aa30356a88b2"
+  },
+  {
+    "url": "https://download.eclipse.org/releases/mars/201506241002/artifacts.jar",
+    "cache_file": "artifacts-624457536.jar",
+    "sha256": "1f33c95ba2d55b8bb8f6d153dc0bc3af7895bd08fbad3cdc7d190b935007e7a1"
+  },
+  {
+    "url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/content.jar",
+    "cache_file": "content152521349.jar",
+    "sha256": "97a565f9b807ad193b30fc0de908fb4f864f9e7f72c5a9abb9daddd42580390e"
+  },
+  {
+    "url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/artifacts.jar",
+    "cache_file": "artifacts152521349.jar",
+    "sha256": "fe16ce12195c6c9bc235e63079eebc65d409efcacba43b9d8d8cf92e70c2db47"
+  }
+]

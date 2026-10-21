@@ -1,0 +1,12 @@
+{
+  "yaml_valid": true,
+  "jobs": [
+    "build",
+    "ui"
+  ],
+  "offline_rebuild": true,
+  "actions_pinned_to_commits": true,
+  "permissions": {
+    "contents": "read"
+  }
+}

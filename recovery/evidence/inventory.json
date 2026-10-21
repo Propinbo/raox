@@ -1,0 +1,96 @@
+{
+  "checked_at_utc": "2026-10-20T16:23:51.6549400Z",
+  "repo_root": "C:\\Users\\propinbo\\Documents\\raox",
+  "origin": "https://github.com/LeKaitoW/raox.git",
+  "original_branch": "release/current",
+  "working_branch": "recovery/initial-audit",
+  "source_commit": "80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc",
+  "release_390_commit": "c99a18b1f1bb130c5f8ac24a27a635433dee5f43",
+  "tracked_files_at_inventory": 585,
+  "counts": {
+    "java": 275,
+    "xtend": 24,
+    "xtext": 1,
+    "mwe2": 1,
+    "embedded_jars": 8,
+    "documentation_html": 20,
+    "rcptt_scenarios": 38,
+    "rao_templates_rcptt": 14,
+    "trace_etalons": 17,
+    "result_etalons": 1
+  },
+  "embedded_dependencies": [
+    {
+      "path": "ru.bmstu.rk9.rao.lib/thirdparty/apache-commons/lib/commons-math3-3.6.jar",
+      "filename": "commons-math3-3.6.jar",
+      "bytes": 2213627,
+      "sha256": "ec9d4def3fbd8d7e72206155799711db3272d45e099d08ea4c68001ad6d3054e",
+      "manifest_version_info": "Implementation-Title: Apache Commons Math; Implementation-Version: 3.6; Bundle-Name: Apache Commons Math; Bundle-Version: 3.6.0; Specification-Version: 3.6",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/third-party/json-simple-1.1.1.jar",
+      "filename": "json-simple-1.1.1.jar",
+      "bytes": 23737,
+      "sha256": "108045c9675ebf6d6ec4d8dcc331693f9b944ac7c87de52dccff2c55e8dfa6f1",
+      "manifest_version_info": "Bundle-Name: JSON.simple; Bundle-Version: 1.1.1",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/gson/lib/gson-2.6.2.jar",
+      "filename": "gson-2.6.2.jar",
+      "bytes": 229650,
+      "sha256": "b8545ba775f641f8bba86027f06307152279fee89a46a4006df1bf2f874d4d9d",
+      "manifest_version_info": "Bundle-Name: Gson; Bundle-Version: 2.6.2",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jcommon-1.0.23.jar",
+      "filename": "jcommon-1.0.23.jar",
+      "bytes": 330246,
+      "sha256": "1e670402809484c71ec74d55b40022a4c4939c7911bd39ee5a0cfb3aaf56397c",
+      "manifest_version_info": "",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19-experimental.jar",
+      "filename": "jfreechart-1.0.19-experimental.jar",
+      "bytes": 13796,
+      "sha256": "ab1a50722c7ad3c6b053f5f0e8016fbc836615f1cd09cdf16eac73445e2496ea",
+      "manifest_version_info": "",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19-swt.jar",
+      "filename": "jfreechart-1.0.19-swt.jar",
+      "bytes": 79793,
+      "sha256": "2a8f8066332fe5e23f102e31f1ddc917ffc7bc46bb603a84a5eacdb88ac593a6",
+      "manifest_version_info": "",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19.jar",
+      "filename": "jfreechart-1.0.19.jar",
+      "bytes": 1570157,
+      "sha256": "db320aa73898e2743d33437dac0ff612d3e7614df96a8f2e591499d34fa4814e",
+      "manifest_version_info": "Specification-Version: 1.0.19; Implementation-Title: JFreeChart; Implementation-Version: 1.0.19",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jgraphx/lib/jgraphx.jar",
+      "filename": "jgraphx.jar",
+      "bytes": 625182,
+      "sha256": "de821194dbf6abbc27911cb0c91bad8977d0d700169afe3618b0e71f2b2384a6",
+      "manifest_version_info": "Bundle-Version: 3.3.1.1",
+      "license_review": "pending",
+      "advisory_review": "not_performed"
+    }
+  ]
+}

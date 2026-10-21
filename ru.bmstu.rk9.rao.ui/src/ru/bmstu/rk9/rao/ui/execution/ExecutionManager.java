@@ -89,25 +89,25 @@ public class ExecutionManager {
 						return new Status(IStatus.CANCEL, pluginId, "Execution cancelled");
 					}
 
-					if (buildOnly) {
-						final Job rebuild = modelBuilder.createRebuildJob();
-						rebuild.schedule();
-						try {
-							rebuild.join();
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-							ModelExecutionSourceProvider.setSimulationState(activeWorkbenchWindow,
-									SimulationState.STOPPED.toString());
-							return new Status(IStatus.ERROR, pluginId,
-									"Internal error while finishing rebuilding project");
-						}
+					// Run must wait for generated Java to be compiled too. Relying on
+					// asynchronous auto-build races the model class loader.
+					final Job rebuild = modelBuilder.createRebuildJob();
+					rebuild.schedule();
+					try {
+						rebuild.join();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+						ModelExecutionSourceProvider.setSimulationState(activeWorkbenchWindow,
+								SimulationState.STOPPED.toString());
+						return new Status(IStatus.ERROR, pluginId,
+								"Internal error while finishing rebuilding project");
+					}
 
-						if (rebuild.getResult() != Status.OK_STATUS) {
-							ModelExecutionSourceProvider.setSimulationState(activeWorkbenchWindow,
-									SimulationState.STOPPED.toString());
-							ConsoleView.addLine("Build failed");
-							return new Status(IStatus.CANCEL, pluginId, "Execution cancelled");
-						}
+					if (rebuild.getResult() != Status.OK_STATUS) {
+						ModelExecutionSourceProvider.setSimulationState(activeWorkbenchWindow,
+								SimulationState.STOPPED.toString());
+						ConsoleView.addLine("Build failed");
+						return new Status(IStatus.CANCEL, pluginId, "Execution cancelled");
 					}
 
 					final Job validate = modelBuilder.createValidateJob();

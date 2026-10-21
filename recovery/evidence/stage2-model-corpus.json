@@ -1,0 +1,138 @@
+[
+  {
+    "name": "accessible_all_conflict",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/accessible_all_conflict.rao.template",
+    "source_sha256": "6361CFFBD48BDB9F10770BD62438A7C782DE3A5F601D3E291D41BEB97E2D6E1D",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/accessible_all_conflict.trc.etalon",
+    "trace_sha256": "FD9F8ABD9A7E8A51EB087B7199BCB7C402E4039344D1A863170F4C82DC75D11E",
+    "results_sha256": null
+  },
+  {
+    "name": "accessible_resources",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/accessible_resources.rao.template",
+    "source_sha256": "AC41BA4A86DF978EF143F4F591510D8F096C08DD2106974386991175D44890CB",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/accessible_resources.trc.etalon",
+    "trace_sha256": "AB8D9A51128741170B1F170ED1F3F066C1B87DB657AA08455BFD370398A61D73",
+    "results_sha256": null
+  },
+  {
+    "name": "barber_clients",
+    "source": "ru.bmstu.rk9.rao.ui/model_templates/barber_clients.rao.template",
+    "source_sha256": "D59A294FE30300C553264DF70AED251FD5634F05A9B61FA982F94832D4AA6131",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_clients/barber_clients.trc.etalon",
+    "trace_sha256": "23E47D3B5B91F8CF937D5677B0875D4D48F656B4A95B6F32A715956C30C11BCD",
+    "results_sha256": null
+  },
+  {
+    "name": "barber_events",
+    "source": "ru.bmstu.rk9.rao.ui/model_templates/barber_events.rao.template",
+    "source_sha256": "453596DD18072DEC56A64D2F9E3DE264563245ED3F3DF8D618E933A34F5739A6",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_events/barber_events.trc.etalon",
+    "trace_sha256": "53F280FFB1330A46A14D148A86195895D3ABB1A3FAF80701462F706447B8A7FB",
+    "results_sha256": null
+  },
+  {
+    "name": "barber_simple",
+    "source": "ru.bmstu.rk9.rao.ui/model_templates/barber_simple.rao.template",
+    "source_sha256": "15E21555B6C5A4ED7EC791BDEB37DEBA4CE6CCC65938B54E79BCE0281ED68442",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_simple/barber_simple.trc.etalon",
+    "trace_sha256": "FEDD189D180EB19DF0DA36BB936C63AB41A16EB28F54505E1A3005A091E4EA40",
+    "results_sha256": null
+  },
+  {
+    "name": "continuous_histogram_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence.rao.template",
+    "source_sha256": "1539E9D9EE45F09D17561CBD93ADD78DDB91C90E567973230D135F283F3AD38D",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence.trc.etalon",
+    "trace_sha256": "F94E551378C7805311EA0991C6029DF45E289DB067BAD9D688AFA785FAC06FE3",
+    "results_sha256": null
+  },
+  {
+    "name": "discrete_histogram_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/discrete_histogram_sequence.rao.template",
+    "source_sha256": "EED4BE1D0D41F6EBFF072C85EE00D9EEEE6068F42BD2668113FCE318C796470A",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/discrete_histogram_sequence.trc.etalon",
+    "trace_sha256": "228C5CCD4B243EAADAB56A28F51FD0EF6296594798DF94B68DB8254703B507EC",
+    "results_sha256": null
+  },
+  {
+    "name": "exponential_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/exponential_sequence.rao.template",
+    "source_sha256": "C7A95C8828307FE791587473C371CD0A520454D0C81F5F4C2AF95001387144A1",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/exponential_sequence.trc.etalon",
+    "trace_sha256": "90BDD64B2A501C918703C47E0A8257956A2E01FD9DCC21BA0CCA5B8E41135897",
+    "results_sha256": null
+  },
+  {
+    "name": "game5",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/game5.rao.template",
+    "source_sha256": "76416D21776E006DD6965616011691F5F9BED4994F6808315A62342EFE1D28A6",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/game5.trc.etalon",
+    "trace_sha256": "8511C7304166BCC108308BFF4E17371629951C0B307BB217B36E205E792BCAE8",
+    "results_sha256": null
+  },
+  {
+    "name": "generator_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/generator_sequence.rao.template",
+    "source_sha256": "7573BB2DAEE5C893BF21D47B7B2153703F43EC5D87F8662B9A71D683A4933D40",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/generator_sequence.trc.etalon",
+    "trace_sha256": "F87EF1A14714CDE2A90ADA18F1D7E4029DAB0D043F3A952C3D718F12A9E84F34",
+    "results_sha256": null
+  },
+  {
+    "name": "list_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/list_sequence.rao.template",
+    "source_sha256": "3FFEC8B0DA5FABCDBD919CA679053DBED14FC58AE2E1C431AF858AA025F284D6",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/list_sequence.trc.etalon",
+    "trace_sha256": "B699625A2CFEB45E239AAE594839C935649DBD475B90C117EEC8F1A448A84D3F",
+    "results_sha256": null
+  },
+  {
+    "name": "normal_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/normal_sequence.rao.template",
+    "source_sha256": "6C5253EA5A4314274B8BEA0E5D51C00AA8929275466FB1BEC426736DB788142F",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/normal_sequence.trc.etalon",
+    "trace_sha256": "521681C606C6F2376DA23239E627F78CCEA90650542E31532BD580257974C30D",
+    "results_sha256": null
+  },
+  {
+    "name": "relevants_combination",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/relevants_combination.rao.template",
+    "source_sha256": "011234D166ABC0C6DD424E92F91F57132E1AD99BC00BB2E58FDB2F93A6E5FD20",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/relevants_combination.trc.etalon",
+    "trace_sha256": "0AC274DEBC799B0EBFF0D83D669FDAB0514A90A11451BD515F4582B7CC2CC4A3",
+    "results_sha256": null
+  },
+  {
+    "name": "relevants_no_combination",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/relevants_no_combination.rao.template",
+    "source_sha256": "04075B810D9B75BB17E982FBCA437A98B22C7CBFB689F1E1954AE7EDE3843AA8",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/relevants_no_combination.trc.etalon",
+    "trace_sha256": "C649099728E817F40A94E540C1B449CA837E62DE9B6A495ED4F1485C92E3A48A",
+    "results_sha256": null
+  },
+  {
+    "name": "results",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_results/results.rao.template",
+    "source_sha256": "D9142D612DCB1CB091CFD29690447FE2591B353440AF688BBF14C74EFAB81D2C",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_results/results.trc.etalon",
+    "trace_sha256": "FC93682A6841F5CD62F6D97BFDF69C9605AAC7D1CDED7110ED81A84205EC05F7",
+    "results_sha256": "63C015FCE5F6533546204E5C7B2BEDA966B5FCEE518DD1669EA71BFC47CF385C"
+  },
+  {
+    "name": "triangular_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/triangular_sequence.rao.template",
+    "source_sha256": "3CCE0B435C2A75608BEE8CFD0AD246A2A789EED312972DB7587DFA0B8278886D",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/triangular_sequence.trc.etalon",
+    "trace_sha256": "80E08CE2246B7B26DA1DC57AAE810AA17F5C7D8A9EA76E6BAF607BEBC3657F3C",
+    "results_sha256": null
+  },
+  {
+    "name": "uniform_sequence",
+    "source": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/uniform_sequence.rao.template",
+    "source_sha256": "8B7F9C178C8A96A80FECAA772C140DA3929F3BD9E4E3F43A989BEE4760767DFD",
+    "trace": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/uniform_sequence.trc.etalon",
+    "trace_sha256": "F1ED22117E36FD4213478A952F6838C4157C38B2CE169FE23E2C2B1FF4C683D9",
+    "results_sha256": null
+  }
+]

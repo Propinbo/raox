@@ -81,6 +81,9 @@ Workflow {
 
 			// The antlr parser generator fragment.
 			fragment = parser.antlr.XtextAntlrGeneratorFragment auto-inject {
+				// Complex Unicode terminals must not depend on ANTLR's 1s DFA timeout.
+				antlrParam = "-Xconversiontimeout"
+				antlrParam = "0"
 			//  options = {
 			//      backtrack = true
 			//  }
@@ -122,6 +125,8 @@ Workflow {
 
 			// generates a more lightweight Antlr parser and lexer tailored for content assist
 			fragment = parser.antlr.XtextAntlrUiGeneratorFragment auto-inject {
+				antlrParam = "-Xconversiontimeout"
+				antlrParam = "0"
 				options = {
 					classSplitting = true
 					fieldsPerClass = "500"

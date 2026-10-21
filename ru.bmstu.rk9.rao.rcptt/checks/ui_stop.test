@@ -1,0 +1,34 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _uIJHwByGEea5c-Q90PErIw
+Element-Name: ui_stop
+Element-Type: testcase
+Element-Version: 3.0
+Id: _stage2Stop
+Runtime-Version: 2.2.0.201706152316
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+open_rao_perspective
+create_rao_project "Пустая модель" "ui_stop"
+with [get-editor "ui_stop.rao"] {
+    get-editbox | set-text "event Tick() { Thread.sleep(100) Tick.plan(currentTime + 1) } def init() { Tick.plan(0) }"
+    get-text-viewer | key-type "M1+s"
+}
+exec-with-options {
+    execute_model "ui_stop"
+    try -times 100 -delay 100 -noScreenshot true -command {
+        invoke-static -pluginId "ru.bmstu.rk9.rao.lib" -className "ru.bmstu.rk9.rao.lib.simulator.CurrentSimulator" -methodName isRunning | equals true | verify-true
+    }
+    get-button "Stop Rao Model" | click
+} -disableJobWaiting true
+get-menu "Model/Export Trace Output/Regular" | click
+read-file "workspace:/ui_stop/ui_stop.trc" | contains "Simulation finished: user interrupt" | verify-true
+// Abort time depends on UI scheduling; only the reason is deterministic.
+get-file "workspace:/ui_stop/ui_stop.trc" | get exists | equals true | verify-true
+copy-file -source "workspace:/ui_stop/ui_stop.trc" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "ui-stop.trc"
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -1,0 +1,52 @@
+{
+  "started_at_utc": "2026-10-20T17:24:54.6150236Z",
+  "finished_at_utc": "2026-10-20T17:25:53.6017942Z",
+  "goal": "package",
+  "clean": true,
+  "exit_code": 0,
+  "succeeded": true,
+  "failure": null,
+  "repository": "C:\\Users\\propinbo\\Documents\\raox",
+  "java_home": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\toolchains\\jdk8u504-b01",
+  "maven": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\toolchains\\apache-maven-3.3.9\\bin\\mvn.cmd",
+  "maven_repository": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\m2",
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\recovery\\evidence\\20261020-202454-609-package.log",
+  "unit_tests": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifact": {
+    "archive": "C:\\Users\\propinbo\\Documents\\raox\\assembly\\target\\raox-3.9.0.zip",
+    "sha256": "2e456f8f7419c67b930d4734e904a17b1a682fecd272ff851d19c803032360b9",
+    "runtime_copy_identical": true,
+    "entries": [
+      {
+        "name": "raox/ru.bmstu.rk9.rao-3.9.0.jar",
+        "bytes": 788856,
+        "sha256": "1a827459b304e0103e1192316004adac6f1534db5958cb43e50f7d70893e66d8"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.lib-3.9.0.jar",
+        "bytes": 2180378,
+        "sha256": "c500d2116e266828df7dd42a4c4b97ab7a51ae0a69496e7a8ce813f03a87e726"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.ui-3.9.0.jar",
+        "bytes": 3552314,
+        "sha256": "123beac1000c6fa0cd9596573437c57ae144069e9a32e92cabb7eb8b08ff715d"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.raox.plugins.game5-3.9.0.jar",
+        "bytes": 75758,
+        "sha256": "1c828388ad3ce2879f4204af91dcf0fa32f9991214d29efd639be0ce6a41800b"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.lib.jar",
+        "bytes": 2180378,
+        "sha256": "c500d2116e266828df7dd42a4c4b97ab7a51ae0a69496e7a8ce813f03a87e726"
+      }
+    ]
+  }
+}

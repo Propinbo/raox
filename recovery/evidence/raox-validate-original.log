@@ -1,0 +1,751 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-maven-plugin/0.23.0/tycho-maven-plugin-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-maven-plugin/0.23.0/tycho-maven-plugin-0.23.0.pom (3 KB at 2.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho/0.23.0/tycho-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho/0.23.0/tycho-0.23.0.pom (19 KB at 33.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-core/0.23.0/tycho-core-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-core/0.23.0/tycho-core-0.23.0.pom (5 KB at 8.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (7 KB at 31.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0/maven-3.0.pom (22 KB at 91.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 KB at 99.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 KB at 57.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (4 KB at 18.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom (4 KB at 17.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 KB at 82.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (7 KB at 25.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 KB at 59.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (2 KB at 8.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (3 KB at 10.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 4.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (6 KB at 24.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 KB at 82.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 3.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (5 KB at 18.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 13.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 29.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 37.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom (5 KB at 18.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom (9 KB at 36.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (9 KB at 34.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (2 KB at 9.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (2 KB at 9.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (3 KB at 10.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (6 KB at 25.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (4 KB at 14.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (3 KB at 11.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (2 KB at 5.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (8 KB at 33.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 KB at 46.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4 KB at 18.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 KB at 75.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (6 KB at 24.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 KB at 47.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (3 KB at 10.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (3 KB at 11.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (2 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (8 KB at 33.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (3 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (4 KB at 16.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (2 KB at 8.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.1/plexus-archiver-2.10.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.1/plexus-archiver-2.10.1.pom (6 KB at 10.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 KB at 86.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.pom (4 KB at 17.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom (11 KB at 47.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom (47 KB at 213.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 KB at 67.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi.compatibility.state/1.0.100.v20150402-1551/org.eclipse.osgi.compatibility.state-1.0.100.v20150402-1551.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi.compatibility.state/1.0.100.v20150402-1551/org.eclipse.osgi.compatibility.state-1.0.100.v20150402-1551.pom (2 KB at 4.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-embedder/0.23.0/sisu-equinox-embedder-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-embedder/0.23.0/sisu-equinox-embedder-0.23.0.pom (2 KB at 2.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox/0.23.0/sisu-equinox-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox/0.23.0/sisu-equinox-0.23.0.pom (2 KB at 1.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi/3.10.100.v20150521-1310/org.eclipse.osgi-3.10.100.v20150521-1310.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi/3.10.100.v20150521-1310/org.eclipse.osgi-3.10.100.v20150521-1310.pom (2 KB at 3.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-api/0.23.0/sisu-equinox-api-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-api/0.23.0/sisu-equinox-api-0.23.0.pom (2 KB at 3.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-metadata-model/0.23.0/tycho-metadata-model-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-metadata-model/0.23.0/tycho-metadata-model-0.23.0.pom (2 KB at 2.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/de/pdark/decentxml/1.3/decentxml-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/de/pdark/decentxml/1.3/decentxml-1.3.pom (7 KB at 27.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-embedder-api/0.23.0/tycho-embedder-api-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-embedder-api/0.23.0/tycho-embedder-api-0.23.0.pom (3 KB at 4.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.embedder.shared/0.23.0/org.eclipse.tycho.embedder.shared-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.embedder.shared/0.23.0/org.eclipse.tycho.embedder.shared-0.23.0.pom (2 KB at 2.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-bundles/0.23.0/tycho-bundles-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-bundles/0.23.0/tycho-bundles-0.23.0.pom (4 KB at 4.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.core.shared/0.23.0/org.eclipse.tycho.core.shared-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.core.shared/0.23.0/org.eclipse.tycho.core.shared-0.23.0.pom (2 KB at 1.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-facade/0.23.0/tycho-p2-facade-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-facade/0.23.0/tycho-p2-facade-0.23.0.pom (3 KB at 4.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2/0.23.0/tycho-p2-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2/0.23.0/tycho-p2-0.23.0.pom (2 KB at 2.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.shared/0.23.0/org.eclipse.tycho.p2.resolver.shared-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.shared/0.23.0/org.eclipse.tycho.p2.resolver.shared-0.23.0.pom (2 KB at 2.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.shared/0.23.0/org.eclipse.tycho.p2.tools.shared-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.shared/0.23.0/org.eclipse.tycho.p2.tools.shared-0.23.0.pom (2 KB at 2.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-maven-plugin/0.23.0/tycho-maven-plugin-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-core/0.23.0/tycho-core-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar (46 KB at 123.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0/maven-model-3.0.jar (161 KB at 333.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-maven-plugin/0.23.0/tycho-maven-plugin-0.23.0.jar (6 KB at 10.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar (37 KB at 62.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.jar (515 KB at 749.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar (30 KB at 42.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar (51 KB at 69.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-core/0.23.0/tycho-core-0.23.0.jar (192 KB at 250.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar (145 KB at 161.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar (50 KB at 55.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar (104 KB at 110.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar (14 KB at 14.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar (73 KB at 73.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (197 KB at 176.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar (106 KB at 93.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar (60 KB at 49.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (150 KB at 119.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar (46 KB at 33.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 20.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.1/plexus-archiver-2.10.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (461 KB at 332.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar (14 KB at 9.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar (48 KB at 32.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi.compatibility.state/1.0.100.v20150402-1551/org.eclipse.osgi.compatibility.state-1.0.100.v20150402-1551.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar (238 KB at 148.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-embedder/0.23.0/sisu-equinox-embedder-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.jar (83 KB at 50.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi/3.10.100.v20150521-1310/org.eclipse.osgi-3.10.100.v20150521-1310.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar (170 KB at 101.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-api/0.23.0/sisu-equinox-api-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi.compatibility.state/1.0.100.v20150402-1551/org.eclipse.osgi.compatibility.state-1.0.100.v20150402-1551.jar (236 KB at 136.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-metadata-model/0.23.0/tycho-metadata-model-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.osgi/3.10.100.v20150521-1310/org.eclipse.osgi-3.10.100.v20150521-1310.jar (1273 KB at 639.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/de/pdark/decentxml/1.3/decentxml-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.1/plexus-archiver-2.10.1.jar (364 KB at 178.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-embedder-api/0.23.0/tycho-embedder-api-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-embedder/0.23.0/sisu-equinox-embedder-0.23.0.jar (13 KB at 6.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.embedder.shared/0.23.0/org.eclipse.tycho.embedder.shared-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-api/0.23.0/sisu-equinox-api-0.23.0.jar (4 KB at 1.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.core.shared/0.23.0/org.eclipse.tycho.core.shared-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/de/pdark/decentxml/1.3/decentxml-1.3.jar (109 KB at 49.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-facade/0.23.0/tycho-p2-facade-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-metadata-model/0.23.0/tycho-metadata-model-0.23.0.jar (36 KB at 15.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (5 KB at 1.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.shared/0.23.0/org.eclipse.tycho.p2.resolver.shared-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-embedder-api/0.23.0/tycho-embedder-api-0.23.0.jar (7 KB at 2.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.shared/0.23.0/org.eclipse.tycho.p2.tools.shared-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.core.shared/0.23.0/org.eclipse.tycho.core.shared-0.23.0.jar (37 KB at 13.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.embedder.shared/0.23.0/org.eclipse.tycho.embedder.shared-0.23.0.jar (10 KB at 3.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-facade/0.23.0/tycho-p2-facade-0.23.0.jar (34 KB at 11.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.shared/0.23.0/org.eclipse.tycho.p2.resolver.shared-0.23.0.jar (27 KB at 8.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.shared/0.23.0/org.eclipse.tycho.p2.tools.shared-0.23.0.jar (20 KB at 6.6 KB/sec)
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-bundles-external/0.23.0/tycho-bundles-external-0.23.0.zip
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-bundles-external/0.23.0/tycho-bundles-external-0.23.0.zip (7052 KB at 3218.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.impl/0.23.0/org.eclipse.tycho.p2.resolver.impl-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.resolver.impl/0.23.0/org.eclipse.tycho.p2.resolver.impl-0.23.0.jar (209 KB at 265.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.maven.repository/0.23.0/org.eclipse.tycho.p2.maven.repository-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.maven.repository/0.23.0/org.eclipse.tycho.p2.maven.repository-0.23.0.jar (144 KB at 205.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.impl/0.23.0/org.eclipse.tycho.p2.tools.impl-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.p2.tools.impl/0.23.0/org.eclipse.tycho.p2.tools.impl-0.23.0.jar (46 KB at 59.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (4 KB at 17.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 KB at 56.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 KB at 116.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom (15 KB at 61.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 KB at 110.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.pom (8 KB at 35.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom (26 KB at 104.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (5 KB at 17.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.2.1/exec-maven-plugin-1.2.1.jar (37 KB at 151.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/xtend/xtend-maven-plugin/2.9.2/xtend-maven-plugin-2.9.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/xtend/xtend-maven-plugin/2.9.2/xtend-maven-plugin-2.9.2.pom (8 KB at 7.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.parent/2.9.2/org.eclipse.xtext.parent-2.9.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.parent/2.9.2/org.eclipse.xtext.parent-2.9.2.pom (15 KB at 24.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (5 KB at 21.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/xtend/xtend-maven-plugin/2.9.2/xtend-maven-plugin-2.9.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/xtend/xtend-maven-plugin/2.9.2/xtend-maven-plugin-2.9.2.jar (42 KB at 41.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7 KB at 32.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (10 KB at 41.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 KB at 170.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom (15 KB at 64.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 KB at 141.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom (6 KB at 27.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom (13 KB at 58.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 KB at 109.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (15 KB at 68.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar (24 KB at 102.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/target-platform-configuration/0.23.0/target-platform-configuration-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/target-platform-configuration/0.23.0/target-platform-configuration-0.23.0.pom (2 KB at 2.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/target-platform-configuration/0.23.0/target-platform-configuration-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/target-platform-configuration/0.23.0/target-platform-configuration-0.23.0.jar (8 KB at 15.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-packaging-plugin/0.23.0/tycho-packaging-plugin-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-packaging-plugin/0.23.0/tycho-packaging-plugin-0.23.0.pom (3 KB at 5.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-packaging-plugin/0.23.0/tycho-packaging-plugin-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-packaging-plugin/0.23.0/tycho-packaging-plugin-0.23.0.jar (124 KB at 254.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-plugin/0.23.0/tycho-p2-plugin-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-plugin/0.23.0/tycho-p2-plugin-0.23.0.pom (3 KB at 3.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-plugin/0.23.0/tycho-p2-plugin-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-p2-plugin/0.23.0/tycho-p2-plugin-0.23.0.jar (27 KB at 31.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-launching/0.23.0/sisu-equinox-launching-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-launching/0.23.0/sisu-equinox-launching-0.23.0.pom (3 KB at 3.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.pom (11 KB at 47.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (52 KB at 227.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (14 KB at 64.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-artifactcomparator/0.23.0/tycho-artifactcomparator-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-artifactcomparator/0.23.0/tycho-artifactcomparator-0.23.0.pom (2 KB at 2.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom (2 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom (6 KB at 23.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom (10 KB at 42.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-launching/0.23.0/sisu-equinox-launching-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-artifactcomparator/0.23.0/tycho-artifactcomparator-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar (53 KB at 230.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar (370 KB at 1330.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-artifactcomparator/0.23.0/tycho-artifactcomparator-0.23.0.jar (20 KB at 30.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/sisu-equinox-launching/0.23.0/sisu-equinox-launching-0.23.0.jar (28 KB at 38.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-compiler-plugin/0.23.0/tycho-compiler-plugin-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-compiler-plugin/0.23.0/tycho-compiler-plugin-0.23.0.pom (3 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-compiler-plugin/0.23.0/tycho-compiler-plugin-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-compiler-plugin/0.23.0/tycho-compiler-plugin-0.23.0.jar (33 KB at 59.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.pom (5 KB at 20.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.jar (23 KB at 89.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom (21 KB at 79.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom (11 KB at 53.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (32 KB at 139.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar (122 KB at 334.6 KB/sec)
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.10/build-helper-maven-plugin-1.10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.10/build-helper-maven-plugin-1.10.pom (6 KB at 24.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/38/mojo-parent-38.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/38/mojo-parent-38.pom (33 KB at 123.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.10/build-helper-maven-plugin-1.10.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.10/build-helper-maven-plugin-1.10.jar (50 KB at 209.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.pom (12 KB at 52.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (12 KB at 51.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (39 KB at 181.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom (16 KB at 69.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.3/maven-compiler-plugin-3.3.jar (46 KB at 201.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19/maven-surefire-plugin-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19/maven-surefire-plugin-2.19.pom (6 KB at 25.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19/surefire-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19/surefire-2.19.pom (18 KB at 91.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19/maven-surefire-plugin-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.19/maven-surefire-plugin-2.19.jar (38 KB at 166.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire-plugin/0.23.0/tycho-surefire-plugin-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire-plugin/0.23.0/tycho-surefire-plugin-0.23.0.pom (4 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire/0.23.0/tycho-surefire-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire/0.23.0/tycho-surefire-0.23.0.pom (4 KB at 4.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire-plugin/0.23.0/tycho-surefire-plugin-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/tycho-surefire-plugin/0.23.0/tycho-surefire-plugin-0.23.0.jar (51 KB at 66.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.osgibooter/0.23.0/org.eclipse.tycho.surefire.osgibooter-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.osgibooter/0.23.0/org.eclipse.tycho.surefire.osgibooter-0.23.0.pom (3 KB at 2.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit/0.23.0/org.eclipse.tycho.surefire.junit-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit/0.23.0/org.eclipse.tycho.surefire.junit-0.23.0.pom (2 KB at 1.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit4/0.23.0/org.eclipse.tycho.surefire.junit4-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit4/0.23.0/org.eclipse.tycho.surefire.junit4-0.23.0.pom (2 KB at 1.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit47/0.23.0/org.eclipse.tycho.surefire.junit47-0.23.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit47/0.23.0/org.eclipse.tycho.surefire.junit47-0.23.0.pom (2 KB at 2.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom (3 KB at 9.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom (17 KB at 65.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom (6 KB at 22.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (2 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 KB at 53.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom (3 KB at 11.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom (2 KB at 7.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom (19 KB at 82.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom (24 KB at 110.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (5 KB at 21.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom (3 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom (3 KB at 11.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom (4 KB at 17.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom (16 KB at 64.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom (3 KB at 11.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom (19 KB at 85.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 0.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (6 KB at 22.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom (3 KB at 10.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom (2 KB at 6.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom (3 KB at 9.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 3.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 8.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom (3 KB at 12.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom (3 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom (3 KB at 12.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom (2 KB at 8.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom (2 KB at 8.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (4 KB at 13.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 71.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (41 KB at 155.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.osgibooter/0.23.0/org.eclipse.tycho.surefire.osgibooter-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit4/0.23.0/org.eclipse.tycho.surefire.junit4-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit/0.23.0/org.eclipse.tycho.surefire.junit-0.23.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit47/0.23.0/org.eclipse.tycho.surefire.junit47-0.23.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar (144 KB at 601.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar (260 KB at 567.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar (39 KB at 56.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit4/0.23.0/org.eclipse.tycho.surefire.junit4-0.23.0.jar (57 KB at 74.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit/0.23.0/org.eclipse.tycho.surefire.junit-0.23.0.jar (24 KB at 27.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar (37 KB at 40.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.junit47/0.23.0/org.eclipse.tycho.surefire.junit47-0.23.0.jar (157 KB at 172.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/tycho/org.eclipse.tycho.surefire.osgibooter/0.23.0/org.eclipse.tycho.surefire.osgibooter-0.23.0.jar (408 KB at 420.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar (119 KB at 119.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar (35 KB at 32.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar (57 KB at 50.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar (29 KB at 24.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 KB at 31.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 250.1 KB/sec)
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[WARNING] No explicit target runtime environment configuration. Build is platform dependent.
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\pom.xml
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/mars/201506241002/ (0B of 142B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/releases/mars/201506241002
+[INFO] Fetching content.xml.xz from http://download.eclipse.org/releases/mars/201506241002/ (0B of 866.22kB at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/ (0B of 115B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2
+[INFO] Fetching content.jar from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/ (0B of 38.25kB at 0B/s)
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\pom.xml
+[INFO] Fetching &countryCode=us&timeZone=3&format=xml from http://www.eclipse.org/downloads/download.php?format=xml&file=/releases/mars/201506241002/ (0B of 63B at 0B/s)
+[INFO] Fetching com.google.guava_15.0.0.v201403281430.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 1.26MB at 0B/s)
+[INFO] Fetching com.google.inject_3.0.0.v201312141243.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 137.09kB at 0B/s)
+[INFO] Fetching javax.inject_1.0.0.v20091030.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 16.6kB at 0B/s)
+[INFO] Fetching org.eclipse.osgi_3.10.100.v20150529-1857.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 416.2kB at 0B/s)
+[INFO] Fetching org.apache.commons.cli_1.2.0.v201404270220.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 24.42kB at 0B/s)
+[INFO] Fetching org.apache.commons.lang_2.6.0.v201404270220.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 106.17kB at 0B/s)
+[INFO] Fetching org.apache.commons.logging_1.1.1.v201101211721.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 35.64kB at 0B/s)
+[INFO] Fetching org.eclipse.core.commands_3.7.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 39.85kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.common_3.7.0.v20150402-1709.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 46.34kB at 0B/s)
+[INFO] Fetching org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 38.36kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 50.68kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 67.25kB at 0B/s)
+[INFO] Fetching com.ibm.icu_54.1.1.v201501272100.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 8.28MB at 0B/s)
+[INFO] Fetching com.ibm.icu_54.1.1.v201501272100.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (1.3MB of 8.28MB at 1.3MB/s)
+[INFO] Fetching org.eclipse.core.expressions_3.5.0.v20150421-2214.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 31.73kB at 0B/s)
+[INFO] Fetching org.eclipse.core.runtime_3.11.0.v20150405-1723.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 34.12kB at 0B/s)
+[INFO] Fetching org.eclipse.core.filesystem_1.5.0.v20150421-0713.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 25.45kB at 0B/s)
+[INFO] Fetching org.eclipse.core.jobs_3.7.0.v20150330-2103.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 43.21kB at 0B/s)
+[INFO] Fetching org.eclipse.core.resources_3.10.0.v20150423-0755.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 860.36kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.app_1.3.300.v20150423-1356.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 39.64kB at 0B/s)
+[INFO] Fetching org.eclipse.core.variables_3.2.800.v20130819-1716.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 16.76kB at 0B/s)
+[INFO] Fetching org.eclipse.debug.core_3.10.0.v20150303-1130.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 106.72kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 361.12kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.ecore.xmi_2.11.0.v20150512-0501.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 79.16kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.codegen_2.11.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 101.75kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.common_2.11.0.v20150512-0501.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 102.91kB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.core_3.11.0.v20150602-1242.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 5.45MB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.core_3.11.0.v20150602-1242.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (1.61MB of 5.45MB at 1.61MB/s)
+[INFO] Fetching org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 121.41kB at 0B/s)
+[INFO] Fetching org.eclipse.text_3.5.400.v20150505-1044.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 82.29kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 449.17kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.mwe.core_1.3.10.v201505260335.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 61.3kB at 0B/s)
+[INFO] Fetching org.apache.ant_1.9.4.v201504302020.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 2.17MB at 0B/s)
+[INFO] Fetching org.apache.ant_1.9.4.v201504302020.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (1.61MB of 2.17MB at 1.61MB/s)
+[INFO] Fetching org.eclipse.emf.mwe2.runtime_2.8.0.v201505260335.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 7.41kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.mwe.utils_1.3.10.v201505260335.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 17.44kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.mwe2.language_2.8.0.v201505260456.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 66.66kB at 0B/s)
+[INFO] Fetching org.antlr.runtime_3.2.0.v201101311130.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 98.52kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.mwe2.lib_2.8.0.v201505260335.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 11.86kB at 0B/s)
+[INFO] Fetching 2.9.2&format=xml&countryCode=us&timeZone=3&format=xml from http://www.eclipse.org/downloads/download.php?file=//modeling/tmf/xtext/updates/releases/ (0B at 0B/s)
+[INFO] Fetching org.eclipse.xtext.common.types_2.9.2.v201603040440.jar.pack.gz from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 122.53kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 791.18kB at 0B/s)
+[INFO] Fetching org.apache.log4j_1.2.15.v201012070815.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 141.34kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.mwe2.launch_2.8.0.v201505260456.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 11.35kB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.debug_3.9.0.v20150528-1838.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 896.23kB at 0B/s)
+[INFO] Fetching org.eclipse.xtend_2.1.0.v201505260349.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 147.84kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.xbase.lib_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 44.48kB at 0B/s)
+[INFO] Fetching org.eclipse.xtend.lib.macro_2.9.2.v201603040440.jar.pack.gz from https://mirror.dkm.cz/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 20.31kB at 0B/s)
+[INFO] Fetching org.eclipse.xtend.lib_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 87.92kB at 0B/s)
+[INFO] Fetching org.eclipse.xtend.typesystem.emf_2.1.0.v201505260349.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 25.07kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.util_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 97.1kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.smap_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 10.71kB at 0B/s)
+[INFO] Fetching org.objectweb.asm_5.0.1.v201404251740.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 33.32kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.xbase_2.9.2.v201603040440.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 1.14MB at 0B/s)
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\pom.xml
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.lib:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\pom.xml
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.lib:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\pom.xml
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.lib:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\pom.xml
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.sdk:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\pom.xml
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.sdk:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\pom.xml
+[INFO] Fetching javax.annotation_1.2.0.v201401042248.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 19.58kB at 0B/s)
+[INFO] Fetching javax.xml_1.3.4.v201005080400.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 246.29kB at 0B/s)
+[INFO] Fetching org.w3c.dom.svg_1.1.0.v201011041433.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 95.1kB at 0B/s)
+[INFO] Fetching org.w3c.css.sac_1.3.1.v200903091627.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 37.68kB at 0B/s)
+[INFO] Fetching org.apache.batik.css_1.7.0.v201011041433.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 347.67kB at 0B/s)
+[INFO] Fetching org.apache.batik.util_1.7.0.v201011041433.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 154.43kB at 0B/s)
+[INFO] Fetching org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 17.78kB at 0B/s)
+[INFO] Fetching org.w3c.dom.smil_1.0.1.v200903091627.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 14.95kB at 0B/s)
+[INFO] Fetching org.apache.batik.util.gui_1.7.0.v200903091627.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 207.37kB at 0B/s)
+[INFO] Fetching org.eclipse.osgi.services_3.5.0.v20150519-2006.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 39.13kB at 0B/s)
+[INFO] Fetching org.eclipse.compare_3.5.600.v20150420-1449.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 238.49kB at 0B/s)
+[INFO] Fetching org.eclipse.ui_3.107.0.v20150507-1945.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 169.58kB at 0B/s)
+[INFO] Fetching org.eclipse.jface.text_3.10.0.v20150603-1752.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 291.69kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.ide_3.11.0.v20150510-1749.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 706.62kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.views_3.8.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 39.61kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.workbench.texteditor_3.9.100.v20141023-1946.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 177.62kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.editors_3.9.0.v20150213-1939.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 160.34kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.forms_3.6.200.v20150506-2029.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 104.13kB at 0B/s)
+[INFO] Fetching org.eclipse.compare.core_3.5.500.v20150505-1058.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 29.81kB at 0B/s)
+[INFO] Fetching org.eclipse.core.databinding_1.5.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 56.08kB at 0B/s)
+[INFO] Fetching org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 77.06kB at 0B/s)
+[INFO] Fetching org.eclipse.core.databinding.property_1.5.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 41.45kB at 0B/s)
+[INFO] Fetching org.eclipse.core.filebuffers_3.5.500.v20140723-1040.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 38.05kB at 0B/s)
+[INFO] Fetching org.eclipse.debug.ui_3.11.0.v20150514-0917.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 858.92kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.console_3.6.0.v20150512-1341.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 70.1kB at 0B/s)
+[INFO] Fetching org.eclipse.help_3.6.0.v20130326-1254.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 107.95kB at 0B/s)
+[INFO] Fetching org.eclipse.draw2d_3.10.0.201506010206.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 182.43kB at 0B/s)
+[INFO] Fetching org.eclipse.swt_3.104.0.v20150528-0211.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 17kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.commands_0.11.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 12.84kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.di_1.5.0.v20150421-2214.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 24.2kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.contexts_1.4.0.v20150421-2214.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 22.05kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.services_2.0.0.v20150403-1912.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 21.45kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.di.annotations_1.4.0.v20150528-1451.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 6.53kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.core.di.extensions_0.13.0.v20150421-2214.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 13.38kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.emf.xpath_0.1.100.v20150513-0856.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 20.55kB at 0B/s)
+[INFO] Fetching org.apache.commons.jxpath_1.3.0.v200911051830.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 98kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.bindings_0.11.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 22.96kB at 0B/s)
+[INFO] Fetching org.eclipse.jface_3.11.0.v20150602-1400.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 357.09kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.css.core_0.11.0.v20150511-1937.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 60.73kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.css.swt_0.12.0.v20150511-1003.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 69.76kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.css.swt.theme_0.10.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 15.02kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.di_1.1.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 8.45kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.model.workbench_1.1.100.v20150407-1430.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 99.74kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.services_1.2.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 12.65kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.widgets_1.1.0.v20150427-1751.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 8.78kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.workbench_1.3.0.v20150531-1948.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 96.33kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.ecore.change_2.11.0.v20150512-0501.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 34.96kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.workbench.addons.swt_1.2.0.v20150512-1414.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 51.35kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.workbench.renderers.swt_0.13.0.v20150603-0857.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 103.21kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 64.31kB at 0B/s)
+[INFO] Fetching org.eclipse.jface.databinding_1.7.0.v20150406-2148.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 61.18kB at 0B/s)
+[INFO] Fetching org.eclipse.e4.ui.workbench3_0.13.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 6.88kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.ds_1.4.300.v20150423-1356.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 88.45kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.common.ui_2.10.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 55.24kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.ecore.edit_2.9.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 40.36kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.edit_2.11.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 87.72kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.ecore.editor_2.11.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 38.97kB at 0B/s)
+[INFO] Fetching org.eclipse.emf.edit.ui_2.11.0.v20150601-0402.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 73.08kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.workbench_3.107.0.v20150510-1732.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 1.02MB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.bidi_0.10.0.v20130327-1442.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 21.69kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.util_1.0.500.v20130404-1337.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 30.41kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.p2.core_2.4.0.v20150527-1706.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 28.85kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.p2.engine_2.4.0.v20150511-1532.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 70.18kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.p2.metadata_2.3.0.v20150511-1532.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 100.68kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.p2.metadata.repository_1.2.200.v20150428-1613.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 45.24kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.p2.repository_2.3.100.v20150428-1613.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 50.62kB at 0B/s)
+[INFO] Fetching org.tukaani.xz_1.3.0.v201308270617.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 36.04kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.security_1.2.100.v20150423-1356.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 41.25kB at 0B/s)
+[INFO] Fetching org.eclipse.gef_3.10.0.201506010206.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 238.9kB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.core.manipulation_1.5.100.v20141002-1241.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 29.46kB at 0B/s)
+[INFO] Fetching org.eclipse.ltk.core.refactoring_3.6.200.v20140826-0859.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 94.21kB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.debug.ui_3.7.0.v20150505-1916.jar from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 1.39MB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.ui_3.11.0.v20150527-0925.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 3.23MB at 0B/s)
+[INFO] Fetching org.eclipse.jdt.ui_3.11.0.v20150527-0925.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (1.61MB of 3.23MB at 1.61MB/s)
+[INFO] Fetching org.eclipse.search_3.10.0.v20150318-0856.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 148.82kB at 0B/s)
+[INFO] Fetching org.eclipse.team.ui_3.7.200.v20150203-1452.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 368.05kB at 0B/s)
+[INFO] Fetching org.eclipse.team.core_3.7.100.v20150203-1452.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 113.41kB at 0B/s)
+[INFO] Fetching org.eclipse.ltk.ui.refactoring_3.7.200.v20140625-1835.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 144.48kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.navigator_3.6.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 122.73kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.navigator.resources_3.5.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 52.74kB at 0B/s)
+[INFO] Fetching org.eclipse.swt.win32.win32.x86_64_3.104.0.v20150528-0211.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 1.13MB at 0B/s)
+[INFO] Fetching org.eclipse.ui.views.properties.tabbed_3.6.100.v20150423-0822.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 37.56kB at 0B/s)
+[INFO] Fetching org.eclipse.xpand_2.1.0.v201505260349.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 79.08kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ui_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 503.3kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.common.types.ui_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 83.12kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.builder_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 114.07kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.common.types.edit_2.9.2.v201603040440.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 41.85kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ecore_2.9.2.v201603040440.jar.pack.gz from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 9.35kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.generator_2.9.2.v201603040440.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 287.41kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.xtext.generator_2.9.2.v201603040440.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 719.56kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ide_2.9.2.v201603040440.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 59.41kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ui.codetemplates_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 60.65kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ui.shared_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 21.42kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.ui.codetemplates.ui_2.9.2.v201603040440.jar.pack.gz from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 66.89kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.xbase.ide_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 320.63kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.xbase.ui_2.9.2.v201603040440.jar.pack.gz from https://mirror.dkm.cz/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 197.91kB at 0B/s)
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.sdk:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\pom.xml
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.tests:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\pom.xml
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.tests:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\pom.xml
+[INFO] Fetching org.eclipse.core.net_1.2.300.v20141118-1725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 30.48kB at 0B/s)
+[INFO] Fetching org.junit_4.12.0.v201504281640.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 283.72kB at 0B/s)
+[INFO] Fetching org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 38.25kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.builder.standalone_2.9.2.v201603040440.jar.pack.gz from https://mirror1.sox.rs/eclipse//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 41.98kB at 0B/s)
+[INFO] Fetching org.eclipse.xtext.junit4_2.9.2.v201603040440.jar.pack.gz from https://eclipse.mirror.liteserver.nl//modeling/tmf/xtext/updates/releases/2.9.2/plugins/ (0B of 88.32kB at 0B/s)
+[INFO] Fetching org.hamcrest.core_1.3.0.v201303031735.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 19.33kB at 0B/s)
+[INFO] Fetching org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar.pack.gz from http://download.eclipse.org/releases/mars/201506241002/plugins/ (0B of 27.89kB at 0B/s)
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.tests:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\pom.xml
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.ui:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\pom.xml
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.ui:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\pom.xml
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.ui:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\pom.xml
+[INFO] Computing target platform for MavenProject: ru.bmstu.rk9.raox.plugins:ru.bmstu.rk9.raox.plugins.game5:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\pom.xml
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.raox.plugins:ru.bmstu.rk9.raox.plugins.game5:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\pom.xml
+[INFO] Resolving class path of MavenProject: ru.bmstu.rk9.raox.plugins:ru.bmstu.rk9.raox.plugins.game5:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent
+[INFO] ru.bmstu.rk9.rao.lib
+[INFO] ru.bmstu.rk9.rao
+[INFO] ru.bmstu.rk9.rao.ui
+[INFO] ru.bmstu.rk9.rao.sdk
+[INFO] ru.bmstu.rk9.rao.tests
+[INFO] ru.bmstu.rk9.raox.plugins.parent
+[INFO] ru.bmstu.rk9.raox.plugins.game5
+[INFO] Package binaries
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building parent 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.rao.lib 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (5 KB at 21.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (9 KB at 35.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1018 B at 4.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 KB at 83.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 KB at 99.1 KB/sec)
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.lib ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.rao 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.rao ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.rao.ui 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.ui ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.ui ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.rao.sdk 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.sdk ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.rao.tests 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.tests ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.tests ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.raox.plugins.parent 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ru.bmstu.rk9.raox.plugins.game5 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-id (default-validate-id) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.23.0:validate-version (default-validate-version) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Package binaries 3.9.0
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] parent ............................................. SUCCESS [  0.001 s]
+[INFO] ru.bmstu.rk9.rao.lib ............................... SUCCESS [  1.236 s]
+[INFO] ru.bmstu.rk9.rao ................................... SUCCESS [  0.003 s]
+[INFO] ru.bmstu.rk9.rao.ui ................................ SUCCESS [  0.003 s]
+[INFO] ru.bmstu.rk9.rao.sdk ............................... SUCCESS [  0.006 s]
+[INFO] ru.bmstu.rk9.rao.tests ............................. SUCCESS [  0.002 s]
+[INFO] ru.bmstu.rk9.raox.plugins.parent ................... SUCCESS [  0.000 s]
+[INFO] ru.bmstu.rk9.raox.plugins.game5 .................... SUCCESS [  0.004 s]
+[INFO] Package binaries ................................... SUCCESS [  0.000 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:16 min
+[INFO] Finished at: 2026-10-20T19:20:52+03:00
+[INFO] Final Memory: 70M/529M
+[INFO] ------------------------------------------------------------------------

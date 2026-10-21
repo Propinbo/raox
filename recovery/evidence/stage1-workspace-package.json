@@ -1,0 +1,32 @@
+{
+  "archive": "C:\\Users\\propinbo\\Documents\\raox\\assembly\\target\\raox-3.9.0.zip",
+  "sha256": "8f22d14671c38a142d04c483ac5891d3907655d7102f9b6d97248ccbe28b5572",
+  "runtime_copy_identical": true,
+  "entries": [
+    {
+      "name": "raox/ru.bmstu.rk9.rao-3.9.0.jar",
+      "bytes": 788858,
+      "sha256": "d6c76071f95857ba5511f8e140e103fb08cea9ff2e969945d526da46b38c9054"
+    },
+    {
+      "name": "raox/ru.bmstu.rk9.rao.lib-3.9.0.jar",
+      "bytes": 2180380,
+      "sha256": "b836706f91b25871c369c5199328e8abbf5f4292bb2b0cae0e470865dfb0518c"
+    },
+    {
+      "name": "raox/ru.bmstu.rk9.rao.ui-3.9.0.jar",
+      "bytes": 3552667,
+      "sha256": "2e6d0cfce05310f568100447d4f28555e53ea9739275c2e92992b91aa30ec733"
+    },
+    {
+      "name": "raox/ru.bmstu.rk9.raox.plugins.game5-3.9.0.jar",
+      "bytes": 75788,
+      "sha256": "5815ce9a8efa3e7f9308d669b6d8c36ee95071ffa1354ad0b7346e5e1b032629"
+    },
+    {
+      "name": "raox/ru.bmstu.rk9.rao.lib.jar",
+      "bytes": 2180380,
+      "sha256": "b836706f91b25871c369c5199328e8abbf5f4292bb2b0cae0e470865dfb0518c"
+    }
+  ]
+}

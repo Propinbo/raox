@@ -226,6 +226,9 @@ public class BuildJobProvider {
 
 				try {
 					recentProject.build(IncrementalProjectBuilder.FULL_BUILD, monitor);
+					// Xtext may create Java after the Java builder's full-build pass.
+					// Compile that delta synchronously before loading model classes.
+					recentProject.build(IncrementalProjectBuilder.INCREMENTAL_BUILD, monitor);
 				} catch (CoreException e) {
 					e.printStackTrace();
 					return new Status(IStatus.ERROR, pluginId, BuildUtil.createErrorMessage("Failed to build project"),

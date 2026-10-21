@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-10-21T10:20:59.7218073Z",
+  "finished_at_utc": "2026-10-21T10:27:41.1241139Z",
+  "goal": "verify",
+  "clean": true,
+  "cache_initially_empty": true,
+  "attempts": [
+    {
+      "number": 1,
+      "exit_code": 1,
+      "network_failure": false,
+      "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\repro-evidence\\20261021-132059-719-verify-attempt-1.log"
+    }
+  ],
+  "exit_code": 1,
+  "succeeded": false,
+  "failure": "Maven exited with code 1. Full log: C:\\Users\\propinbo\\Documents\\raox\\.build\\repro-evidence\\20261021-132059-719-verify.log",
+  "repository": "C:\\Users\\propinbo\\Documents\\raox\\.build\\clean source",
+  "java_home": "C:\\Users\\propinbo\\Documents\\raox\\.build\\tools\\jdk8u504-b01",
+  "maven": "C:\\Users\\propinbo\\Documents\\raox\\.build\\clean source\\mvnw.cmd",
+  "maven_repository": "C:\\Users\\propinbo\\Documents\\raox\\.build\\repro-m2",
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\repro-evidence\\20261021-132059-719-verify.log",
+  "unit_tests": null,
+  "artifact": null
+}

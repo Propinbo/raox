@@ -1,0 +1,27 @@
+{
+  "antlr_artifact": "org.xtext:antlr-generator:3.2.1",
+  "antlr_sha256": "9f7315c29dbdab5c88ad6fbd2230e0691b772138be9595ffb02183888b3689a5",
+  "default_timeout_ms": 1000,
+  "default_confirmed_by": "JDK 8 javap -c org.antlr.analysis.DFA, static initializer: sipush 1000; putstatic MAX_TIME_PER_DFA_CREATION",
+  "input": "ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g",
+  "timeout_probe": [
+    {
+      "arguments": "org.antlr.Tool -Xconversiontimeout 1 -o <external output> <input>",
+      "exit_code": 1,
+      "log": "antlr-timeout-1ms.log"
+    },
+    {
+      "arguments": "org.antlr.Tool -Xconversiontimeout 0 -o <external output> <input>",
+      "exit_code": 0,
+      "log": "antlr-timeout-disabled.log"
+    }
+  ],
+  "unicode_source_path_probe": {
+    "helper": "AntlrPathProbe.java",
+    "arguments": "AntlrPathProbe <base64 UTF-8 input path> <ASCII output directory>",
+    "exit_code": 1,
+    "log": "antlr-unicode-path.log",
+    "note": "Helper passes Unicode filename inside Java, avoiding Java 8 command line argument encoding."
+  },
+  "original_RULE_ANY_OTHER_message_reproduced": false
+}

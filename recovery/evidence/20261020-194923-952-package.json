@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-20T16:49:23.9677990Z",
+  "finished_at_utc": "2026-10-20T16:50:12.7235251Z",
+  "goal": "package",
+  "clean": false,
+  "exit_code": 1,
+  "succeeded": false,
+  "failure": null,
+  "repository": "C:\\Users\\propinbo\\Documents\\raox",
+  "java_home": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\toolchains\\jdk8u504-b01",
+  "maven": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\toolchains\\apache-maven-3.3.9\\bin\\mvn.cmd",
+  "maven_repository": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\m2",
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\recovery\\evidence\\20261020-194923-952-package.log",
+  "unit_tests": null,
+  "artifact": null
+}

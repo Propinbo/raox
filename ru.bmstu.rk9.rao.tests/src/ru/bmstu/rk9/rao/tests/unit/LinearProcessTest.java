@@ -22,20 +22,32 @@ import ru.bmstu.rk9.rao.lib.simulator.CurrentSimulator.SimulationStopCode;
 public class LinearProcessTest {
 
 	@Test
-	public void test() {
+	public void overloadedProcessWithoutQueueReportsBackpressure() {
 		ProcessTestSuite.initEmptySimulation();
 		SimulatorInitializationInfo initializationInfo = new SimulatorInitializationInfo();
 		initializationInfo.terminateConditions.add(() -> CurrentSimulator.getTime() > 1000);
-		initializationInfo.processBlocks.addAll(generateSituation());
+		initializationInfo.processBlocks.addAll(generateSituation(10.0));
 		CurrentSimulator.initialize(initializationInfo);
 		SimulationStopCode simulationStopCode = CurrentSimulator.run();
 		assertEquals("linear_process_test", SimulationStopCode.RUNTIME_ERROR, simulationStopCode);
-		assertTrue(Math.abs(CurrentSimulator.getTime() - 40) < 1e16);
+		// At t=50 Generate cannot accept another transact while Seize is busy.
+		assertEquals(50.0, CurrentSimulator.getTime(), 0.0);
 	}
 
-	private List<Block> generateSituation() {
+	@Test
+	public void processWithoutContentionCompletesNormally() {
+		ProcessTestSuite.initEmptySimulation();
+		SimulatorInitializationInfo initializationInfo = new SimulatorInitializationInfo();
+		initializationInfo.terminateConditions.add(() -> CurrentSimulator.getTime() >= 60);
+		initializationInfo.processBlocks.addAll(generateSituation(20.0));
+		CurrentSimulator.initialize(initializationInfo);
+		assertEquals(SimulationStopCode.TERMINATE_CONDITION, CurrentSimulator.run());
+		assertEquals(60.0, CurrentSimulator.getTime(), 0.0);
+	}
+
+	private List<Block> generateSituation(double interval) {
 		List<Block> blocks = new ArrayList<Block>();
-		Generate generate = new Generate(() -> 10.0);
+		Generate generate = new Generate(() -> interval);
 		Terminate terminate = new Terminate();
 		Hold hold = new Hold(() -> 15.0);
 		Resource resource = TestResource.create();

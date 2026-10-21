@@ -6,8 +6,8 @@ import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.KeyEvent;
-import org.eclipse.swt.events.KeyListener;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
@@ -38,10 +38,10 @@ public class Game5WizardPage extends WizardPage {
 		projectNameText.setLayoutData(projectNameData);
 		projectNameText.setFocus();
 
-		projectNameText.addKeyListener(new KeyListener() {
+		projectNameText.addModifyListener(new ModifyListener() {
 
 			@Override
-			public void keyReleased(KeyEvent e) {
+			public void modifyText(ModifyEvent e) {
 				String projectName = projectNameText.getText();
 				IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
 				if (projectName.isEmpty()) {
@@ -73,9 +73,6 @@ public class Game5WizardPage extends WizardPage {
 				setPageComplete(true);
 			}
 
-			@Override
-			public void keyPressed(KeyEvent e) {
-			}
 		});
 
 		setControl(container);

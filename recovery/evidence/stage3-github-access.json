@@ -1,0 +1,16 @@
+{
+  "authenticated_login": "Propinbo",
+  "repository": "LeKaitoW/raox",
+  "permissions": {
+    "pull": true,
+    "push": false,
+    "maintain": false,
+    "admin": false
+  },
+  "remote_ci_run": false,
+  "own_fork_lookup": {
+    "repository": "Propinbo/raox",
+    "status": 404
+  },
+  "checked_at_utc": "2026-10-21T10:32:15.4727155Z"
+}

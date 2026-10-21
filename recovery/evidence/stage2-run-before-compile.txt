@@ -1,0 +1,11 @@
+java.lang.ClassNotFoundException: ui_stop.ui_stop
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at ru.bmstu.rk9.rao.ui.execution.ModelInternalsParser.parseModel(ModelInternalsParser.java:150)
+	at ru.bmstu.rk9.rao.ui.execution.ModelInternalsParser.parse(ModelInternalsParser.java:141)
+	at ru.bmstu.rk9.rao.ui.execution.ExecutionJobProvider$1.run(ExecutionJobProvider.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+

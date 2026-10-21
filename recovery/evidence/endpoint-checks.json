@@ -1,0 +1,42 @@
+[
+  {
+    "url": "http://download.eclipse.org/releases/mars/201506241002/p2.index",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/releases/mars/201506241002/p2.index"
+  },
+  {
+    "url": "https://download.eclipse.org/releases/mars/201506241002/p2.index",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/releases/mars/201506241002/p2.index"
+  },
+  {
+    "url": "https://download.eclipse.org/releases/mars/201506241002/content.jar",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/releases/mars/201506241002/content.jar"
+  },
+  {
+    "url": "http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/p2.index",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/p2.index"
+  },
+  {
+    "url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/p2.index",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/p2.index"
+  },
+  {
+    "url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/content.jar",
+    "status": 200,
+    "final_url": "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2/content.jar"
+  },
+  {
+    "url": "http://raox.ru/docs/reference/base_types_and_functions.html",
+    "status": "error",
+    "message": "No such host is known. (raox.ru:80)"
+  },
+  {
+    "url": "https://raox.ru/docs/reference/base_types_and_functions.html",
+    "status": "error",
+    "message": "No such host is known. (raox.ru:443)"
+  }
+]

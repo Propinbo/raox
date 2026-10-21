@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><testsuite name="results" time="18.146" failures="0" tests="4" skipped="0" errors="0"><testcase name="empty_model" time="7.579"></testcase><testcase name="model_uniform_sequence" time="5.669"></testcase><testcase name="model_uniform_sequence_notrace" time="4.175"></testcase><testcase name="rao_perspective" time="0.723"></testcase></testsuite>

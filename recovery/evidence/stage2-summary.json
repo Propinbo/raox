@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "base_head": "80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc",
+  "build_exit": 0,
+  "clean": true,
+  "junit": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "rcptt": {
+    "tests": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "release_comparison_tests": 4,
+  "ui_plugins_match_archive": true,
+  "archive_sha256": "2e456f8f7419c67b930d4734e904a17b1a682fecd272ff851d19c803032360b9",
+  "exports": {
+    "points": 5,
+    "csv_json_equal": true,
+    "samples_match_model": true,
+    "trace_stop_time": 3.0
+  }
+}

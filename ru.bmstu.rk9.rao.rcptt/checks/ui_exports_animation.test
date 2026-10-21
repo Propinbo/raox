@@ -1,0 +1,67 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _uIJHwByGEea5c-Q90PErIw
+Element-Name: ui_exports_animation
+Element-Type: testcase
+Element-Version: 3.0
+Id: _stage2ExportsAnimation
+Runtime-Version: 2.2.0.201706152316
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+open_rao_perspective
+create_rao_project "Пустая модель" "ui_exports"
+get-menu "Window/Show View/Other..." | click
+with [get-window "Show View"] {
+    get-tree | select "Rao/Rao Animation"
+    get-button Open | click
+}
+with [get-editor "ui_exports.rao"] {
+    get-editbox | set-text [concat
+        "type T { int n }\nresource r = T.create(0)\n"
+        "event Tick() { r.n = r.n + 1 Tick.plan(currentTime + 1) }\n"
+        "def init() { Tick.plan(0) }\n"
+        "def terminateCondition() { return currentTime >= 3 }\n"
+        "result total = Result.create([r.n], new LastValueStatistics())\n"
+        "frame Frame { def init() { background = new Background(160, 100, RaoColor.WHITE) } "
+        "def draw() { drawText(\"UTF-8: проверка\", 10, 20) } }\n"]
+    get-text-viewer | key-type "M1+s"
+}
+enable_monitoring "ui_exports"
+execute_model "ui_exports"
+get-view "Rao Animation" | get-list | select "ui_exports.ui_exports.Frame"
+get-menu "Model/Export Trace Output/Regular" | click
+get-menu "Model/Export Results" | click
+get-file "workspace:/ui_exports/ui_exports.trc" | get exists | equals true | verify-true
+get-file "workspace:/ui_exports/ui_exports.res" | get exists | equals true | verify-true
+with [get-view "Collected Objects" | get-tree] {
+    select "ui_exports/Results/total"
+    get-menu Plot | click
+}
+get-view total | get-canvas
+take-screenshot "Result plot and UTF-8 animation"
+set-dialog-result File [concat [get-workspace-location] "/ui_exports/plot.csv"]
+with [get-view "Collected Objects" | get-tree] {
+    select "ui_exports/Results/total"
+    get-menu "Export to CSV" | click
+}
+set-dialog-result File [concat [get-workspace-location] "/ui_exports/plot.json"]
+with [get-view "Collected Objects" | get-tree] {
+    select "ui_exports/Results/total"
+    get-menu "Export to JSON" | click
+}
+get-view "Project Explorer" | get-tree | select "ui_exports"
+get-view "Project Explorer" | get-tree | get-menu Refresh | click
+get-file "workspace:/ui_exports/plot.csv" | get exists | equals true | verify-true
+get-file "workspace:/ui_exports/plot.json" | get exists | equals true | verify-true
+read-file "workspace:/ui_exports/ui_exports.res" | contains "Last value: 4" | verify-true
+read-file "workspace:/ui_exports/plot.csv" | contains "x,y" | verify-true
+read-file "workspace:/ui_exports/plot.json" | contains "\"x\"" | verify-true
+copy-file -source "workspace:/ui_exports/plot.csv" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "ui-exports.csv"
+copy-file -source "workspace:/ui_exports/plot.json" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "ui-exports.json"
+copy-file -source "workspace:/ui_exports/ui_exports.trc" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "ui-exports.trc"
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -1,0 +1,5 @@
+{
+  "check": "Static href/src attributes in 20 HTML pages; excludes dynamic JS, CSS imports and fragment validation",
+  "checked_local_references": 128,
+  "missing": []
+}

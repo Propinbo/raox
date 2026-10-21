@@ -1,0 +1,25 @@
+{
+  "tools": [
+    {
+      "name": "jdk",
+      "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_windows_hotspot_8u504b01.zip",
+      "sha256": "ea43d46ede95b51e44a12c66711706cddc762e0a766c54bccea18954e902b2aa",
+      "bytes": 106457258
+    },
+    {
+      "name": "eclipse",
+      "url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-win-x64.zip",
+      "sha256": "3f92c73ac2f5f06fe35015f94dfd96788a3e1883ad57f91625d590c55ad0d34d",
+      "bytes": 357005470
+    },
+    {
+      "name": "rcptt",
+      "url": "https://download.eclipse.org/rcptt/release/2.2.0/runner/rcptt.runner-2.2.0.zip",
+      "sha256": "fd42db2758cf51680574d8526c5231ef8f06b30d7afae63a916050926618ad77",
+      "bytes": 155930468
+    }
+  ],
+  "rcptt_plugin_files": 935,
+  "eclipse_plugin_files": 1296,
+  "verified_at_utc": "2026-10-21T10:30:54.7292055Z"
+}

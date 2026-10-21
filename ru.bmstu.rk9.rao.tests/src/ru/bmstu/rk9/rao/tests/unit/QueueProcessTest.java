@@ -32,6 +32,7 @@ public class QueueProcessTest {
 		CurrentSimulator.initialize(initializationInfo);
 		SimulationStopCode simulationStopCode = CurrentSimulator.run();
 		assertEquals("linear_process_test", SimulationStopCode.TERMINATE_CONDITION, simulationStopCode);
+		assertEquals(70.0, CurrentSimulator.getTime(), 0.0);
 	}
 
 	private List<Block> generateSituation() {

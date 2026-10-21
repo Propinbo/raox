@@ -35,8 +35,6 @@ import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
-import org.eclipse.swt.events.PaintEvent;
-import org.eclipse.swt.events.PaintListener;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -125,14 +123,6 @@ public class TraceView extends ViewPart {
 	@Override
 	public void createPartControl(Composite parent) {
 		viewer = new TableViewer(parent, SWT.H_SCROLL | SWT.V_SCROLL | SWT.VIRTUAL);
-
-		// This updates size of the column and sets correct horizontal slider width
-		viewer.getTable().addPaintListener(new PaintListener() {
-			@Override
-			public void paintControl(PaintEvent e) {
-				viewer.getTable().getColumn(0).pack();
-			}
-		});
 
 		TableViewerColumn column = new TableViewerColumn(viewer, SWT.NONE);
 		TableColumnLayout tableLayout = new TableColumnLayout();
@@ -389,6 +379,13 @@ public class TraceView extends ViewPart {
 
 	private static boolean shouldFollowOutput = true;
 
+	private static void resizeTraceColumn() {
+		// pack() can synchronously repaint a Win32 table. Never call it from
+		// PaintListener: that re-enters painting indefinitely on some SWT builds.
+		if (readyForInput() && viewer.getTable().getColumnCount() > 0)
+			viewer.getTable().getColumn(0).pack();
+	}
+
 	private static boolean shouldFollowOutput() {
 		return shouldFollowOutput;
 	}
@@ -402,6 +399,7 @@ public class TraceView extends ViewPart {
 			final int size = allEntries.size();
 
 			TraceView.viewer.setItemCount(size);
+			resizeTraceColumn();
 			if (TraceView.shouldFollowOutput())
 				TraceView.viewer.getTable().setTopIndex(size - 1);
 		}
@@ -425,6 +423,7 @@ public class TraceView extends ViewPart {
 						TraceView.viewer.getTable().setTopIndex(size - 1);
 
 					viewer.refresh();
+					resizeTraceColumn();
 				}
 			});
 		}

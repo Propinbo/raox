@@ -1,0 +1,30 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _uIJHwByGEea5c-Q90PErIw
+Element-Name: ui_import
+Element-Type: testcase
+Element-Version: 3.0
+Id: _stage2Import
+Runtime-Version: 2.2.0.201706152316
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+open_rao_perspective
+get-menu "File/Import..." | click
+with [get-window Import] {
+    get-tree | select "General/Existing Projects into Workspace"
+    get-button "Next >" | click
+    get-combo -after [get-button "Select root directory:"] | set-text [concat [get-workspace-location] "/../import-source"]
+    get-button Refresh | click
+    get-button "Copy projects into workspace" | check
+    get-button Finish | click
+}
+get-view "Project Explorer" | get-tree | select "ui_import/ui_import.rao" | double-click
+execute_model "ui_import"
+get-menu "Model/Export Results" | click
+read-file "workspace:/ui_import/ui_import.res" | contains "Last value: 7" | verify-true
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

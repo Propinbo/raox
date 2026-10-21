@@ -16,7 +16,7 @@ proc open_perspective [val perspective_name] {
 	get-menu "Window/Perspective/Open Perspective/Other..." | click
 	with [get-window "Open Perspective"] {
 		get-table | select $perspective_name
-		get-button OK | click
+		get-button Open | click
 	}
 }
 
@@ -27,6 +27,7 @@ proc create_rao_project [val template_name] [val project_name] {
 			key-type Enter
 			set-text rao
 		}
+		get-tree | select "Rao X/Rao X Project"
 		get-button "Next >" | click
 	}
 

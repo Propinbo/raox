@@ -1,0 +1,14 @@
+{
+  "jdk": {
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_windows_hotspot_8u504b01.zip",
+    "verification": "Matched SHA-256 from Adoptium API",
+    "sha256": "ea43d46ede95b51e44a12c66711706cddc762e0a766c54bccea18954e902b2aa",
+    "name": "Temurin 8u504-b01 Windows x64 JDK"
+  },
+  "maven": {
+    "url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.3.9/apache-maven-3.3.9-bin.zip",
+    "verification": "Matched SHA-1 published over HTTPS by Maven Central; SHA-256 recorded locally",
+    "sha256": "bb37146a67d067069754c775b9c9f03b52da953261981738de963057023cda3a",
+    "name": "Apache Maven 3.3.9"
+  }
+}

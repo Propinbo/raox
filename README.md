@@ -1,6 +1,31 @@
-[![Build Status](https://travis-ci.org/aurusov/raox.svg?branch=release%2F3.8.0-travis)](https://travis-ci.org/aurusov/raox)
-
 # Rao X
+
+## Building the legacy plugins
+
+The Windows x64 build uses pinned Temurin 8u504-b01, Maven 3.3.9 and
+[an exact Mars / Xtext 2.9.2 target](raox.target/raox.target.target).
+Run from PowerShell in the source checkout:
+
+```powershell
+.\recovery\Initialize-Toolchains.ps1
+.\recovery\Invoke-LegacyBuild.ps1 -Clean -Goal verify
+```
+
+JDK downloads and the Maven Wrapper distribution are verified with SHA-256.
+See [the build instructions](build-with-maven.md) and [stage 3 evidence](recovery/STAGE3.md).
+A clean build creates
+`assembly/target/raox-3.9.0.zip` and runs 32 JUnit checks, including compilation and simulation
+of all 17 historical RCPTT models with exact trace/result comparisons.
+See [the behavior verification report](recovery/STAGE2.md) for the separate RCPTT UI command.
+The [GitHub Actions workflow](.github/workflows/legacy-build.yml) starts each build with
+an empty Maven/p2 cache and retains the ZIP, logs and JUnit reports. Its manual
+`run_ui` option runs the 42 RCPTT checks in a separate job. The remote run status is
+recorded in [STATE.md](recovery/STATE.md).
+Use an ASCII path for the source checkout; spaces are supported. The legacy ANTLR generator
+cannot process non-ASCII source paths. Unicode identifiers in models are tested separately.
+
+The manual Eclipse setup below is historical.
+
 ## Summary
 <img src=docs/raox.png><img>
 This project is an implementation of RAO modelling language in [Eclipse](https://eclipse.org), using [Xbase](https://wiki.eclipse.org/Xbase).
@@ -61,7 +86,9 @@ git clone git@github.com:aurusov/raox.git
 27496 [main] INFO  text.generator.junit.Junit4Fragment  - generating Compare Framework infrastructure
 27550 [main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.
 ```
->**[!]** *If your output differs from the one above by a lot of errors mentioning* `RULE_ANY_OTHER`*, you should run the generation process again and again until the bulid is succesfull. This is Xtext/Antlr bug caused by complex rules supporting unicode identifiers in grammar, sorry for the inconvenience*
+> The workflow disables ANTLR's time limit for DFA analysis, and the build checks Unicode
+> identifiers in both generated lexers and the parser. If generation fails, preserve the
+> first error and fix its cause; repeated generation is not a recovery procedure.
 
 * `Run` `>` `Run Configurations...` `>` `Eclipse Application` `>` `New` `>` `Name` `=`
  * `raox`

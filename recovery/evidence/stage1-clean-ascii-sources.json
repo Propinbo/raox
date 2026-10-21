@@ -1,0 +1,37 @@
+{
+  "base_commit": "80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc",
+  "source": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\stage1-ascii\\clean sources",
+  "overlay": [
+    {
+      "path": "assembly/lib-jar-without-version.xml",
+      "sha256": "47BCB3862710FBE4B18F9D85404289D0584E95EEC6C8FFF606132C7801163EA2"
+    },
+    {
+      "path": "pom.xml",
+      "sha256": "DD6087867F226ABFC5273EFE0430FED480732C9BE8155EB8D3391FBBC9AB53A7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/pom.xml",
+      "sha256": "01DCB10694C5D17F8E7BB700BE73E67A62365FB128F5F873E634FDF3CA66EA26"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2",
+      "sha256": "60C05AF0C645455844AA8D39650CF6CDAA1AA073CB987F2B40F67CEE2A2984DF"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java",
+      "sha256": "FF9A763A5C611BBA64BCA1AF3AA8FF9723F9B63188F806BA235055711E49A171"
+    },
+    {
+      "path": "recovery/Invoke-LegacyBuild.ps1",
+      "sha256": "57D0CB4BFF4A617929111E3CCA9F23FBBD5744DBEDE17F485258064FF10AB6AB"
+    },
+    {
+      "path": "recovery/Test-LegacyPackage.ps1",
+      "sha256": "C42DCED711FD7E477818D2FB26C93AF23DFA996B61C06F5F25603DAAE4B6210C"
+    }
+  ],
+  "compiled_class_files": 0,
+  "generated_java_files": 0,
+  "target_directories": 0
+}

@@ -315,12 +315,10 @@ public class ModelInternalsParser {
 			}
 
 			if (Logic.class.isAssignableFrom(nestedModelClass)) {
-				decisionPointClasses.add(nestedModelClass);
 				continue;
 			}
 
 			if (Search.class.isAssignableFrom(nestedModelClass)) {
-				decisionPointClasses.add(nestedModelClass);
 				continue;
 			}
 
@@ -339,9 +337,15 @@ public class ModelInternalsParser {
 			}
 		}
 
-		for (Field field : modelClass.getDeclaredFields()) {
-			if (AbstractResult.class.isAssignableFrom(field.getType()))
-				resultFields.add(field);
+		// Reflection does not guarantee declaration order. Use the Rao source order
+		// for results and decision points, which can affect observable execution.
+		for (RaoEntity entity : entities) {
+			for (Field field : modelClass.getDeclaredFields())
+				if (entity.getName().equals(field.getName()) && AbstractResult.class.isAssignableFrom(field.getType()))
+					resultFields.add(field);
+			for (Class<?> nested : modelClass.getDeclaredClasses())
+				if (entity.getName().equals(nested.getSimpleName()) && AbstractDecisionPoint.class.isAssignableFrom(nested))
+					decisionPointClasses.add(nested);
 		}
 
 		for (Method method : modelClass.getDeclaredMethods()) {
@@ -368,6 +372,23 @@ public class ModelInternalsParser {
 
 	public final void postprocess() throws IllegalArgumentException, IllegalAccessException, InstantiationException,
 			InvocationTargetException, ClassNotFoundException, IOException, CoreException {
+		postprocessModel();
+
+		for (IResource processFile : BuildUtil.getAllFilesInProject(project, "proc")) {
+			ProcessModelNode model = ProcessEditor.readModelFromFile((IFile) processFile);
+			if (model == null)
+				model = new ProcessModelNode();
+			List<Block> blocks = BlockConverter.convertModelToBlocks(model, modelContentsInfo);
+			simulatorInitializationInfo.processBlocks.addAll(blocks);
+		}
+		for (Class<?> animationClass : animationClasses) {
+			AnimationFrame frame = (AnimationFrame) animationClass.newInstance();
+			animationFrames.add(frame);
+		}
+	}
+
+	/** Initialize compiled results and decision points without an Eclipse workspace. */
+	public final void postprocessModel() throws IllegalAccessException, InstantiationException {
 		for (Field resultField : resultFields) {
 			resultField.setAccessible(true);
 			AbstractResult<?> result = (AbstractResult<?>) resultField.get(null);
@@ -382,18 +403,6 @@ public class ModelInternalsParser {
 			simulatorInitializationInfo.decisionPoints.add(dpt);
 		}
 
-		for (IResource processFile : BuildUtil.getAllFilesInProject(project, "proc")) {
-			ProcessModelNode model = ProcessEditor.readModelFromFile((IFile) processFile);
-			if (model == null)
-				model = new ProcessModelNode();
-			List<Block> blocks = BlockConverter.convertModelToBlocks(model, modelContentsInfo);
-			simulatorInitializationInfo.processBlocks.addAll(blocks);
-		}
-
-		for (Class<?> animationClass : animationClasses) {
-			AnimationFrame frame = (AnimationFrame) animationClass.newInstance();
-			animationFrames.add(frame);
-		}
 	}
 
 	public final List<AnimationFrame> getAnimationFrames() {

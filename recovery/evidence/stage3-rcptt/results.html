@@ -1,0 +1,243 @@
+<html>
+<head>
+<style>
+.failure th, .failure td {
+	border-color: red;
+}
+
+.skipped th, .skipped td {
+	border-color: grey;
+}
+
+.passed th, .passed td {
+	border-color: green;
+}
+
+hr {
+	margin-bottom: 50px;
+}
+
+h1.failure, h2.failure, h3.failure, h4.failure, h5.failure {
+	color: red;
+}
+
+h1.passed, h2.passed, h3.passed, h4.passed, h5.passed {
+	color: green;
+}
+
+h1.skipped, h2.skipped, h3.skipped, h4.skipped, h5.skipped {
+	color: grey;
+}
+
+table.failure th,
+table.passed th,
+table#summary th
+{
+	vertical-align: top;
+	text-align: right;
+	width: 150px;
+}
+
+/*To keep header on details icon level */
+summary h1,
+summary h2,
+summary h3,
+summary h4,
+summary h5,
+summary h6
+{
+	display: inline-block;
+}
+
+.childNode {
+	padding-left: 10px;
+}
+
+table {
+	border-collapse:collapse;
+	width: 100%;
+}
+
+table td, table th {
+	border:1px solid;
+	padding: 2px;
+}
+
+summary {
+	cursor:pointer;
+	display: block;
+}
+
+/* Imitation of details element
+ * http://www.w3.org/wiki/HTML/Elements/details
+ */   
+
+.notwebkit details.closed .detailsContent {
+  display:none;
+}
+
+.notwebkit details.closed summary h1:before,
+.notwebkit details.closed summary h2:before,
+.notwebkit details.closed summary h3:before,
+.notwebkit details.closed summary h4:before,
+.notwebkit details.closed summary h5:before,
+.notwebkit details.closed summary h6:before
+{
+  content: "+ ";
+}
+
+.notwebkit details summary h1:before,
+.notwebkit details summary h2:before,
+.notwebkit details summary h3:before,
+.notwebkit details summary h4:before,
+.notwebkit details summary h5:before,
+.notwebkit details summary h6:before
+{
+  content: "- ";
+}
+
+</style>
+<script type="text/javascript">
+function installDetailsWorkaround() {
+	var nodes = document.getElementsByTagName("details")
+  	for (var i=0; i<nodes.length; i++) {
+    //console.log(i, nodes[i]);
+		installCollapse(nodes[i]);
+	}
+}
+
+function getContent(detailsNode) {
+	var children = detailsNode.children;
+	for (var i=0; i<children.length; i++) {
+		if (children[i].tagName == 'SUMMARY')
+			continue;
+		return children[i];		
+	}     
+	return null;
+}
+
+function hasClass( elem, name ) {
+	return ( " " + elem.className + " " ).indexOf( " " + name + " " ) >= 0;
+}
+
+function addClass( elem, name ) {
+	if ( !hasClass( elem, name ) ) {
+		elem.className += ( elem.className ? " " : "" ) + name;
+	}
+}
+
+function toggleClass( elem, name ) {
+	if ( hasClass( elem, name ) ) {
+		removeClass( elem, name );
+	} else {
+		addClass( elem, name );
+	}
+}
+
+function removeClass( elem, name ) {
+	var set = " " + elem.className + " ";
+
+	// Class name may appear multiple times
+	while ( set.indexOf( " " + name + " " ) >= 0 ) {
+		set = set.replace( " " + name + " ", " " );
+	}
+
+	// trim for prettiness
+	elem.className = typeof set.trim === "function" ? set.trim() : set.replace( /^\s+|\s+$/g, "" );
+}
+
+function toggleDetails(detailsNode) {
+	toggleClass(detailsNode, "closed");
+}
+
+function installCollapse(detailsNode) {
+	var children = detailsNode.children;
+	for (var i=0; i<children.length; i++) {     
+		var child = children[i];
+		if (child.tagName != 'SUMMARY')
+			continue;
+		child.addEventListener('click', function() {
+			toggleDetails(detailsNode);
+		});
+		break;
+	}
+}
+
+if(navigator.userAgent.indexOf('AppleWebKit') == -1){
+    addClass(document.getElementsByTagName("html")[0], "notwebkit");
+}
+
+</script>
+</head>
+<body onload="installDetailsWorkaround()">
+<table  id="summary">
+ <tr>
+  <th>Total Tests</th>
+  <td>42</td>
+ </tr>
+
+ <tr>
+  <th>Failed Tests</th>
+  <td>0 (0%)</td>
+ </tr>
+
+ <tr>
+  <th>Skipped Tests</th>
+  <td>0 (0%)</td>
+ </tr>
+
+ <tr>
+  <th>Execution Time</th>
+  <td>207.7 s</td>
+ </tr>
+</table>
+<h1 class="failure">Failed Tests (0)</h1>
+<h1 class="skipped">Skipped Tests (0)</h1>
+<table class="skipped">
+</table>
+<details class="closed"><summary><h1 class="passed">Passed Tests (42)</h1></summary>
+<table class="passed detailsContent">
+<tr><td>base_java_project</td><td>5.9 s</td></tr>
+<tr><td>continuous_histogram_sequence</td><td>9.5 s</td></tr>
+<tr><td>continuous_histogram_sequence_notrace</td><td>4.3 s</td></tr>
+<tr><td>model_accessible_all_conflict</td><td>5.1 s</td></tr>
+<tr><td>model_accessible_all_conflict_notrace</td><td>4.8 s</td></tr>
+<tr><td>model_accessible_resources</td><td>5.1 s</td></tr>
+<tr><td>model_accessible_resources_notrace</td><td>4.5 s</td></tr>
+<tr><td>model_barber_clients</td><td>5.3 s</td></tr>
+<tr><td>model_barber_clients_notrace</td><td>4.2 s</td></tr>
+<tr><td>model_barber_events</td><td>3.6 s</td></tr>
+<tr><td>model_barber_events_notrace</td><td>4.5 s</td></tr>
+<tr><td>model_barber_simple</td><td>4.4 s</td></tr>
+<tr><td>model_barber_simple_notrace</td><td>3.6 s</td></tr>
+<tr><td>model_discrete_histogram_sequence</td><td>4.7 s</td></tr>
+<tr><td>model_discrete_histogram_sequence_notrace</td><td>5.1 s</td></tr>
+<tr><td>empty_model</td><td>2.5 s</td></tr>
+<tr><td>model_exponential_sequence</td><td>4.5 s</td></tr>
+<tr><td>model_exponential_sequence_notrace</td><td>5.2 s</td></tr>
+<tr><td>model_game5</td><td>6.7 s</td></tr>
+<tr><td>model_game5_notrace</td><td>6.5 s</td></tr>
+<tr><td>model_generator_sequence</td><td>4.8 s</td></tr>
+<tr><td>model_generator_sequence_notrace</td><td>4.5 s</td></tr>
+<tr><td>model_list_sequence</td><td>4.4 s</td></tr>
+<tr><td>model_list_sequence_notrace</td><td>4.5 s</td></tr>
+<tr><td>model_normal_sequence</td><td>5.4 s</td></tr>
+<tr><td>model_normal_sequence_notrace</td><td>5.0 s</td></tr>
+<tr><td>model_relevants_combination</td><td>5.4 s</td></tr>
+<tr><td>model_relevants_combination_notrace</td><td>4.4 s</td></tr>
+<tr><td>model_relevants_no_combination</td><td>4.7 s</td></tr>
+<tr><td>model_relevants_no_combination_notrace</td><td>4.9 s</td></tr>
+<tr><td>model_results</td><td>5.9 s</td></tr>
+<tr><td>model_results_notrace</td><td>5.4 s</td></tr>
+<tr><td>model_results_results</td><td>4.2 s</td></tr>
+<tr><td>model_triangular_sequence</td><td>5.1 s</td></tr>
+<tr><td>model_triangular_sequence_notrace</td><td>4.4 s</td></tr>
+<tr><td>model_uniform_sequence</td><td>4.4 s</td></tr>
+<tr><td>model_uniform_sequence_notrace</td><td>4.5 s</td></tr>
+<tr><td>rao_perspective</td><td>0.5 s</td></tr>
+<tr><td>ui_exports_animation</td><td>5.7 s</td></tr>
+<tr><td>ui_game5</td><td>8.5 s</td></tr>
+<tr><td>ui_import</td><td>7.9 s</td></tr>
+<tr><td>ui_stop</td><td>3.1 s</td></tr>
+</table>
+</body></html>

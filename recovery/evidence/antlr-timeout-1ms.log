@@ -1,0 +1,71 @@
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2346:1: ANTLR could not analyze this decision in rule ruleXAssignment; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 40; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2289:1: ANTLR could not analyze this decision in rule ruleXAssignment; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 41; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2584:2: ANTLR could not analyze this decision in rule ruleXOrExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 44; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2685:2: ANTLR could not analyze this decision in rule ruleXAndExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 45; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2786:2: ANTLR could not analyze this decision in rule ruleXEqualityExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 46; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:2939:3: ANTLR could not analyze this decision in rule ruleXRelationalExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 48; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:3067:2: ANTLR could not analyze this decision in rule ruleXOtherOperatorExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 50; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:3283:2: ANTLR could not analyze this decision in rule ruleXAdditiveExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 54; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:3391:2: ANTLR could not analyze this decision in rule ruleXMultiplicativeExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 56; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:3610:2: ANTLR could not analyze this decision in rule ruleXCastedExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 60; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:3640:1: ANTLR could not analyze this decision in rule ruleXPostfixOperation; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 61; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:4052:4: ANTLR could not analyze this decision in rule ruleXMemberFeatureCall; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 71; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:5035:7: ANTLR could not analyze this decision in rule ruleXSwitchExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 87; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:6846:1: ANTLR could not analyze this decision in rule ruleXReturnExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 122; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:6959:1: ANTLR could not analyze this decision in rule ruleXTryCatchFinallyExpression; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 123; reason: timed out (>1ms)
+ 
+
+warning(200): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:7255:2: Decision can match input such as "'.'" using multiple alternatives: 1, 2
+As a result, alternative(s) 2 were disabled for that input
+Semantic predicates were present but were hidden by actions.
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:7326:2: ANTLR could not analyze this decision in rule ruleJvmTypeReference; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 131; reason: timed out (>1ms)
+ 
+
+warning(205): ru.bmstu.rk9.rao/src-gen/ru/bmstu/rk9/rao/parser/antlr/internal/InternalRao.g:1:8: ANTLR could not analyze this decision in rule Tokens; often this is because of recursive rule references visible from the left edge of alternatives.  ANTLR will re-analyze the decision with a fixed lookahead of k=1.  Consider using "options {k=1;}" for that decision and possibly adding a syntactic predicate.
+error(10):  internal error: org.antlr.tool.Grammar.createLookaheadDFA(Grammar.java:1279): could not even do k=1 for decision 26; reason: timed out (>1ms)
+ 
+

@@ -1,0 +1,5 @@
+error(10):  internal error: Exception InternalRao__.g:107:105: unexpected char: '\'@org.antlr.grammar.v2.ANTLRLexer.nextToken(ANTLRLexer.java:347): unexpected stream error from parsing InternalRao__.g 
+
+error(150):  grammar file InternalRao__.g has no rules
+error(100): InternalRao__.g:0:0: syntax error: assign.types: <AST>:0:0: unexpected end of subtree
+error(100): InternalRao__.g:0:0: syntax error: define: <AST>:0:0: unexpected end of subtree

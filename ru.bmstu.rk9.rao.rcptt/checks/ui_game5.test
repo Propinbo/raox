@@ -1,0 +1,36 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _uIJHwByGEea5c-Q90PErIw
+Element-Name: ui_game5
+Element-Type: testcase
+Element-Version: 3.0
+Id: _stage2Game5
+Runtime-Version: 2.2.0.201706152316
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+open_rao_perspective
+get-menu "File/New/Project..." | click
+with [get-window "New Project"] {
+    get-tree | select "Rao X/Rao X Game5 Project"
+    get-button "Next >" | click
+}
+with [get-window "New Rao X Game5 Project"] {
+    get-editbox -after [get-label "Project name:"] | set-text "ui_game5"
+    get-button Finish | click
+}
+with [get-editor "ui_game5"] {
+    get-group "Board:"
+    get-button "In order" | click
+    take-screenshot "Game5 board in order"
+    get-button "Run experiment" | click
+}
+// Game5 enables monitoring of its six initial board resources.
+get-view Trace | get-table | get-property itemCount | equals 9 | verify-true
+get-file "workspace:/ui_game5/game_5.rao" | get exists | equals true | verify-true
+get-file "workspace:/ui_game5/game_5.json" | get exists | equals true | verify-true
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

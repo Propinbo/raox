@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "java": "C:\\Users\\propinbo\\Documents\\raox\\.build\\tools\\jdk8u504-b01\\bin\\java.exe",
+  "runner": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\stage2-ui\\runner\\eclipse",
+  "aut": "C:\\Users\\propinbo\\Documents\\raox\\.build\\tools\\eclipse\\raox-eclipse-3.9.0-win-x64",
+  "plugins": [
+    {
+      "name": "ru.bmstu.rk9.rao-3.9.0.jar",
+      "sha256": "C5E98E75DC6EEE10B5EA2E7608BE9FC96371AD46C218DA9817E96B693C1D7811"
+    },
+    {
+      "name": "ru.bmstu.rk9.rao.lib-3.9.0.jar",
+      "sha256": "EE283AE7E3175F92CEC556CA5B9DA14C94C27B3AAD4CFCB1B52D2CDD65B3CA99"
+    },
+    {
+      "name": "ru.bmstu.rk9.rao.ui-3.9.0.jar",
+      "sha256": "C657B7C438EF840E9D690F5C44C4BFEABCF7ABAC80539E60BA3489B74B65A3C3"
+    },
+    {
+      "name": "ru.bmstu.rk9.raox.plugins.game5-3.9.0.jar",
+      "sha256": "E374B8EA1341823A2B101EF19098C5F5DB0CE3484EFA22D3197A3BF8F43A1391"
+    }
+  ],
+  "counts": {
+    "tests": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\ui-evidence\\20261021-132152-064-rcptt\\runner.log"
+}

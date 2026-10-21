@@ -30,6 +30,7 @@ public class BranchedProcessTest {
 		CurrentSimulator.initialize(initializationInfo);
 		SimulationStopCode simulationStopCode = CurrentSimulator.run();
 		assertEquals("linear_process_test", SimulationStopCode.TERMINATE_CONDITION, simulationStopCode);
+		assertEquals(65.0, CurrentSimulator.getTime(), 0.0);
 	}
 
 	private List<Block> generateSituation() {
@@ -41,7 +42,9 @@ public class BranchedProcessTest {
 		Seize seize = new Seize(resource);
 		Release release = new Release(resource);
 		Queue queue = new Queue(Integer.MAX_VALUE, Queueing.FIFO);
-		SelectPath selectPath = new SelectPath(0.5);
+		// Alternate branches explicitly; the probability constructor has no seed API.
+		int[] branch = {0};
+		SelectPath selectPath = new SelectPath(() -> ++branch[0] % 2 == 1);
 		blocks.add(generate);
 		blocks.add(selectPath);
 		blocks.add(queue);

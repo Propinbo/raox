@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-20T16:27:26.7951033Z",
+  "source_commit": "80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc",
+  "validate": {
+    "exit_code": 0,
+    "duration": "5m16s",
+    "source_changes": "none",
+    "log": "raox-validate-original.log",
+    "finished_at_moscow": "2026-10-20T19:20:52+03:00"
+  },
+  "runtime_jar": {
+    "sha256": "e5118aaa151853b159fe991e907551c7745325048418b407d9f5016c11076ab0",
+    "status": "compiled and packaged during package probe",
+    "test_status": "full project tests not reached",
+    "path": "ru.bmstu.rk9.rao.lib/target/ru.bmstu.rk9.rao.lib-3.9.0.jar"
+  },
+  "package": {
+    "exit_code": 1,
+    "started_at_utc": "2026-10-20T16:21:42.3652497Z",
+    "finished_log_at_utc": "2026-10-20T16:25:58.5968996Z",
+    "log": "raox-package-original.log",
+    "failing_stage": "exec-maven-plugin:1.2.1:java in ru.bmstu.rk9.rao",
+    "exception": "java.lang.UnsupportedClassVersionError",
+    "class": "org/eclipse/core/runtime/OperationCanceledException",
+    "required_class_version": 61,
+    "supported_class_version": 52,
+    "offending_artifact": "org.eclipse.platform:org.eclipse.equinox.common:3.21.0",
+    "full_compilation": "not_completed",
+    "tests": "not_reached",
+    "final_distribution": "not_produced"
+  }
+}

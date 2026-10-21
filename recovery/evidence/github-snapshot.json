@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-20T16:16:44.0151846Z",
+  "repository": {
+    "full_name": "LeKaitoW/raox",
+    "description": "Rao modelling language written in Xbase",
+    "pushed_at": "2023-01-28T13:36:16Z",
+    "default_branch": "release/current",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "html_url": "https://github.com/LeKaitoW/raox"
+  },
+  "latest_release": {
+    "tag_name": "3.9.0",
+    "target_commitish": "feature/travis",
+    "published_at": "2017-10-27T18:18:33Z",
+    "html_url": "https://github.com/LeKaitoW/raox/releases/tag/3.9.0",
+    "assets": [
+      {
+        "name": "raox-3.9.0.zip",
+        "size": 8735945,
+        "browser_download_url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-3.9.0.zip"
+      },
+      {
+        "name": "raox-eclipse-3.9.0-linux-x64.zip",
+        "size": 354801404,
+        "browser_download_url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-linux-x64.zip"
+      },
+      {
+        "name": "raox-eclipse-3.9.0-linux-x86.zip",
+        "size": 354677310,
+        "browser_download_url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-linux-x86.zip"
+      },
+      {
+        "name": "raox-eclipse-3.9.0-win-x64.zip",
+        "size": 357005470,
+        "browser_download_url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-win-x64.zip"
+      },
+      {
+        "name": "raox-eclipse-3.9.0-win-x86.zip",
+        "size": 356969447,
+        "browser_download_url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-win-x86.zip"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+type Ресурс {
+    int значение
+}
+resource счётчик = Ресурс.create(0)
+event Событие() {
+    счётчик.значение = счётчик.значение + 1
+    Событие.plan(currentTime + 1)
+}
+def init() { Событие.plan(1) }
+def terminateCondition() { return currentTime >= 3 }
+result Итог = Result.create([счётчик.значение], new LastValueStatistics())

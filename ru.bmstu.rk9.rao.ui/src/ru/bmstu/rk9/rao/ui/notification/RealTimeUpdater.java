@@ -1,10 +1,10 @@
 package ru.bmstu.rk9.rao.ui.notification;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.PlatformUI;
@@ -68,7 +68,7 @@ public class RealTimeUpdater {
 		scheduledActions.clear();
 	}
 
-	private boolean haveNewData = false;
+	private volatile boolean haveNewData = false;
 
 	private final Subscriber databaseSubscriber = new Subscriber() {
 		@Override
@@ -91,14 +91,15 @@ public class RealTimeUpdater {
 		}
 	};
 
-	private final Set<Runnable> scheduledActions = new HashSet<Runnable>();
+	// Timer iteration overlaps simulation completion and UI subscriber changes.
+	private final Set<Runnable> scheduledActions = new CopyOnWriteArraySet<Runnable>();
 	private Timer timer = null;
 	private TimerTask timerTask = null;
 
 	private final long delayMsec = 0;
 	private final long periodMsec = 1000 / 25;
 
-	private boolean paused = true;
+	private volatile boolean paused = true;
 
 	public final synchronized void setPaused(boolean paused) {
 		if (this.paused == paused)

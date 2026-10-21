@@ -39,7 +39,7 @@ public class ResultsParser {
 	public static void updateResultTextView(StyledText styledText, List<AbstractResult<?>> results) {
 		styledText.setText("");
 
-		ParsedStyledText parsedStyleText = parse(results);
+		ParsedStyledText parsedStyleText = parse(results, true);
 
 		styledText.setText(parsedStyleText.parsedText);
 
@@ -48,7 +48,7 @@ public class ResultsParser {
 	}
 
 	public static String parseAsString(List<AbstractResult<?>> results) {
-		return parse(results).parsedText;
+		return parse(results, false).parsedText;
 	}
 
 	private static void addResultToTreeView(Tree tree, JSONObject data) {
@@ -80,7 +80,7 @@ public class ResultsParser {
 		});
 	}
 
-	private static ParsedStyledText parse(List<AbstractResult<?>> results) {
+	private static ParsedStyledText parse(List<AbstractResult<?>> results, boolean styled) {
 		final StringBuilder resultParsedText = new StringBuilder();
 		LinkedList<StyleRange> styles = new LinkedList<StyleRange>();
 
@@ -105,7 +105,8 @@ public class ResultsParser {
 				numberStyle.start = resultParsedText.length() + text[0].length() + 4;
 				numberStyle.length = text[1].length();
 				numberStyle.fontStyle = SWT.ITALIC;
-				numberStyle.foreground = Display.getCurrent().getSystemColor(SWT.COLOR_DARK_BLUE);
+				if (styled)
+					numberStyle.foreground = Display.getCurrent().getSystemColor(SWT.COLOR_DARK_BLUE);
 
 				styles.add(numberStyle);
 

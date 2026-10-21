@@ -1,0 +1,6 @@
+{
+  "points": 5,
+  "csv_json_equal": true,
+  "samples_match_model": true,
+  "trace_stop_time": 3.0
+}

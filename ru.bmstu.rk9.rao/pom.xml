@@ -61,6 +61,42 @@
 					</arguments>
 				</configuration>
 				<dependencies>
+					<!-- Pin the generator's Maven classpath, not just the p2 platform. -->
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.common</artifactId>
+						<version>${emf-common-version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.ecore</artifactId>
+						<version>${emf-ecore-version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+						<version>${emf-xmi-version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.codegen</artifactId>
+						<version>2.11.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.codegen.ecore</artifactId>
+						<version>2.11.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.antlr</groupId>
+						<artifactId>antlr-runtime</artifactId>
+						<version>3.2</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.xtext</groupId>
+						<artifactId>xtext-antlr-generator</artifactId>
+						<version>2.1.1</version>
+					</dependency>
 					<dependency>
 						<groupId>org.eclipse.xtext</groupId>
 						<artifactId>org.eclipse.xtext.xtext</artifactId>
@@ -73,8 +109,8 @@
 					</dependency>
 					<dependency>
 						<groupId>org.eclipse.equinox</groupId>
-						<artifactId>common</artifactId>
-						<version>3.6.200-v20130402-1505</version>
+						<artifactId>org.eclipse.equinox.common</artifactId>
+						<version>3.6.0</version>
 					</dependency>
 				</dependencies>
 			</plugin>

@@ -1,0 +1,15 @@
+{
+  "eclipse": {
+    "url": "https://github.com/LeKaitoW/raox/releases/download/3.9.0/raox-eclipse-3.9.0-win-x64.zip",
+    "path": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\stage2-ui\\release\\raox-eclipse-3.9.0-win-x64",
+    "sha256": "3F92C73AC2F5F06FE35015F94DFD96788A3E1883AD57F91625D590C55AD0D34D",
+    "platform": "Eclipse 4.7.1 (Oxygen)",
+    "xtext": "2.12.0.v20170518-0959",
+    "xbase": "2.12.0.v20170519-0752"
+  },
+  "rcptt": {
+    "url": "https://download.eclipse.org/rcptt/release/2.2.0/runner/rcptt.runner-2.2.0.zip",
+    "path": "C:\\Users\\propinbo\\Documents\\Codex\\2026-10-20\\https-www-google-com-url-q\\work\\stage2-ui\\runner\\eclipse",
+    "sha256": "FD42DB2758CF51680574D8526C5231EF8F06B30D7AFAE63A916050926618AD77"
+  }
+}
