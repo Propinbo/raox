@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>Первая модель на Windows</h1>
-<p><a href="../index.html">Документация Rao X</a> · Проверено 21 октября 2026 года.</p>
+<p><a href="../index.html">Документация Rao X</a> · Повторно проверено 22 октября 2026 года.</p>
 <h2>1. Инструменты и исходники</h2>
 <p>Нужны Windows 10 1903+ или Windows 11 x64, Git и PowerShell 7 (<code>pwsh</code>).
 Сеть нужна для первой загрузки инструментов и зависимостей. Java, Maven и Eclipse
@@ -20,9 +20,9 @@
 <p>Разместите исходники в ASCII-пути, например <code>C:\work\raox</code>.
 Пробелы разрешены; кириллица в пути исходников пока не поддержана генератором.
 Команды выполняйте из корня репозитория в PowerShell 7.</p>
-<p>Получите полную ветку восстановления (ветка по умолчанию fork содержит старую версию)
+<p>Получите основную ветку release/current из fork
 или распакуйте переданный архив исходников в <code>C:\work\raox</code>.</p>
-<pre><code>git clone --branch codex/stage3-reproducibility --single-branch https://github.com/Propinbo/raox.git C:\work\raox
+<pre><code>git clone https://github.com/Propinbo/raox.git C:\work\raox
 Set-Location C:\work\raox
 .\recovery\Initialize-Platform.ps1 -IncludeUi
 .\recovery\Invoke-PlatformBuild.ps1 -Clean</code></pre>

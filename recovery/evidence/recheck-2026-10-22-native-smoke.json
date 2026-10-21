@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "83883a4e00f5a4a1a34d66f7217cf5de34d6a7326a6dc62fa1f538762c61d37e",
+  "application": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-001007\\raox",
+  "working_directory": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-001007",
+  "java_home_removed": true,
+  "path_contains_java": false,
+  "native_exit_code": 0,
+  "installed_roots": "org.eclipse.jdt.feature.group/3.20.300.v20250905-1111\r\norg.eclipse.platform.ide/4.37.0.I20250905-0730\r\norg.eclipse.xtend.sdk.feature.group/2.40.0.v20250825-0355\r\nru.bmstu.rk9.rao.sdk.feature.group/3.9.0\r\nOperation completed in 14 ms.\r\nWARNING: Using incubator modules: jdk.incubator.vector\r\nOct 22, 2026 12:10:14 AM org.apache.aries.spifly.BaseActivator log\r\nINFO: Registered provider org.slf4j.simple.SimpleServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle slf4j.simple",
+  "verified": {
+    "application": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-001007\\raox",
+    "files_verified": 1362,
+    "mutable_state_files": 0,
+    "platform": "win32/win32/x86_64"
+  }
+}

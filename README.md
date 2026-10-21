@@ -34,14 +34,17 @@ Java включена в архив. Плагины отдельно: `assembly/
 HTML-примеров), 43 RCPTT (включая quick start в новом workspace), проверка CSV/JSON,
 native launcher и SWT/AWT. [Свидетельства документации](recovery/STAGE6.md).
 
-[Windows CI](.github/workflows/legacy-build.yml) настроен на холодную и offline-сборку,
-упаковку и дополнительный UI-прогон. Последний подтверждённый удалённый запуск —
-[этап 3, JDK 8](https://github.com/Propinbo/raox/actions/runs/39588936426).
-Исходники этапов 4–6 находятся в ветке `codex/stage3-reproducibility` fork.
-Ветка по умолчанию `release/current` содержит прежнюю версию. Получить восстановленную:
+[Windows CI](.github/workflows/legacy-build.yml) выполняет холодную и offline-сборку,
+упаковку и дополнительный UI-прогон. [Java 21 CI 39650169800](https://github.com/Propinbo/raox/actions/runs/39650169800)
+успешно проверил сборку, пустой кэш, offline и самостоятельный ZIP.
+[Повторная проверка 22 октября](recovery/RECHECK-2026-10-22.md) прошла 38 JUnit,
+все 43 RCPTT одним прогоном, native launcher и SWT/AWT.
+
+Основная ветка fork — `release/current`. Получить восстановленный проект:
 
 ```powershell
-git clone --branch codex/stage3-reproducibility --single-branch https://github.com/Propinbo/raox.git
+git clone https://github.com/Propinbo/raox.git
 ```
 
-Точка передачи, локальные результаты проверок и статус удалённого CI — в STATE.
+Точка передачи и ограничения — в [STATE](recovery/STATE.md).
+Постоянное правило проверки и отправки в основную ветку — в [AGENTS.md](AGENTS.md).

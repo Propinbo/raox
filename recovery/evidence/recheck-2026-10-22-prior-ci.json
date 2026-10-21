@@ -1,0 +1,87 @@
+{
+  "run_id": 39650169800,
+  "html_url": "https://github.com/Propinbo/raox/actions/runs/39650169800",
+  "commit": "e43d43d7696fa47f19d8e4fc1fa7a2af205248b7",
+  "checked_on": "2026-10-22",
+  "jobs": [
+    {
+      "id": 119396117444,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 39650169800,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Check local documentation links and help navigation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Download and verify JDK",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Build from an empty Maven, p2 and wrapper cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Rebuild with Maven offline",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Provision a standalone Windows x64 application from local p2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Upload plugins, JUnit reports and build evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    },
+    {
+      "id": 119400768669,
+      "name": "ui",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 39650169800,
+      "logs_url": null,
+      "steps": null
+    }
+  ]
+}

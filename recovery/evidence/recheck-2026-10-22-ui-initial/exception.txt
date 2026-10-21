@@ -1,0 +1,9 @@
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.ui.internal.wizards.datatransfer.WizardProjectsImportPage.<init>(WizardProjectsImportPage.java:416)
+	at org.eclipse.ui.wizards.datatransfer.ExternalProjectImportWizard.addPages(ExternalProjectImportWizard.java:95)
+	at org.eclipse.jface.wizard.WizardSelectionPage.getNextPage(WizardSelectionPage.java:121)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardSelectionPage.getNextPage(WorkbenchWizardSelectionPage.java:98)
+	at org.eclipse.ui.internal.dialogs.ImportExportPage.getNextPage(ImportExportPage.java:413)
+	at org.eclipse.ui.internal.dialogs.ImportExportPage.treeDoubleClicked(ImportExportPage.java:229)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:778)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
