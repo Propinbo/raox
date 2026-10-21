@@ -1,0 +1,1154 @@
+!SESSION 2026-10-21 20:07:05.663 -----------------------------------------------
+eclipse.buildId=4.37.0.I20250905-0730
+java.version=21.0.12.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.platform.ide -eclipse.keyring C:\Users\propinbo\Documents\raox\.build\stage5 UI проверка\20261021-200655-537-rcptt\runner-workspace\.metadata\.plugins\org.eclipse.pde.core\AUT_0/secure_storage
+Command-line arguments:  -product org.eclipse.platform.ide -data C:\Users\propinbo\Documents\raox\.build\stage5 UI проверка\20261021-200655-537-rcptt\aut-workspace-0 -os win32 -consoleLog -eclipse.keyring C:\Users\propinbo\Documents\raox\.build\stage5 UI проверка\20261021-200655-537-rcptt\runner-workspace\.metadata\.plugins\org.eclipse.pde.core\AUT_0/secure_storage
+
+!ENTRY org.eclipse.rcptt.ecl.data.apache.poi.impl 4 0 2026-10-21 20:07:08.456
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.rcptt.ecl.data.apache.poi.impl [282]
+  Unresolved requirement: Require-Bundle: org.apache.poi.ooxml; bundle-version="3.9.0"
+    -> Bundle-SymbolicName: org.apache.poi.ooxml; bundle-version="3.9.0.v201405241905"
+       org.apache.poi.ooxml [54]
+         Unresolved requirement: Require-Bundle: org.apache.poi; bundle-version="3.9.0"
+           -> Bundle-SymbolicName: org.apache.poi; bundle-version="3.9.0.v201405241750"
+              org.apache.poi [53]
+                Unresolved requirement: Import-Package: org.apache.commons.codec.digest
+  Unresolved requirement: Require-Bundle: org.apache.poi; bundle-version="3.9.0"
+    -> Bundle-SymbolicName: org.apache.poi; bundle-version="3.9.0.v201405241750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.rcptt.ecl.client.tcp 1 0 2026-10-21 20:07:20.148
+!MESSAGE sun.net.client.defaultConnectTimeout is not set. Setting to 60000
+
+!ENTRY org.eclipse.rcptt.ecl.client.tcp 1 0 2026-10-21 20:07:20.149
+!MESSAGE sun.net.client.defaultReadTimeout is not set. Setting to 120000
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.362
+!MESSAGE Trying to start ECL server on port 7001
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.418
+!MESSAGE ECL server started on port 7001
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.420
+!MESSAGE Verified that local ECL server is working
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.420
+!MESSAGE Trying to start Tesla server on port 7001
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.421
+!MESSAGE Trying to start Tesla server on port 7002
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:07:20.473
+!MESSAGE Tesla server started on port 7002
+
+!ENTRY org.eclipse.ui.workbench 4 0 2026-10-21 20:07:20.481
+!MESSAGE Bad call to getCoolBarManager()
+!STACK 0
+java.lang.Exception: Bad call to getCoolBarManager()
+	at org.eclipse.ui.internal.WorkbenchWindow.getCoolBarManager(WorkbenchWindow.java:3009)
+	at org.eclipse.rcptt.tesla.ui.Q7KeyFormatter.installQ7Formatter(Q7KeyFormatter.java:67)
+	at org.eclipse.rcptt.tesla.ui.SWTTeslaStartup.earlyStartup(SWTTeslaStartup.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2785)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+WARNING: Using incubator modules: jdk.incubator.vector
+Oct 21, 2026 8:07:07 PM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider org.slf4j.simple.SimpleServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle slf4j.simple
+[org.eclipse.core.jobs] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.core.jobs] info register aspect org.eclipse.rcptt.sherlock.aspects.jobs.JobsAspect
+[org.eclipse.core.jobs] info register aspect org.eclipse.rcptt.tesla.jobs.aspects.JobsAspect
+[org.eclipse.rcptt.watson.aspects.jobs] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.watson.aspects.jobs] info register aspect org.eclipse.rcptt.sherlock.aspects.jobs.JobsAspect
+[org.eclipse.rcptt.watson.aspects.jobs] info processing reweavable type org.eclipse.rcptt.sherlock.aspects.jobs.JobsAspect: org\eclipse\rcptt\sherlock\aspects\jobs\JobsAspect.aj
+[org.eclipse.rcptt.tesla.jobs.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jobs.aspects] info register aspect org.eclipse.rcptt.tesla.jobs.aspects.JobsAspect
+[org.eclipse.rcptt.tesla.jobs.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jobs.aspects.JobsAspect: org\eclipse\rcptt\tesla\jobs\aspects\JobsAspect.aj
+[org.eclipse.ui.workbench] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.ui.workbench] info register aspect org.eclipse.rcptt.runtime.ui.preferences.aspects.DialogSettingsAspect
+[org.eclipse.ui.workbench] info register aspect org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+[org.eclipse.ui.workbench] info register aspect org.eclipse.rcptt.tesla.workbench.texteditor.aspects.WorkbenchTexteditorAspect
+[org.eclipse.ui.workbench] info register aspect org.eclipse.rcptt.tesla.workbench.aspects.WorkbenchAspect
+[org.eclipse.jface] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.jface] info register aspect org.eclipse.rcptt.tesla.recording.aspects.jface.JFaceRecordingAspect
+[org.eclipse.jface] info register aspect org.eclipse.rcptt.tesla.jface.CellEditorAspect
+[org.eclipse.jface] info register aspect org.eclipse.rcptt.tesla.jface.ImageDescriptorAspect
+[org.eclipse.jface] info register aspect org.eclipse.rcptt.tesla.jface.WindowAspect
+[org.eclipse.swt] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.sherlock.aspects.swt.DisplayAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.swt] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.swt] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.swt.SWTError
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.swt] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.swt.SWTError
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect: org\eclipse\rcptt\tesla\swt\aspects\EventFilterAspect.aj
+[org.eclipse.rcptt.tesla.swt.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.aspects.SWTAspectActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.aspects.SWTAspectActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.jface.CellEditorAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.jface.ImageDescriptorAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info register aspect org.eclipse.rcptt.tesla.jface.WindowAspect
+[org.eclipse.rcptt.tesla.jface.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jface.ImageDescriptorAspect: org\eclipse\rcptt\tesla\jface\ImageDescriptorAspect.aj
+[org.eclipse.rcptt.tesla.jface.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.JFaceAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.JFaceAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect: org\eclipse\rcptt\tesla\swt\aspects\DisplayAspect.aj
+[org.eclipse.ui.ide] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.ui.ide] info register aspect org.eclipse.rcptt.tesla.ui.ide.aspects.IDEAspects
+[org.eclipse.rcptt.watson.aspects.swt] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.watson.aspects.swt] info register aspect org.eclipse.rcptt.sherlock.aspects.swt.DisplayAspect
+[org.eclipse.rcptt.watson.aspects.swt] info processing reweavable type org.eclipse.rcptt.sherlock.aspects.swt.DisplayAspect: org\eclipse\rcptt\sherlock\aspects\swt\DisplayAspect.aj
+[org.eclipse.ui.forms] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.ui.forms] info register aspect org.eclipse.rcptt.tesla.recording.aspects.forms.FormsRecordingAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect: org\eclipse\rcptt\tesla\swt\aspects\ImagesAspect.aj
+[org.eclipse.jface.databinding] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.jface.databinding] info register aspect org.eclipse.rcptt.tesla.jface.DatabindingAspect
+[org.eclipse.core.databinding.observable] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.core.databinding.observable] info register aspect org.eclipse.rcptt.tesla.jface.DatabindingObservablesAspect
+[org.eclipse.rcptt.tesla.jface.databinding.observable.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.databinding.observable.aspects] info register aspect org.eclipse.rcptt.tesla.jface.DatabindingObservablesAspect
+[org.eclipse.rcptt.tesla.jface.databinding.observable.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jface.DatabindingObservablesAspect: org\eclipse\rcptt\tesla\jface\DatabindingObservablesAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.swt] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.recording.aspects.swt] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.tesla.recording.aspects.swt] info processing reweavable type org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect: org\eclipse\rcptt\tesla\recording\aspects\RecordingAspect.aj
+[org.eclipse.rcptt.tesla.swt] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.jface.CellEditorAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.jface.ImageDescriptorAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.jface.WindowAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.tesla.jobs.aspects.JobsAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.sherlock.aspects.jobs.JobsAspect
+[org.eclipse.rcptt.tesla.swt] info register aspect org.eclipse.rcptt.sherlock.aspects.swt.DisplayAspect
+[org.eclipse.rcptt.tesla.swt] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.logging.SwtEventLog
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.logging.SwtEventLog
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.jface.text] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.jface.text] info register aspect org.eclipse.rcptt.tesla.recording.aspects.jface.text.JFaceTextRecordingAspect
+[org.eclipse.jface.text] info register aspect org.eclipse.rcptt.tesla.jface.TextReconcilerAspect
+[org.eclipse.jface.text] info register aspect org.eclipse.rcptt.tesla.jface.text.TextViewerAspect
+[org.eclipse.jdt.core] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.jdt.core] info register aspect org.eclipse.rcptt.tesla.jdt.JDTAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.MenuAspect: org\eclipse\rcptt\tesla\swt\aspects\MenuAspect.aj
+[org.eclipse.ui.views] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.ui.views] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.DNDAspect: org\eclipse\rcptt\tesla\swt\aspects\DNDAspect.aj
+[org.eclipse.rcptt.tesla.jface.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jface.CellEditorAspect: org\eclipse\rcptt\tesla\jface\CellEditorAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.jface] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.recording.aspects.jface] info register aspect org.eclipse.rcptt.tesla.recording.aspects.jface.JFaceRecordingAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface] info processing reweavable type org.eclipse.rcptt.tesla.recording.aspects.jface.JFaceRecordingAspect: org\eclipse\rcptt\tesla\recording\aspects\jface\JFaceRecordingAspect.aj
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect: org\eclipse\rcptt\tesla\swt\aspects\BrowserAspect.aj
+[org.eclipse.rcptt.tesla.ecl.impl] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.ecl.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.ecl.impl] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.ecl.internal.impl.EclJobCollector
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.ecl.impl] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.ecl.internal.impl.EclJobCollector
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jdt] info register aspect org.eclipse.rcptt.tesla.jdt.JDTAspect
+[org.eclipse.rcptt.tesla.jdt] error can't determine modifiers of missing type org.eclipse.jdt.internal.core.search.processing.JobManager
+when processing type mungers org.eclipse.rcptt.tesla.internal.jdt.JDTJobProcessor
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt] error can't determine modifiers of missing type org.eclipse.jdt.internal.core.search.processing.JobManager
+when weaving type org.eclipse.rcptt.tesla.internal.jdt.JDTJobProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] info register aspect org.eclipse.rcptt.tesla.jdt.JDTAspect
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.browser.Browser
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.FileDialog
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.DirectoryDialog
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.MessageBox
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.FontDialog
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.ColorDialog
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Control
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Shell
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Menu
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Control
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Decorations
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.Image
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.ImageData
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.Device
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.DropTarget
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.DragSource
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Text
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Combo
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Transfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Transfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ByteArrayTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.TransferData
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.FileTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.HTMLTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ImageTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.RTFTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.TextTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.URLTransfer
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.TransferData
+when processing type mungers org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when processing type mungers 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.browser.Browser
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.browser.Browser
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.FileDialog
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.DirectoryDialog
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.MessageBox
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.FontDialog
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.ColorDialog
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Control
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Display
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Menu
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Menu
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.Image
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.Image
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.Image
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.graphics.ImageData
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Text
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Text
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Combo
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.widgets.Combo
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.Clipboard
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ByteArrayTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ByteArrayTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.FileTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.FileTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.HTMLTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.HTMLTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ImageTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.ImageTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.RTFTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.RTFTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.TextTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.TextTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.URLTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine modifiers of missing type org.eclipse.swt.dnd.URLTransfer
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DropTarget is an instance of org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DropTarget
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DragSource is an instance of org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DragSource
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTWaitJob
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DropTarget is an instance of org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DropTarget
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DragSource is an instance of org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DragSource
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspectsActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.runtime.ui] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.runtime.ui] info register aspect org.eclipse.rcptt.tesla.ui.ide.aspects.IDEAspects
+[org.eclipse.rcptt.runtime.ui] error can't determine modifiers of missing type org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction
+when weaving type org.eclipse.rcptt.internal.runtime.ui.Q7RuntimeStartup
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.runtime.ui] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.internal.runtime.ui.Q7RuntimeStartup
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.runtime.ui] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.internal.runtime.ui.Q7RuntimeStartup
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.ui.ide.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.ui.ide.aspects] info register aspect org.eclipse.rcptt.tesla.ui.ide.aspects.IDEAspects
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info register aspect org.eclipse.rcptt.tesla.workbench.aspects.WorkbenchAspect
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] info processing reweavable type org.eclipse.rcptt.tesla.workbench.aspects.WorkbenchAspect: org\eclipse\rcptt\tesla\workbench\aspects\WorkbenchAspect.aj
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.workbench.aspects.WorkbenchAspectActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.workbench.aspects.e4x] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.workbench.aspects.WorkbenchAspectActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.ctx.preferences.impl] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.runtime.ui.preferences.aspects.DialogSettingsAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.ctx.preferences.impl] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.ctx.preferences.impl] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.ctx.preferences.impl.PreferencesContextProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.ctx.preferences.impl] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.ctx.preferences.impl.PreferencesContextProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect: org\eclipse\rcptt\tesla\swt\aspects\ClipboardAspect.aj
+[org.eclipse.rcptt.expandbar.runtime] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.expandbar.runtime] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.expandbar.runtime] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.expandbar.runtime.internal.ExpandBarUIProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.expandbar.runtime] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.expandbar.runtime.internal.ExpandBarUIProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.forms.impl] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.forms.impl] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.forms.impl] info register aspect org.eclipse.rcptt.tesla.recording.aspects.forms.FormsRecordingAspect
+[org.eclipse.rcptt.tesla.canvas] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.canvas] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.canvas] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.canvas.CanvasProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.canvas] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.canvas.CanvasProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.gef] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.gef.aspects.DirectEditAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.gef.aspects.AutoExposeAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.gef] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.gef] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.gef.GefProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.gef] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.gef.GefProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.gef] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.gef] info register aspect org.eclipse.rcptt.tesla.gef.aspects.DirectEditAspect
+[org.eclipse.gef] info register aspect org.eclipse.rcptt.tesla.gef.aspects.AutoExposeAspect
+[org.eclipse.gef] info register aspect org.eclipse.rcptt.tesla.recording.aspects.gef.GefRecordingAspect
+[org.eclipse.draw2d] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.draw2d] info register aspect org.eclipse.rcptt.tesla.recording.aspects.draw2d.Draw2DRecordingAspect
+[org.eclipse.draw2d] info register aspect org.eclipse.rcptt.tesla.recording.aspects.gef.GefRecordingAspect
+[org.eclipse.rcptt.tesla.jface.databinding] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.databinding] info register aspect org.eclipse.rcptt.tesla.jface.DatabindingAspect
+[org.eclipse.rcptt.tesla.jface.databinding] info register aspect org.eclipse.rcptt.tesla.jface.DatabindingObservablesAspect
+[org.eclipse.rcptt.tesla.jface.text] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.text] info register aspect org.eclipse.rcptt.tesla.jface.TextReconcilerAspect
+[org.eclipse.rcptt.tesla.properties.view] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.properties.view] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.properties.view] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.properties.view.PropertiesViewProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.properties.view] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.properties.view.PropertiesViewProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.ui.ide] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.ui.ide] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.ui.ide] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.internal.ui.problemview.ProblemViewSupportProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.ui.ide] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.internal.ui.problemview.ProblemViewSupportProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.workbench.texteditor] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.jface.text.TextViewerAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] info register aspect org.eclipse.rcptt.tesla.recording.aspects.jface.text.JFaceTextRecordingAspect
+[org.eclipse.rcptt.tesla.workbench.texteditor] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.workbench.texteditor.WorkbenchTexteditorProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.workbench.texteditor] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.workbench.texteditor.WorkbenchTexteditorProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.gef.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.gef.aspects.DirectEditAspect
+[org.eclipse.rcptt.tesla.gef.aspects] info register aspect org.eclipse.rcptt.tesla.gef.aspects.AutoExposeAspect
+[org.eclipse.rcptt.tesla.gef.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.gef.AutoExpandLevels
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.gef.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.gef.AutoExpandLevels
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.text.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] info register aspect org.eclipse.rcptt.tesla.jface.text.TextViewerAspect
+[org.eclipse.rcptt.tesla.jface.text.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.text.JFaceTextManager
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.text.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.text.JFaceTextManager
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] info register aspect org.eclipse.rcptt.tesla.jface.TextReconcilerAspect
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.TextReconcilerManager
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.text.reconciler.aspects] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.jface.TextReconcilerManager
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.e4x] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.swt.e4x] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.swt.e4x] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.e4x.E4WorkbenchProvider
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.swt.e4x] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.swt.e4x.E4WorkbenchProvider
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info register aspect org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info processing reweavable type org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect: org\eclipse\rcptt\tesla\recording\aspects\WorkbenchRecordingAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] info successfully verified type org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect exists.  Originates from org\eclipse\rcptt\tesla\recording\aspects\WorkbenchRecordingAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.recording.aspects.RecordingWorkbenchActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.recording.aspects.workbench] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.recording.aspects.RecordingWorkbenchActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jface.WindowAspect: org\eclipse\rcptt\tesla\jface\WindowAspect.aj
+[org.eclipse.rcptt.tesla.jdt.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jdt.JDTAspect: org\eclipse\rcptt\tesla\jdt\JDTAspect.aj
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DropTarget is an instance of org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving aspects 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DropTarget
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving aspects 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine whether missing type org.eclipse.swt.dnd.DragSource is an instance of org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving aspects 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jdt.aspects] error can't determine implemented interfaces of missing type org.eclipse.swt.dnd.DragSource
+when weaving type org.eclipse.rcptt.tesla.jdt.JDTAspect
+when weaving aspects 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.jface.text.aspects] info processing reweavable type org.eclipse.rcptt.tesla.jface.text.TextViewerAspect: org\eclipse\rcptt\tesla\jface\text\TextViewerAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info AspectJ Weaver Version 1.9.25 built on Monday Nov 3, 2025 at 19:06:39 PST
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.DNDAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.MenuAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.EventFilterAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.BrowserAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ClipboardAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.swt.aspects.ImagesAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info register aspect org.eclipse.rcptt.tesla.recording.aspects.jface.text.JFaceTextRecordingAspect
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] info processing reweavable type org.eclipse.rcptt.tesla.recording.aspects.jface.text.JFaceTextRecordingAspect: org\eclipse\rcptt\tesla\recording\aspects\jface\text\JFaceTextRecordingAspect.aj
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.recording.aspects.jface.text.RecordingJFaceTextActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+[org.eclipse.rcptt.tesla.recording.aspects.jface.text] error can't determine modifiers of missing type org.eclipse.swt.internal.gtk.OS
+when weaving type org.eclipse.rcptt.tesla.recording.aspects.jface.text.RecordingJFaceTextActivator
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+0    [Worker-1: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_clients/barber_clients.rao#/1/@members.3/@members.12/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:08:55.965
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_clients/barber_clients.rao#/1/@members.3/@members.12/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+11   [Worker-1: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_clients/barber_clients.rao#/1/@members.3/@members.13/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:08:55.973
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_clients/barber_clients.rao#/1/@members.3/@members.13/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+49061 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.3/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.023
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.3/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+49061 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.3/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.024
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.3/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+49062 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.6/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.024
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.6/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+49063 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.9/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.025
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.9/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+49063 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.12/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.025
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.12/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+49063 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.13/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.025
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.13/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+49064 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.13/@returnType to JvmPrimitiveType: boolean (simpleName: boolean) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.026
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.13/@returnType to JvmPrimitiveType: boolean (simpleName: boolean) cannot be exported as the target is not contained in a resource.
+
+49064 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.14/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.027
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.14/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+49065 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.15/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.027
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.15/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+49065 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.15/@returnType to JvmGenericType: java.lang.String (visibility: PUBLIC, simpleName: String, identifier: java.lang.String, deprecated: false) (abstract: false, static: false, final: true, packageName: java.lang) (interface: false, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.027
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.15/@returnType to JvmGenericType: java.lang.String (visibility: PUBLIC, simpleName: String, identifier: java.lang.String, deprecated: false) (abstract: false, static: false, final: true, packageName: java.lang) (interface: false, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+49066 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.16/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.028
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.16/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+49066 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.16/@returnType to JvmGenericType: java.nio.ByteBuffer (visibility: PUBLIC, simpleName: ByteBuffer, identifier: java.nio.ByteBuffer, deprecated: false) (abstract: true, static: false, final: false, packageName: java.nio) (interface: false, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.028
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.16/@returnType to JvmGenericType: java.nio.ByteBuffer (visibility: PUBLIC, simpleName: ByteBuffer, identifier: java.nio.ByteBuffer, deprecated: false) (abstract: true, static: false, final: false, packageName: java.nio) (interface: false, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+49066 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.18/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.028
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.18/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+49066 [Worker-22: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.19/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:09:45.028
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/barber_simple/barber_simple.rao#/1/@members.1/@members.19/@returnType to JvmGenericType: java.util.Collection (visibility: PUBLIC, simpleName: Collection, identifier: java.util.Collection, deprecated: false) (abstract: true, static: false, final: false, packageName: java.util) (interface: true, strictFloatingPoint: false, anonymous: false) cannot be exported as the target is not contained in a resource.
+
+266859 [Worker-20: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/relevants_no_combination/relevants_no_combination.rao#/1/@members.0/@members.0/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:13:22.821
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/relevants_no_combination/relevants_no_combination.rao#/1/@members.0/@members.0/@annotations.0 to JvmAnnotationType: java.lang.Override (visibility: PUBLIC, simpleName: Override, identifier: java.lang.Override, deprecated: false) (abstract: true, static: false, final: false, packageName: java.lang) cannot be exported as the target is not contained in a resource.
+
+266860 [Worker-20: Updating editor state] ERROR org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/relevants_no_combination/relevants_no_combination.rao#/1/@members.0/@members.0/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+!ENTRY org.apache.log4j 4 0 2026-10-21 20:13:22.822
+!MESSAGE org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy  - Reference from platform:/resource/relevants_no_combination/relevants_no_combination.rao#/1/@members.0/@members.0/@returnType to JvmVoid: void cannot be exported as the target is not contained in a resource.
+
+
+!ENTRY org.eclipse.rcptt.tesla.core 4 0 2026-10-21 20:15:21.443
+!MESSAGE Can not find view by pattern "total". Activating views...
+
+!ENTRY org.eclipse.rcptt.runtime.ui 1 0 2026-10-21 20:16:06.072
+!MESSAGE Workbench is about to shut down
+!STACK 0
+java.lang.Exception: Just to get a current stack trace logged. This is not an error.
+	at org.eclipse.rcptt.internal.runtime.ui.Q7RuntimeStartup$1.preShutdown(Q7RuntimeStartup.java:33)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:989)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:167)
+	at org.eclipse.ui.internal.Workbench.firePreShutdown(Workbench.java:986)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1115)
+	at org.eclipse.ui.internal.Workbench.lambda$5(Workbench.java:1466)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1466)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1437)
+	at org.eclipse.rcptt.tesla.ecl.internal.impl.commands.ShutdownAutService.lambda$2(ShutdownAutService.java:58)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4135)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3751)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+[1021/201607.942:ERROR:ui\gfx\win\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1411

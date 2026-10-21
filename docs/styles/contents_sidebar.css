@@ -30,3 +30,16 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+@media (max-width: 760px) {
+  #wrapper { padding-left: 0; }
+  #sidebar-wrapper {
+    position: static;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid gray;
+  }
+  .sidebar-nav { position: static; width: auto; }
+}

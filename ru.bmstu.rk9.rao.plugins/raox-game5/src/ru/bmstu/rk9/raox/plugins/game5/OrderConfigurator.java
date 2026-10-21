@@ -3,42 +3,42 @@ package ru.bmstu.rk9.raox.plugins.game5;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.HashSet;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import com.github.cliftonlabs.json_simple.JsonArray;
+import com.github.cliftonlabs.json_simple.JsonObject;
+import com.github.cliftonlabs.json_simple.Jsoner;
+import com.github.cliftonlabs.json_simple.JsonException;
 
 public class OrderConfigurator {
 	private static final int tilesCountX = 3;
 	private static final int tilesCountY = 2;
 
 	@SuppressWarnings("unchecked")
-	public static void setInOrder(JSONObject object) throws IOException, ParseException {
-		JSONParser parser = new JSONParser();
-		InputStream inputStream = Game5View.class.getClassLoader()
+	public static void setInOrder(JsonObject object) throws IOException, JsonException {
+		try (InputStream inputStream = Game5View.class.getClassLoader()
 				.getResourceAsStream(Game5ProjectConfigurator.configTemplatePath);
-		InputStreamReader reader = new InputStreamReader(inputStream);
-		JSONObject templateObject = (JSONObject) parser.parse(reader);
-		JSONArray templateOrder = (JSONArray) templateObject.get("places");
-		object.put("places", templateOrder);
+				InputStreamReader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
+			JsonObject templateObject = (JsonObject) Jsoner.deserialize(reader);
+			object.put("places", templateObject.get("places"));
+		}
 	}
 
-	public static JSONArray shuffle(JSONArray places, String solvable) {
+	public static JsonArray shuffle(JsonArray places, String solvable) {
 		if (solvable.equals("all")) {
 			Collections.shuffle(places);
 			return places;
 		}
-		JSONArray order = inverseOrderPlaces(places);
+		JsonArray order = inverseOrderPlaces(places);
 		do {
 			Collections.shuffle(order);
 		} while (!solvable.equals(String.valueOf(isSolvable(tilesCountX, tilesCountY, order))));
 		return inverseOrderPlaces(order);
 	}
 
-	private static boolean isSolvable(int tilesCountX, int tilesCountY, JSONArray order) {
+	private static boolean isSolvable(int tilesCountX, int tilesCountY, JsonArray order) {
 
 		final int freePlaceRow = order.indexOf(String.valueOf(tilesCountX * tilesCountY)) / tilesCountX + 1;
 		int sum = 0;
@@ -60,7 +60,7 @@ public class OrderConfigurator {
 		// См. Перельман. Живая математика.
 	}
 
-	public static String convertPlacesToString(JSONArray places) {
+	public static String convertPlacesToString(JsonArray places) {
 		String order = Integer.toString(places.indexOf(String.valueOf(1)) + 1);
 		for (int i = 1; i < places.size(); i++) {
 			order = order + " " + Integer.toString(places.indexOf(String.valueOf(i + 1)) + 1);
@@ -69,9 +69,9 @@ public class OrderConfigurator {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static JSONArray convertStringToPlaces(String order) {
+	public static JsonArray convertStringToPlaces(String order) {
 		String[] orderList = order.split(" ");
-		JSONArray orderArray = new JSONArray();
+		JsonArray orderArray = new JsonArray();
 		if (!orderIsValid(orderList)) {
 			return null;
 		}
@@ -82,8 +82,8 @@ public class OrderConfigurator {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static JSONArray inverseOrderPlaces(JSONArray position) {
-		JSONArray inversePosition = new JSONArray();
+	public static JsonArray inverseOrderPlaces(JsonArray position) {
+		JsonArray inversePosition = new JsonArray();
 		for (int i = 1; i < position.size() + 1; i++)
 			inversePosition.add(String.valueOf(position.indexOf(String.valueOf(i)) + 1));
 		return inversePosition;

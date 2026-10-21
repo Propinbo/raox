@@ -11,7 +11,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.EventObject;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.eclipse.core.resources.IFile;
@@ -360,8 +359,7 @@ public class ProcessEditor extends GraphicalEditorWithFlyoutPalette {
 				int blockNodeID = marker.getAttributeValue(BlockNode.BLOCK_NODE_MARKER, 0);
 				ProcessModelEditPart modelPart = (ProcessModelEditPart) getGraphicalViewer().getRootEditPart()
 						.getChildren().get(0);
-				List<EditPart> editParts = modelPart.getChildren();
-				for (EditPart editPart : editParts) {
+				for (org.eclipse.gef.GraphicalEditPart editPart : modelPart.getChildren()) {
 					if (!(editPart instanceof BlockEditPart))
 						continue;
 

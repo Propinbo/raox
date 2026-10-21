@@ -74,3 +74,4 @@ assembly/target
 # Isolated toolchain, wrapper cache and build evidence
 .build/
 raox.target/target/
+raox.repository/target/

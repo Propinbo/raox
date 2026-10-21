@@ -7,7 +7,9 @@ Bundle-SymbolicName: ru.bmstu.rk9.rao.ui;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: ru.bmstu.rk9.rao;visibility:=reexport,
  ru.bmstu.rk9.rao.lib;bundle-version="0.1.0";visibility:=reexport,
- org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui;bundle-version="[2.40.0,2.41.0)",
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
  org.eclipse.ui.editors;bundle-version="3.5.0",
  org.eclipse.ui.ide;bundle-version="3.5.0",
  org.eclipse.xtext.ui.shared,
@@ -28,9 +30,9 @@ Require-Bundle: ru.bmstu.rk9.rao;visibility:=reexport,
  org.eclipse.jdt.launching;bundle-version="3.7.100",
  org.eclipse.gef,
  org.eclipse.ui.workbench
-Import-Package: org.apache.log4j,
+Import-Package: org.apache.log4j;version="[1.2.26,2.0.0)",
  org.eclipse.xtext.xbase.lib
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: com.mxgraph.analysis,
  com.mxgraph.canvas,
  com.mxgraph.costfunction,
@@ -75,7 +77,7 @@ Export-Package: com.mxgraph.analysis,
    ru.bmstu.rk9.rao.services,
    org.eclipse.xtext,
    org.eclipse.xtext.ui.editor.contentassist.antlr",
- ru.bmstu.rk9.rao.ui.contentassist.antlr.internal,
+ ru.bmstu.rk9.rao.ide.contentassist.antlr.internal,
  ru.bmstu.rk9.rao.ui.execution;uses:="org.eclipse.core.commands,ru.bmstu.rk9.rao.ui.notification,ru.bmstu.rk9.rao.ui.simulation",
  ru.bmstu.rk9.rao.ui.graph;
   uses:="com.mxgraph.swing,
@@ -97,7 +99,7 @@ Export-Package: com.mxgraph.analysis,
    org.eclipse.swt.graphics,
    org.eclipse.swt.widgets,
    ru.bmstu.rk9.rao.ui.serialization,
-   org.jfree.experimental.chart.swt,
+   org.jfree.chart.swt,
    ru.bmstu.rk9.rao.lib.database,
    org.eclipse.ui.part",
  ru.bmstu.rk9.rao.ui.quickfix;uses:="org.eclipse.xtext.ui.editor.quickfix",
@@ -129,5 +131,5 @@ Export-Package: com.mxgraph.analysis,
    ru.bmstu.rk9.rao.lib.notification,
    org.eclipse.ui.part",
  ru.bmstu.rk9.rao.ui.wizard
-Bundle-ClassPath: .,thirdparty/jgraphx/lib/jgraphx.jar,thirdparty/jfreechart/lib/jcommon-1.0.23.jar,thirdparty/jfreechart/lib/jfreechart-1.0.19-experimental.jar,thirdparty/jfreechart/lib/jfreechart-1.0.19-swt.jar,thirdparty/jfreechart/lib/jfreechart-1.0.19.jar,thirdparty/gson/lib/gson-2.6.2.jar
+Bundle-ClassPath: .,thirdparty/jgraphx/lib/jgraphx-4.2.2.jar,thirdparty/jfreechart/lib/jfreechart-1.5.6.jar,thirdparty/jfreechart/lib/swtgraphics2d-1.1.0.jar,thirdparty/gson/lib/gson-2.14.0.jar
 Bundle-Activator: ru.bmstu.rk9.rao.ui.RaoActivatorExtension

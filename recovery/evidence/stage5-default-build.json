@@ -1,0 +1,71 @@
+{
+  "started_at_utc": "2026-10-21T17:21:40.6391429Z",
+  "finished_at_utc": "2026-10-21T17:22:54.7459363Z",
+  "goal": "verify",
+  "clean": false,
+  "offline": true,
+  "cache_initially_empty": false,
+  "attempts": [
+    {
+      "number": 1,
+      "exit_code": 0,
+      "network_failure": false,
+      "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\stage5-default-evidence\\20261021-202140-637-verify-attempt-1.log"
+    }
+  ],
+  "exit_code": 0,
+  "succeeded": true,
+  "failure": null,
+  "repository": "C:\\Users\\propinbo\\Documents\\raox",
+  "java_home": "C:\\Users\\propinbo\\Documents\\raox\\.build\\platform-tools\\jdk-21.0.12.1+1",
+  "maven": "C:\\Users\\propinbo\\Documents\\raox\\mvnw.cmd",
+  "maven_repository": "C:\\Users\\propinbo\\Documents\\raox\\.build\\platform-m2",
+  "target_platform_sha256": "2ef72997467bf2cc7638e150fe774162fe807b1c26b8be2cd85e9cba350023c8",
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\stage5-default-evidence\\20261021-202140-637-verify.log",
+  "unit_tests": {
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "dependency_verification": {
+    "p2_bundles": 736,
+    "p2_extra_artifacts": 30,
+    "p2_equivalent_zip_representations": [],
+    "maven_binaries": 383
+  },
+  "artifact": {
+    "archive": "C:\\Users\\propinbo\\Documents\\raox\\assembly\\target\\raox-3.9.0.zip",
+    "sha256": "d291e91202c8b38425648acce8669ca6df78c8a4e34ec47814fdddd4fee27e06",
+    "runtime_copy_identical": true,
+    "class_version": 65,
+    "classes_checked": 811,
+    "entries": [
+      {
+        "name": "raox/ru.bmstu.rk9.rao-3.9.0.jar",
+        "bytes": 646024,
+        "sha256": "c4cc20f28a2fe52680b7b5ebb0f96d5401d88aaa1ae59dfe0be30feba37bcafa"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.lib-3.9.0.jar",
+        "bytes": 2187877,
+        "sha256": "d4032beb804ff6c0b6aabce8fb4c8fb7e74b514b2c7086e8f893d49eeb2e864c"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.ui-3.9.0.jar",
+        "bytes": 3622667,
+        "sha256": "ccfefdcb8b9d7c8bac0ef37ff54ba029c0628100ee40cf893e758ff8bf6c6f86"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.raox.plugins.game5-3.9.0.jar",
+        "bytes": 90624,
+        "sha256": "08cc6ed2f68ae72739cc7db5e03b24fa943e75b02ab097f3967eb4d2355b1988"
+      },
+      {
+        "name": "raox/ru.bmstu.rk9.rao.lib.jar",
+        "bytes": 2187877,
+        "sha256": "d4032beb804ff6c0b6aabce8fb4c8fb7e74b514b2c7086e8f893d49eeb2e864c"
+      }
+    ]
+  }
+}

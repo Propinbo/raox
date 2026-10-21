@@ -1,14 +1,15 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)][string]$AutRoot,
-    [Parameter(Mandatory = $true)][string]$RunnerRoot
+    [Parameter(Mandatory = $true)][string]$RunnerRoot,
+    [string]$LockRoot = $PSScriptRoot
 )
 
 $ErrorActionPreference = 'Stop'
 foreach ($name in @('eclipse', 'rcptt')) {
     $root = if ($name -eq 'eclipse') { $AutRoot } else { $RunnerRoot }
     $root = (Resolve-Path -LiteralPath $root).Path
-    $inventory = @(Import-Csv -LiteralPath (Join-Path $PSScriptRoot "$name-plugins.lock.csv"))
+    $inventory = @(Import-Csv -LiteralPath (Join-Path $LockRoot "$name-plugins.lock.csv"))
     $actual = @(Get-ChildItem -LiteralPath (Join-Path $root 'plugins') -File -Recurse)
     if ($actual.Count -ne $inventory.Count) { throw "Unexpected $name plugin file count: $($actual.Count)" }
     foreach ($entry in $inventory) {

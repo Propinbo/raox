@@ -1,0 +1,5 @@
+{
+  "reason": "Excluded from the ANTLR generator; replaced with explicit reload4j 1.2.26",
+  "sha256": "7AE3FDDE7AB0CAE4735A2AEC04381AD9B6E25C93D24205F3ED315D9866F12FE1",
+  "coordinate": "log4j:log4j:1.2.16"
+}

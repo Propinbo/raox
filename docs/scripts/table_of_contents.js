@@ -31,7 +31,7 @@ function generateSidebar(referenceContents, tutorialContents, userGuideContents,
 
     var header = $("<h2>");
     header.attr("align", "center");
-    header.html("Содержание");
+    header.html('<a href="../index.html">Документация Rao X</a>');
 
     var commonList = $("<ul>");
 
@@ -145,6 +145,7 @@ function getTutorialContents() {
 
 function getUserGuideContents() {
     var contents = [
+        {"href":"../user_guide/quick_start.html", "title":"Первая модель на Windows"},
         {
             "href":"../user_guide/first_run.html",
             "title":"Первый запуск"

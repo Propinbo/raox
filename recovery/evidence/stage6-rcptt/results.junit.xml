@@ -1,0 +1,1750 @@
+<?xml version="1.0" ?><testsuite name="results" time="503.846" failures="1" tests="43" skipped="0" errors="0"><testcase name="base_java_project" time="10.097"></testcase><testcase name="continuous_histogram_sequence" time="17.432"></testcase><testcase name="continuous_histogram_sequence_notrace" time="12.869"></testcase><testcase name="docs_quickstart" time="15.786"></testcase><testcase name="model_accessible_all_conflict" time="12.235"></testcase><testcase name="model_accessible_all_conflict_notrace" time="10.740"></testcase><testcase name="model_accessible_resources" time="11.976"></testcase><testcase name="model_accessible_resources_notrace" time="10.407"></testcase><testcase name="model_barber_clients" time="10.248"></testcase><testcase name="model_barber_clients_notrace" time="7.948"></testcase><testcase name="model_barber_events" time="9.015"></testcase><testcase name="model_barber_events_notrace" time="7.354"></testcase><testcase name="model_barber_simple" time="10.620"></testcase><testcase name="model_barber_simple_notrace" time="7.671"></testcase><testcase name="model_discrete_histogram_sequence" time="12.598"></testcase><testcase name="model_discrete_histogram_sequence_notrace" time="10.026"></testcase><testcase name="empty_model" time="6.959"></testcase><testcase name="model_exponential_sequence" time="11.701"></testcase><testcase name="model_exponential_sequence_notrace" time="10.031"></testcase><testcase name="model_game5" time="23.401"></testcase><testcase name="model_game5_notrace" time="21.069"></testcase><testcase name="model_generator_sequence" time="12.075"></testcase><testcase name="model_generator_sequence_notrace" time="10.274"></testcase><testcase name="model_list_sequence" time="11.595"></testcase><testcase name="model_list_sequence_notrace" time="10.238"></testcase><testcase name="model_normal_sequence" time="11.739"></testcase><testcase name="model_normal_sequence_notrace" time="10.270"></testcase><testcase name="model_relevants_combination" time="12.467"></testcase><testcase name="model_relevants_combination_notrace" time="10.638"></testcase><testcase name="model_relevants_no_combination" time="12.013"></testcase><testcase name="model_relevants_no_combination_notrace" time="10.386"></testcase><testcase name="model_results" time="17.905"></testcase><testcase name="model_results_notrace" time="16.433"></testcase><testcase name="model_results_results" time="16.634"></testcase><testcase name="model_triangular_sequence" time="11.966"></testcase><testcase name="model_triangular_sequence_notrace" time="10.262"></testcase><testcase name="model_uniform_sequence" time="11.738"></testcase><testcase name="model_uniform_sequence_notrace" time="10.145"></testcase><testcase name="rao_perspective" time="2.347"></testcase><testcase name="ui_exports_animation" time="14.832"></testcase><testcase name="ui_game5" time="16.574"></testcase><testcase name="ui_import" time="3.457"><failure type="testcase" message="Line 6: get-button: The Button &quot;Select root directory:&quot; could not be found.  "><![CDATA[Line 6: get-button: The Button "Select root directory:" could not be found.  swt.info
+      Window(Import)
+            Label()
+            Label(Select an import wizard:)
+            Text()
+            Tree()
+                  Item(General)
+                        Item(Archive File)
+                        Item(Existing Projects into Workspace)
+                        Item(File System)
+                        Item(Preferences)
+                        Item(Projects from Folder or Archive)
+                  Item(Install)
+                  Item(Run/Debug)
+                  Item(Team)
+            Label()
+            Toolbar()
+                  Button(Help)
+            Button(< Back)
+            Button(Next >)
+            Button(Finish)
+            Button(Cancel)
+            Label()
+            Label(Select)
+            Text(Create new projects from an archive file or directory.)
+      eclipse.windows
+            page:Workspace
+                  views
+                        view:Project Explorer
+                            id=org.eclipse.ui.navigator.ProjectExplorer
+                            dirty=false
+                            fastView=false
+
+                              View(Project Explorer)
+                                    Toolbar()
+                                          Button(Collapse All)
+                                          Button(Link with Editor)
+                                          Button(Select and deselect filters to apply to the content in the tree)
+                                    Link(There are no projects in your workspace.To add a project:)
+                                    Label()
+                                    Link(Create a project...)
+                                    Label()
+                                    Link(Import projects...)
+                        view:Problems
+                            id=org.eclipse.ui.views.ProblemView
+                            dirty=false
+                            fastView=false
+
+                              View(Problems)
+                                    Toolbar()
+                                          Button(Filters...)
+                        view:Collected Objects
+                            id=ru.bmstu.rk9.rao.ui.SerializedObjectsView
+                            dirty=false
+                            fastView=false
+
+                              View(Collected Objects)
+                                    Toolbar()
+                                    Tree()
+                                          Item(ui_game5)
+                        view:Monitoring Configuration
+                            id=ru.bmstu.rk9.rao.ui.SerializationConfigView
+                            dirty=false
+                            fastView=false
+
+                              View(Monitoring Configuration)
+                                    Toolbar()
+                                    Tree()
+                        view:Console
+                            id=org.eclipse.ui.console.ConsoleView
+                            dirty=false
+                            fastView=false
+
+                              View(Console)
+                                    Toolbar()
+                                          Button(Pin Console)
+                                          Button(Display Selected Console)
+                                          Button(Open Console)
+                        view:Console
+                            id=ru.bmstu.rk9.rao.ui.ConsoleView
+                            dirty=false
+                            fastView=false
+
+                              View(Console)
+                                    Toolbar()
+                        view:Trace
+                            id=ru.bmstu.rk9.rao.ui.TraceView
+                            dirty=false
+                            fastView=false
+
+                              View(Trace)
+                                    Toolbar()
+                                          Button(Find)
+                                          Button(Export trace output)
+                                    Table()
+                                          Item(ES 0.0 Tracing started)
+                                          Item(RC 0.0 game_5.block1 = {1, java.awt.Point[x=1,y=1]})
+                                          Item(RC 0.0 game_5.block2 = {2, java.awt.Point[x=2,y=1]})
+                                          Item(RC 0.0 game_5.block3 = {3, java.awt.Point[x=3,y=1]})
+                                          Item(RC 0.0 game_5.block4 = {4, java.awt.Point[x=1,y=2]})
+                                          Item(RC 0.0 game_5.block5 = {5, java.awt.Point[x=2,y=2]})
+                                          Item(RC 0.0 game_5.hole = {6, java.awt.Point[x=3,y=2]})
+                                          Item(ES 0.0 Simulation started)
+                                          Item(ES 0.0 Simulation finished: no more events)
+                        view:Results
+                            id=ru.bmstu.rk9.rao.ui.ResultsView
+                            dirty=false
+                            fastView=false
+
+                              View(Results)
+                                    Toolbar()
+                                          Button(Expand All)
+                                          Button(Collapse All)
+                                          Button(Collapse Including Models)
+                                          Button(View as text)
+                        view:Properties
+                            id=org.eclipse.ui.views.PropertySheet
+                            dirty=false
+                            fastView=false
+
+                        view:Status
+                            id=ru.bmstu.rk9.rao.ui.StatusView
+                            dirty=false
+                            fastView=false
+
+                              View(Status)
+                                    Toolbar()
+                        view:Rao Plot
+                            id=ru.bmstu.rk9.rao.ui.PlotView
+                            dirty=false
+                            fastView=false
+
+                              View(Rao Plot)
+                                    Toolbar()
+                                    Canvas()
+                        view:Rao Animation
+                            id=ru.bmstu.rk9.rao.ui.AnimationView
+                            dirty=false
+                            fastView=false
+
+                              View(Rao Animation)
+                                    Toolbar()
+                        view:Rao Plot
+                            id=ru.bmstu.rk9.rao.ui.PlotView
+                            dirty=false
+                            fastView=false
+
+                              View(Rao Plot)
+                                    Toolbar()
+                                    Canvas()
+            shells
+                  Window()
+            shells
+                  Window(Import)
+                        Label()
+                        Label(Select an import wizard:)
+                        Text()
+                        Tree()
+                              Item(General)
+                                    Item(Archive File)
+                                    Item(Existing Projects into Workspace)
+                                    Item(File System)
+                                    Item(Preferences)
+                                    Item(Projects from Folder or Archive)
+                              Item(Install)
+                              Item(Run/Debug)
+                              Item(Team)
+                        Label()
+                        Toolbar()
+                              Button(Help)
+                        Button(< Back)
+                        Button(Next >)
+                        Button(Finish)
+                        Button(Cancel)
+                        Label()
+                        Label(Select)
+                        Text(Create new projects from an archive file or directory.)
+swt.player
+gef.editparts
+java.runtime
+    cpus=20
+    freeMemory=246264424
+    totalMemory=868220928
+    maxMemory=2147483648
+Jobs information:
+  Job:ECL session execute: sequence
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: ast-exec
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: with
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: pipeline
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: get-button
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: ast-exec
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: sequence
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:ECL session execute: ast-exec
+      class=org.eclipse.rcptt.ecl.internal.core.Session$1
+      state=running
+  Job:Workbench Auto-Save Job
+      class=org.eclipse.ui.internal.Workbench$40
+      state=sleeping
+  Job:Compacting resource model
+      class=org.eclipse.core.internal.utils.StringPoolJob
+      state=sleeping
+Thread information:
+    Thread:Worker-7
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Worker-19
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Worker-6
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Signal Dispatcher
+      class=java.lang.Thread
+    Thread:Worker-1: ECL session execute: sequence
+      class=org.eclipse.core.internal.jobs.Worker
+        6: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        5: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        4: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        3: org.eclipse.rcptt.ecl.internal.commands.SequenceService.service(SequenceService.java:45)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:main
+      class=java.lang.Thread
+        96: java.base@21.0.12.1/java.lang.Thread.dumpThreads(Native Method)
+        95: java.base@21.0.12.1/java.lang.Thread.getAllStackTraces(Thread.java:2522)
+        94: org.eclipse.rcptt.tesla.internal.core.info.GeneralInformationCollector.collectThreadInformation(GeneralInformationCollector.java:41)
+        93: org.eclipse.rcptt.tesla.internal.core.info.GeneralInformationCollector.collectInformation(GeneralInformationCollector.java:29)
+        92: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.getAdvancedInformation(AbstractTeslaClient.java:359)
+        91: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.handleFailedResponse(AbstractTeslaClient.java:349)
+        90: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.handleSelect(AbstractTeslaClient.java:117)
+        89: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.execute(AbstractTeslaClient.java:298)
+        88: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.doOneCommand(AbstractTeslaClient.java:247)
+        87: org.eclipse.rcptt.tesla.internal.core.AbstractTeslaClient.processNext(AbstractTeslaClient.java:129)
+        86: org.eclipse.rcptt.tesla.ecl.impl.TeslaBridge$2.doProcessing(TeslaBridge.java:102)
+        85: org.eclipse.rcptt.tesla.swt.events.TeslaEventManager.doProcessing(TeslaEventManager.java:109)
+        84: org.eclipse.rcptt.tesla.swt.aspects.DisplayAspect.ajc$around$org_eclipse_rcptt_tesla_swt_aspects_DisplayAspect$1$e269b158(DisplayAspect.aj:87)
+        83: org.eclipse.swt.widgets.Display.sleep(Display.java:4858)
+        82: org.eclipse.jface.window.Window.runEventLoop(Window.java:824)
+        81: org.eclipse.jface.window.Window.open_aroundBody0(Window.java:799)
+        80: org.eclipse.jface.window.Window.open(Window.java:785)
+        79: org.eclipse.ui.internal.handlers.WizardHandler$Import.executeHandler(WizardHandler.java:153)
+        78: org.eclipse.ui.internal.handlers.WizardHandler.execute_aroundBody0(WizardHandler.java:279)
+        77: org.eclipse.ui.internal.handlers.WizardHandler$AjcClosure1.run(WizardHandler.java:1)
+        76: org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663bproceed(WorkbenchRecordingAspect.aj:55)
+        75: org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663b(WorkbenchRecordingAspect.aj:67)
+        74: org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:274)
+        73: org.eclipse.ui.internal.handlers.HandlerProxy.execute_aroundBody0(HandlerProxy.java:277)
+        72: org.eclipse.ui.internal.handlers.HandlerProxy$AjcClosure1.run(HandlerProxy.java:1)
+        71: org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663bproceed(WorkbenchRecordingAspect.aj:55)
+        70: org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663b(WorkbenchRecordingAspect.aj:67)
+        69: org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:271)
+        68: org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+        67: java.base@21.0.12.1/java.lang.invoke.LambdaForm$DMH/0x000001d45edd2c00.invokeVirtual(LambdaForm$DMH)
+        66: java.base@21.0.12.1/java.lang.invoke.LambdaForm$MH/0x000001d45f332000.invoke(LambdaForm$MH)
+        65: java.base@21.0.12.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        64: java.base@21.0.12.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:157)
+        63: java.base@21.0.12.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        62: java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+        61: org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+        60: org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+        59: org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:237)
+        58: org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+        57: org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+        56: org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+        55: org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+        54: org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+        53: org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+        52: org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:141)
+        51: org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+        50: org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+        49: org.eclipse.jface.action.ActionContributionItem$$Lambda/0x000001d45ea07630.handleEvent(Unknown Source)
+        48: org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+        47: org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+        46: org.eclipse.swt.widgets.Widget.sendEvent_aroundBody2(Widget.java:1214)
+        45: org.eclipse.swt.widgets.Widget$AjcClosure3.run(Widget.java:1)
+        44: org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892proceed(RecordingAspect.aj:96)
+        43: org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892(RecordingAspect.aj:120)
+        42: org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1212)
+        41: org.eclipse.swt.widgets.Widget.sendEvent_aroundBody4(Widget.java:1238)
+        40: org.eclipse.swt.widgets.Widget$AjcClosure5.run(Widget.java:1)
+        39: org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7proceed(RecordingAspect.aj:41)
+        38: org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect.ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7(RecordingAspect.aj:84)
+        37: org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1227)
+        36: org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1223)
+        35: org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:860)
+        34: org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents.sendEventRaw(SWTEvents.java:93)
+        33: org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents.sendEvent(SWTEvents.java:74)
+        32: org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents.sendEvent(SWTEvents.java:64)
+        31: org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer.clickMenuItem(SWTUIPlayer.java:1009)
+        30: org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$3.run(SWTUIPlayer.java:866)
+        29: org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$ExecRunnable.run(SWTUIPlayer.java:2703)
+        28: org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+        27: org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+        26: org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4135)
+        25: org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3751)
+        24: org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+        23: org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+        22: org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+        21: org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+        20: org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+        19: org.eclipse.ui.internal.Workbench$$Lambda/0x000001d45e325910.run(Unknown Source)
+        18: org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+        17: org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+        16: org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+        15: org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+        14: org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+        13: org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+        12: org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+        11: org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+        10: org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+        9: java.base@21.0.12.1/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+        8: java.base@21.0.12.1/java.lang.invoke.LambdaForm$MH/0x000001d45e01c800.invoke(LambdaForm$MH)
+        7: java.base@21.0.12.1/java.lang.invoke.LambdaForm$MH/0x000001d45e01cc00.invokeExact_MT(LambdaForm$MH)
+        6: java.base@21.0.12.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+        5: java.base@21.0.12.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        4: java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+        3: app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+        2: app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+        1: app//org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+        0: app//org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-2: ECL session execute: pipeline
+      class=org.eclipse.core.internal.jobs.Worker
+        6: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        5: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        4: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        3: org.eclipse.rcptt.ecl.internal.commands.PipelineService.service(PipelineService.java:39)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-16
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-15: ECL session execute: get-button
+      class=org.eclipse.core.internal.jobs.Worker
+        12: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        11: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        10: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        9: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        8: org.eclipse.rcptt.tesla.internal.core.queue.TeslaQStream.readResponse(TeslaQStream.java:60)
+        7: org.eclipse.rcptt.tesla.internal.core.queue.TeslaQPlayer.executeCommand(TeslaQPlayer.java:34)
+        6: org.eclipse.rcptt.tesla.core.protocol.UIPlayer.safeExecuteCommand(UIPlayer.java:91)
+        5: org.eclipse.rcptt.tesla.core.protocol.UISelector.find(UISelector.java:206)
+        4: org.eclipse.rcptt.tesla.ecl.impl.TeslaBridge.find(TeslaBridge.java:237)
+        3: org.eclipse.rcptt.tesla.ecl.internal.impl.commands.SelectorService.service(SelectorService.java:326)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:Worker-22: ECL session execute: sequence
+      class=org.eclipse.core.internal.jobs.Worker
+        6: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        5: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        4: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        3: org.eclipse.rcptt.ecl.internal.commands.SequenceService.service(SequenceService.java:45)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Java indexing
+      class=java.lang.Thread
+        6: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        5: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        4: java.base@21.0.12.1/java.lang.Object.wait(Object.java:339)
+        3: org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:502)
+        2: org.eclipse.jdt.internal.core.search.processing.JobManager$$Lambda/0x000001d45e67b698.run(Unknown Source)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Thread-58
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        7: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        6: java.base@21.0.12.1/java.lang.Object.wait(Object.java:339)
+        5: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator$Condition.await(AbstractGenerator.java:32)
+        4: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator.yield(AbstractGenerator.java:96)
+        3: generator_sequence.generator_sequence$gen.run(generator_sequence.java:27)
+        2: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator$2.run(AbstractGenerator.java:108)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-18
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Attach Listener
+      class=java.lang.Thread
+    Thread:Worker-9
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Q7 Runner Monitor
+      class=org.eclipse.rcptt.runtime.ui.Q7Monitor
+        2: java.base@21.0.12.1/java.lang.Thread.sleep0(Native Method)
+        1: java.base@21.0.12.1/java.lang.Thread.sleep(Thread.java:509)
+        0: org.eclipse.rcptt.runtime.ui.Q7Monitor.run(Q7Monitor.java:28)
+    Thread:Worker-12: ECL session execute: ast-exec
+      class=org.eclipse.core.internal.jobs.Worker
+        8: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        7: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        6: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        5: org.eclipse.rcptt.ecl.internal.commands.ExecService.exec(ExecService.java:83)
+        4: org.eclipse.rcptt.ecl.internal.commands.ExecService.service(ExecService.java:54)
+        3: org.eclipse.rcptt.ecl.ast.commands.AstExecService.service(AstExecService.java:29)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-8
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:ForkJoinPool.commonPool-worker-4
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:pool-1-thread-1
+      class=java.lang.Thread
+        11: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        10: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        9: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        8: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        7: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1746)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-5: ECL session execute: ast-exec
+      class=org.eclipse.core.internal.jobs.Worker
+        11: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        10: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        9: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        8: org.eclipse.rcptt.ecl.internal.commands.ExecService.processExecutableValue(ExecService.java:335)
+        7: org.eclipse.rcptt.ecl.internal.commands.ExecService.calcParamValue(ExecService.java:302)
+        6: org.eclipse.rcptt.ecl.internal.commands.ExecService.evalParameters(ExecService.java:179)
+        5: org.eclipse.rcptt.ecl.internal.commands.ExecService.exec(ExecService.java:72)
+        4: org.eclipse.rcptt.ecl.internal.commands.ExecService.service(ExecService.java:54)
+        3: org.eclipse.rcptt.ecl.ast.commands.AstExecService.service(AstExecService.java:29)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Thread-52
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        7: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        6: java.base@21.0.12.1/java.lang.Object.wait(Object.java:339)
+        5: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator$Condition.await(AbstractGenerator.java:32)
+        4: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator.yield(AbstractGenerator.java:96)
+        3: generator_sequence.generator_sequence$gen.run(generator_sequence.java:27)
+        2: ru.bmstu.rk9.rao.lib.thirdparty.AbstractGenerator$2.run(AbstractGenerator.java:108)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:pool-2-thread-1
+      class=java.lang.Thread
+        11: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        10: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        9: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        8: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        7: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1746)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-10
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-21
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:SCR Component Actor
+      class=java.lang.Thread
+        5: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        4: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:339)
+        2: org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:ForkJoinPool.commonPool-worker-3
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Common-Cleaner
+      class=jdk.internal.misc.InnocuousThread
+        9: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        8: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1886)
+        6: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        5: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        4: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        3: java.base@21.0.12.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        2: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        1: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+        0: java.base@21.0.12.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Notification Thread
+      class=java.lang.Thread
+    Thread:Worker-17: ECL session execute: ast-exec
+      class=org.eclipse.core.internal.jobs.Worker
+        8: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        7: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        6: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        5: org.eclipse.rcptt.ecl.internal.commands.ExecService.exec(ExecService.java:83)
+        4: org.eclipse.rcptt.ecl.internal.commands.ExecService.service(ExecService.java:54)
+        3: org.eclipse.rcptt.ecl.ast.commands.AstExecService.service(AstExecService.java:29)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:Active Thread: Equinox Container: e3110ca9-6e46-4036-b7b9-f6a3995fcba6
+      class=java.lang.Thread
+        9: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        8: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        6: java.base@21.0.12.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        5: java.base@21.0.12.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-JM
+      class=org.eclipse.core.internal.jobs.InternalWorker
+        2: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        1: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        0: org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+    Thread:Java2D Disposer
+      class=java.lang.Thread
+        11: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        10: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        9: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        8: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        7: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1746)
+        5: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+        4: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+        3: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:234)
+        2: java.desktop@21.0.12.1/sun.java2d.Disposer.run(Disposer.java:145)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-14
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:AWT-Windows
+      class=java.lang.Thread
+        3: java.desktop@21.0.12.1/sun.awt.windows.WToolkit.eventLoop(Native Method)
+        2: java.desktop@21.0.12.1/sun.awt.windows.WToolkit.run(WToolkit.java:360)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:ForkJoinPool.commonPool-worker-2
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:ForkJoinPool.commonPool-worker-1
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-23: ECL session execute: with
+      class=org.eclipse.core.internal.jobs.Worker
+        6: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        5: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        4: org.eclipse.rcptt.ecl.internal.core.Process.waitFor(Process.java:51)
+        3: org.eclipse.rcptt.ecl.internal.commands.WithService.service(WithService.java:35)
+        2: org.eclipse.rcptt.ecl.internal.core.AbstractSession.internalDoExecute(AbstractSession.java:88)
+        1: org.eclipse.rcptt.ecl.internal.core.Session$1.run(Session.java:48)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+    Thread:Worker-0
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Worker-13
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:LocalFile Deleter
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Worker-11
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Worker-3
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Gogo shell
+      class=java.lang.Thread
+        11: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        10: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        9: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        8: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        7: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1746)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:JNA Cleaner
+      class=com.sun.jna.internal.Cleaner$CleanerThread
+        6: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        5: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        4: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1886)
+        3: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        2: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        1: java.base@21.0.12.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        0: com.sun.jna.internal.Cleaner$CleanerThread.run(Cleaner.java:154)
+    Thread:ForkJoinPool.commonPool-worker-5
+      class=java.util.concurrent.ForkJoinWorkerThread
+        4: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        3: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+        2: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+        1: java.base@21.0.12.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        0: java.base@21.0.12.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    Thread:Compiler Processing Task
+      class=java.lang.Thread
+        10: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        9: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+        8: java.base@21.0.12.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+        7: java.base@21.0.12.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+        6: java.base@21.0.12.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+        5: java.base@21.0.12.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Compiler Source File Reader
+      class=java.lang.Thread
+        8: java.base@21.0.12.1/jdk.internal.misc.Unsafe.park(Native Method)
+        7: java.base@21.0.12.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        6: java.base@21.0.12.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1797)
+        5: java.base@21.0.12.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+        4: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        3: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        2: java.base@21.0.12.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        1: java.base@21.0.12.1/java.lang.Thread.runWith(Thread.java:1596)
+        0: java.base@21.0.12.1/java.lang.Thread.run(Thread.java:1583)
+    Thread:Worker-20
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+    Thread:Worker-4
+      class=org.eclipse.core.internal.jobs.Worker
+        4: java.base@21.0.12.1/java.lang.Object.wait0(Native Method)
+        3: java.base@21.0.12.1/java.lang.Object.wait(Object.java:366)
+        2: org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:205)
+        1: org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:248)
+        0: org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+  pluginId=org.eclipse.ui
+  message=Unhandled event loop exception
+  severity=4
+  exception={
+    className=java.lang.NullPointerException
+    message=Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+    stackTrace=[{
+            declaringClass=org.eclipse.ui.internal.wizards.datatransfer.WizardProjectsImportPage
+            methodName=<init>
+            fileName=WizardProjectsImportPage.java
+            lineNumber=416
+        }
+        {
+            index=1
+            declaringClass=org.eclipse.ui.wizards.datatransfer.ExternalProjectImportWizard
+            methodName=addPages
+            fileName=ExternalProjectImportWizard.java
+            lineNumber=95
+        }
+        {
+            index=2
+            declaringClass=org.eclipse.jface.wizard.WizardSelectionPage
+            methodName=getNextPage
+            fileName=WizardSelectionPage.java
+            lineNumber=121
+        }
+        {
+            index=3
+            declaringClass=org.eclipse.ui.internal.dialogs.WorkbenchWizardSelectionPage
+            methodName=getNextPage
+            fileName=WorkbenchWizardSelectionPage.java
+            lineNumber=98
+        }
+        {
+            index=4
+            declaringClass=org.eclipse.ui.internal.dialogs.ImportExportPage
+            methodName=getNextPage
+            fileName=ImportExportPage.java
+            lineNumber=413
+        }
+        {
+            index=5
+            declaringClass=org.eclipse.jface.wizard.WizardDialog
+            methodName=nextPressed
+            fileName=WizardDialog.java
+            lineNumber=914
+        }
+        {
+            index=6
+            declaringClass=org.eclipse.jface.wizard.WizardDialog
+            methodName=buttonPressed
+            fileName=WizardDialog.java
+            lineNumber=470
+        }
+        {
+            index=7
+            declaringClass=org.eclipse.jface.dialogs.Dialog
+            methodName=lambda$0
+            fileName=Dialog.java
+            lineNumber=615
+        }
+        {
+            index=8
+            declaringClass=org.eclipse.swt.events.SelectionListener$1
+            methodName=widgetSelected
+            fileName=SelectionListener.java
+            lineNumber=83
+        }
+        {
+            index=9
+            declaringClass=org.eclipse.swt.widgets.TypedListener
+            methodName=handleEvent
+            fileName=TypedListener.java
+            lineNumber=286
+        }
+        {
+            index=10
+            declaringClass=org.eclipse.swt.widgets.EventTable
+            methodName=sendEvent
+            fileName=EventTable.java
+            lineNumber=91
+        }
+        {
+            index=11
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=sendEvent
+            fileName=Display.java
+            lineNumber=4362
+        }
+        {
+            index=12
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent_aroundBody2
+            fileName=Widget.java
+            lineNumber=1214
+        }
+        {
+            index=13
+            declaringClass=org.eclipse.swt.widgets.Widget$AjcClosure3
+            methodName=run
+            fileName=Widget.java
+            lineNumber=1
+        }
+        {
+            index=14
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892proceed
+            fileName=RecordingAspect.aj
+            lineNumber=96
+        }
+        {
+            index=15
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892
+            fileName=RecordingAspect.aj
+            lineNumber=120
+        }
+        {
+            index=16
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1212
+        }
+        {
+            index=17
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent_aroundBody4
+            fileName=Widget.java
+            lineNumber=1238
+        }
+        {
+            index=18
+            declaringClass=org.eclipse.swt.widgets.Widget$AjcClosure5
+            methodName=run
+            fileName=Widget.java
+            lineNumber=1
+        }
+        {
+            index=19
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7proceed
+            fileName=RecordingAspect.aj
+            lineNumber=41
+        }
+        {
+            index=20
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7
+            fileName=RecordingAspect.aj
+            lineNumber=84
+        }
+        {
+            index=21
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1227
+        }
+        {
+            index=22
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1223
+        }
+        {
+            index=23
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=notifyListeners
+            fileName=Widget.java
+            lineNumber=860
+        }
+        {
+            index=24
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents
+            methodName=sendEventRaw
+            fileName=SWTEvents.java
+            lineNumber=93
+        }
+        {
+            index=25
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents
+            methodName=sendEvent
+            fileName=SWTEvents.java
+            lineNumber=195
+        }
+        {
+            index=26
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$3
+            methodName=run
+            fileName=SWTUIPlayer.java
+            lineNumber=903
+        }
+        {
+            index=27
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$ExecRunnable
+            methodName=run
+            fileName=SWTUIPlayer.java
+            lineNumber=2703
+        }
+        {
+            index=28
+            declaringClass=org.eclipse.swt.widgets.RunnableLock
+            methodName=run
+            fileName=RunnableLock.java
+            lineNumber=40
+        }
+        {
+            index=29
+            declaringClass=org.eclipse.swt.widgets.Synchronizer
+            methodName=runAsyncMessages
+            fileName=Synchronizer.java
+            lineNumber=132
+        }
+        {
+            index=30
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=runAsyncMessages
+            fileName=Display.java
+            lineNumber=4135
+        }
+        {
+            index=31
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=readAndDispatch
+            fileName=Display.java
+            lineNumber=3751
+        }
+        {
+            index=32
+            declaringClass=org.eclipse.jface.window.Window
+            methodName=runEventLoop
+            fileName=Window.java
+            lineNumber=823
+        }
+        {
+            index=33
+            declaringClass=org.eclipse.jface.window.Window
+            methodName=open_aroundBody0
+            fileName=Window.java
+            lineNumber=799
+        }
+        {
+            index=34
+            declaringClass=org.eclipse.jface.window.Window
+            methodName=open
+            fileName=Window.java
+            lineNumber=785
+        }
+        {
+            index=35
+            declaringClass=org.eclipse.ui.internal.handlers.WizardHandler$Import
+            methodName=executeHandler
+            fileName=WizardHandler.java
+            lineNumber=153
+        }
+        {
+            index=36
+            declaringClass=org.eclipse.ui.internal.handlers.WizardHandler
+            methodName=execute_aroundBody0
+            fileName=WizardHandler.java
+            lineNumber=279
+        }
+        {
+            index=37
+            declaringClass=org.eclipse.ui.internal.handlers.WizardHandler$AjcClosure1
+            methodName=run
+            fileName=WizardHandler.java
+            lineNumber=1
+        }
+        {
+            index=38
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663bproceed
+            fileName=WorkbenchRecordingAspect.aj
+            lineNumber=55
+        }
+        {
+            index=39
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663b
+            fileName=WorkbenchRecordingAspect.aj
+            lineNumber=67
+        }
+        {
+            index=40
+            declaringClass=org.eclipse.ui.internal.handlers.WizardHandler
+            methodName=execute
+            fileName=WizardHandler.java
+            lineNumber=274
+        }
+        {
+            index=41
+            declaringClass=org.eclipse.ui.internal.handlers.HandlerProxy
+            methodName=execute_aroundBody0
+            fileName=HandlerProxy.java
+            lineNumber=277
+        }
+        {
+            index=42
+            declaringClass=org.eclipse.ui.internal.handlers.HandlerProxy$AjcClosure1
+            methodName=run
+            fileName=HandlerProxy.java
+            lineNumber=1
+        }
+        {
+            index=43
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663bproceed
+            fileName=WorkbenchRecordingAspect.aj
+            lineNumber=55
+        }
+        {
+            index=44
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.WorkbenchRecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_WorkbenchRecordingAspect$2$943c663b
+            fileName=WorkbenchRecordingAspect.aj
+            lineNumber=67
+        }
+        {
+            index=45
+            declaringClass=org.eclipse.ui.internal.handlers.HandlerProxy
+            methodName=execute
+            fileName=HandlerProxy.java
+            lineNumber=271
+        }
+        {
+            index=46
+            declaringClass=org.eclipse.ui.internal.handlers.E4HandlerProxy
+            methodName=execute
+            fileName=E4HandlerProxy.java
+            lineNumber=98
+        }
+        {
+            index=47
+            declaringClass=jdk.internal.reflect.DirectMethodHandleAccessor
+            methodName=invoke
+            fileName=DirectMethodHandleAccessor.java
+            lineNumber=103
+        }
+        {
+            index=48
+            declaringClass=java.lang.reflect.Method
+            methodName=invoke
+            fileName=Method.java
+            lineNumber=580
+        }
+        {
+            index=49
+            declaringClass=org.eclipse.e4.core.internal.di.MethodRequestor
+            methodName=execute
+            fileName=MethodRequestor.java
+            lineNumber=58
+        }
+        {
+            index=50
+            declaringClass=org.eclipse.e4.core.internal.di.InjectorImpl
+            methodName=invokeUsingClass
+            fileName=InjectorImpl.java
+            lineNumber=305
+        }
+        {
+            index=51
+            declaringClass=org.eclipse.e4.core.internal.di.InjectorImpl
+            methodName=invoke
+            fileName=InjectorImpl.java
+            lineNumber=237
+        }
+        {
+            index=52
+            declaringClass=org.eclipse.e4.core.contexts.ContextInjectionFactory
+            methodName=invoke
+            fileName=ContextInjectionFactory.java
+            lineNumber=174
+        }
+        {
+            index=53
+            declaringClass=org.eclipse.e4.core.commands.internal.HandlerServiceHandler
+            methodName=execute
+            fileName=HandlerServiceHandler.java
+            lineNumber=165
+        }
+        {
+            index=54
+            declaringClass=org.eclipse.core.commands.Command
+            methodName=executeWithChecks
+            fileName=Command.java
+            lineNumber=488
+        }
+        {
+            index=55
+            declaringClass=org.eclipse.core.commands.ParameterizedCommand
+            methodName=executeWithChecks
+            fileName=ParameterizedCommand.java
+            lineNumber=485
+        }
+        {
+            index=56
+            declaringClass=org.eclipse.e4.core.commands.internal.HandlerServiceImpl
+            methodName=executeHandler
+            fileName=HandlerServiceImpl.java
+            lineNumber=204
+        }
+        {
+            index=57
+            declaringClass=org.eclipse.ui.internal.handlers.LegacyHandlerService
+            methodName=executeCommand
+            fileName=LegacyHandlerService.java
+            lineNumber=385
+        }
+        {
+            index=58
+            declaringClass=org.eclipse.ui.internal.actions.CommandAction
+            methodName=runWithEvent
+            fileName=CommandAction.java
+            lineNumber=141
+        }
+        {
+            index=59
+            declaringClass=org.eclipse.jface.action.ActionContributionItem
+            methodName=handleWidgetSelection
+            fileName=ActionContributionItem.java
+            lineNumber=581
+        }
+        {
+            index=60
+            declaringClass=org.eclipse.jface.action.ActionContributionItem
+            methodName=lambda$4
+            fileName=ActionContributionItem.java
+            lineNumber=415
+        }
+        {
+            index=61
+            declaringClass=org.eclipse.swt.widgets.EventTable
+            methodName=sendEvent
+            fileName=EventTable.java
+            lineNumber=91
+        }
+        {
+            index=62
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=sendEvent
+            fileName=Display.java
+            lineNumber=4362
+        }
+        {
+            index=63
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent_aroundBody2
+            fileName=Widget.java
+            lineNumber=1214
+        }
+        {
+            index=64
+            declaringClass=org.eclipse.swt.widgets.Widget$AjcClosure3
+            methodName=run
+            fileName=Widget.java
+            lineNumber=1
+        }
+        {
+            index=65
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892proceed
+            fileName=RecordingAspect.aj
+            lineNumber=96
+        }
+        {
+            index=66
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$2$2f127892
+            fileName=RecordingAspect.aj
+            lineNumber=120
+        }
+        {
+            index=67
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1212
+        }
+        {
+            index=68
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent_aroundBody4
+            fileName=Widget.java
+            lineNumber=1238
+        }
+        {
+            index=69
+            declaringClass=org.eclipse.swt.widgets.Widget$AjcClosure5
+            methodName=run
+            fileName=Widget.java
+            lineNumber=1
+        }
+        {
+            index=70
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7proceed
+            fileName=RecordingAspect.aj
+            lineNumber=41
+        }
+        {
+            index=71
+            declaringClass=org.eclipse.rcptt.tesla.recording.aspects.RecordingAspect
+            methodName=ajc$around$org_eclipse_rcptt_tesla_recording_aspects_RecordingAspect$1$bd9fb3e7
+            fileName=RecordingAspect.aj
+            lineNumber=84
+        }
+        {
+            index=72
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1227
+        }
+        {
+            index=73
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=sendEvent
+            fileName=Widget.java
+            lineNumber=1223
+        }
+        {
+            index=74
+            declaringClass=org.eclipse.swt.widgets.Widget
+            methodName=notifyListeners
+            fileName=Widget.java
+            lineNumber=860
+        }
+        {
+            index=75
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents
+            methodName=sendEventRaw
+            fileName=SWTEvents.java
+            lineNumber=93
+        }
+        {
+            index=76
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents
+            methodName=sendEvent
+            fileName=SWTEvents.java
+            lineNumber=74
+        }
+        {
+            index=77
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTEvents
+            methodName=sendEvent
+            fileName=SWTEvents.java
+            lineNumber=64
+        }
+        {
+            index=78
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer
+            methodName=clickMenuItem
+            fileName=SWTUIPlayer.java
+            lineNumber=1009
+        }
+        {
+            index=79
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$3
+            methodName=run
+            fileName=SWTUIPlayer.java
+            lineNumber=866
+        }
+        {
+            index=80
+            declaringClass=org.eclipse.rcptt.tesla.internal.ui.player.SWTUIPlayer$ExecRunnable
+            methodName=run
+            fileName=SWTUIPlayer.java
+            lineNumber=2703
+        }
+        {
+            index=81
+            declaringClass=org.eclipse.swt.widgets.RunnableLock
+            methodName=run
+            fileName=RunnableLock.java
+            lineNumber=40
+        }
+        {
+            index=82
+            declaringClass=org.eclipse.swt.widgets.Synchronizer
+            methodName=runAsyncMessages
+            fileName=Synchronizer.java
+            lineNumber=132
+        }
+        {
+            index=83
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=runAsyncMessages
+            fileName=Display.java
+            lineNumber=4135
+        }
+        {
+            index=84
+            declaringClass=org.eclipse.swt.widgets.Display
+            methodName=readAndDispatch
+            fileName=Display.java
+            lineNumber=3751
+        }
+        {
+            index=85
+            declaringClass=org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5
+            methodName=run
+            fileName=PartRenderingEngine.java
+            lineNumber=1151
+        }
+        {
+            index=86
+            declaringClass=org.eclipse.core.databinding.observable.Realm
+            methodName=runWithDefault
+            fileName=Realm.java
+            lineNumber=339
+        }
+        {
+            index=87
+            declaringClass=org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine
+            methodName=run
+            fileName=PartRenderingEngine.java
+            lineNumber=1042
+        }
+        {
+            index=88
+            declaringClass=org.eclipse.e4.ui.internal.workbench.E4Workbench
+            methodName=createAndRunUI
+            fileName=E4Workbench.java
+            lineNumber=153
+        }
+        {
+            index=89
+            declaringClass=org.eclipse.ui.internal.Workbench
+            methodName=lambda$3
+            fileName=Workbench.java
+            lineNumber=678
+        }
+        {
+            index=90
+            declaringClass=org.eclipse.core.databinding.observable.Realm
+            methodName=runWithDefault
+            fileName=Realm.java
+            lineNumber=339
+        }
+        {
+            index=91
+            declaringClass=org.eclipse.ui.internal.Workbench
+            methodName=createAndRunWorkbench
+            fileName=Workbench.java
+            lineNumber=583
+        }
+        {
+            index=92
+            declaringClass=org.eclipse.ui.PlatformUI
+            methodName=createAndRunWorkbench
+            fileName=PlatformUI.java
+            lineNumber=173
+        }
+        {
+            index=93
+            declaringClass=org.eclipse.ui.internal.ide.application.IDEApplication
+            methodName=start
+            fileName=IDEApplication.java
+            lineNumber=185
+        }
+        {
+            index=94
+            declaringClass=org.eclipse.equinox.internal.app.EclipseAppHandle
+            methodName=run
+            fileName=EclipseAppHandle.java
+            lineNumber=219
+        }
+        {
+            index=95
+            declaringClass=org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher
+            methodName=runApplication
+            fileName=EclipseAppLauncher.java
+            lineNumber=149
+        }
+        {
+            index=96
+            declaringClass=org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher
+            methodName=start
+            fileName=EclipseAppLauncher.java
+            lineNumber=115
+        }
+        {
+            index=97
+            declaringClass=org.eclipse.core.runtime.adaptor.EclipseStarter
+            methodName=run
+            fileName=EclipseStarter.java
+            lineNumber=467
+        }
+        {
+            index=98
+            declaringClass=org.eclipse.core.runtime.adaptor.EclipseStarter
+            methodName=run
+            fileName=EclipseStarter.java
+            lineNumber=298
+        }
+        {
+            index=99
+            declaringClass=jdk.internal.reflect.DirectMethodHandleAccessor
+            methodName=invoke
+            fileName=DirectMethodHandleAccessor.java
+            lineNumber=103
+        }
+        {
+            index=100
+            declaringClass=java.lang.reflect.Method
+            methodName=invoke
+            fileName=Method.java
+            lineNumber=580
+        }
+        {
+            index=101
+            declaringClass=org.eclipse.equinox.launcher.Main
+            methodName=invokeFramework
+            fileName=Main.java
+            lineNumber=627
+        }
+        {
+            index=102
+            declaringClass=org.eclipse.equinox.launcher.Main
+            methodName=basicRun
+            fileName=Main.java
+            lineNumber=575
+        }
+        {
+            index=103
+            declaringClass=org.eclipse.equinox.launcher.Main
+            methodName=run
+            fileName=Main.java
+            lineNumber=1431
+        }
+        {
+            index=104
+            declaringClass=org.eclipse.equinox.launcher.Main
+            methodName=main
+            fileName=Main.java
+            lineNumber=1403
+        }
+]}
+    data=[B@6ef7e510
+    message=The Button "Select root directory:" could not be found.(aut-workspace-0 - Eclipse Platform)
+
+    data=[B@3b89bf47
+    message=The Button "Select root directory:" could not be found.(Import)]]></failure></testcase><testcase name="ui_stop" time="9.675"></testcase></testsuite>

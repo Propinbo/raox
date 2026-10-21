@@ -32,5 +32,14 @@ with [get-editor "ui_game5"] {
 get-view Trace | get-table | get-property itemCount | equals 9 | verify-true
 get-file "workspace:/ui_game5/game_5.rao" | get exists | equals true | verify-true
 get-file "workspace:/ui_game5/game_5.json" | get exists | equals true | verify-true
+// Reopen the saved configuration through the parser after JSON library migration.
+get-menu "File/Save" | click
+get-editor "ui_game5" | close
+get-view "Project Explorer" | get-tree | select "ui_game5/game_5.json" | double-click
+with [get-editor "ui_game5"] {
+    get-group "Board:"
+    get-button "In order" | click
+}
+get-menu "File/Save" | click
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

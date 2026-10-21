@@ -15,8 +15,9 @@ Entry-Name: .content
 open_rao_perspective
 get-menu "File/Import..." | click
 with [get-window Import] {
-    get-tree | select "General/Existing Projects into Workspace"
-    get-button "Next >" | click
+    // Activate the selected wizard directly instead of a separate Next click,
+    // which sometimes left the selection page open during the full UI suite.
+    get-tree | select "General/Existing Projects into Workspace" | double-click
     get-combo -after [get-button "Select root directory:"] | set-text [concat [get-workspace-location] "/../import-source"]
     get-button Refresh | click
     get-button "Copy projects into workspace" | check

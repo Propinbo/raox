@@ -1,12 +1,13 @@
 [CmdletBinding()]
 param(
     [string]$ToolchainRoot = (Join-Path (Split-Path -Parent $PSScriptRoot) '.build/tools'),
-    [switch]$IncludeUi
+    [switch]$IncludeUi,
+    [string]$LockFile = (Join-Path $PSScriptRoot 'toolchains.lock.json')
 )
 
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$lock = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'toolchains.lock.json') -Raw | ConvertFrom-Json
+$lock = Get-Content -LiteralPath $LockFile -Raw | ConvertFrom-Json
 $null = New-Item -ItemType Directory -Path $ToolchainRoot -Force
 $ToolchainRoot = (Resolve-Path -LiteralPath $ToolchainRoot).Path
 $names = @('jdk')

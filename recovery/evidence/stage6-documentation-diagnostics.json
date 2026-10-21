@@ -1,0 +1,20 @@
+{
+  "initial_junit_failures": [
+    {
+      "test": "callCountTutorial",
+      "message": "docs/tutorial/call_center_call_count.html expected-results expected:<...r.totalCallsCount\n  [Mean: 5.017775238751459\n  Last value: 11.0]\n  Standard deviatio...> but was:<...r.totalCallsCount\n  [Last value: 11.0\n  Mean: 5.017775238751459]\n  Standard deviatio...>"
+    },
+    {
+      "test": "singleOperatorTutorial",
+      "message": "docs/tutorial/call_center_single_operator.html expected-results expected:<...totalPeopleServed\n  [Mean: 4.0714235818806825\n  Last value: 10.0\n  Standard deviation: 3.1491732498062306\n  varcoef: 243.58291290129318\n\ntest.test.queueLengthStatistics\n  Mean: 0.26029519109908134\n  Last value: 1.0]\n  Standard deviatio...> but was:<...totalPeopleServed\n  [Last value: 10.0\n  Mean: 4.0714235818806825\n  Standard deviation: 3.1491732498062306\n  varcoef: 243.58291290129318\n\ntest.test.queueLengthStatistics\n  Last value: 1.0\n  Mean: 0.26029519109908134]\n  Standard deviatio...>"
+    }
+  ],
+  "initial_ui_counts": {
+    "tests": 43,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initial_ui_problem": "docs_quickstart: Export to CSV disabled until Plot opened",
+  "resolution": "Documentation and UI steps corrected; simulator and expectations unchanged."
+}

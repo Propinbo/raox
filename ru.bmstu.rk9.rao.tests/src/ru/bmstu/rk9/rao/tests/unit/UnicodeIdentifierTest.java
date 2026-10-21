@@ -36,9 +36,9 @@ public class UnicodeIdentifierTest {
     @Test
     public void contentAssistLexerRecognizesUnicodeIdentifiers() {
         for (String identifier : IDENTIFIERS) {
-            assertIdentifier(new ru.bmstu.rk9.rao.ui.contentassist.antlr.internal.InternalRaoLexer(
+            assertIdentifier(new ru.bmstu.rk9.rao.ide.contentassist.antlr.internal.InternalRaoLexer(
                     new ANTLRStringStream(identifier)), identifier,
-                    ru.bmstu.rk9.rao.ui.contentassist.antlr.internal.InternalRaoLexer.RULE_ID);
+                    ru.bmstu.rk9.rao.ide.contentassist.antlr.internal.InternalRaoLexer.RULE_ID);
         }
     }
 

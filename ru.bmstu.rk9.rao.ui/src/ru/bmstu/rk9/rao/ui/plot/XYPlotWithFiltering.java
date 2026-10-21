@@ -10,10 +10,10 @@ import org.jfree.chart.plot.CrosshairState;
 import org.jfree.chart.plot.PlotRenderingInfo;
 import org.jfree.chart.plot.SeriesRenderingOrder;
 import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.RendererUtilities;
+import org.jfree.chart.renderer.RendererUtils;
 import org.jfree.chart.renderer.xy.XYItemRenderer;
 import org.jfree.chart.renderer.xy.XYItemRendererState;
-import org.jfree.data.general.DatasetUtilities;
+import org.jfree.data.general.DatasetUtils;
 import org.jfree.data.xy.XYDataset;
 
 public class XYPlotWithFiltering extends XYPlot {
@@ -106,7 +106,7 @@ public class XYPlotWithFiltering extends XYPlot {
 		boolean hasData = false;
 		final XYDataset dataset = getDataset(datasetIndex);
 
-		if (!DatasetUtilities.isEmptyOrNull(dataset)) {
+		if (!DatasetUtils.isEmptyOrNull(dataset)) {
 			hasData = true;
 			final ValueAxis xAxis = getDomainAxisForDataset(datasetIndex);
 			final ValueAxis yAxis = getRangeAxisForDataset(datasetIndex);
@@ -137,7 +137,7 @@ public class XYPlotWithFiltering extends XYPlot {
 							continue;
 
 						if (state.getProcessVisibleItemsOnly()) {
-							int[] itemBounds = RendererUtilities.findLiveItems(dataset, seriesIndex,
+							int[] itemBounds = RendererUtils.findLiveItems(dataset, seriesIndex,
 									xAxis.getLowerBound(), xAxis.getUpperBound());
 							firstItem = Math.max(itemBounds[0] - 1, 0);
 							lastItem = Math.min(itemBounds[1] + 1, lastItem);
@@ -173,7 +173,7 @@ public class XYPlotWithFiltering extends XYPlot {
 							continue;
 
 						if (state.getProcessVisibleItemsOnly()) {
-							int[] itemBounds = RendererUtilities.findLiveItems(dataset, series, xAxis.getLowerBound(),
+							int[] itemBounds = RendererUtils.findLiveItems(dataset, series, xAxis.getLowerBound(),
 									xAxis.getUpperBound());
 							firstItem = Math.max(itemBounds[0] - 1, 0);
 							lastItem = Math.min(itemBounds[1] + 1, lastItem);

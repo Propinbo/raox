@@ -60,9 +60,9 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.commands.ICommandService;
 import org.eclipse.ui.part.EditorPart;
 import org.eclipse.ui.services.IServiceLocator;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.ParseException;
+import com.github.cliftonlabs.json_simple.JsonArray;
+import com.github.cliftonlabs.json_simple.JsonObject;
+import com.github.cliftonlabs.json_simple.JsonException;
 
 import ru.bmstu.rk9.rao.lib.notification.Subscriber;
 import ru.bmstu.rk9.rao.lib.notification.Subscription.SubscriptionType;
@@ -78,7 +78,7 @@ public class Game5View extends EditorPart {
 
 	protected static boolean dirty = false;
 	public static final String ID = "raox-game5.Game5View";
-	private static JSONObject object;
+	private static JsonObject object;
 	private final List<TileButton> tiles = new ArrayList<>();
 	private final int tilesCountX = 3;
 	private final int tilesCountY = 2;
@@ -122,7 +122,7 @@ public class Game5View extends EditorPart {
 		boardGroup.setLayout(boardLayout);
 		boardGroup.setText("Board:");
 		boardGroup.setBackground(color);
-		JSONArray places = (JSONArray) object.get("places");
+		JsonArray places = (JsonArray) object.get("places");
 		for (int i = 0; i < tilesCountX * tilesCountY; i++) {
 			tiles.add(new TileButton(boardGroup, SWT.NONE, String.valueOf(places.indexOf(String.valueOf(i + 1)) + 1),
 					i + 1));
@@ -168,7 +168,7 @@ public class Game5View extends EditorPart {
 		red.dispose();
 		setOrderError.setVisible(false);
 		final Text setOrderText = new Text(setOrderGroup, SWT.BORDER);
-		final String order = OrderConfigurator.convertPlacesToString((JSONArray) object.get("places"));
+		final String order = OrderConfigurator.convertPlacesToString((JsonArray) object.get("places"));
 		setOrderText.setText(order);
 		setOrderText.setEnabled(false);
 		final Button setOrderOkButton = new Button(setOrderGroup, SWT.PUSH);
@@ -320,7 +320,7 @@ public class Game5View extends EditorPart {
 				if (setOrderButton.getSelection()) {
 					setOrderText.setEnabled(true);
 					setOrderOkButton.setEnabled(true);
-					JSONArray places = (JSONArray) object.get("places");
+					JsonArray places = (JsonArray) object.get("places");
 					String order = OrderConfigurator.convertPlacesToString(places);
 					setOrderText.setText(order);
 				} else {
@@ -349,7 +349,7 @@ public class Game5View extends EditorPart {
 		setOrderOkButton.addSelectionListener(new SelectionListener() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				JSONArray places = OrderConfigurator.convertStringToPlaces(setOrderText.getText());
+				JsonArray places = OrderConfigurator.convertStringToPlaces(setOrderText.getText());
 				if (places != null) {
 					object.put("places", places);
 					updateTiles();
@@ -433,8 +433,8 @@ public class Game5View extends EditorPart {
 				setOrderButton.setSelection(false);
 				setOrderText.setEnabled(false);
 				setOrderOkButton.setEnabled(false);
-				JSONArray places = (JSONArray) object.get("places");
-				JSONArray newPlaces = OrderConfigurator.shuffle(places, (String) object.get("solvable"));
+				JsonArray places = (JsonArray) object.get("places");
+				JsonArray newPlaces = OrderConfigurator.shuffle(places, (String) object.get("solvable"));
 				object.put("places", newPlaces);
 				updateTiles();
 				setOrderText.setText(OrderConfigurator.convertPlacesToString(newPlaces));
@@ -454,14 +454,14 @@ public class Game5View extends EditorPart {
 				setOrderOkButton.setEnabled(false);
 				try {
 					OrderConfigurator.setInOrder(object);
-				} catch (IOException | ParseException e) {
+				} catch (IOException | JsonException e) {
 					e.printStackTrace();
 					MessageDialog.openError(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Error",
 							"Failed to set tiles in order:\n" + e.getMessage());
 					throw new Game5Exception(e);
 				}
 				updateTiles();
-				setOrderText.setText(OrderConfigurator.convertPlacesToString((JSONArray) object.get("places")));
+				setOrderText.setText(OrderConfigurator.convertPlacesToString((JsonArray) object.get("places")));
 				setDirty(true);
 			}
 
@@ -478,7 +478,7 @@ public class Game5View extends EditorPart {
 					setOrderText.setEnabled(false);
 					setOrderOkButton.setEnabled(false);
 					final TileButton tile = (TileButton) arg0.getSource();
-					final JSONArray places = (JSONArray) object.get("places");
+					final JsonArray places = (JsonArray) object.get("places");
 					final int tileNumber = tile.getTileNumber();
 					final int tilePlace = tile.getTilePlace();
 					final int freePlace = Integer.valueOf((String) places.get(tilesCountX * tilesCountY - 1));
@@ -546,7 +546,7 @@ public class Game5View extends EditorPart {
 		return false;
 	}
 
-	public static final JSONObject getConfigurations() {
+	public static final JsonObject getConfigurations() {
 		return object;
 	}
 
@@ -573,7 +573,7 @@ public class Game5View extends EditorPart {
 
 			OutputStream configOutputStream = new FileOutputStream(configIFile.getRawLocation().toString());
 			PrintStream congifPrintStream = new PrintStream(configOutputStream, true, StandardCharsets.UTF_8.name());
-			congifPrintStream.print(object.toString());
+			congifPrintStream.print(object.toJson());
 			congifPrintStream.close();
 
 			modelOutputStream = new FileOutputStream(configIFile.getLocation().removeLastSegments(1)
@@ -679,7 +679,7 @@ public class Game5View extends EditorPart {
 	}
 
 	private final void updateTiles() {
-		JSONArray places = (JSONArray) object.get("places");
+		JsonArray places = (JsonArray) object.get("places");
 		for (int i = 0; i < tilesCountX * tilesCountY; i++) {
 			tiles.get(i).updateTile(String.valueOf(places.indexOf(String.valueOf(i + 1)) + 1));
 		}
@@ -692,7 +692,7 @@ public class Game5View extends EditorPart {
 			display.asyncExec(() -> {
 				GraphControl.openFrameWindow(new FrameInfo(0, "Расстановка_фишек"));
 				new GraphManager(GraphControl.getOpenedGraphMap().get(0).getGraphPanel(),
-						OrderConfigurator.inverseOrderPlaces((JSONArray) object.get("places")));
+						OrderConfigurator.inverseOrderPlaces((JsonArray) object.get("places")));
 			});
 		}
 	};

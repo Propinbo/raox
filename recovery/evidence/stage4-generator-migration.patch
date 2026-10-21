@@ -1,0 +1,271 @@
+diff --git a/ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java b/ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java
+index c913d609..a335e9c7 100644
+--- a/ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java
++++ b/ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java
+@@ -36,9 +36,9 @@ public class UnicodeIdentifierTest {
+     @Test
+     public void contentAssistLexerRecognizesUnicodeIdentifiers() {
+         for (String identifier : IDENTIFIERS) {
+-            assertIdentifier(new ru.bmstu.rk9.rao.ui.contentassist.antlr.internal.InternalRaoLexer(
++            assertIdentifier(new ru.bmstu.rk9.rao.ide.contentassist.antlr.internal.InternalRaoLexer(
+                     new ANTLRStringStream(identifier)), identifier,
+-                    ru.bmstu.rk9.rao.ui.contentassist.antlr.internal.InternalRaoLexer.RULE_ID);
++                    ru.bmstu.rk9.rao.ide.contentassist.antlr.internal.InternalRaoLexer.RULE_ID);
+         }
+     }
+ 
+diff --git a/ru.bmstu.rk9.rao.ui/META-INF/MANIFEST.MF b/ru.bmstu.rk9.rao.ui/META-INF/MANIFEST.MF
+index 66cc1cf3..e21ef90a 100644
+--- a/ru.bmstu.rk9.rao.ui/META-INF/MANIFEST.MF
++++ b/ru.bmstu.rk9.rao.ui/META-INF/MANIFEST.MF
+@@ -8,6 +8,8 @@ Bundle-ActivationPolicy: lazy
+ Require-Bundle: ru.bmstu.rk9.rao;visibility:=reexport,
+  ru.bmstu.rk9.rao.lib;bundle-version="0.1.0";visibility:=reexport,
+  org.eclipse.xtext.ui,
++ org.eclipse.xtext.ide,
++ org.eclipse.xtext.xbase.ide,
+  org.eclipse.ui.editors;bundle-version="3.5.0",
+  org.eclipse.ui.ide;bundle-version="3.5.0",
+  org.eclipse.xtext.ui.shared,
+@@ -75,7 +77,7 @@ Export-Package: com.mxgraph.analysis,
+    ru.bmstu.rk9.rao.services,
+    org.eclipse.xtext,
+    org.eclipse.xtext.ui.editor.contentassist.antlr",
+- ru.bmstu.rk9.rao.ui.contentassist.antlr.internal,
++ ru.bmstu.rk9.rao.ide.contentassist.antlr.internal,
+  ru.bmstu.rk9.rao.ui.execution;uses:="org.eclipse.core.commands,ru.bmstu.rk9.rao.ui.notification,ru.bmstu.rk9.rao.ui.simulation",
+  ru.bmstu.rk9.rao.ui.graph;
+   uses:="com.mxgraph.swing,
+diff --git a/ru.bmstu.rk9.rao/pom.xml b/ru.bmstu.rk9.rao/pom.xml
+index fb918c46..4bea0f83 100644
+--- a/ru.bmstu.rk9.rao/pom.xml
++++ b/ru.bmstu.rk9.rao/pom.xml
+@@ -62,6 +62,11 @@
+ 				</configuration>
+ 				<dependencies>
+ 					<!-- Pin the generator's Maven classpath, not just the p2 platform. -->
++					<dependency>
++						<groupId>org.eclipse.xtext</groupId>
++						<artifactId>org.eclipse.xtext.xtext</artifactId>
++						<version>${xtext-version}</version>
++					</dependency>
+ 					<dependency>
+ 						<groupId>org.eclipse.emf</groupId>
+ 						<artifactId>org.eclipse.emf.common</artifactId>
+@@ -99,7 +104,7 @@
+ 					</dependency>
+ 					<dependency>
+ 						<groupId>org.eclipse.xtext</groupId>
+-						<artifactId>org.eclipse.xtext.xtext</artifactId>
++						<artifactId>org.eclipse.xtext.xtext.generator</artifactId>
+ 						<version>${xtext-version}</version>
+ 					</dependency>
+ 					<dependency>
+diff --git a/ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2 b/ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2
+index 4252881e..2ba10786 100644
+--- a/ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2
++++ b/ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2
+@@ -1,160 +1,49 @@
+ module ru.bmstu.rk9.rao.GenerateRao
+ 
+-import org.eclipse.emf.mwe.utils.*
+-import org.eclipse.xtext.generator.*
+-import org.eclipse.xtext.ui.generator.*
++import org.eclipse.xtext.xtext.generator.*
++import org.eclipse.xtext.xtext.generator.model.project.*
+ 
+-var fileExtensions = "rao"
+-var projectName = "ru.bmstu.rk9.rao"
+-var grammarURI = "platform:/resource/${projectName}/src/ru/bmstu/rk9/rao/Rao.xtext"
+-var runtimeProject = "../${projectName}"
+-var generateXtendStub = true
+-var encoding = "UTF-8"
++var runtimeProject = "../ru.bmstu.rk9.rao"
+ 
+ Workflow {
+-	bean = StandaloneSetup {
+-		scanClassPath = true
+-		platformUri = "${runtimeProject}/.."
+-
+-		// use an XtextResourceset throughout the process, which is able to resolve classpath:/ URIs.
+-		resourceSet = org.eclipse.xtext.resource.XtextResourceSet : theResourceSet {}
+-
+-		// add mappings from platform:/resource to classpath:/
+-		uriMap = {
+-			from = "platform:/resource/org.eclipse.xtext.xbase/"
+-			to = "classpath:/"
+-		}
+-		uriMap = {
+-			from = "platform:/resource/org.eclipse.xtext.common.types/"
+-			to = "classpath:/"
+-		}
+-
+-		registerGeneratedEPackage = "org.eclipse.xtext.xbase.XbasePackage"
+-		registerGenModelFile = "platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel"
+-	}
+-
+-	component = DirectoryCleaner {
+-		directory = "${runtimeProject}/src-gen"
+-	}
+-
+-	component = DirectoryCleaner {
+-		directory = "${runtimeProject}/model/generated"
+-	}
+-
+-	component = DirectoryCleaner {
+-		directory = "${runtimeProject}.ui/src-gen"
+-	}
+-
+-	component = DirectoryCleaner {
+-		directory = "${runtimeProject}.tests/src-gen"
+-	}
+-
+-	component = Generator {
+-		pathRtProject = runtimeProject
+-		pathUiProject = "${runtimeProject}.ui"
+-		projectNameRt = projectName
+-		projectNameUi = "${projectName}.ui"
+-		encoding = encoding
+-		language = auto-inject {
+-			// make sure we use the resourceSet created during standalone setup.
+-			forcedResourceSet = theResourceSet
+-			uri = grammarURI
+-
+-			// Java API to access grammar elements (required by several other fragments)
+-			fragment = grammarAccess.GrammarAccessFragment auto-inject {}
+-
+-			// generates Java API for the generated EPackages
+-			fragment = ecore.EMFGeneratorFragment auto-inject {
+-				javaModelDirectory = "/${projectName}/src-gen"
+-			}
+-
+-			// the old serialization component
+-			// fragment = parseTreeConstructor.ParseTreeConstructorFragment auto-inject {}
+-
+-			// serializer 2.0
+-			fragment = serializer.SerializerFragment auto-inject {
+-				generateStub = false
+-			}
+-
+-			// a custom ResourceFactory for use with EMF
+-			fragment = resourceFactory.ResourceFactoryFragment auto-inject {}
+-
+-			// The antlr parser generator fragment.
+-			fragment = parser.antlr.XtextAntlrGeneratorFragment auto-inject {
+-				// Complex Unicode terminals must not depend on ANTLR's 1s DFA timeout.
+-				antlrParam = "-Xconversiontimeout"
+-				antlrParam = "0"
+-			//  options = {
+-			//      backtrack = true
+-			//  }
+-			}
+-
+-			// Xtend-based API for validation
+-			fragment = validation.ValidatorFragment auto-inject {
+-			//    composedCheck = "org.eclipse.xtext.validation.ImportUriValidator"
+-			//    composedCheck = "org.eclipse.xtext.validation.NamesAreUniqueValidator"
+-			}
+-
+-			// old scoping and exporting API
+-			// fragment = scoping.ImportURIScopingFragment auto-inject {}
+-			// fragment = exporting.SimpleNamesFragment auto-inject {}
+-
+-			// scoping and exporting API
+-			fragment = scoping.ImportNamespacesScopingFragment auto-inject {}
+-			fragment = exporting.QualifiedNamesFragment auto-inject {}
+-			fragment = builder.BuilderIntegrationFragment auto-inject {}
+-
+-			// generator API
+-			fragment = generator.GeneratorFragment auto-inject {}
+-
+-			// formatter API
+-			fragment = formatting2.Formatter2Fragment auto-inject {}
+-
+-			// labeling API
+-			fragment = labeling.LabelProviderFragment auto-inject {}
+-
+-			// outline API
+-			fragment = outline.OutlineTreeProviderFragment auto-inject {}
+-			fragment = outline.QuickOutlineFragment auto-inject {}
+-
+-			// quickfix API
+-			fragment = quickfix.QuickfixProviderFragment auto-inject {}
+-
+-			// content assist API
+-			fragment = contentAssist.ContentAssistFragment auto-inject {}
+-
+-			// generates a more lightweight Antlr parser and lexer tailored for content assist
+-			fragment = parser.antlr.XtextAntlrUiGeneratorFragment auto-inject {
+-				antlrParam = "-Xconversiontimeout"
+-				antlrParam = "0"
+-				options = {
+-					classSplitting = true
+-					fieldsPerClass = "500"
+-					methodsPerClass = "500"
+-				}
+-			}
+-
+-			// generates junit test support classes into Generator#pathTestProject
+-			fragment = junit.Junit4Fragment auto-inject {}
+-
+-			// rename refactoring
+-			fragment = refactoring.RefactorElementNameFragment auto-inject {}
+-
+-			// provides the necessary bindings for java types integration
+-			fragment = types.TypesGeneratorFragment auto-inject {}
+-
+-			// generates the required bindings only if the grammar inherits from Xbase
+-			fragment = xbase.XbaseGeneratorFragment auto-inject {}
+-
+-			// generates the required bindings only if the grammar inherits from Xtype
+-			fragment = xbase.XtypeGeneratorFragment auto-inject {}
+-
+-			// provides a preference page for template proposals
+-			fragment = templates.CodetemplatesGeneratorFragment auto-inject {}
+-
+-			// provides a compare view
+-			fragment = compare.CompareFragment auto-inject {}
+-		}
+-	}
++    component = XtextGenerator {
++        configuration = {
++            project = StandardProjectConfig {
++                baseName = "ru.bmstu.rk9.rao"
++                rootPath = "${runtimeProject}/.."
++                runtimeTest = { enabled = true }
++                genericIde = {
++                    name = "ru.bmstu.rk9.rao.ui"
++                    root = "${runtimeProject}.ui"
++                }
++                eclipsePlugin = { enabled = true }
++                createEclipseMetaData = false
++            }
++            code = {
++                preferXtendStubs = false
++                encoding = "UTF-8"
++                lineDelimiter = "\n"
++            }
++        }
++        language = StandardLanguage {
++            name = "ru.bmstu.rk9.rao.Rao"
++            fileExtensions = "rao"
++            serializer = { generateStub = false }
++            junitSupport = { generateStub = false }
++            validator = { generateXtendStub = true }
++            labelProvider = { generateXtendStub = true }
++            outline = { generateXtendStub = true }
++            quickFixProvider = { generateXtendStub = true }
++            contentAssist = { generateXtendStub = true }
++            parserGenerator = {
++                antlrParam = "-Xconversiontimeout"
++                antlrParam = "0"
++                options = {
++                    classSplitting = true
++                    fieldsPerClass = "500"
++                    methodsPerClass = "500"
++                }
++            }
++        }
++    }
+ }
+-

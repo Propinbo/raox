@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rao X — локальная документация</title>
+<link rel="stylesheet" href="styles/rao_general.css">
+<style>body { max-width: 960px; margin: 32px auto; padding: 0 24px; } nav { display: flex; flex-wrap: wrap; gap: 24px; } nav section { flex: 1 1 260px; }</style>
+</head>
+<body>
+<h1>Rao X</h1>
+<p>Среда дискретно-событийного моделирования. Проверенная конфигурация:
+Windows x64, Java 21, Eclipse 2025-09, Xtext 2.40.0. Документация открывается
+прямо с диска; сервер и доступ к сети для чтения справки не требуются.</p>
+<p><strong>Начните с <a href="user_guide/quick_start.html">Windows quick start</a>:</strong>
+сборка, установка, первая модель и проверка результата.
+Для разработчика — <a href="development.md">архитектура, генерация, отладка, форматы, тесты и выпуск</a>
+(Markdown, откройте в редакторе или на GitHub),
+<a href="../build-with-maven.md">команды сборки</a> и
+<a href="../recovery/STATE.md">состояние восстановления</a>.</p>
+<nav aria-label="Справка">
+<section><h2>Язык</h2><ul>
+<li><a href="reference/base_types_and_functions.html">Базовые возможности языка</a></li>
+<li><a href="reference/resource.html">Ресурсы</a></li>
+<li><a href="reference/event.html">События</a></li>
+<li><a href="reference/pattern.html">Образцы: операции и правила</a></li>
+<li><a href="reference/logic.html">Группы активностей</a></li>
+<li><a href="reference/search.html">Поиск решения на графе</a></li>
+<li><a href="reference/sequence.html">Последовательности</a></li>
+<li><a href="reference/constant.html">Константы</a></li>
+<li><a href="reference/function.html">Функции</a></li>
+<li><a href="reference/result.html">Результаты моделирования</a></li>
+<li><a href="reference/animation.html">Анимация</a></li>
+</ul></section>
+<section><h2>Учебные модели</h2><ul>
+<li><a href="tutorial/call_center_call_count.html">Подсчёт звонков</a></li>
+<li><a href="tutorial/call_center_single_operator.html">Служба с одним оператором</a></li>
+</ul><h2>Диагностика</h2><ul>
+<li><a href="debug/trace.html">Трассировка</a></li>
+<li><a href="debug/logger.html">Логирование</a></li>
+</ul></section>
+<section><h2>Интерфейс</h2><ul>
+<li><a href="user_guide/quick_start.html">Первая модель на Windows</a></li>
+<li><a href="user_guide/first_run.html">Первый запуск</a></li>
+<li><a href="user_guide/model_create.html">Создание модели</a></li>
+<li><a href="user_guide/model_run.html">Запуск модели</a></li>
+<li><a href="user_guide/model_import.html">Импорт модели</a></li>
+<li><a href="user_guide/show_animation.html">Включение анимации</a></li>
+</ul></section>
+</nav>
+<p>Снимки экрана в старых руководствах сохранены как иллюстрации.
+Актуальные имена меню и последовательность действий приведены в quick start.
+Полные модели из двух уроков и раздела логирования проверяются сборкой;
+короткие фрагменты справочника требуют окружающей модели.</p>
+<p><a href="../recovery/THIRD-PARTY.md">Зависимости, лицензии и известные ограничения</a> ·
+<a href="history/README-legacy.md">Историческая установка Java 8 / Neon</a></p>
+</body>
+</html>

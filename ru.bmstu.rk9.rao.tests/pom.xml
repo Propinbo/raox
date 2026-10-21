@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -28,7 +28,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.10</version>
+				<version>3.6.1</version>
 				<executions>
 					<execution>
 						<id>add-test-source</id>
@@ -47,7 +47,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<version>3.14.1</version>
 				<executions>
 					<execution>
 						<id>compile-tests</id>
@@ -56,8 +56,7 @@
 							<goal>testCompile</goal>
 						</goals>
 						<configuration>
-							<source>8</source>
-							<target>8</target>
+							<release>21</release>
 						</configuration>
 					</execution>
 				</executions>
@@ -65,7 +64,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19</version>
+				<version>3.5.4</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-junit47</artifactId>
+						<version>3.5.4</version>
+					</dependency>
+				</dependencies>
 				<executions>
 					<execution>
 						<id>unit-tests</id>
@@ -82,7 +88,7 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.eclipse.xtend</groupId>
+				<groupId>org.eclipse.xtext</groupId>
 				<artifactId>xtend-maven-plugin</artifactId>
 			</plugin>
 			<plugin>

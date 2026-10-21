@@ -1,9 +1,12 @@
 [CmdletBinding()]
-param([Parameter(Mandatory = $true)][string]$CacheRoot)
+param(
+    [Parameter(Mandatory = $true)][string]$CacheRoot,
+    [string]$LockRoot = $PSScriptRoot
+)
 
 $ErrorActionPreference = 'Stop'
 $CacheRoot = (Resolve-Path -LiteralPath $CacheRoot).Path
-$lock = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'p2-bundles.lock.json') -Raw | ConvertFrom-Json
+$lock = Get-Content -LiteralPath (Join-Path $LockRoot 'p2-bundles.lock.json') -Raw | ConvertFrom-Json
 $known = @{}
 foreach ($bundle in $lock.bundles) {
     $known["$($bundle.id)/$($bundle.version)"] = $bundle
@@ -29,7 +32,7 @@ Write-Host "Verified SHA-256 of $checked pinned p2 bundles ($($repacked.Count) e
 
 # Maven generator/plugin dependencies form a separate classpath from p2. Lock their
 # immutable binaries too; range discovery may download additional candidate POMs.
-$mavenLock = @(Import-Csv -LiteralPath (Join-Path $PSScriptRoot 'maven-artifacts.lock.csv'))
+$mavenLock = @(Import-Csv -LiteralPath (Join-Path $LockRoot 'maven-artifacts.lock.csv'))
 $mavenFiles = @(Get-ChildItem -LiteralPath $CacheRoot -File -Recurse |
     Where-Object {
         $relative = $_.FullName.Substring($CacheRoot.Length + 1).Replace('\', '/')
@@ -48,4 +51,22 @@ foreach ($file in $mavenFiles) {
     }
 }
 Write-Host "Verified SHA-256 of $($mavenFiles.Count) pinned Maven artifacts."
-[pscustomobject]@{ p2_bundles = $checked; p2_equivalent_zip_representations = @($repacked); maven_binaries = $mavenFiles.Count }
+$extraCount = 0
+$extraLockFile = Join-Path $LockRoot 'p2-extra-artifacts.lock.csv'
+if (Test-Path -LiteralPath $extraLockFile) {
+    $extraLock = @(Import-Csv -LiteralPath $extraLockFile)
+    $extraFiles = @(Get-ChildItem -LiteralPath (Join-Path $CacheRoot 'p2') -Recurse -File -Filter '*.jar' |
+        Where-Object { $_.FullName -notmatch '[\\/]p2[\\/]osgi[\\/]bundle[\\/]' })
+    if ($extraFiles.Count -ne $extraLock.Count) { throw 'p2 feature/native artifact set differs from the lock.' }
+    foreach ($entry in $extraLock) {
+        $path = Join-Path $CacheRoot $entry.path
+        if (-not (Test-Path -LiteralPath $path -PathType Leaf)) { throw "Missing p2 artifact: $($entry.path)" }
+        if ((Get-FileHash -LiteralPath $path).Hash -ne $entry.sha256 -and
+            (& (Join-Path $PSScriptRoot 'Get-JarContentHash.ps1') -Path $path) -ne $entry.content_sha256) {
+            throw "p2 feature/native checksum differs: $($entry.path)"
+        }
+        $extraCount++
+    }
+    Write-Host "Verified $extraCount pinned p2 feature/native archives."
+}
+[pscustomobject]@{ p2_bundles = $checked; p2_extra_artifacts = $extraCount; p2_equivalent_zip_representations = @($repacked); maven_binaries = $mavenFiles.Count }

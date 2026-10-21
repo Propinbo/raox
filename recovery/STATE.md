@@ -1,92 +1,90 @@
 # Rao X: состояние для продолжения
 
-Обновлено 21 октября 2026 года. **Этапы 1, 2 и 3 завершены.** GitHub Actions
-подтвердил холодную и offline-сборку на отдельном Windows Server 2022 runner. Подробности —
-[STAGE3.md](STAGE3.md), история проверок — [STAGE1.md](STAGE1.md) и [STAGE2.md](STAGE2.md).
+Обновлено 21 октября 2026 года. **Этапы 1–6 завершены локально.**
+[Roadmap](ROADMAP.md), [отчёт этапа 6](STAGE6.md),
+[локальная справка](../docs/index.html), [первая модель](../docs/user_guide/quick_start.html).
 
-## Репозиторий и исходная точка
+## Репозиторий и точка передачи
 
 - Каталог: `C:\Users\propinbo\Documents\raox`.
-- Upstream: `https://github.com/LeKaitoW/raox.git`, исходная ветка `release/current`.
-- Базовый HEAD: `80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc`.
-- Пользователь поручил создать fork: создан `https://github.com/Propinbo/raox`,
-  сохранены все шесть веток и 34 тега. [Подтверждение](evidence/stage3-fork.jpg).
-- Исходная рабочая ветка восстановления: `recovery/initial-audit`.
-  Изменения этапов 1–3 опубликованы в отдельной ветке `codex/stage3-reproducibility`.
-  Она отслеживает `fork/codex/stage3-reproducibility`; `origin` сохранён как upstream.
-- Проверенный CI коммит: `e591a1ea943fbbfc35bdb3d59646acfc6e07d4ca`;
-  [успешный run](https://github.com/Propinbo/raox/actions/runs/39588936426).
-  Следующий коммит содержит только отчёты и статус завершения этапа.
+- Upstream: `https://github.com/LeKaitoW/raox.git`, исходный HEAD —
+  `80f0c44d2c6541ea43a4fdc9ff3598fa9e9e01fc`.
+- Fork: `https://github.com/Propinbo/raox`.
+- Ветка передачи: `codex/stage3-reproducibility`; базовый HEAD до общего коммита этапов 4–6 —
+  `fe02d189dbef399a6f5d3afa10cc3bdceb3f7e7b`.
+- По поручению пользователя этапы 4–6 сведены в общий коммит для отправки в эту ветку fork.
+  Ветка по умолчанию `release/current` остаётся прежней; используйте clone с явным `--branch`.
+  Новый удалённый CI ещё не подтверждён. Последний успешный удалённый CI — платформа этапа 3,
+  [run 39588936426](https://github.com/Propinbo/raox/actions/runs/39588936426).
 
-## Изменения этапа 3
+## Текущая версия
 
-1. Добавлен модуль `raox.target`: 152 точных p2 IU, `win32/win32/x86_64`, JavaSE-1.8.
-   Оба родительских POM используют один target; широкие p2 repositories удалены.
-2. Maven Wrapper 3.3.4 (`only-script`) скачивает Maven 3.3.9 и проверяет SHA-256.
-   `Initialize-Toolchains.ps1` получает Temurin 8u504-b01, при `-IncludeUi` — Eclipse/RCPTT.
-3. Зафиксированы SHA-256 152 p2-bundle, 354 Maven-бинарников, четырёх metadata p2,
-   1296 файлов плагинов UI Eclipse и 935 файлов runner.
-   Для перепаковки p2/Pack200 допускается только идентичность полного содержимого JAR;
-   изменение данных записи отвергается. Это проверено отдельной фикстурой.
-4. `Invoke-LegacyBuild.ps1` изолирует кэши и settings, проверяет JDK/Maven, 32 теста,
-   ZIP и зависимости; сохраняет результат каждой транспортной попытки, поддерживает
-   `-RequireEmptyCache` и `-Offline`, восстанавливает переменные окружения.
-5. Исправлен offline fallback старого Tycho для XZ metadata через проверенные
-   content/artifacts JAR в его штатном формате кэша. Версии платформы не обновлялись.
-6. `.github/workflows/legacy-build.yml`: Windows Server 2022, сборка с пустым кэшем,
-   offline-повтор, ZIP/JUnit/логи; отдельный ручной job с 42 RCPTT и проверкой экспортов.
-   Удалён устаревший `.travis.yml`. Изменения только Markdown/evidence не запускают CI.
-7. Обновлены README/инструкция сборки/roadmap, добавлены отчёт и свидетельства этапа 3.
+Rao X 3.9.0, Temurin 21.0.12.1+1, Maven 3.9.11, Tycho 4.0.13,
+Eclipse 2025-09 / 4.37, Xtext/Xbase/Xtend 2.40.0, Windows x64.
+Gson 2.14.0, JSON.simple 4.0.1, JGraphX 4.2.2, JFreeChart 1.5.6,
+SWTGraphics2D 1.1.0, Commons Math 3.6.1. Полный p2 и самостоятельный ZIP
+с Java создаются без старого Nexus. Seed, числа, исторические трассы и результаты сохранены.
 
-Изменения этапов 1–2 сохранены: совместимый Maven-classpath генератора/Xtend,
-ANTLR без тайм-аута, упаковка runtime, Unicode/модельные тесты, исправления порядка
-результатов, экспорта, трассы, таймера, запуска до компиляции и мастера game5.
-Грамматика, математические библиотеки и семантика симулятора не переносились.
+Этап 6 обновил README/build-with-maven, HTML-справку и навигацию, добавил
+`docs/index.html`, `docs/user_guide/quick_start.html`, `docs/development.md`,
+архив старых инструкций в `docs/history`, пять JUnit-проверок шести HTML-примеров,
+RCPTT quick start, проверку ссылок/экспорта и команды CI. Runtime не менялся;
+811 классов продукта совпали с контрольным этапом 5.
 
 ## Последние подтверждённые проверки
 
 | Проверка | Результат |
 | --- | --- |
-| Чистые исходники и пустой Maven/p2/wrapper-кэш | Код 0; 10 модулей, 32 JUnit, 0 failures/errors/skipped. Две транспортные ошибки сохранены, третья попытка завершилась успешно. [JSON](evidence/stage3-cold-build.json), [лог](evidence/stage3-cold-build.log) |
-| `clean verify -Offline` | Код 0; 32 JUnit, проверены все 152 p2 и 354 Maven-бинарника. [JSON](evidence/stage3-offline-build.json), [лог](evidence/stage3-offline-build.log) |
-| Полный UI-прогон | Код 0; 42/42 RCPTT, без ошибок/пропусков. [JUnit](evidence/stage3-rcptt/results.junit.xml), [HTML](evidence/stage3-rcptt/results.html) |
-| CSV/JSON | Пять одинаковых правильных точек; остановка трассы при t=3. [Проверка](evidence/stage3-rcptt/export-validation.json) |
-| Классы новой сборки | 858 `.class` побайтово совпали с архивом, прошедшим UI. [Сравнение](evidence/stage3-class-comparison.json) |
-| Отдельная машина / GitHub CI | Windows Server 2022: код 0, холодная + offline-сборка, по 32 JUnit; 152 p2 и 354 Maven-бинарника проверены. [Cold](evidence/stage3-ci-cold-build.json), [offline](evidence/stage3-ci-offline-build.json), [run](evidence/stage3-ci-run.json) |
-| Классы с GitHub runner | 858 `.class` побайтово совпали с локальной сборкой, прошедшей UI. [Сравнение](evidence/stage3-ci-class-comparison.json) |
+| Чистая копия, offline `clean verify` | Код 0, 11 модулей, 38 JUnit, без ошибок и пропусков. [JSON](evidence/stage6-clean-build.json). |
+| Шесть полных HTML-примеров | Четыре исполняются, две анимации компилируются. [JUnit](evidence/stage6-junit/TEST-ru.bmstu.rk9.rao.tests.unit.DocumentationExamplesTest.xml). |
+| Установленный ZIP, новый AUT workspace | Подтверждены все 43 сценария: полный прогон 42/43, затем 3/3 после исправления UI-теста импорта. [Сводка](evidence/stage6-rcptt/verification.json), [JUnit по проверенным случаям](evidence/stage6-rcptt/verified-cases.junit.xml). |
+| Первая модель из инструкции | Last value 4, четыре события до t=3, все пять точек CSV/JSON совпали. [JSON](evidence/stage6-rcptt/quickstart-validation.json). |
+| Локальная HTML-справка | 22 страницы, ссылки/anchors/ресурсы проверены, ошибок нет. [JSON](evidence/stage6-documentation-links.json). |
+| Native launcher | Код 0 без системной Java, путь с кириллицей/пробелами. [JSON](evidence/stage6-native-smoke.json). |
+| SWT/AWT | Java 21.0.12.1 / SWT 4970, код 0. [Лог](evidence/stage6-swt-awt.log). |
+| Продукт без изменения поведения | 811/811 классов совпали с этапом 5. [JSON](evidence/stage6-class-comparison.json). |
 
-Исходники копировались в `.build/clean source` без `target`/`.class`;
-[манифест](evidence/stage3-source-snapshot.json). Новый кэш — `.build/final-m2`;
-старые кэши туда не копировались. Пакеты и инструменты скачивались по HTTPS.
-Подробности транспортных ошибок и проверки защиты SHA-256 — в `STAGE3.md`.
+Пустой кэш локально подтверждён этапом 5; этот этап использовал заполненный кэш
+и проверил новую копию исходников. Детали предыдущих проверок — в [STAGE5](STAGE5.md).
 
-## Команды
+## Команды и артефакты
 
-Из корня репозитория, Windows PowerShell 5.1 или 7:
-
-```powershell
-.\recovery\Initialize-Toolchains.ps1
-.\recovery\Invoke-LegacyBuild.ps1 -Clean -Goal verify -RequireEmptyCache
-.\recovery\Invoke-LegacyBuild.ps1 -Clean -Goal verify -Offline
-```
-
-`-RequireEmptyCache` применяется только к новому/пустому кэшу. По умолчанию
-инструменты находятся в `.build/tools`, Maven/p2/wrapper — в `.build/m2`,
-логи — в `.build/evidence`. Для уже проверенного локального кэша:
+Обычная сборка из корня переданных исходников (PowerShell 7):
 
 ```powershell
-.\recovery\Invoke-LegacyBuild.ps1 -CacheRoot .build/final-m2 -Clean -Goal verify -Offline
+.\recovery\Initialize-Platform.ps1 -IncludeUi
+.\recovery\Invoke-PlatformBuild.ps1 -Clean
+.\recovery\New-WindowsDistribution.ps1
 ```
 
-Исходники должны находиться в ASCII-пути; пробелы и Unicode-имена внутри моделей
-проверены. Кэш должен быть выделенным для этой сборки. Архивы содержат плагины;
-самостоятельный новый дистрибутив относится к этапу 5. SHA ZIP/JAR меняется из-за
-меток времени; неизменность 858 `.class` проверена отдельно.
+Все команды UI, документации, отладки и выпуска — в
+[build-with-maven](../build-with-maven.md) и [руководстве разработчика](../docs/development.md).
 
-## Следующий проверяемый шаг
+- ZIP этапа 6: `.build/stage6-distribution/raox-3.9.0-windows-x86_64.zip`.
+  SHA-256 и размер — [distribution.json](evidence/stage6-distribution.json).
+- Передача исходников с локальными изменениями:
+  `assembly/target/handoff/raox-3.9.0-stage6-source.zip`.
+  Внутри `raox/SOURCE-MANIFEST.json` с SHA-256 каждого файла, без .git/.build/target.
+  Сведения о самом архиве сохраняются рядом со свидетельствами в `stage6-handoff.json`.
+- Чистая сборка: `.build/stage6 clean source`; плагины и p2 находятся в её `assembly/target`
+  и `raox.repository/target`. Логи — `.build/stage6-final-build-evidence`.
+- UI: `.build/stage6-final-ui`, экспортированные свидетельства — `recovery/evidence/stage6-rcptt`.
+- Инструменты: `.build/platform-tools`, кэш: `.build/platform-m2`.
+  Команды с точными параметрами и кодами завершения — в [STAGE6](STAGE6.md).
 
-Этап 4 — выбрать согласованную матрицу JDK/Eclipse/Xtext/Tycho и начать перенос
-с прежними 32 JUnit и 42 RCPTT. Не обновлять одновременно платформу и математические
-библиотеки. Работать от ветки `codex/stage3-reproducibility` или её следующего потомка.
-UI job в GitHub подготовлен, но удалённо не запускался; для ручного workflow_dispatch
-файл должен попасть в default branch. Локальные 42 RCPTT подтверждены.
+## Ограничения и следующий шаг
+
+Исходники должны лежать в ASCII-пути; установленное приложение, workspace и
+Unicode-модели проверены. Упаковка требует PowerShell 7, Windows 10 1903+ / 11 x64.
+Linux на новой платформе не проверялся; пользовательского CLI для запуска моделей пока нет.
+Оставшиеся advisory HTTP/Jetty и встроенный модифицированный JSON учтены в
+[THIRD-PARTY](THIRD-PARTY.md).
+
+Первый запуск проверен автоматически через UI. Отдельного человеческого прогона,
+интерактивной PDE/JDWP-сессии и интерактивного Bird с внешними спрайтами не было.
+Ссылки внешних сайтов не проверялись на доступность; просмотр HTML через браузер
+выполнен на localhost, прямой file:// блокируется политикой встроенного браузера.
+
+Следующий проверяемый шаг вне завершённого roadmap: подтвердить современный Windows CI
+на отправленном commit, затем подготовить выпуск по инструкции. Исходники передаются
+через ветку `codex/stage3-reproducibility` fork или подготовленный архив.

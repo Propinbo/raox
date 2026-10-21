@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.PlatformUI;
@@ -49,11 +50,21 @@ public class RealTimeUpdater {
 		timerTask = new TimerTask() {
 			@Override
 			public void run() {
-				if (!haveNewData || paused || display.isDisposed())
+				if (!haveNewData || paused || display.isDisposed() || !updatePending.compareAndSet(false, true))
 					return;
 
-				for (Runnable action : scheduledActions)
-					display.asyncExec(action);
+				// Rendering can take longer than the timer period. Keep only one
+				// pending batch so stale updates cannot starve Stop or other UI input.
+				display.asyncExec(() -> {
+					try {
+						if (!display.isDisposed()) {
+							for (Runnable action : scheduledActions)
+								action.run();
+						}
+					} finally {
+						updatePending.set(false);
+					}
+				});
 			}
 		};
 		timer.scheduleAtFixedRate(timerTask, delayMsec, periodMsec);
@@ -69,6 +80,7 @@ public class RealTimeUpdater {
 	}
 
 	private volatile boolean haveNewData = false;
+	private final AtomicBoolean updatePending = new AtomicBoolean();
 
 	private final Subscriber databaseSubscriber = new Subscriber() {
 		@Override

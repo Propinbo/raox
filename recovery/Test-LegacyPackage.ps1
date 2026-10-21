@@ -2,7 +2,8 @@
 param(
     [Parameter(Mandatory = $true)]
     [string]$ArchivePath,
-    [string]$Version = '3.9.0'
+    [string]$Version = '3.9.0',
+    [int]$ExpectedClassVersion = 0
 )
 
 $ErrorActionPreference = 'Stop'
@@ -37,10 +38,42 @@ try {
     $runtime = $entries | Where-Object name -eq "raox/ru.bmstu.rk9.rao.lib-$Version.jar"
     $runtimeCopy = $entries | Where-Object name -eq 'raox/ru.bmstu.rk9.rao.lib.jar'
     if ($runtime.sha256 -ne $runtimeCopy.sha256) { throw 'Unversioned runtime differs from the built runtime.' }
+    $classesChecked = 0
+    if ($ExpectedClassVersion -gt 0) {
+        foreach ($name in $expected | Where-Object { $_ -ne 'raox/ru.bmstu.rk9.rao.lib.jar' }) {
+            $jarStream = $archive.GetEntry($name).Open()
+            $jar = [IO.Compression.ZipArchive]::new($jarStream, [IO.Compression.ZipArchiveMode]::Read)
+            try {
+                foreach ($entry in $jar.Entries | Where-Object { $_.FullName.EndsWith('.class') }) {
+                    $stream = $entry.Open()
+                    $header = New-Object byte[] 8
+                    try {
+                        $offset = 0
+                        while ($offset -lt 8) {
+                            $read = $stream.Read($header, $offset, 8 - $offset)
+                            if ($read -eq 0) { throw "Truncated class: $name/$($entry.FullName)" }
+                            $offset += $read
+                        }
+                    } finally { $stream.Dispose() }
+                    $major = 256 * [int]$header[6] + [int]$header[7]
+                    if ($major -ne $ExpectedClassVersion) {
+                        throw "Unexpected class version $major in $name/$($entry.FullName); expected $ExpectedClassVersion"
+                    }
+                    $classesChecked++
+                }
+            } finally {
+                $jar.Dispose()
+                $jarStream.Dispose()
+            }
+        }
+        if ($classesChecked -eq 0) { throw 'Archive contains no compiled classes.' }
+    }
     [pscustomobject]@{
         archive = $ArchivePath
         sha256 = (Get-FileHash -LiteralPath $ArchivePath -Algorithm SHA256).Hash.ToLowerInvariant()
         runtime_copy_identical = $true
+        class_version = $ExpectedClassVersion
+        classes_checked = $classesChecked
         entries = @($entries)
     }
 } finally {

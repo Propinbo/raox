@@ -1,0 +1,450 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] Tycho Version:  4.0.13 (dbd40458ea67f56274c25d9d1fd7f2e5af8971b0)
+[INFO] Tycho Mode:     project
+[INFO] Tycho Builder:  maven
+[INFO] Build Threads:  1
+[INFO] Using tycho.disableP2Mirrors to disable P2 mirrors is deprecated, use the property eclipse.p2.mirrors instead, see https://tycho.eclipseprojects.io/doc/4.0.13/SystemProperties.html for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent                                                             [pom]
+[INFO] raox.target                                  [eclipse-target-definition]
+[INFO] ru.bmstu.rk9.rao.lib                                    [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao                                        [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao.ui                                     [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao.sdk                                   [eclipse-feature]
+[INFO] ru.bmstu.rk9.rao.tests                             [eclipse-test-plugin]
+[INFO] ru.bmstu.rk9.raox.plugins.parent                                   [pom]
+[INFO] ru.bmstu.rk9.raox.plugins.game5                         [eclipse-plugin]
+[INFO] Package binaries                                                   [jar]
+[INFO] 
+[INFO] ----------------------< ru.bmstu.rk9.rao:parent >-----------------------
+[INFO] Building parent 3.9.0                                             [1/10]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ parent ---
+[INFO] 
+[INFO] --------------------< ru.bmstu.rk9.rao:raox.target >--------------------
+[INFO] Building raox.target 3.9.0                                        [2/10]
+[INFO]   from raox.target\pom.xml
+[INFO] ---------------------[ eclipse-target-definition ]----------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ raox.target ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-target-definition (default-package-target-definition) @ raox.target ---
+[INFO] 
+[INFO] ---------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.lib >----------------
+[INFO] Building ru.bmstu.rk9.rao.lib 3.9.0                               [3/10]
+[INFO]   from ru.bmstu.rk9.rao.lib\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] Resolving target definition file:/C:/Users/propinbo/Documents/raox/raox.target/raox.target.target for environments=[win32/win32/x86_64], include source mode=honor, referenced repository mode =ignore, execution environment=StandardEEResolutionHints [executionEnvironment=OSGi profile 'JavaSE-21' { source level: 21, target level: 21}] with Tycho Provisioning Agent (extension>org.eclipse.tycho:tycho-maven-plugin:4.0.13)
+[INFO] ### Using TychoRepositoryTransport for remote P2 access ###
+[INFO]     Cache location:         C:\Users\propinbo\Documents\raox\.build\platform-m2\.cache\tycho
+[INFO]     Transport mode:         online
+[INFO]     Http Transport type:    Java11Client
+[INFO]     Update mode:            cache first
+[INFO]     Minimum cache duration: 60 minutes
+[INFO]       (you can configure this with -Dtycho.p2.transport.min-cache-minutes=<desired minimum cache duration>)
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.lib ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao.lib
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.lib ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Compiling 106 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao.lib ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 39 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target\ru.bmstu.rk9.rao.lib-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] -----------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao >------------------
+[INFO] Building ru.bmstu.rk9.rao 3.9.0                                   [4/10]
+[INFO]   from ru.bmstu.rk9.rao\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- clean:2.5:clean (gen-clean) @ ru.bmstu.rk9.rao ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\xtend-gen (includes = [], excludes = [*.gitignore])
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src-gen (includes = [], excludes = [*.gitignore])
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao
+[INFO] 
+[INFO] --- exec:3.5.0:java (default) @ ru.bmstu.rk9.rao ---
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen.ecore/2.43.0/org.eclipse.emf.codegen.ecore-2.43.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen.ecore/2.43.0/org.eclipse.emf.codegen.ecore-2.43.0.pom (3.2 kB at 8.8 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.common/2.43.0/org.eclipse.emf.common-2.43.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.common/2.43.0/org.eclipse.emf.common-2.43.0.jar (404 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore/2.40.0/org.eclipse.emf.ecore-2.40.0.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore.xmi/2.39.0/org.eclipse.emf.ecore.xmi-2.39.0.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen/2.27.0/org.eclipse.emf.codegen-2.27.0.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/3.20.200/org.eclipse.equinox.common-3.20.200.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen.ecore/2.43.0/org.eclipse.emf.codegen.ecore-2.43.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore.xmi/2.39.0/org.eclipse.emf.ecore.xmi-2.39.0.jar (255 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/3.34.0/org.eclipse.core.runtime-3.34.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.equinox.common/3.20.200/org.eclipse.equinox.common-3.20.200.jar (165 kB at 872 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/jdt/org.eclipse.jdt.core/3.43.0/org.eclipse.jdt.core-3.43.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.ecore/2.40.0/org.eclipse.emf.ecore-2.40.0.jar (1.4 MB at 6.2 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/jdt/ecj/3.43.0/ecj-3.43.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.core.runtime/3.34.0/org.eclipse.core.runtime-3.34.0.jar (83 kB at 317 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/jdt/ecj/3.43.0/ecj-3.43.0.jar (3.3 MB at 10.0 MB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen/2.27.0/org.eclipse.emf.codegen-2.27.0.jar (399 kB at 914 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/jdt/org.eclipse.jdt.core/3.43.0/org.eclipse.jdt.core-3.43.0.jar (4.5 MB at 10 MB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/emf/org.eclipse.emf.codegen.ecore/2.43.0/org.eclipse.emf.codegen.ecore-2.43.0.jar (1.2 MB at 2.1 MB/s)
+0    INFO  XtextGenerator     - Initializing Xtext generator
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup addRegisterGeneratedEPackage
+INFO: Adding generated EPackage 'org.eclipse.xtext.common.types.TypesPackage'
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao/'
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.tests at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.tests/'
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.ui at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.ui/'
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.ui at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.ui/'
+Oct 21, 2026 2:36:12 PM org.eclipse.emf.mwe.utils.StandaloneSetup setResourceSet
+INFO: Using resourceSet registry. The registered Packages will not be registered in the global EPackage.Registry.INSTANCE!
+Oct 21, 2026 2:36:13 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/Xtext/Xbase/XAnnotations' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:36:13 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/xbase/Xtype' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:36:13 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/xbase/Xbase' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:36:13 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/common/JavaVMTypes' from 'platform:/resource/org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel'
+634  INFO  XtextGenerator     - Generating ru.bmstu.rk9.rao.Rao
+852  INFO  EMFGeneratorFragment2 - Generating EMF model code
+Oct 21, 2026 2:36:13 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.bmstu.ru/rk9/rao/Rao' from 'platform:/resource/ru.bmstu.rk9.rao/model/generated/Rao.genmodel'
+6861 INFO  XtextGenerator     - Generating common infrastructure
+6877 INFO  Workflow           - Done.
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761)
+	at java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:234)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:82)
+[INFO] 
+[INFO] --- xtend:2.40.0:compile (default) @ ru.bmstu.rk9.rao ---
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.pom (1.8 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.23.0/error_prone_parent-2.23.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.23.0/error_prone_parent-2.23.0.pom (13 kB at 291 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtend.core/2.40.0/org.eclipse.xtend.core-2.40.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtend.core/2.40.0/org.eclipse.xtend.core-2.40.0.pom (1.6 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.smap/2.40.0/org.eclipse.xtext.smap-2.40.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.smap/2.40.0/org.eclipse.xtext.smap-2.40.0.pom (790 B at 8.7 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar (17 kB at 366 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtend.core/2.40.0/org.eclipse.xtend.core-2.40.0.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.smap/2.40.0/org.eclipse.xtext.smap-2.40.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.smap/2.40.0/org.eclipse.xtext.smap-2.40.0.jar (25 kB at 235 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtend.core/2.40.0/org.eclipse.xtend.core-2.40.0.jar (1.4 MB at 2.7 MB/s)
+[WARNING] 
+WARNING: 	RaoJvmModelInferrer.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\jvmmodel\RaoJvmModelInferrer.xtend
+54: The operator '!=' should be replaced by '!==' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoJvmModelInferrer.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\jvmmodel\RaoJvmModelInferrer.xtend
+108: The operator '!=' should be replaced by '!==' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoValidator.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\validation\RaoValidator.xtend
+239: The operator '==' should be replaced by '===' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoFormatter.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\formatting2\RaoFormatter.xtend
+176: The operator '==' should be replaced by '===' when null is one of the arguments.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao ---
+[INFO] Compiling 94 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-install-debug-info (default) @ ru.bmstu.rk9.rao ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\main\java is empty. Can't process.
+[INFO] Installing Xtend files into 52 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\classes
+[INFO] 
+[INFO] --- xtend:2.40.0:testCompile (default) @ ru.bmstu.rk9.rao ---
+[INFO] Can't find Xtend properties under C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao/.settings/org.eclipse.xtend.core.Xtend.prefs, maven defaults are used.
+[INFO] skip compiling sources because the configured directory '[C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\java]' does not exist.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-test-install-debug-info (default) @ ru.bmstu.rk9.rao ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\java is empty. Can't process.
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\generated-sources\xtend is empty. Can't process.
+[INFO] Installing Xtend files into 0 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\test-classes
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao ---
+[INFO] 39 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\ru.bmstu.rk9.rao-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] ----------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.ui >----------------
+[INFO] Building ru.bmstu.rk9.rao.ui 3.9.0                                [5/10]
+[INFO]   from ru.bmstu.rk9.rao.ui\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.81/bcpg-jdk18on-1.81.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.81/bcpg-jdk18on-1.81.jar (728 kB at 12 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.jar (8.9 MB at 46 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81/bcutil-jdk18on-1.81.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81/bcutil-jdk18on-1.81.jar (706 kB at 11 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/github/weisj/jsvg/1.7.2/jsvg-1.7.2.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/github/weisj/jsvg/1.7.2/jsvg-1.7.2.jar (714 kB at 13 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/ibm/icu/icu4j/77.1/icu4j-77.1.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/ibm/icu/icu4j/77.1/icu4j-77.1.jar (15 MB at 41 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar (1.4 MB at 24 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar (26 kB at 443 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-constants/1.19/batik-constants-1.19.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-constants/1.19/batik-constants-1.19.jar (8.6 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-css/1.19/batik-css-1.19.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-css/1.19/batik-css-1.19.jar (331 kB at 5.8 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-i18n/1.19/batik-i18n-1.19.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-i18n/1.19/batik-i18n-1.19.jar (12 kB at 251 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-util/1.19/batik-util-1.19.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-util/1.19/batik-util-1.19.jar (127 kB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0.jar (564 kB at 12 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar (74 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.11/xmlgraphics-commons-2.11.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.11/xmlgraphics-commons-2.11.jar (686 kB at 7.6 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/commonmark/commonmark/0.25.1/commonmark-0.25.1.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/commonmark/commonmark/0.25.1/commonmark-0.25.1.jar (217 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/1.4.1/org.osgi.service.event-1.4.1.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/1.4.1/org.osgi.service.event-1.4.1.jar (48 kB at 734 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/tukaani/xz/1.10/xz-1.10.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/tukaani/xz/1.10/xz-1.10.jar (169 kB at 3.7 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.81/bcpg-jdk18on-1.81.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.81/bcpg-jdk18on-1.81.pom (1.8 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/maven-metadata.xml
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/maven-metadata.xml (944 B at 19 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.pom (1.2 kB at 31 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom (1.2 kB at 36 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/maven-metadata.xml
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/maven-metadata.xml (912 B at 19 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81/bcutil-jdk18on-1.81.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81/bcutil-jdk18on-1.81.pom (1.3 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom (1.3 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/github/weisj/jsvg/1.7.2/jsvg-1.7.2.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/github/weisj/jsvg/1.7.2/jsvg-1.7.2.pom (1.2 kB at 15 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/com/ibm/icu/icu4j/77.1/icu4j-77.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/com/ibm/icu/icu4j/77.1/icu4j-77.1.pom (1.5 kB at 32 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.pom (16 kB at 304 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/eclipse/ee4j/project/1.0.7/project-1.0.7.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/eclipse/ee4j/project/1.0.7/project-1.0.7.pom (14 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-constants/1.19/batik-constants-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-constants/1.19/batik-constants-1.19.pom (2.9 kB at 66 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik/1.19/batik-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik/1.19/batik-1.19.pom (7.6 kB at 155 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.19/batik-shared-resources-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.19/batik-shared-resources-1.19.pom (1.7 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-css/1.19/batik-css-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-css/1.19/batik-css-1.19.pom (3.6 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-util/1.19/batik-util-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-util/1.19/batik-util-1.19.pom (4.2 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-i18n/1.19/batik-i18n-1.19.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-i18n/1.19/batik-i18n-1.19.pom (2.9 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.11/xmlgraphics-commons-2.11.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.11/xmlgraphics-commons-2.11.pom (9.7 kB at 304 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.17.0/commons-io-2.17.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.17.0/commons-io-2.17.0.pom (20 kB at 371 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/commons/commons-parent/74/commons-parent-74.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/commons/commons-parent/74/commons-parent-74.pom (78 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.0/commons-logging-1.3.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.0/commons-logging-1.3.0.pom (27 kB at 635 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.pom (1.8 kB at 8.2 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0.pom (20 kB at 386 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/commons/commons-parent/85/commons-parent-85.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/commons/commons-parent/85/commons-parent-85.pom (78 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.pom (32 kB at 608 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/commonmark/commonmark/0.25.1/commonmark-0.25.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/commonmark/commonmark/0.25.1/commonmark-0.25.1.pom (2.4 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/commonmark/commonmark-parent/0.25.1/commonmark-parent-0.25.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/commonmark/commonmark-parent/0.25.1/commonmark-parent-0.25.1.pom (13 kB at 161 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/1.4.1/org.osgi.service.event-1.4.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.service.event/1.4.1/org.osgi.service.event-1.4.1.pom (2.3 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.pom (1.3 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar (2.0 MB at 24 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.19/batik-shared-resources-1.19.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/osgi/osgi.annotation/8.1.0/osgi.annotation-8.1.0.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar (86 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/osgi/osgi.annotation/8.1.0/osgi.annotation-8.1.0.jar (36 kB at 559 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.19/batik-shared-resources-1.19.jar (6.7 kB at 100 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.jar (12 kB at 178 kB/s)
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.ui ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao.ui
+[INFO] 
+[INFO] --- xtend:2.40.0:compile (default) @ ru.bmstu.rk9.rao.ui ---
+[WARNING] 
+WARNING: 	RaoOutlineTreeProvider.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\ru\bmstu\rk9\rao\ui\outline\RaoOutlineTreeProvider.xtend
+22: The public modifier is unnecessary on class VirtualOutlineNode
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.ui ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Compiling 162 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for parent 3.9.0:
+[INFO] 
+[INFO] parent ............................................. SUCCESS [  0.107 s]
+[INFO] raox.target ........................................ SUCCESS [  0.006 s]
+[INFO] ru.bmstu.rk9.rao.lib ............................... SUCCESS [  4.903 s]
+[INFO] ru.bmstu.rk9.rao ................................... SUCCESS [ 20.349 s]
+[INFO] ru.bmstu.rk9.rao.ui ................................ FAILURE [01:28 min]
+[INFO] ru.bmstu.rk9.rao.sdk ............................... SKIPPED
+[INFO] ru.bmstu.rk9.rao.tests ............................. SKIPPED
+[INFO] ru.bmstu.rk9.raox.plugins.parent ................... SKIPPED
+[INFO] ru.bmstu.rk9.raox.plugins.game5 .................... SKIPPED
+[INFO] Package binaries ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:57 min
+[INFO] Finished at: 2026-10-21T14:37:56+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.eclipse.tycho:tycho-compiler-plugin:4.0.13:compile (default-compile) on project ru.bmstu.rk9.rao.ui: Compilation failure: Compilation failure: 
+[ERROR] C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\ru\bmstu\rk9\rao\ui\gef\process\ProcessEditor.java:[363] 
+[ERROR] 	List<EditPart> editParts = modelPart.getChildren();
+[ERROR] 	                           ^^^^^^^^^^^^^^^^^^^^^^^
+[ERROR] Type mismatch: cannot convert from List<capture#15-of ? extends GraphicalEditPart> to List<EditPart>
+[ERROR] 1 problem (1 error)
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.eclipse.tycho:tycho-compiler-plugin:4.0.13:compile (default-compile) on project ru.bmstu.rk9.rao.ui: Compilation failure
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: copied.org.apache.maven.plugin.CompilationFailureException: Compilation failure
+    at copied.org.apache.maven.plugin.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:433)
+    at org.eclipse.tycho.compiler.AbstractOsgiCompilerMojo.doCompile (AbstractOsgiCompilerMojo.java:400)
+    at org.eclipse.tycho.compiler.AbstractOsgiCompilerMojo.execute (AbstractOsgiCompilerMojo.java:381)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :ru.bmstu.rk9.rao.ui

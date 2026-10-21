@@ -1,0 +1,6 @@
+{
+  "modified_bundle": "bcpg.source",
+  "version": "1.81.0",
+  "payload_change_rejected": true,
+  "failure": "p2 bundle checksum mismatch (including entry contents): bcpg.source/1.81.0"
+}

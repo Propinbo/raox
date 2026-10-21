@@ -1,0 +1,29 @@
+{
+  "platform": "win32/win32/x86_64",
+  "jdk": {
+    "version": "Temurin 21.0.12.1+1",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+    "sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+    "directory": "jdk-21.0.12.1+1",
+    "probe": "bin/java.exe"
+  },
+  "maven": {
+    "version": "3.9.11",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip",
+    "sha256": "0d7125e8c91097b36edb990ea5934e6c68b4440eef4ea96510a0f6815e7eeadb"
+  },
+  "eclipse": {
+    "version": "2025-09 R / 4.37 / Xtext 2.40.0.v20250825-0355",
+    "url": "https://archive.eclipse.org/technology/epp/downloads/release/2025-09/R/eclipse-dsl-2025-09-R-win32-x86_64.zip",
+    "sha256": "bc3be09fe250a90c4d9152602d4814623bef5f755fd40072acc3b00657dd6d65",
+    "directory": "eclipse",
+    "probe": "eclipse.exe"
+  },
+  "rcptt": {
+    "version": "2.6.1",
+    "url": "https://download.eclipse.org/rcptt/release/2.6.1/runner/rcptt.runner-2.6.1-win32.win32.x86_64.zip",
+    "sha256": "7eea67d9a71dbb8d68183c02a46dda229b6831a2779f4ddd148c70121156ebf3",
+    "directory": ".",
+    "probe": "eclipse.ini"
+  }
+}

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
@@ -132,6 +133,7 @@ public class BuildUtil {
 		final IJavaProject javaProject = JavaCore.create(project);
 		try {
 			javaProject.setRawClasspath(classpaths.toArray(new IClasspathEntry[classpaths.size()]), null);
+			configureCompiler(javaProject);
 		} catch (JavaModelException e) {
 			e.printStackTrace();
 			throw new BuildUtilException("Project set classpath failed" + ":\n" + e.getMessage());
@@ -153,12 +155,18 @@ public class BuildUtil {
 		final IExecutionEnvironmentsManager executionEnvironmentsManager = JavaRuntime
 				.getExecutionEnvironmentsManager();
 		final IExecutionEnvironment[] executionEnvironments = executionEnvironmentsManager.getExecutionEnvironments();
-		final String JavaSeVersion = "JavaSE-1.8";
+		final String JavaSeVersion = "JavaSE-21";
 		for (IExecutionEnvironment executionEnvironment : executionEnvironments)
 			if (executionEnvironment.getId().equals(JavaSeVersion))
 				return JavaCore.newContainerEntry(JavaRuntime.newJREContainerPath(executionEnvironment));
 
 		throw new BuildUtilException(JavaSeVersion + " not found");
+	}
+
+	private static void configureCompiler(IJavaProject javaProject) {
+		Map<String, String> options = javaProject.getOptions(false);
+		JavaCore.setComplianceOptions(JavaCore.VERSION_21, options);
+		javaProject.setOptions(options);
 	}
 
 	private static IClasspathEntry getRaoxClasspathEntry() throws BuildUtilException {
@@ -205,7 +213,9 @@ public class BuildUtil {
 			Iterator<IClasspathEntry> it = classpaths.iterator();
 			while (it.hasNext()) {
 				final String path = it.next().getPath().toString();
-				if (path.contains("org.eclipse.xtext.xbase.lib")) {
+				if (path.startsWith(JavaRuntime.JRE_CONTAINER)) {
+					it.remove();
+				} else if (path.contains("org.eclipse.xtext.xbase.lib")) {
 					it.remove();
 					updateXtendClasspath = true;
 				} else if (path.contains(BundleType.RAOX_LIB.name)) {
@@ -219,8 +229,10 @@ public class BuildUtil {
 
 			if (updateRaoxClasspath)
 				classpaths.add(getRaoxClasspathEntry());
+			classpaths.add(getJavaSeClasspathEntry());
 
 			javaProject.setRawClasspath(classpaths.toArray(new IClasspathEntry[classpaths.size()]), monitor);
+			configureCompiler(javaProject);
 
 		} catch (JavaModelException e) {
 			e.printStackTrace();

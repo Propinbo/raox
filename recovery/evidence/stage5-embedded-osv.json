@@ -1,0 +1,76 @@
+{
+  "queried_at_utc": "2026-10-21T16:09:18.6969291Z",
+  "results": [
+    {
+      "package": "org.apache.commons:commons-math3",
+      "version": "3.6",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.googlecode.json-simple:json-simple",
+      "version": "1.1.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.google.code.gson:gson",
+      "version": "2.6.2",
+      "vulnerabilities": [
+        {
+          "id": "GHSA-4jrv-ppp4-jm57",
+          "modified": "2026-09-10T03:49:19.710819Z"
+        }
+      ]
+    },
+    {
+      "package": "org.jfree:jcommon",
+      "version": "1.0.23",
+      "vulnerabilities": []
+    },
+    {
+      "package": "org.jfree:jfreechart",
+      "version": "1.0.19",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.github.monkeysintown:jgraphx",
+      "version": "3.3.1.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "org.apache.commons:commons-math3",
+      "version": "3.6.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.github.cliftonlabs:json-simple",
+      "version": "4.0.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.google.code.gson:gson",
+      "version": "2.14.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "com.github.vlsi.mxgraph:jgraphx",
+      "version": "4.2.2",
+      "vulnerabilities": []
+    },
+    {
+      "package": "org.jfree:jfreechart",
+      "version": "1.5.6",
+      "vulnerabilities": []
+    },
+    {
+      "package": "org.jfree:swtgraphics2d",
+      "version": "1.1.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "ch.qos.reload4j:reload4j",
+      "version": "1.2.26",
+      "vulnerabilities": []
+    }
+  ],
+  "endpoint": "https://api.osv.dev/v1/querybatch"
+}

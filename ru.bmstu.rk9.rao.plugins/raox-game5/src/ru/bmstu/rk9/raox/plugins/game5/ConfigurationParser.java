@@ -1,27 +1,24 @@
 package ru.bmstu.rk9.raox.plugins.game5;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.PlatformUI;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import com.github.cliftonlabs.json_simple.JsonArray;
+import com.github.cliftonlabs.json_simple.JsonObject;
+import com.github.cliftonlabs.json_simple.Jsoner;
+import com.github.cliftonlabs.json_simple.JsonException;
 
 public class ConfigurationParser {
-	public static JSONObject parseObject(IFile configIFile) {
-		JSONObject object = null;
-		try {
-			final JSONParser parser = new JSONParser();
-			object = (JSONObject) parser.parse(new InputStreamReader(new FileInputStream(ResourcesPlugin.getWorkspace()
-					.getRoot().getLocation().append(configIFile.getFullPath()).toString()), StandardCharsets.UTF_8));
-		} catch (IOException | ParseException e) {
+	public static JsonObject parseObject(IFile configIFile) {
+		JsonObject object = null;
+		try (InputStreamReader reader = new InputStreamReader(configIFile.getContents(), StandardCharsets.UTF_8)) {
+			object = (JsonObject) Jsoner.deserialize(reader);
+		} catch (IOException | CoreException | JsonException e) {
 			e.printStackTrace();
 			MessageDialog.openError(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Error",
 					"Failed to parse configuration template:\n" + e.getMessage());
@@ -37,8 +34,8 @@ public class ConfigurationParser {
 		return Integer.toString(x) + ", " + Integer.toString(y);
 	}
 
-	public static String getResourcesCode(JSONObject object) {
-		final JSONArray places = (JSONArray) object.get("places");
+	public static String getResourcesCode(JsonObject object) {
+		final JsonArray places = (JsonArray) object.get("places");
 		String code = "";
 
 		for (int index = 0; index < places.size(); index++) {
@@ -53,7 +50,7 @@ public class ConfigurationParser {
 		return code;
 	}
 
-	public static String getSearchCode(JSONObject object) {
+	public static String getSearchCode(JsonObject object) {
 		String costRight = object.get("costRight").toString();
 		String computeRight = object.get("computeRight").toString().toUpperCase();
 

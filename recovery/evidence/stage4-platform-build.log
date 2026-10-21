@@ -1,0 +1,828 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] Tycho Version:  4.0.13 (dbd40458ea67f56274c25d9d1fd7f2e5af8971b0)
+[INFO] Tycho Mode:     project
+[INFO] Tycho Builder:  maven
+[INFO] Build Threads:  1
+[INFO] Using tycho.disableP2Mirrors to disable P2 mirrors is deprecated, use the property eclipse.p2.mirrors instead, see https://tycho.eclipseprojects.io/doc/4.0.13/SystemProperties.html for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent                                                             [pom]
+[INFO] raox.target                                  [eclipse-target-definition]
+[INFO] ru.bmstu.rk9.rao.lib                                    [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao                                        [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao.ui                                     [eclipse-plugin]
+[INFO] ru.bmstu.rk9.rao.sdk                                   [eclipse-feature]
+[INFO] ru.bmstu.rk9.rao.tests                             [eclipse-test-plugin]
+[INFO] ru.bmstu.rk9.raox.plugins.parent                                   [pom]
+[INFO] ru.bmstu.rk9.raox.plugins.game5                         [eclipse-plugin]
+[INFO] Package binaries                                                   [jar]
+[INFO] 
+[INFO] ----------------------< ru.bmstu.rk9.rao:parent >-----------------------
+[INFO] Building parent 3.9.0                                             [1/10]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ parent ---
+[INFO] 
+[INFO] --------------------< ru.bmstu.rk9.rao:raox.target >--------------------
+[INFO] Building raox.target 3.9.0                                        [2/10]
+[INFO]   from raox.target\pom.xml
+[INFO] ---------------------[ eclipse-target-definition ]----------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ raox.target ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-target-definition (default-package-target-definition) @ raox.target ---
+[INFO] 
+[INFO] ---------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.lib >----------------
+[INFO] Building ru.bmstu.rk9.rao.lib 3.9.0                               [3/10]
+[INFO]   from ru.bmstu.rk9.rao.lib\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] Resolving target definition file:/C:/Users/propinbo/Documents/raox/raox.target/raox.target.target for environments=[win32/win32/x86_64], include source mode=honor, referenced repository mode =ignore, execution environment=StandardEEResolutionHints [executionEnvironment=OSGi profile 'JavaSE-21' { source level: 21, target level: 21}] with Tycho Provisioning Agent (extension>org.eclipse.tycho:tycho-maven-plugin:4.0.13)
+[INFO] ### Using TychoRepositoryTransport for remote P2 access ###
+[INFO]     Cache location:         C:\Users\propinbo\Documents\raox\.build\platform-m2\.cache\tycho
+[INFO]     Transport mode:         online
+[INFO]     Http Transport type:    Java11Client
+[INFO]     Update mode:            cache first
+[INFO]     Minimum cache duration: 60 minutes
+[INFO]       (you can configure this with -Dtycho.p2.transport.min-cache-minutes=<desired minimum cache duration>)
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.lib ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao.lib
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.lib ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Compiling 106 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao.lib ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 39 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao.lib ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.lib\target\ru.bmstu.rk9.rao.lib-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao.lib ---
+[INFO] 
+[INFO] -----------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao >------------------
+[INFO] Building ru.bmstu.rk9.rao 3.9.0                                   [4/10]
+[INFO]   from ru.bmstu.rk9.rao\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target
+[INFO] 
+[INFO] --- clean:2.5:clean (gen-clean) @ ru.bmstu.rk9.rao ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\xtend-gen (includes = [], excludes = [*.gitignore])
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src-gen (includes = [], excludes = [*.gitignore])
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\model (includes = [], excludes = [])
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao
+[INFO] 
+[INFO] --- exec:3.5.0:java (default) @ ru.bmstu.rk9.rao ---
+0    INFO  XtextGenerator     - Initializing Xtext generator
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup addRegisterGeneratedEPackage
+INFO: Adding generated EPackage 'org.eclipse.xtext.common.types.TypesPackage'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao/'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.tests at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.tests/'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.ui at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.ui/'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup addProjectMapping
+INFO: Registering project ru.bmstu.rk9.rao.ui at 'file:/C:/Users/propinbo/Documents/raox/ru.bmstu.rk9.rao.ui/'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.StandaloneSetup setResourceSet
+INFO: Using resourceSet registry. The registered Packages will not be registered in the global EPackage.Registry.INSTANCE!
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/Xtext/Xbase/XAnnotations' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/xbase/Xtype' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/xbase/Xbase' from 'platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel'
+Oct 21, 2026 2:43:45 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.eclipse.org/xtext/common/JavaVMTypes' from 'platform:/resource/org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel'
+670  INFO  XtextGenerator     - Generating ru.bmstu.rk9.rao.Rao
+837  INFO  EMFGeneratorFragment2 - Generating EMF model code
+Oct 21, 2026 2:43:46 PM org.eclipse.emf.mwe.utils.GenModelHelper registerGenModel
+INFO: Registered GenModel 'http://www.bmstu.ru/rk9/rao/Rao' from 'platform:/resource/ru.bmstu.rk9.rao/model/generated/Rao.genmodel'
+6601 INFO  XtextGenerator     - Generating common infrastructure
+6605 INFO  Workflow           - Done.
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761)
+	at java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:234)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:82)
+[INFO] 
+[INFO] --- xtend:2.40.0:compile (default) @ ru.bmstu.rk9.rao ---
+[WARNING] 
+WARNING: 	RaoJvmModelInferrer.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\jvmmodel\RaoJvmModelInferrer.xtend
+54: The operator '!=' should be replaced by '!==' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoJvmModelInferrer.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\jvmmodel\RaoJvmModelInferrer.xtend
+108: The operator '!=' should be replaced by '!==' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoValidator.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\validation\RaoValidator.xtend
+239: The operator '==' should be replaced by '===' when null is one of the arguments.
+[WARNING] 
+WARNING: 	RaoFormatter.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\ru\bmstu\rk9\rao\formatting2\RaoFormatter.xtend
+176: The operator '==' should be replaced by '===' when null is one of the arguments.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao ---
+[INFO] Compiling 94 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-install-debug-info (default) @ ru.bmstu.rk9.rao ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\main\java is empty. Can't process.
+[INFO] Installing Xtend files into 52 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\classes
+[INFO] 
+[INFO] --- xtend:2.40.0:testCompile (default) @ ru.bmstu.rk9.rao ---
+[INFO] Can't find Xtend properties under C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao/.settings/org.eclipse.xtend.core.Xtend.prefs, maven defaults are used.
+[INFO] skip compiling sources because the configured directory '[C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\java]' does not exist.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-test-install-debug-info (default) @ ru.bmstu.rk9.rao ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\java is empty. Can't process.
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\src\test\generated-sources\xtend is empty. Can't process.
+[INFO] Installing Xtend files into 0 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\test-classes
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao ---
+[INFO] 39 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao\target\ru.bmstu.rk9.rao-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao ---
+[INFO] 
+[INFO] ----------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.ui >----------------
+[INFO] Building ru.bmstu.rk9.rao.ui 3.9.0                                [5/10]
+[INFO]   from ru.bmstu.rk9.rao.ui\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.ui ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao.ui
+[INFO] 
+[INFO] --- xtend:2.40.0:compile (default) @ ru.bmstu.rk9.rao.ui ---
+[WARNING] 
+WARNING: 	RaoOutlineTreeProvider.xtend - C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\ru\bmstu\rk9\rao\ui\outline\RaoOutlineTreeProvider.xtend
+22: The public modifier is unnecessary on class VirtualOutlineNode
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.ui ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Compiling 162 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-install-debug-info (default) @ ru.bmstu.rk9.rao.ui ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\main\java is empty. Can't process.
+[INFO] Installing Xtend files into 6 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target\classes
+[INFO] 
+[INFO] --- xtend:2.40.0:testCompile (default) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Can't find Xtend properties under C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui/.settings/org.eclipse.xtend.core.Xtend.prefs, maven defaults are used.
+[INFO] skip compiling sources because the configured directory '[C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\test\java]' does not exist.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao.ui ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-test-install-debug-info (default) @ ru.bmstu.rk9.rao.ui ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\test\java is empty. Can't process.
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\src\test\generated-sources\xtend is empty. Can't process.
+[INFO] Installing Xtend files into 0 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target\test-classes
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 257 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao.ui ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.ui\target\ru.bmstu.rk9.rao.ui-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao.ui ---
+[INFO] 
+[INFO] ---------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.sdk >----------------
+[INFO] Building ru.bmstu.rk9.rao.sdk 3.9.0                               [6/10]
+[INFO]   from ru.bmstu.rk9.rao.sdk\pom.xml
+[INFO] --------------------------[ eclipse-feature ]---------------------------
+[INFO] Resolving dependencies of MavenProject: ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.sdk:3.9.0 @ C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\pom.xml
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier-aggregator (default-build-qualifier-aggregator) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\src\main\resources
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 257 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-feature (default-package-feature) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.sdk\target\ru.bmstu.rk9.rao.sdk-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:feature-p2-metadata (default-feature-p2-metadata) @ ru.bmstu.rk9.rao.sdk ---
+[INFO] 
+[INFO] --------------< ru.bmstu.rk9.rao:ru.bmstu.rk9.rao.tests >---------------
+[INFO] Building ru.bmstu.rk9.rao.tests 3.9.0                             [7/10]
+[INFO]   from ru.bmstu.rk9.rao.tests\pom.xml
+[INFO] ------------------------[ eclipse-test-plugin ]-------------------------
+[INFO] Maven Artifact org.hamcrest:hamcrest-core:1.3 @ C:\Users\propinbo\Documents\raox\.build\platform-m2\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar is not a bundle and will be ignored, automatic wrapping of such artifacts can be enabled with <pomDependencies>wrapAsBundle</pomDependencies> in target platform configuration.
+[INFO] Maven Artifact junit:junit:4.12 @ C:\Users\propinbo\Documents\raox\.build\platform-m2\junit\junit\4.12\junit-4.12.jar is not a bundle and will be ignored, automatic wrapping of such artifacts can be enabled with <pomDependencies>wrapAsBundle</pomDependencies> in target platform configuration.
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.rao.tests ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Resolving class path of ru.bmstu.rk9.rao.tests
+[INFO] 
+[INFO] --- xtend:2.40.0:compile (default) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.rao.tests ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Compiling 12 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-install-debug-info (default) @ ru.bmstu.rk9.rao.tests ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\main\java is empty. Can't process.
+[INFO] Installing Xtend files into 0 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target\classes
+[INFO] 
+[INFO] --- xtend:2.40.0:testCompile (default) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Can't find Xtend properties under C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests/.settings/org.eclipse.xtend.core.Xtend.prefs, maven defaults are used.
+[INFO] skip compiling sources because the configured directory '[C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\test\java]' does not exist.
+[INFO] 
+[INFO] --- build-helper:1.10:add-test-source (add-test-source) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Test Source directory: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\ru\bmstu\rk9\rao\tests added.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.rao.tests ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (compile-tests) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- xtend:2.40.0:xtend-test-install-debug-info (default) @ ru.bmstu.rk9.rao.tests ---
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\test\java is empty. Can't process.
+[WARNING] Directory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\src\test\generated-sources\xtend is empty. Can't process.
+[INFO] Installing Xtend files into 0 class files as secondary (via SMAP) debug sources in: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (unit-tests) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Surefire report directory: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target\surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true, enableOutErrElements=true, enablePropertiesElement=true
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.LinearProcessTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in ru.bmstu.rk9.rao.tests.unit.LinearProcessTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.922 s -- in ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.QueueProcessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in ru.bmstu.rk9.rao.tests.unit.QueueProcessTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.RcpttModelTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.71 s -- in ru.bmstu.rk9.rao.tests.unit.RcpttModelTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.TracerUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in ru.bmstu.rk9.rao.tests.unit.TracerUnitTest
+[INFO] Running ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s -- in ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 266 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.tests\target\ru.bmstu.rk9.rao.tests-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.rao.tests ---
+[INFO] 
+[INFO] --- tycho-surefire:4.0.13:test (default-test) @ ru.bmstu.rk9.rao.tests ---
+[INFO] Skipping tests
+[INFO] 
+[INFO] -----< ru.bmstu.rk9.raox.plugins:ru.bmstu.rk9.raox.plugins.parent >-----
+[INFO] Building ru.bmstu.rk9.raox.plugins.parent 3.9.0                   [8/10]
+[INFO]   from ru.bmstu.rk9.rao.plugins\pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ru.bmstu.rk9.raox.plugins.parent ---
+[INFO] 
+[INFO] -----< ru.bmstu.rk9.raox.plugins:ru.bmstu.rk9.raox.plugins.game5 >------
+[INFO] Building ru.bmstu.rk9.raox.plugins.game5 3.9.0                    [9/10]
+[INFO]   from ru.bmstu.rk9.rao.plugins\raox-game5\pom.xml
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] Deleting C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\target
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:build-qualifier (default-build-qualifier) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] The project's OSGi version is 3.9.0
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-id (default-validate-id) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:validate-version (default-validate-version) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- target-platform-configuration:4.0.13:target-platform (default-target-platform) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:validate-classpath (default-validate-classpath) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] Resolving class path of ru.bmstu.rk9.raox.plugins.game5
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\src\main\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:compile (default-compile) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] Compiling 11 source files to C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\target\classes using Eclipse Compiler for Java(TM) 3.41.0.v20250213-1140
+[INFO] 
+[INFO] --- tycho-bnd:4.0.13:process (default-process) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- tycho-ds:4.0.13:declarative-services (default-declarative-services) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\src\test\resources
+[INFO] 
+[INFO] --- tycho-compiler:4.0.13:testCompile (default-testCompile) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:update-consumer-pom (default-update-consumer-pom) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 258 system scoped dependencies were not mapped to maven artifacts
+[INFO] 
+[INFO] --- tycho-packaging:4.0.13:package-plugin (default-package-plugin) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\ru.bmstu.rk9.rao.plugins\raox-game5\target\ru.bmstu.rk9.raox.plugins.game5-3.9.0.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:4.0.13:p2-metadata-default (default-p2-metadata-default) @ ru.bmstu.rk9.raox.plugins.game5 ---
+[INFO] 
+[INFO] ---------------------< ru.bmstu.rk9.rao:assembly >----------------------
+[INFO] Building Package binaries 3.9.0                                  [10/10]
+[INFO]   from assembly\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ assembly ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ assembly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\assembly\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ assembly ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ assembly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\propinbo\Documents\raox\assembly\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ assembly ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ assembly ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar (124 kB at 358 kB/s)
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (default) @ assembly ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.3/maven-plugin-api-3.0.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.3/maven-plugin-api-3.0.3.pom (2.3 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0.3/maven-3.0.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0.3/maven-3.0.3.pom (23 kB at 452 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 500 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 kB at 291 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.3/maven-model-3.0.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.3/maven-model-3.0.3.pom (3.9 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.pom (2.9 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.3/maven-artifact-3.0.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.3/maven-artifact-3.0.3.pom (1.9 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1.pom (3.0 kB at 77 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/2.1.1/guice-plexus-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-plexus/2.1.1/guice-plexus-2.1.1.pom (3.6 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/2.1.1/guice-bean-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-bean/2.1.1/guice-bean-2.1.1.pom (3.0 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/2.1.1/sisu-inject-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject/2.1.1/sisu-inject-2.1.1.pom (1.8 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/2.1.1/sisu-parent-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-parent/2.1.1/sisu-parent-2.1.1.pom (9.3 kB at 221 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/7/forge-parent-7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/7/forge-parent-7.pom (13 kB at 309 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom (3.9 kB at 95 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (3.3 kB at 72 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 kB at 349 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.1.1/sisu-inject-bean-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.1.1/sisu-inject-bean-2.1.1.pom (3.0 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4.pom (7.8 kB at 218 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-parent/2.9.4/guice-parent-2.9.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-parent/2.9.4/guice-parent-2.9.4.pom (13 kB at 259 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 kB at 151 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom (9.9 kB at 219 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom (4.7 kB at 107 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom (2.4 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (17 kB at 380 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 kB at 678 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (14 kB at 301 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.pom (11 kB at 209 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 kB at 345 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.pom (1.4 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/1/apache-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/1/apache-1.pom (3.4 kB at 66 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.pom (738 B at 17 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.3/maven-plugin-api-3.0.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.0.3/maven-plugin-api-3.0.3.jar (49 kB at 794 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.3/maven-model-3.0.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.3/maven-artifact-3.0.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.0.3/maven-model-3.0.3.jar (163 kB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (4.2 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.1.1/sisu-inject-bean-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.0.3/maven-artifact-3.0.3.jar (52 kB at 497 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.jar (47 kB at 424 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.jar (223 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1.jar (196 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-bean/2.1.1/sisu-inject-bean-2.1.1.jar (230 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar (12 kB at 62 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4-no_aop.jar (484 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar (1.9 MB at 8.0 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (284 kB at 1.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.1/commons-io-2.1.jar (163 kB at 658 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar (195 kB at 666 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar (1.2 MB at 3.8 MB/s)
+[INFO] Ignoring missing file
+[INFO] Replacement run on 0 file.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ assembly ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.pom (4.5 kB at 102 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom (4.9 kB at 122 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom (7.8 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom (20 kB at 357 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/69/commons-parent-69.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/69/commons-parent-69.pom (77 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.2/maven-archiver-3.6.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.2/maven-archiver-3.6.2.pom (4.4 kB at 137 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/41/maven-shared-components-41.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/41/maven-shared-components-41.pom (3.2 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.2/plexus-archiver-4.9.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.2/plexus-archiver-4.9.2.pom (6.0 kB at 127 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.4.2/plexus-io-3.4.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.4.2/plexus-io-3.4.2.pom (3.9 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.pom (22 kB at 422 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/66/commons-parent-66.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/66/commons-parent-66.pom (77 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.pom (16 kB at 341 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.pom (31 kB at 718 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom (78 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom (23 kB at 596 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom (15 kB at 355 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/luben/zstd-jni/1.5.5-11/zstd-jni-1.5.5-11.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/luben/zstd-jni/1.5.5-11/zstd-jni-1.5.5-11.pom (2.0 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar (36 kB at 637 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.27/plexus-interpolation-1.27.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.2/maven-archiver-3.6.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.2/plexus-archiver-4.9.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.2/maven-archiver-3.6.2.jar (27 kB at 570 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.4.2/plexus-io-3.4.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.27/plexus-interpolation-1.27.jar (86 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar (193 kB at 3.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar (509 kB at 8.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.2/plexus-archiver-4.9.2.jar (225 kB at 3.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.4.2/plexus-io-3.4.2.jar (79 kB at 877 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/luben/zstd-jni/1.5.5-11/zstd-jni-1.5.5-11.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar (1.1 MB at 9.3 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar (58 kB at 500 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar (365 kB at 2.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar (658 kB at 4.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/luben/zstd-jni/1.5.5-11/zstd-jni-1.5.5-11.jar (6.8 MB at 25 MB/s)
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\propinbo\Documents\raox\assembly\target\assembly-3.9.0.jar
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-jars) @ assembly ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- assembly:2.5.5:single (default) @ assembly ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom (3.8 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (8.7 kB at 167 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom (1.6 kB at 30 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom (12 kB at 224 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom (20 kB at 427 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom (2.3 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom (3.1 kB at 58 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom (2.7 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom (2.1 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom (2.0 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom (2.7 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom (1.9 kB at 58 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom (2.0 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom (1.5 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom (2.8 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom (4.0 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom (15 kB at 360 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom (2.8 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom (19 kB at 299 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 3.6 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (5.3 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom (2.5 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom (1.6 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom (4.0 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom (1.5 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.2/plexus-archiver-2.10.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.2/plexus-archiver-2.10.2.pom (5.4 kB at 100 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 kB at 436 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom (3.8 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.pom (3.9 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom (11 kB at 194 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom (47 kB at 927 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.pom (2.7 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/4/maven-shared-components-4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/4/maven-shared-components-4.pom (2.2 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom (10.0 kB at 192 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 9.9 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (8.8 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.0/maven-shared-io-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.0/maven-shared-io-1.0.pom (3.0 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom (765 B at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom (13 kB at 366 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom (767 B at 20 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom (1.4 kB at 30 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom (1.3 kB at 34 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom (1.2 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom (588 B at 14 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom (6.4 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom (767 B at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom (5.9 kB at 138 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom (4.1 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom (2.7 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom (21 kB at 559 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.pom (6.2 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom (5.1 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom (4.9 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom (3.4 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (4.5 kB at 119 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (2.8 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (1.7 kB at 36 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (2.7 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 kB at 433 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1.0 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.21/plexus-utils-3.0.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.21/plexus-utils-3.0.21.pom (3.8 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0/maven-repository-builder-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0/maven-repository-builder-1.0.pom (4.6 kB at 95 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5.1 kB at 134 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom (765 B at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom (12 kB at 227 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom (1.4 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom (1.5 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom (1.8 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom (1.6 kB at 32 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom (2.7 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom (1.6 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 kB at 248 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar (32 kB at 854 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.2/plexus-archiver-2.10.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.jar (77 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.jar (31 kB at 708 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar (39 kB at 897 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar (43 kB at 971 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.10.2/plexus-archiver-2.10.2.jar (374 kB at 8.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar (174 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.21/plexus-utils-3.0.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.jar (51 kB at 517 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0/maven-repository-builder-1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.6/plexus-io-2.6.jar (84 kB at 850 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 kB at 220 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar (165 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0/maven-repository-builder-1.0.jar (22 kB at 156 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.21/plexus-utils-3.0.21.jar (245 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (233 kB at 1.4 MB/s)
+[INFO] Reading assembly descriptor: lib-jar-without-version.xml
+[INFO] Reading assembly descriptor: jars-only.xml
+[INFO] Copying files to C:\Users\propinbo\Documents\raox\assembly\target\raox-copy-rename
+[WARNING] Assembly file: C:\Users\propinbo\Documents\raox\assembly\target\raox-copy-rename is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: C:\Users\propinbo\Documents\raox\assembly\target\raox-3.9.0.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for parent 3.9.0:
+[INFO] 
+[INFO] parent ............................................. SUCCESS [  0.094 s]
+[INFO] raox.target ........................................ SUCCESS [  0.000 s]
+[INFO] ru.bmstu.rk9.rao.lib ............................... SUCCESS [  4.910 s]
+[INFO] ru.bmstu.rk9.rao ................................... SUCCESS [ 17.989 s]
+[INFO] ru.bmstu.rk9.rao.ui ................................ SUCCESS [  5.531 s]
+[INFO] ru.bmstu.rk9.rao.sdk ............................... SUCCESS [  0.194 s]
+[INFO] ru.bmstu.rk9.rao.tests ............................. SUCCESS [ 28.045 s]
+[INFO] ru.bmstu.rk9.raox.plugins.parent ................... SUCCESS [  0.018 s]
+[INFO] ru.bmstu.rk9.raox.plugins.game5 .................... SUCCESS [  0.663 s]
+[INFO] Package binaries ................................... SUCCESS [  8.338 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:09 min
+[INFO] Finished at: 2026-10-21T14:44:42+03:00
+[INFO] ------------------------------------------------------------------------

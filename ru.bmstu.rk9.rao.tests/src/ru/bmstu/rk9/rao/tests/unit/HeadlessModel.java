@@ -82,7 +82,7 @@ final class HeadlessModel implements AutoCloseable {
         assertNotNull("Tests require a JDK, not a JRE", compiler);
         DiagnosticCollector<JavaFileObject> diagnostics = new DiagnosticCollector<>();
         try (StandardJavaFileManager manager = compiler.getStandardFileManager(diagnostics, Locale.ROOT, StandardCharsets.UTF_8)) {
-            List<String> options = Arrays.asList("-encoding", "UTF-8", "-source", "8", "-target", "8",
+            List<String> options = Arrays.asList("-encoding", "UTF-8", "--release", "21",
                     "-classpath", System.getProperty("surefire.test.class.path", System.getProperty("java.class.path")),
                     "-d", output.toString());
             boolean compiled = compiler.getTask(null, manager, diagnostics,

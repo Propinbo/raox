@@ -13,7 +13,7 @@
 <p>Можно логировать любой Java-объект. В общем случае вызов выглядит так</p>
 <pre><code class="rao">log(object)</code></pre>
 <p>У объекта автоматически вызывается метод <code>toString()</code>. Пример</p>
-<pre><code class="rao">type TechSupport {
+<pre><code class="rao" id="model-source">type TechSupport {
     int callCount
 }
 
@@ -36,7 +36,7 @@ def terminateCondition() {
     return currentTime >= 480
 }
 </code></pre>
-В окне <code>Console</code> быдет выведено
+Ниже приведён исторический пример вывода; имя проекта и время выполнения зависят от запуска. Сам код модели проверяется текущей сборкой. В окне <code>Console</code> будет выведено
 <pre><code class="text">запуск модели
 Started model test2
 проверка условия окончания

@@ -8,7 +8,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.ui.PlatformUI;
-import org.json.simple.JSONArray;
+import com.github.cliftonlabs.json_simple.JsonArray;
 
 import com.mxgraph.model.mxCell;
 import com.mxgraph.util.mxEvent;
@@ -23,7 +23,7 @@ import ru.bmstu.rk9.rao.ui.graph.TreeBuilder.Node;
 
 public class GraphManager {
 
-	public GraphManager(GraphPanel graph, JSONArray order) {
+	public GraphManager(GraphPanel graph, JsonArray order) {
 		this.graphPanel = graph;
 		this.initialOrder = order;
 		this.currentOrder = order;
@@ -48,8 +48,8 @@ public class GraphManager {
 	};
 
 	private final GraphPanel graphPanel;
-	private final JSONArray initialOrder;
-	private JSONArray currentOrder;
+	private final JsonArray initialOrder;
+	private JsonArray currentOrder;
 
 	private final mxIEventListener selectionListener = new mxIEventListener() {
 
@@ -82,8 +82,8 @@ public class GraphManager {
 	}
 
 	@SuppressWarnings("unchecked")
-	private final JSONArray useRules(List<String> rules) {
-		final JSONArray nodeOrder = (JSONArray) initialOrder.clone();
+	private final JsonArray useRules(List<String> rules) {
+		final JsonArray nodeOrder = (JsonArray) initialOrder.clone();
 		for (int i = rules.size() - 1; i >= 0; i--) {
 			final int holeIndex = nodeOrder.indexOf("6");
 			switch (rules.get(i)) {

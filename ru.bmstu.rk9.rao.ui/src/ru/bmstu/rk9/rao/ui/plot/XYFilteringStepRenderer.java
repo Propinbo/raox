@@ -19,7 +19,7 @@ import org.jfree.chart.renderer.xy.XYItemRendererState;
 import org.jfree.chart.renderer.xy.XYStepRenderer;
 import org.jfree.chart.urls.XYURLGenerator;
 import org.jfree.data.xy.XYDataset;
-import org.jfree.ui.RectangleEdge;
+import org.jfree.chart.ui.RectangleEdge;
 
 public class XYFilteringStepRenderer extends XYStepRenderer {
 	public XYFilteringStepRenderer(XYToolTipGenerator toolTipGenerator, XYURLGenerator urlGenerator) {
@@ -81,9 +81,8 @@ public class XYFilteringStepRenderer extends XYStepRenderer {
 					drawLine(graphics2D, state.workingLine, screenXFromStep, screenY1, screenX1, screenY1);
 				}
 			}
-			int domainAxisIndex = plot.getDomainAxisIndex(domainAxis);
-			int rangeAxisIndex = plot.getRangeAxisIndex(rangeAxis);
-			updateCrosshairValues(crosshairState, valueX1, valueY1, domainAxisIndex, rangeAxisIndex, screenX1, screenY1,
+			int datasetIndex = plot.indexOf(dataset);
+			updateCrosshairValues(crosshairState, valueX1, valueY1, datasetIndex, screenX1, screenY1,
 					orientation);
 
 			EntityCollection entities = state.getEntityCollection();

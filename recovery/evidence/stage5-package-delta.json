@@ -1,0 +1,10 @@
+{
+  "manifest_updated": true,
+  "files": 1362,
+  "application_binaries_unchanged": true,
+  "final_package_sha256": "4a975dc8f280c93a0694e1b78988d4574a016cc9a13d2674ce08e7d80ae60553",
+  "changed_files": [
+    "THIRD-PARTY.md"
+  ],
+  "ui_package_sha256": "1846c642b0276da7251140e55c3d568c346d49c321e0f71607274b8bddd8b170"
+}

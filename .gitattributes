@@ -22,3 +22,6 @@ mvnw.cmd text eol=crlf
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+# Preserve the reviewed bytes of vendored sources, notices and source archives.
+recovery/licenses/** -text
+ru.bmstu.rk9.rao.ui/thirdparty/jfreechart-swt/** -text

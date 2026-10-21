@@ -11,23 +11,18 @@
 
 	<artifactId>assembly</artifactId>
 	<name>Package binaries</name>
+	<packaging>pom</packaging>
 
 	<properties>
 		<assembly-descriptor1>lib-jar-without-version.xml</assembly-descriptor1>
 		<assembly-descriptor2>jars-only.xml</assembly-descriptor2>
-		<set_rao_perspective-token>-product</set_rao_perspective-token>
-		<set_rao_perspective-value>
--perspective${line.separator}
-ru.bmstu.rk9.rao.ui.perspective${line.separator}
--product
-		</set_rao_perspective-value>
 	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
+				<version>3.3.1</version>
 				<executions>
 					<execution>
 						<id>copy-jars</id>
@@ -69,38 +64,16 @@ ru.bmstu.rk9.rao.ui.perspective${line.separator}
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>com.google.code.maven-replacer-plugin</groupId>
-				<artifactId>replacer</artifactId>
-				<version>1.5.3</version>
-				<executions>
-					<execution>
-					<phase>prepare-package</phase>
-					<goals>
-						<goal>replace</goal>
-					</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<ignoreMissingFile>true</ignoreMissingFile>
-					<file>${basedir}/target/eclipse.ini</file>
-					<replacements>
-						<replacement>
-							<token>${set_rao_perspective-token}</token>
-							<value>${set_rao_perspective-value}</value>
-						</replacement>
-					</replacements>
-				</configuration>
-			</plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.5.5</version>
+				<version>3.7.1</version>
 				<configuration>
 					<descriptors>
 						<descriptor>${assembly-descriptor1}</descriptor>
 						<descriptor>${assembly-descriptor2}</descriptor>
 					</descriptors>
 					<finalName>raox</finalName>
+					<attach>false</attach>
 				</configuration>
 				<executions>
 					<execution>

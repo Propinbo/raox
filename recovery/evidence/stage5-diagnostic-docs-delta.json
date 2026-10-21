@@ -1,0 +1,11 @@
+{
+  "final_package_sha256": "e3d7ab2a2c9bbaa79df7404b102c1cd5b59f14a01ad50b94cdc0cdaaf4a83dc4",
+  "files": 1362,
+  "application_binaries_unchanged": true,
+  "changed_files": [
+    "README.txt",
+    "THIRD-PARTY.md"
+  ],
+  "manifest_updated": true,
+  "ui_package_sha256": "d55c3534d01fcdfeec318efe70ddde7d4d82916292c40207535bf4bb16fba3bb"
+}

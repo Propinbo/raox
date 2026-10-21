@@ -1,155 +1,146 @@
-# Сборка через maven
+# Сборка через Maven
 
-## Зафиксированная сборка Windows x64
+## Windows x64 / Java 21
 
-Нужны Windows x64 и PowerShell 5.1 или 7. JDK Temurin **8u504-b01** загружается
-скриптом, Apache Maven **3.3.9** — Maven Wrapper **3.3.4**. Системная установка
-Java/Maven не требуется. URL и SHA-256 находятся в
-[toolchains.lock.json](recovery/toolchains.lock.json) и
-[maven-wrapper.properties](.mvn/wrapper/maven-wrapper.properties).
-Из корня исходников:
+Нужны Windows x64 и PowerShell 5.1 или 7. Скрипт загружает Temurin **21.0.12.1+1**,
+Maven Wrapper — Maven **3.9.11**. Системные установки и PATH не меняются.
 
 ```powershell
-.\recovery\Initialize-Toolchains.ps1
-.\recovery\Invoke-LegacyBuild.ps1 -Clean -Goal verify
+.\recovery\Initialize-Platform.ps1
+.\recovery\Invoke-PlatformBuild.ps1 -Clean
 ```
 
-Путь к исходникам должен содержать только ASCII: например, `C:\work\raox`.
-Пробелы в пути проверены. Кириллица в пути исходников ломает внутреннюю генерацию лексера
-в старом ANTLR; скрипт сообщает об этом до запуска Maven. Русские и другие Unicode-имена
-в `.rao` проверяются тестами и этим ограничением не затронуты.
+По умолчанию выполняется `verify`. Плагины находятся в
+`assembly/target/raox-3.9.0.zip`; проверяются 38 JUnit, состав ZIP и SHA-256 зависимостей.
+Дополнительная проверка фиксирует 8 000 чисел распределений Commons Math.
+Модуль `raox.repository` создаёт локальный p2-репозиторий с зависимостями.
 
-Для собственных каталогов инструментов, кэша и отчётов:
+Инструменты находятся в `.build/platform-tools`, выделенный Maven/p2/wrapper-кэш —
+в `.build/platform-m2`, логи и JSON — в `.build/platform-evidence`.
+Для других каталогов доступны параметры `-ToolchainRoot`, `-CacheRoot`, `-LogRoot`.
+`-RequireEmptyCache` отвергает непустой кэш, `-Offline` проверяет повторную сборку
+после его заполнения. Сетевые ошибки сохраняются по попыткам; ошибки компиляции
+и тестов автоматически не повторяются. `-NetworkRetries 0` отключает повторы.
 
 ```powershell
-.\recovery\Initialize-Toolchains.ps1 -ToolchainRoot C:\raox-tools
-.\recovery\Invoke-LegacyBuild.ps1 -ToolchainRoot C:\raox-tools -CacheRoot C:\raox-m2 `
-    -LogRoot C:\raox-reports -Clean -Goal verify -RequireEmptyCache
+.\recovery\Invoke-PlatformBuild.ps1 -CacheRoot .build/new-m2 -RequireEmptyCache -Clean
+.\recovery\Invoke-PlatformBuild.ps1 -CacheRoot .build/new-m2 -Offline -Clean
 ```
 
-По умолчанию выполняется `clean package` при `-Clean`, иначе `package`.
-Для отдельных стадий доступны `-Goal validate` и `-Goal verify`.
-`-RequireEmptyCache` отвергает непустой кэш. Для повторного запуска с ним уберите этот
-флаг; `-Offline` проверяет сборку без сетевых обращений Maven после заполнения кэша.
-Скрипт временно задаёт `JAVA_HOME`, `MAVEN_OPTS`, `MAVEN_USER_HOME`, использует отдельные Maven settings/кэш,
-затем восстанавливает окружение. Журнал и JSON с кодом завершения, результатами тестов,
-составом и SHA-256 архива сохраняются в `.build/evidence/`.
-Инструменты по умолчанию лежат в `.build/tools/`, Maven/p2 и wrapper — в `.build/m2/`.
-Все эти каталоги игнорируются Git. При сетевых ошибках допускаются три повтора;
-каждая попытка имеет отдельный лог и запись в JSON. Ошибки генерации/компиляции/тестов
-автоматически не перезапускаются. `-NetworkRetries 0` отключает сетевые повторы.
+Используйте ASCII-путь исходников; пробелы разрешены. Поддержка Unicode-имён
+моделей проверяется отдельно. Установленный дистрибутив проверяется также в пути
+с пробелами и кириллицей; ограничение исходников на ASCII остаётся у генератора.
 
-Maven использует только HTTPS Maven Central; старые транзитивные Codehaus-репозитории
-заменяются через settings. p2 использует два точных release-сайта по HTTPS, без зеркал.
-Все 152 bundle и их SHA-256 зафиксированы в
-[p2-bundles.lock.json](recovery/p2-bundles.lock.json). Оба родительских POM используют
-один [target](raox.target/raox.target.target), `win32/win32/x86_64`, JavaSE-1.8.
-Локально установленные артефакты Tycho исключены.
-Дополнительно проверяются 354 Maven JAR/ZIP из
-[maven-artifacts.lock.csv](recovery/maven-artifacts.lock.csv). Кэш должен быть
-выделенным для этой сборки. После online-запуска четыре p2 metadata-файла
-сохраняются с проверкой SHA-256 для offline fallback старого Tycho.
+## Самостоятельный дистрибутив Windows x64
 
-Результат — **`assembly/target/raox-3.9.0.zip`**. В папке `raox/` находятся плагины
-языка, runtime, UI, game5 и дополнительный `ru.bmstu.rk9.rao.lib.jar` без версии.
-Скрипт проверяет состав архива и побайтовое совпадение двух копий runtime через SHA-256.
-SDK feature собирается отдельно в `ru.bmstu.rk9.rao.sdk/target/`, как и в исходной сборке;
-архив содержит плагины, без установленного Eclipse.
-
-Проверено **32 JUnit-теста**, без ошибок и пропусков. Они включают реальную компиляцию
-и выполнение всех 17 исторических моделей RCPTT, точное сравнение трасс и результатов,
-UTF-8, неверный ввод и воспроизводимость seed. `LinearProcessTest` проверяет обоснованную
-перегрузку без очереди при `t=50` и отдельное успешное выполнение.
-RCPTT и запуск Eclipse выполняются отдельно. Инструменты можно получить тем же скриптом:
+Для упаковки и native smoke нужны **PowerShell 7** и **Windows 10 1903+ / 11 x64**.
+Сначала выполните сборку выше.
 
 ```powershell
-.\recovery\Initialize-Toolchains.ps1 -IncludeUi
+.\recovery\Initialize-Platform.ps1 -IncludeUi
+.\recovery\New-WindowsDistribution.ps1
+$smoke = .\recovery\Invoke-DistributionSmoke.ps1 `
+    -ArchivePath assembly/target/windows-x64/raox-3.9.0-windows-x86_64.zip
+```
+
+ZIP содержит `raox/eclipse.exe`, Java 21, JDT, Rao X и Game5, лицензии и исходники
+LGPL-компонентов. Установка идёт p2 director в пустой каталог исключительно из
+`raox.repository/target/repository`; старые Nexus и ручная установка плагинов
+не нужны. Загруженный Eclipse используется только как инструмент p2 director.
+Для повторной упаковки укажите новый `-OutputRoot`, существующий каталог
+приложения скрипт не перезаписывает. Архив p2: `raox.repository/target/*.zip`.
+
+Распакуйте ZIP целиком в доступный для записи каталог, запустите `raox/eclipse.exe`
+и выберите новый workspace. JVM указана относительным путём в `eclipse.ini`.
+`Invoke-DistributionSmoke.ps1` распаковывает ZIP во временный путь с пробелами и
+кириллицей, проверяет хеши файлов и запускает native launcher с удалённым
+JAVA_HOME и PATH без Java. Временная копия остаётся для проверки UI.
+
+В копии Windows EXE добавляется per-process UTF-8-манифест для поддержки кириллицы
+в пути Java 21; исходная JDK не меняется. `native-launchers.json` фиксирует SHA-256
+до и после изменения. Лицензии и ограничения описаны в [THIRD-PARTY.md](recovery/THIRD-PARTY.md).
+
+UI установленного приложения:
+
+```powershell
 .\recovery\Invoke-RcpttTests.ps1 `
-    -JavaHome .build/tools/jdk8u504-b01 `
-    -RunnerRoot .build/tools/rcptt/eclipse `
-    -AutRoot .build/tools/eclipse/raox-eclipse-3.9.0-win-x64 `
+    -JavaHome (Join-Path $smoke.application jre) `
+    -RunnerRoot .build/platform-tools/rcptt `
+    -AutRoot $smoke.application `
+    -PluginsRoot (Join-Path $smoke.application plugins) `
+    -InstalledDistribution -LockRoot recovery/platform -LogRoot .build/distribution-ui
+$latestRun = Get-ChildItem .build/distribution-ui -Directory | Sort-Object Name | Select-Object -Last 1
+.\recovery\Test-UiExports.ps1 -RunRoot $latestRun.FullName
+.\recovery\Test-QuickStartExports.ps1 -RunRoot $latestRun.FullName
+```
+
+Библиотеки, координаты, источники, лицензии и ограничения описаны в
+[THIRD-PARTY.md](recovery/THIRD-PARTY.md). `Test-EmbeddedLibraries.ps1` проверяет
+их фиксированные байты; обычная сборка выполняет эту проверку автоматически.
+
+## Платформа и фиксация зависимостей
+
+Сборка и интерфейс используют Eclipse **2025-09 / 4.37**, Xtext/Xbase/Xtend **2.40.0**,
+Guice **7.0.0**, Tycho **4.0.13** и JavaSE-21.
+[Target](raox.target/raox.target.target) содержит точные корневые IU и единственный
+неизменяемый p2 timestamp-репозиторий. Отдельный Maven-classpath генератора и Xtend
+фиксирует EMF и JDT; старый набор fragments заменён на `XtextGenerator / StandardLanguage`.
+Грамматика сохранена. Библиотеки обновлены отдельно с проверками совместимости.
+
+[Инструменты и SHA-256](recovery/platform/toolchains.lock.json),
+[p2 bundle](recovery/platform/p2-bundles.lock.json),
+[Maven-бинарники](recovery/platform/maven-artifacts.lock.csv).
+Штатная сборка только проверяет lock-файлы. `Export-PlatformLocks.ps1` предназначен
+для осознанного обновления инвентаря после проверки переноса, а не для исправления
+несовпадений при обычной сборке. Используйте выделенный кэш без посторонних артефактов.
+
+## Проверки интерфейса
+
+```powershell
+.\recovery\Initialize-Platform.ps1 -IncludeUi
+.\recovery\Invoke-SwtAwtProbe.ps1
+.\recovery\Invoke-RcpttTests.ps1 `
+    -JavaHome .build/platform-tools/jdk-21.0.12.1+1 `
+    -RunnerRoot .build/platform-tools/rcptt `
+    -AutRoot .build/platform-tools/eclipse/eclipse `
+    -LockRoot recovery/platform `
     -PluginsRoot assembly/target/plugins -LogRoot .build/ui-evidence
 $latestRun = Get-ChildItem .build/ui-evidence -Directory | Sort-Object Name | Select-Object -Last 1
 .\recovery\Test-UiExports.ps1 -RunRoot $latestRun.FullName
+.\recovery\Test-QuickStartExports.ps1 -RunRoot $latestRun.FullName
 ```
 
-UI использует исторический Eclipse 4.7.1 / Xtext 2.12.0 и RCPTT 2.2.0;
-его версии зафиксированы отдельно от Maven-платформы, включая хеши всех файлов плагинов.
-Полный прогон обязан выполнить ровно 42 теста без пропусков.
-[Подробности проверок поведения](recovery/STAGE2.md).
+RCPTT **2.6.1** проверяет 42 прежних сценария и новый quick start (всего 43) без пропусков: JDT-компиляцию
+и загрузку классов, импорт, запуск/остановку, трассы, результаты, CSV/JSON, графики,
+анимацию и game5. Отдельная проба создаёт, отображает и освобождает SWT/AWT frame на JDK 21.
+Перед UI-прогоном проверяются SHA-256 плагинов обоих загруженных инструментов.
 
-Jenkins, кафедральный Nexus и внешний каталог Eclipse для этой команды не требуются.
-[Этап 3](recovery/STAGE3.md) содержит фактические результаты пустого кэша и ограничения.
-[GitHub Actions](.github/workflows/legacy-build.yml) выполняет `verify` с пустым кэшем
-на Windows Server 2022 и сохраняет ZIP, логи и JUnit. UI вынесен в отдельный job,
-включаемый параметром `run_ui` при `workflow_dispatch`. Workflow не использует secrets,
-Jenkins или Nexus; токен имеет только `contents: read`.
-[Контрольный run](https://github.com/Propinbo/raox/actions/runs/39588936426) прошёл
-холодную и offline-сборку на Windows Server 2022, по 32 JUnit. UI job в этом run
-пропущен по условию; 42 RCPTT проверены локально. Ручной workflow_dispatch станет
-доступен после попадания workflow в default branch; код оставлен в отдельной ветке fork.
+[GitHub Actions](.github/workflows/legacy-build.yml) настроен на эту матрицу:
+пустой кэш, offline-повтор, ZIP/JUnit/логи; ручной `run_ui` включает UI и SWT/AWT.
+Результаты платформы — в [STAGE4.md](recovery/STAGE4.md), библиотек и упаковки —
+в [STAGE5.md](recovery/STAGE5.md). CI дополнен упаковкой и smoke, UI проверяет ZIP;
+локальные изменения конфигурации не означают нового удалённого запуска CI.
+Исторический успешный CI этапа 3 проверял прежнюю платформу, а не эту матрицу.
 
-## Исторические инструкции
+Исходная сборка JDK 8 / Mars / Xtext 2.9.2 и её lock-файлы сохранены в истории
+на коммите `fe02d189`. Команды и свидетельства — [STAGE3.md](recovery/STAGE3.md).
 
-Следующие команды сохранены для справки. Для контрольной сборки используйте команду выше.
+## Документация и передача
 
-## Общие положения
+[Первая модель на Windows](docs/user_guide/quick_start.html),
+[HTML-справка](docs/index.html), [архитектура и выпуск](docs/development.md).
+Шесть полных HTML-примеров проверяются обычной JUnit-сборкой: четыре исполняются, две анимации компилируются.
+Отдельная проверка локальных ссылок требует Python 3.9+:
+
+```powershell
+python .\recovery\Test-Documentation.py --output .build/documentation-links.json
 ```
-[export MAVEN_OPTS="-Xmx512M"]
-[mvn initialize -N -Pset-git-version]
-mvn [clean] package|deploy -Drepository-url=<url-to-repository-root> [-Pdebug]
-```
-- `export MAVEN_OPTS="-Xmx512M"` - Устанавливает максимальное количество выделяемой памяти.
-Команда необходима, если сборка выдает ошибку `java heap space`. Под Windows `set MAVEN_OPTS="-Xmx512M"` или через настройки переменных среды.
 
-- `mvn initialize -N -Pset-git-version` - Устанавливает версию бинарников на основе гита. Обязательная команда, если бинарники передаются пользователям.
- - `-N` или `--non-recursive` - Запускает только родительский pom.xml. Без этого флага версия поменяется, но сборка завершится с ошибкой, что критично для сборки на Дженкинсе.
- - `-Pset-git-version` - Определает и устанавливает версию на основе `git describe --tags`
+Ожидается `errors: []`. Внешние адреса перечисляются отдельно, сеть не используется.
+Для запуска только UI quick start добавьте `-Tests '*docs_quickstart*'` к команде
+`Invoke-RcpttTests.ps1` для установленного дистрибутива выше. Текст модели берётся
+непосредственно из HTML, проверяются `.res`, `.trc`, CSV и JSON; численные точки проверяет `Test-QuickStartExports.ps1`.
 
-- `mvn [clean] package` - Запускает очистку (`clean`) и следом за ней сборку (`package`) проекта, как если бы они запускались отдельно<br>
- ```
-[mvn clean]
-mvn package
-```
-`mvn clean` - Удаляет бинарники и содержимое папок `target`.<br>
-`mvn package` - Запускает сборку.
-Результаты сборки
- - архив с плагинами `assembly\target\rao-<version>-plugins.zip`. Например
-    - `rao-2.8.0.12-gea41589-plugins.zip` для не релизной сборки
-    - `rao-2.8.0-plugins.zip` для релизной
-
- - папка с плагинами
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao.lib-<version>.jar```
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao.ui-<version>.jar```
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao-<version>.jar```
-
-- `mvn deploy` - Запускает сборку и развертывает полученные артифакты в репозитории.
-
- ```
-mvn deploy -Drepository-url=<url-to-repository-root>
-```
-Параметр `repository-url` задает адрес репозитория, который по умолчанию не задан, поэтому является обязательным при запуске сборки с развертыванием.
-
-- `-Pdebug` - Добавляет в сборку jar'ники с исходниками, которые при необходимости отладки можно использовать в `eclipse` через `attach source` 
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao.lib-<version>-sources.jar```
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao.ui-<version>-sources.jar```
-    - ```assembly\target\plugins\ru.bmstu.rk9.rao-<version>-sources.jar```
-
-## Автосборка на Дженкинсе
-### Только джарники
-```
-export MAVEN_OPTS="-Xmx512M"
-mvn initialize -N -Pset-git-version
-mvn clean deploy -Drepository-url=file:///home/rdo/nexus/rdo-work/nexus/storage/raox-m2/
-
-```
-### Архив с Эклипсом
-Cобирается в [aurusov/raox-deploy](https://github.com/aurusov/raox-deploy)
-```
-export MAVEN_OPTS="-Xmx512M"
-cd assembly
-mvn initialize -N -Pset-raox-version
-mvn clean package -Declipse-path=../../../../eclipses/eclipse-dsl-mars-1-linux-gtk-x64 -Dtarget-os=linux -Dtarget-bitness=x64
-```
-## Продвижение версии
-Продвижение версии можно посмотреть на [gitflow.md](/gitflow.md) в разделе ```release/version```
+Исторические команды Java 8, Jenkins/Nexus и `set-git-version` вынесены в
+[отдельный архив](docs/history/build-legacy.md); исходное описание Linux/Neon —
+в [исторический README](docs/history/README-legacy.md).

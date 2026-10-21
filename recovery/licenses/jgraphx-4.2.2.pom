@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.vlsi.mxgraph</groupId>
+  <artifactId>jgraphx</artifactId>
+  <version>4.2.2</version>
+  <name>jgraphx</name>
+  <description>JGraphX is a Java Swing diagramming (graph visualisation) library</description>
+  <url>https://github.com/vlsi/jgraphx-publish</url>
+  <licenses>
+    <license>
+      <name>BSD</name>
+      <url>https://github.com/vlsi/jgraphx-publish/LICENSE</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>alderg</id>
+      <name>Gaudenz Alder</name>
+    </developer>
+    <developer>
+      <id>davidjgraph</id>
+      <name>David Benson</name>
+    </developer>
+    <developer>
+      <id>vlsi</id>
+      <name>Vladimir Sitnikov</name>
+      <email>sitnikov.vladimir@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/vlsi/jgraphx-publish.git</connection>
+    <url>https://github.com/vlsi/jgraphx-publish</url>
+  </scm>
+</project>

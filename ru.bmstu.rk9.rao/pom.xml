@@ -37,7 +37,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
+				<version>3.5.0</version>
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
@@ -50,56 +50,21 @@
 					<includeProjectDependencies>false</includeProjectDependencies>
 					<includePluginDependencies>true</includePluginDependencies>
 					<mainClass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainClass>
+					<blockSystemExit>true</blockSystemExit>
 					<arguments>
-						<argument>file://${project.basedir}/src/ru/bmstu/rk9/rao/GenerateRao.mwe2</argument>
+						<argument>${project.baseUri}src/ru/bmstu/rk9/rao/GenerateRao.mwe2</argument>
 						<argument>
 							-p
 						</argument>
 						<argument>
-							runtimeProject=/${project.basedir}
+							runtimeProject=${project.basedir}
 						</argument>
 					</arguments>
 				</configuration>
 				<dependencies>
-					<!-- Pin the generator's Maven classpath, not just the p2 platform. -->
-					<dependency>
-						<groupId>org.eclipse.emf</groupId>
-						<artifactId>org.eclipse.emf.common</artifactId>
-						<version>${emf-common-version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.emf</groupId>
-						<artifactId>org.eclipse.emf.ecore</artifactId>
-						<version>${emf-ecore-version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.emf</groupId>
-						<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-						<version>${emf-xmi-version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.emf</groupId>
-						<artifactId>org.eclipse.emf.codegen</artifactId>
-						<version>2.11.0</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.emf</groupId>
-						<artifactId>org.eclipse.emf.codegen.ecore</artifactId>
-						<version>2.11.0</version>
-					</dependency>
-					<dependency>
-						<groupId>org.antlr</groupId>
-						<artifactId>antlr-runtime</artifactId>
-						<version>3.2</version>
-					</dependency>
 					<dependency>
 						<groupId>org.eclipse.xtext</groupId>
-						<artifactId>xtext-antlr-generator</artifactId>
-						<version>2.1.1</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.xtext</groupId>
-						<artifactId>org.eclipse.xtext.xtext</artifactId>
+						<artifactId>org.eclipse.xtext.xtext.generator</artifactId>
 						<version>${xtext-version}</version>
 					</dependency>
 					<dependency>
@@ -108,14 +73,27 @@
 						<version>${xtext-version}</version>
 					</dependency>
 					<dependency>
-						<groupId>org.eclipse.equinox</groupId>
-						<artifactId>org.eclipse.equinox.common</artifactId>
-						<version>3.6.0</version>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.mwe2.launch</artifactId>
+						<version>2.23.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.xtext</groupId>
+						<artifactId>xtext-antlr-generator</artifactId>
+						<version>2.1.1</version>
+						<exclusions><exclusion>
+							<groupId>log4j</groupId><artifactId>log4j</artifactId>
+						</exclusion></exclusions>
+					</dependency>
+					<dependency>
+						<groupId>ch.qos.reload4j</groupId>
+						<artifactId>reload4j</artifactId>
+						<version>1.2.26</version>
 					</dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
-				<groupId>org.eclipse.xtend</groupId>
+				<groupId>org.eclipse.xtext</groupId>
 				<artifactId>xtend-maven-plugin</artifactId>
 			</plugin>
 			<plugin>

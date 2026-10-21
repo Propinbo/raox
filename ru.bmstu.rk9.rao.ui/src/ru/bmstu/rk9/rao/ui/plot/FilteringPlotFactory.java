@@ -6,13 +6,13 @@ import org.jfree.chart.axis.DateAxis;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.xy.XYItemRenderer;
-import org.jfree.chart.util.ParamChecks;
+import org.jfree.chart.util.Args;
 import org.jfree.data.xy.XYDataset;
 
 public class FilteringPlotFactory {
 	public static JFreeChart createXYStepChart(String title, String xAxisLabel, String yAxisLabel, XYDataset dataset,
 			PlotOrientation orientation, boolean legend, boolean tooltips, boolean urls) {
-		ParamChecks.nullNotPermitted(orientation, "orientation");
+		Args.nullNotPermitted(orientation, "orientation");
 		final DateAxis xAxis = new DateAxis(xAxisLabel);
 		final NumberAxis yAxis = new NumberAxis(yAxisLabel);
 		yAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());

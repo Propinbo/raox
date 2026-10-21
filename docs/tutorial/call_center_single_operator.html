@@ -12,8 +12,9 @@
 <h2>Модель службы технической поддержки с одним оператором</h2>
 <h3>Постановка задачи</h3>
 <p>За основу будет взята модель подсчета числа звонков, рассмотренная ранее. Необходимо промоделировать обслуживание заявок единственным оператором в течение рабочего дня, собрать статистику по длине очереди и количеству обслуженных заявок. Время на обслуживание заявки распределено по равномерному закону на интервале от 20 до 40 минут.</p>
+<p>Полный код ниже проверяется сборкой без сети. Короткие фрагменты далее показывают части этой модели. Условие currentTime &gt;= 480 проверяется после шага: последний звонок учтён в момент 486.85470956869307.</p>
 <h3>Полный код модели, <a href="https://github.com/aurusov/raox-models/tree/master/tutorial/call_center/call_center_single_operator">скачать</a></h3>
-<pre><code class="rao">enum OperatorState {FREE, BUSY}
+<pre><code class="rao" id="model-source">enum OperatorState {FREE, BUSY}
 
 type TechSupport {
     OperatorState operatorState
@@ -119,21 +120,21 @@ result queueLengthStatistics = Result.create([techSupport.queueLength])
 </code></pre>
 
 <h3>Результаты моделирования</h3>
-<pre><code class="rao">test.test.totalPeopleServed
-    Mean: 4.0714235818806825
-    Last value: 10.0
-    Standard deviation: 3.1491732498062306
-    varcoef: 243.58291290129318
+<pre><code class="text" id="expected-results">test.test.totalPeopleServed
+  Last value: 10.0
+  Mean: 4.0714235818806825
+  Standard deviation: 3.1491732498062306
+  varcoef: 243.58291290129318
 
 test.test.queueLengthStatistics
-    Mean: 0.26029519109908134
-    Last value: 1.0
-    Standard deviation: 0.43879562963841606
-    varcoef: 73.97048089009185
+  Last value: 1.0
+  Mean: 0.26029519109908134
+  Standard deviation: 0.43879562963841606
+  varcoef: 73.97048089009185
 </code></pre>
 
 <h3>Трассировка</h3>
-<pre><code class="rao">ES 0.0 Tracing started
+<pre><code class="text" id="expected-trace">ES 0.0 Tracing started
 RC 0.0 techSupport = {FREE, 0, 0}
 ES 0.0 Simulation started
 V  0.0 totalPeopleServed = 0.0

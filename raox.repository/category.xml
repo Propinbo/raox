@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <feature id="ru.bmstu.rk9.rao.sdk" version="3.9.0"><category name="raox"/></feature>
+  <iu id="org.eclipse.platform.ide" version="4.37.0.I20250905-0730"/>
+  <iu id="org.eclipse.jdt.feature.group" version="3.20.300.v20250905-1111"/>
+  <iu id="org.eclipse.xtext.sdk.feature.group" version="2.40.0.v20250825-0355"/>
+  <iu id="org.eclipse.xtend.sdk.feature.group" version="2.40.0.v20250825-0355"/>
+  <iu id="org.eclipse.gef.feature.group" version="3.25.0.202508011427"/>
+  <category-def name="raox" label="Rao X"/>
+</site>

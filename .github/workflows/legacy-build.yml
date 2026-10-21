@@ -1,18 +1,16 @@
-name: Legacy Windows build
+name: Java 21 Windows build
 
 on:
   push:
     paths-ignore:
-      - '**/*.md'
       - recovery/evidence/**
   pull_request:
     paths-ignore:
-      - '**/*.md'
       - recovery/evidence/**
   workflow_dispatch:
     inputs:
       run_ui:
-        description: Run the separate 42 RCPTT UI checks
+        description: Run the separate 43 RCPTT UI checks
         type: boolean
         default: false
 
@@ -28,25 +26,38 @@ jobs:
         shell: pwsh
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Check local documentation links and help navigation
+        run: python ./recovery/Test-Documentation.py --output .build/platform-evidence/documentation-links.json
       - name: Download and verify JDK
-        run: ./recovery/Initialize-Toolchains.ps1
+        run: ./recovery/Initialize-Platform.ps1
       # Deliberately do not restore a cache: every run checks all artifact sources.
       - name: Build from an empty Maven, p2 and wrapper cache
-        run: ./recovery/Invoke-LegacyBuild.ps1 -Clean -RequireEmptyCache -Goal verify
+        run: ./recovery/Invoke-PlatformBuild.ps1 -Clean -RequireEmptyCache -Goal verify
       - name: Rebuild with Maven offline
-        run: ./recovery/Invoke-LegacyBuild.ps1 -Clean -Goal verify -Offline
+        run: ./recovery/Invoke-PlatformBuild.ps1 -Clean -Goal verify -Offline
+      - name: Provision a standalone Windows x64 application from local p2
+        run: |
+          ./recovery/Initialize-Platform.ps1 -IncludeUi
+          ./recovery/New-WindowsDistribution.ps1
+          $smoke = ./recovery/Invoke-DistributionSmoke.ps1 `
+            -ArchivePath assembly/target/windows-x64/raox-3.9.0-windows-x86_64.zip
+          $smoke | ConvertTo-Json -Depth 6 | Set-Content .build/platform-evidence/distribution-smoke.json
       - name: Upload plugins, JUnit reports and build evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: legacy-windows-build
+          name: java21-windows-build
           include-hidden-files: true
           if-no-files-found: error
           path: |
             assembly/target/raox-3.9.0.zip
             assembly/target/plugins/*.jar
+            assembly/target/windows-x64/*.zip
+            assembly/target/windows-x64/*.json
+            assembly/target/windows-x64/director.log
+            raox.repository/target/*.zip
             ru.bmstu.rk9.rao.tests/target/surefire-reports/
-            .build/evidence/
+            .build/platform-evidence/
 
   ui:
     if: github.event_name == 'workflow_dispatch' && inputs.run_ui
@@ -60,24 +71,33 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
-          name: legacy-windows-build
-      - name: Download and verify JDK, historical Eclipse and RCPTT
-        run: ./recovery/Initialize-Toolchains.ps1 -IncludeUi
+          name: java21-windows-build
+      - name: Download and verify Java 21, Eclipse 2025-09 and RCPTT
+        run: ./recovery/Initialize-Platform.ps1 -IncludeUi
+      - name: Verify the SWT and AWT bridge on Java 21
+        run: ./recovery/Invoke-SwtAwtProbe.ps1
       - name: Run UI checks and validate exported data
         run: |
+          $smoke = ./recovery/Invoke-DistributionSmoke.ps1 `
+            -ArchivePath assembly/target/windows-x64/raox-3.9.0-windows-x86_64.zip
           ./recovery/Invoke-RcpttTests.ps1 `
-            -JavaHome .build/tools/jdk8u504-b01 `
-            -RunnerRoot .build/tools/rcptt/eclipse `
-            -AutRoot .build/tools/eclipse/raox-eclipse-3.9.0-win-x64 `
-            -PluginsRoot assembly/target/plugins `
+            -JavaHome (Join-Path $smoke.application jre) `
+            -RunnerRoot .build/platform-tools/rcptt `
+            -AutRoot $smoke.application `
+            -LockRoot recovery/platform `
+            -PluginsRoot (Join-Path $smoke.application plugins) `
+            -InstalledDistribution `
             -LogRoot .build/ui-evidence
           $latestRun = Get-ChildItem .build/ui-evidence -Directory | Sort-Object Name | Select-Object -Last 1
           ./recovery/Test-UiExports.ps1 -RunRoot $latestRun.FullName
+          ./recovery/Test-QuickStartExports.ps1 -RunRoot $latestRun.FullName
       - name: Upload RCPTT HTML, JUnit, logs and exports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: legacy-windows-ui
+          name: java21-windows-ui
           include-hidden-files: true
           if-no-files-found: error
-          path: .build/ui-evidence/
+          path: |
+            .build/ui-evidence/
+            .build/platform-probe/

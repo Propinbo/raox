@@ -1,0 +1,8 @@
+{
+  "canonical_url": "https://download.eclipse.org/releases/2025-09/202509101001/binary/org.eclipse.platform_root_4.37.0.v20250905-0730",
+  "canonical_response": "HTML Temporary shutdown, 7949 bytes",
+  "mirror_url": "https://ftp.fau.de/eclipse/releases/2025-09/202509101001/binary/org.eclipse.platform_root_4.37.0.v20250905-0730",
+  "bytes": 196,
+  "expected_sha256": "5b9cf01f850a226e489b7d188c9114ccd0cdc40a703157c1b60bae1c672ef677",
+  "actual_sha256": "5b9cf01f850a226e489b7d188c9114ccd0cdc40a703157c1b60bae1c672ef677"
+}

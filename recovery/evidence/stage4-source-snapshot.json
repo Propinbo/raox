@@ -1,0 +1,3192 @@
+{
+  "created_at_utc": "2026-10-21T11:45:12.2265172Z",
+  "repository_head": "fe02d189dbef399a6f5d3afa10cc3bdceb3f7e7b",
+  "destination": "C:\\Users\\propinbo\\Documents\\raox\\.build\\stage4 clean source",
+  "generated_outputs": 0,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "4983a18c83deff03f93ce1eb41b2508ea1f0f1fadf3b03c2bc01c39f89945545"
+    },
+    {
+      "path": ".github/workflows/legacy-build.yml",
+      "sha256": "0cb3a31c35b267a403ba9b9908433cc9065b0b5ee7e943e44f11a82f8526a012"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "43e8817f4eaf39f7bbc2117957186a010ae3bd535257f43f5961cbb12255dcf3"
+    },
+    {
+      "path": ".mvn/wrapper/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "sha256": "bb0b8f16b2661c3676ed5a6a15f5b11d864460c4e77cfb50c583f54708f944e7"
+    },
+    {
+      "path": "assembly/jars-only.xml",
+      "sha256": "7d51ce5ec8b8a73710b07575b685804b6d3273aba0fab9359ac7d5e9e77a284f"
+    },
+    {
+      "path": "assembly/lib-jar-without-version.xml",
+      "sha256": "47bcb3862710fbe4b18f9d85404289d0584e95eec6c8fff606132c7801163ea2"
+    },
+    {
+      "path": "assembly/pom.xml",
+      "sha256": "3f65032432a36899c33c65a8bf65c9ca4b810d91cf7195def9d99ecca9e8915b"
+    },
+    {
+      "path": "build-with-maven.md",
+      "sha256": "b5f826d9b9e504ba7a2501948261d54d140300d8b743cde0df30484e91fbdd9a"
+    },
+    {
+      "path": "deploy/.gitignore",
+      "sha256": "bfe9b383bee6dfa03f884f37d893789a90d1a190e5d34be5372296b73f48a0f7"
+    },
+    {
+      "path": "deploy/assembly/eclipse-dropins.xml",
+      "sha256": "217cae663ab068310480c8541bca1a57f88a8c952d1ea3d7963111a2a45db795"
+    },
+    {
+      "path": "deploy/assembly/pom.xml",
+      "sha256": "35db6d7d8f5112a875ed0897a660602d1af69ab4d6d4aba700ec1f61f7e082bd"
+    },
+    {
+      "path": "deploy/LICENSE",
+      "sha256": "8a4e11b0a6069987194c9d85d4fc99a9ad957e6832b9ba628458a0d3d477d409"
+    },
+    {
+      "path": "deploy/README.md",
+      "sha256": "3453b2e2acdd2cc98557ee9884cbdc9e1c9630d34f999d270cb49c0f92736650"
+    },
+    {
+      "path": "deploy/scripts/ftp_server.py",
+      "sha256": "ef1f538531c3701a87fa9f47a83ddd95745693d55faf62cad93a86a69ea7af63"
+    },
+    {
+      "path": "deploy/scripts/remove_outdated_deploys.py",
+      "sha256": "0dece061445b51301d88117e5deb3b6cf350bd23e61e8fe06e25278bf99aac66"
+    },
+    {
+      "path": "deploy/scripts/update_download_web_page.py",
+      "sha256": "585a9245a21532fc1b459bbcd87bcfc321555f4f5017c990524d5494f7a09f98"
+    },
+    {
+      "path": "deploy/scripts/versioned_file.py",
+      "sha256": "8320ea52dba073085aebb4f8139ccdc22754a641ec4388809d70174b66a39d37"
+    },
+    {
+      "path": "docs/.project",
+      "sha256": "afe02762b1868356e9cc484fb2aa0d62662aae43694d3d984318963ec6680973"
+    },
+    {
+      "path": "docs/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "docs/debug/logger.html",
+      "sha256": "adf344b1a58be11a08790cc5e16b79655d9b0da166c544b23c228e2a04f3b76a"
+    },
+    {
+      "path": "docs/debug/trace.html",
+      "sha256": "31f0ad5ee5b88901acd1bea0eb0189edaa7a30fc515ddfc6c3610d445c766ce8"
+    },
+    {
+      "path": "docs/raox.png",
+      "sha256": "3ed7b67ee7e1ca1cfd01f41edbaa29146953dee7caa0bb5c6780af4ed39ae7a1"
+    },
+    {
+      "path": "docs/reference/animation.html",
+      "sha256": "c268ea527500a45fd12406a0d462a0978429ea5677e45c59974324004f57a4d8"
+    },
+    {
+      "path": "docs/reference/base_types_and_functions.html",
+      "sha256": "1fe97e9ce210cc0b4ec53624aeb30139f5f9f8f49a991032d232761fe81b841b"
+    },
+    {
+      "path": "docs/reference/constant.html",
+      "sha256": "0af8ec1eae59ef5a5e4d73fbe1a99cbdc3145f28fce88084b457b31ff009308b"
+    },
+    {
+      "path": "docs/reference/event.html",
+      "sha256": "4284badfd8dbbae8e709da9f29f1a7034441517205f3ba6c773a8cf2c3a9ffc8"
+    },
+    {
+      "path": "docs/reference/function.html",
+      "sha256": "c36ce70770c7d29bba640d4326fb1b5a9f1d3d98cdfb7bc385cc20cf37efeadc"
+    },
+    {
+      "path": "docs/reference/logic.html",
+      "sha256": "9a4e92728d23f9aa6752173711fb589271b725de819ee2d3d48f1679d3590917"
+    },
+    {
+      "path": "docs/reference/pattern.html",
+      "sha256": "dad10decdcf39d57f47aefd3949d91801acb8614edc648e97d0ca8fda71ca182"
+    },
+    {
+      "path": "docs/reference/resource.html",
+      "sha256": "40e1fa7decd097089ffa8be3ab2fee8b37790c37919a0d60ae7b6a23909c21e4"
+    },
+    {
+      "path": "docs/reference/result.html",
+      "sha256": "c793933771f8baf803eab2d4e07e3efc9305ec495d20c976151162a0ba3a6d13"
+    },
+    {
+      "path": "docs/reference/search.html",
+      "sha256": "28aec4865a61f9089f0ffe5ab563f607b78d12b5d32cf4a9940c416431e8388c"
+    },
+    {
+      "path": "docs/reference/sequence.html",
+      "sha256": "3c480e88c9e9b86b27963c59d26e44ba03543675d1036160e4e73f124c9ca8d4"
+    },
+    {
+      "path": "docs/resources/images/numeric_statistics_comparison.png",
+      "sha256": "e08355a63312712905736eb7012d975a5d9186e5300c7857f7d5c4690d254e8a"
+    },
+    {
+      "path": "docs/scripts/table_of_contents.js",
+      "sha256": "3d0ec57903ca66fc1327a8b5cf962c77bb9d7c5b4a8ba1f07e066711a09a98b7"
+    },
+    {
+      "path": "docs/scripts/thirdparty/highlight.pack.js",
+      "sha256": "05a03eb003dd1d879a50dbe344ecda5c4c7e012551d9827299bc08a1f6497b61"
+    },
+    {
+      "path": "docs/scripts/thirdparty/jquery-2.1.4.min.js",
+      "sha256": "de4b3c3d1dc2506b6693f0f98884e1dc074cda9d66cab39b7b48a115fdfc4c0f"
+    },
+    {
+      "path": "docs/styles/contents_sidebar.css",
+      "sha256": "b4715e510b2b9c2c6dc2dd8140e6340cabea0a661e95b313fd7afb5994a3ba7b"
+    },
+    {
+      "path": "docs/styles/rao_general.css",
+      "sha256": "de14a2888c1a305f6305fba7006a5d73671dadc33d23460dc08b011bfb7bd3ee"
+    },
+    {
+      "path": "docs/styles/rao_highlight.css",
+      "sha256": "b8bc6d05f221274d4da549c17d48006ff3b5d64ad1b6917a7008d6d32cc7b239"
+    },
+    {
+      "path": "docs/tutorial/call_center_call_count.html",
+      "sha256": "c7a402dbadbed990c1ec95ee6901b30986781c7c297d4212e2d59b7659d4e00e"
+    },
+    {
+      "path": "docs/tutorial/call_center_single_operator.html",
+      "sha256": "8c26847134d4174cecbe7c582d9e8861b489c6265bc44766ea23050cb069368d"
+    },
+    {
+      "path": "docs/user_guide/first_run.html",
+      "sha256": "eb8780f42e70f0da69bf0e299ce94c4fc83beae82e65b62943e7c8b715206f00"
+    },
+    {
+      "path": "docs/user_guide/first_run/step_1.png",
+      "sha256": "2ea83af725284d4bff9717630b0c2ac95ab038f3836c03c8d7dd71b673637ccf"
+    },
+    {
+      "path": "docs/user_guide/first_run/step_2.png",
+      "sha256": "54044d34c2fb12499f0129431bf5405fa5d772b3278fb6646dfa0de6d3ce090a"
+    },
+    {
+      "path": "docs/user_guide/first_run/step_3.png",
+      "sha256": "740a7c580e36835fdb94576bd66c5f9e09f92ba9814c748004d48ae6f13a0a6a"
+    },
+    {
+      "path": "docs/user_guide/first_run/step_4.png",
+      "sha256": "f4a781409e6059ce09a5c297d9ef6a95fbba310db13c5189a60a29c9167aa02f"
+    },
+    {
+      "path": "docs/user_guide/model_create.html",
+      "sha256": "cd398945510220a0de476d1005ebd509af446397e58323ac37d0a4d7b606d85e"
+    },
+    {
+      "path": "docs/user_guide/model_create/step_1.png",
+      "sha256": "9aec9563c7d498bb4e68264a31813bb5be06f9909fd9acde4d2232f8019e9d81"
+    },
+    {
+      "path": "docs/user_guide/model_create/step_2.png",
+      "sha256": "01df0e0727ff4d312a519140001a47af86237d688af602ac26c0934865d216ab"
+    },
+    {
+      "path": "docs/user_guide/model_create/step_3.png",
+      "sha256": "e7a740a8eded30b0c450607d1482e4d9ac98ab28f97206b2b2887adab0c81f60"
+    },
+    {
+      "path": "docs/user_guide/model_create/step_4.png",
+      "sha256": "cdb8b131204bbf3e355db54edc09bcbb07658612607fd8db54b314f84fe15599"
+    },
+    {
+      "path": "docs/user_guide/model_import.html",
+      "sha256": "24693d21965e8fbfae0a2f32d6f4ad0e6c32a3a669a5770810439f90ff6f00f3"
+    },
+    {
+      "path": "docs/user_guide/model_import/step_1.png",
+      "sha256": "a0cd1fcde373bcc225fdbd41c6a9840791119cb64aee5f2db89c3b6387027dd4"
+    },
+    {
+      "path": "docs/user_guide/model_import/step_2.png",
+      "sha256": "e87463afec084c1aa7baab24e99f5b3358cac5b1decf8bc5b581903d2b222ad1"
+    },
+    {
+      "path": "docs/user_guide/model_import/step_3.png",
+      "sha256": "5316cbe2fbf6d2dd5a2f74422f64b85b711cb636d201565b3c1de4e16813dc3f"
+    },
+    {
+      "path": "docs/user_guide/model_import/step_4.png",
+      "sha256": "5da099bfd6588234d1af88b6f139244da195ac1fea798efc390ec0ad28c4aa8f"
+    },
+    {
+      "path": "docs/user_guide/model_run.html",
+      "sha256": "e8c89fb066b320df8e6da9e0e20c4a788f1040bf32c06f38b94bb383ff0f7e6d"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_1.png",
+      "sha256": "ff42323bf00cdfc6018d40afa7590bb3e9d19c18b9784d0302ad93d523a37df7"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_2.png",
+      "sha256": "55414a90ff0e1a6424726c7ddc9e3fcec4f4bcf07a10c8a1779f3d495cc50f84"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_3.png",
+      "sha256": "113368914b90a7c52c2b358c01c1025085956460167f8b8e5caf911821490b71"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_4.png",
+      "sha256": "a9f825b8ecfe89673d891f7a4dce802ab850e2b876f28b50ac0414c1a1dbf2e6"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_5.png",
+      "sha256": "ca82b3e5968cf7610ed024132ed6cd9a706f7fbe887ef17dc86d14b3b20b7867"
+    },
+    {
+      "path": "docs/user_guide/model_run/step_6.png",
+      "sha256": "acf40d38cf3873e252fee215dc9d30772f2e2a61489e4e22b32a098ae633f3d1"
+    },
+    {
+      "path": "docs/user_guide/show_animation.html",
+      "sha256": "5deb65ba5f126c80b0e8098bb33881d4474e8686eb996819d048c4f8c364f68f"
+    },
+    {
+      "path": "docs/user_guide/show_animation/step_1.png",
+      "sha256": "54fac36169bb1a0e610e684beb9b6de8650223a160821fc56fcdb127ef210600"
+    },
+    {
+      "path": "docs/user_guide/show_animation/step_2.png",
+      "sha256": "33a3033e4304767eae01cc51d9804a834b997e614620234d5c8a48ae1b42512c"
+    },
+    {
+      "path": "docs/user_guide/show_animation/step_3.png",
+      "sha256": "4cb2566f76133f93704638673e61405cf4022e0fc7b993738502232d10d970ff"
+    },
+    {
+      "path": "docs/user_guide/show_animation/step_4.png",
+      "sha256": "50a2dad6e6539e249cc8c58f7c807f491cfc98a92717c046db626a4220890b62"
+    },
+    {
+      "path": "docs/user_guide/show_animation/step_5.png",
+      "sha256": "3e9f44927dd24aea942bbd4127332844b81cb822d03489812bc8d0a192e80617"
+    },
+    {
+      "path": "gitflow.md",
+      "sha256": "d7c0455db052d66a6e67439568686d977d308de27d4a51658f1f9e436e014cfd"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6c65659d6c4c91fb6924b6795efdc60050a12e97f1f6cdad751488900afe99aa"
+    },
+    {
+      "path": "mvnw",
+      "sha256": "cae96cef89ebea3531221f4ae17c23cf8edf67d00eae8306d4186ae1bbed4d02"
+    },
+    {
+      "path": "mvnw.cmd",
+      "sha256": "46eedb8419bd14fe70d5bb2916d7b6f51806e51b39d5b76a42610384ca929c1c"
+    },
+    {
+      "path": "pom.xml",
+      "sha256": "e9b7f30e11c77a65bb9a7e3a453e17c895b4a648b33f8abedf8b22dd65d0aa71"
+    },
+    {
+      "path": "raox.target/pom.xml",
+      "sha256": "829b228e4ebad62b14754571cfccb1fa865785d5bd183a4cb14e226f465f645c"
+    },
+    {
+      "path": "raox.target/raox.target.target",
+      "sha256": "7956336b3fc6efa95dc06ad65f520b303ebeb0023f403bcd8e4f394ab541b775"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c82d88db1272ddf898e58690d94bb4f1e915afcdf48b845d879205ab45777123"
+    },
+    {
+      "path": "recovery/AUDIT.md",
+      "sha256": "c23823beda6ede3ac9fb243bb841d326283f8ccadd6fae3dace51b19ffc7dc55"
+    },
+    {
+      "path": "recovery/DEPENDENCIES.csv",
+      "sha256": "2390559c1d19fdff753c98a7180a320ddbaf7c032552ec33c524ae57627a60f7"
+    },
+    {
+      "path": "recovery/eclipse-plugins.lock.csv",
+      "sha256": "16e2091a95e5e9ab9befc4b4b2b06217abf1c6bd57697271343abfd69ede1f0d"
+    },
+    {
+      "path": "recovery/evidence/20261020-193237-package.json",
+      "sha256": "55165ae5c492f6f272085487b306a6794796b77bc0cd8becc169625f7cf1ea38"
+    },
+    {
+      "path": "recovery/evidence/20261020-193237-package.log",
+      "sha256": "344fb82863c574327261d2b090fffdde4b06451fcf67dd4ac77b601ba995afde"
+    },
+    {
+      "path": "recovery/evidence/20261020-193343-package.json",
+      "sha256": "417b2a76510a914c444ffea71accbd8883dbaa068b04fad2590ad9451f68ee6b"
+    },
+    {
+      "path": "recovery/evidence/20261020-193343-package.log",
+      "sha256": "a6588cc394e81cc57a2956e7896301e882980865222438b4b1903cb780ea6005"
+    },
+    {
+      "path": "recovery/evidence/20261020-193556-662-package.json",
+      "sha256": "7311b100c0754ff18c96358e2231174ee299b20ae40165d36df04dfe538cae56"
+    },
+    {
+      "path": "recovery/evidence/20261020-193556-662-package.log",
+      "sha256": "de0ef67b7e1e614527d751cca2e3a304ec290201a61eab6973bf03a2ea8c63cd"
+    },
+    {
+      "path": "recovery/evidence/20261020-193710-600-package.json",
+      "sha256": "44c101de1207120e75c05f2c0f765e014432fd9a48c3858e8f1d6c41c46ce42a"
+    },
+    {
+      "path": "recovery/evidence/20261020-193710-600-package.log",
+      "sha256": "944bae5622d459a50e39858fb6ae5aca147c0cafc2b8ae23c94cdbc57cdd2a79"
+    },
+    {
+      "path": "recovery/evidence/20261020-194008-395-package.json",
+      "sha256": "79ccc1083dfc7adc66ba248f4acee2b61ed143273f2a8837a19b68a7fc320655"
+    },
+    {
+      "path": "recovery/evidence/20261020-194008-395-package.log",
+      "sha256": "9ec47185b43e25a13cf6d486f9e7fba3c4c37857af6bb8c17373bcf5e4c63262"
+    },
+    {
+      "path": "recovery/evidence/20261020-194923-952-package.json",
+      "sha256": "c862685040bfa018a192e7cf77ed31e9ad9c29391f004a95cb6cddb8db02a858"
+    },
+    {
+      "path": "recovery/evidence/20261020-194923-952-package.log",
+      "sha256": "fff3989fc2aa02668b2cf267d8bba0cbaf810a60289f396f287211af8639c88d"
+    },
+    {
+      "path": "recovery/evidence/20261020-195041-834-package.json",
+      "sha256": "73c8f58f1a27f26b8a696e1aee8c8e662bb48b7c85a61163cb6bcb4834018984"
+    },
+    {
+      "path": "recovery/evidence/20261020-195041-834-package.log",
+      "sha256": "1e28d2dc7c5ae2d8a123794c1c95b44eeb07c2d5f68c98f6f003021eec4502f8"
+    },
+    {
+      "path": "recovery/evidence/20261020-195101-609-package.json",
+      "sha256": "a180c0da520e95f8960a6bf96ab0f19cc65e6c1492ad85e60c2e31a72ad23947"
+    },
+    {
+      "path": "recovery/evidence/20261020-195101-609-package.log",
+      "sha256": "f8edc9a1bda2dc2783cf9b29315b4b0bc73f0b8f1f1a03cddbf8101e49830e4e"
+    },
+    {
+      "path": "recovery/evidence/20261020-195215-161-package.json",
+      "sha256": "3f06071ab135d98fa774c759a2f7d449f5847afc7eb76850a8a7211c8ae565a9"
+    },
+    {
+      "path": "recovery/evidence/20261020-195215-161-package.log",
+      "sha256": "f1a2d84da10c7a3f21b631d89b07221ad2aea47356b5d4cd6882018b10c5db67"
+    },
+    {
+      "path": "recovery/evidence/20261020-195412-813-package.json",
+      "sha256": "74484abefed6e0cab303d23873a28113f3009ee94746d54da2f81e1e8e667e97"
+    },
+    {
+      "path": "recovery/evidence/20261020-195412-813-package.log",
+      "sha256": "b0398165f4a54055d44599cf20a442bb528c40747a28358f95c0e50bcc1542ee"
+    },
+    {
+      "path": "recovery/evidence/20261020-195543-572-package.json",
+      "sha256": "1ce383f84586c15778d56b21b24fc365e1ae99ba90481e5291fe7f87adb6e42b"
+    },
+    {
+      "path": "recovery/evidence/20261020-195543-572-package.log",
+      "sha256": "d7fa47430922eb09d530a88fb7db1791c8e79e0556a2b2ad1edd7d21affb64b0"
+    },
+    {
+      "path": "recovery/evidence/20261020-200202-737-package.json",
+      "sha256": "02f15f37754044b2dd74fcd5ff126b50a35a8b23536d2e7a9989f211c15313c0"
+    },
+    {
+      "path": "recovery/evidence/20261020-200202-737-package.log",
+      "sha256": "1e9188dc2988befa0d7dc30d4d1d83deb3e8baa2403e4f3aabc844d949dd4c77"
+    },
+    {
+      "path": "recovery/evidence/20261020-200415-627-package.json",
+      "sha256": "246fb8ca2c714954c42652c622fc276e15a43439d109c06a60a3d91d62a15b38"
+    },
+    {
+      "path": "recovery/evidence/20261020-200415-627-package.log",
+      "sha256": "61f1a2531b66fa043f4c056a2961a9360b2239859e31addc44ea339ba1c8e215"
+    },
+    {
+      "path": "recovery/evidence/20261020-200725-021-package.json",
+      "sha256": "10d2f51e4256b2c7bc7b6f0f94a2d46b2dda25a1a661df183ff8ca7419b9f8d7"
+    },
+    {
+      "path": "recovery/evidence/20261020-200725-021-package.log",
+      "sha256": "6b7603e3dfa842854754613f03b0ad0f283ee5be722394632ce6ce1f862e355b"
+    },
+    {
+      "path": "recovery/evidence/20261020-200902-294-package.json",
+      "sha256": "6287da5ecdfcfc0ba5fbfbc279a147d77524a335ab4259a035aedf960212c9c1"
+    },
+    {
+      "path": "recovery/evidence/20261020-200902-294-package.log",
+      "sha256": "d772b7f744f93680e4bca3f375fe9d81af62609ceff626c883b62155812000ec"
+    },
+    {
+      "path": "recovery/evidence/20261020-201543-371-package.json",
+      "sha256": "28cd7762e32d87e23780e52458a77e93398d2e28107c32523c767b07e216c44d"
+    },
+    {
+      "path": "recovery/evidence/20261020-201543-371-package.log",
+      "sha256": "884aff694f15ef1626d66d42906d70dd12c4c4f83326f09450d502acc05b06d8"
+    },
+    {
+      "path": "recovery/evidence/20261020-202238-058-package.json",
+      "sha256": "7497ab2e5a609377ed854c31c7ed3e258ce4e2990b4cf88a4dd752becf3538d5"
+    },
+    {
+      "path": "recovery/evidence/20261020-202238-058-package.log",
+      "sha256": "aa1e821a1b4bd7cd6f800d3e9b7738781f4e31e2854a0c5af3fc7423f6ba88c9"
+    },
+    {
+      "path": "recovery/evidence/20261020-202332-124-package.json",
+      "sha256": "88835768f07d180c5d9c2c8f1ba7b56889688a27acc27ab52994f21c27f6411e"
+    },
+    {
+      "path": "recovery/evidence/20261020-202332-124-package.log",
+      "sha256": "4798cab42afc8a99b07b087bb763a0ab905fd332fa8fa23e34907355e064f2f9"
+    },
+    {
+      "path": "recovery/evidence/20261020-202454-609-package.json",
+      "sha256": "c454df40c8a7d526d6ba3233061a65c7999f2d4c21f07b9c8507c733b4b6c47b"
+    },
+    {
+      "path": "recovery/evidence/20261020-202454-609-package.log",
+      "sha256": "62224883a651c15a858e9f2598b1966cee0682fb2209185e2453cb611f12c9ea"
+    },
+    {
+      "path": "recovery/evidence/antlr-probes.json",
+      "sha256": "7ef98bf24b7fe652c10862328d1fb7418664a4eed73efce76a3e49bc0f3c06f7"
+    },
+    {
+      "path": "recovery/evidence/antlr-timeout-1ms.log",
+      "sha256": "775f403ab395803dc729f5c9766e0449275796e62ee597c1d9648c1e688bdc1e"
+    },
+    {
+      "path": "recovery/evidence/antlr-timeout-disabled.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery/evidence/antlr-unicode-path.log",
+      "sha256": "222f64ab43e33427a56994863f9e29cc57d48ec06a39d2a07e74b695d9d69960"
+    },
+    {
+      "path": "recovery/evidence/AntlrPathProbe.java",
+      "sha256": "58f6b92b6a53382799485aec7c745f74fa41b3fa5681f20ea548e2b432e2d775"
+    },
+    {
+      "path": "recovery/evidence/build-results.json",
+      "sha256": "0974fbbb0548bbeae02d96abe48f99b0492fdca8d2f1253e51e9100be718f134"
+    },
+    {
+      "path": "recovery/evidence/docs-link-check.json",
+      "sha256": "45619170c1c041f7b62782738c2410c8554cf93465c0d6368e7e1e26fbe2a996"
+    },
+    {
+      "path": "recovery/evidence/endpoint-checks.json",
+      "sha256": "2fcac4ab9d99e2a60d6cfdaa157b3236f4a191650daab320f443af84b18445f2"
+    },
+    {
+      "path": "recovery/evidence/github-snapshot.json",
+      "sha256": "4f6842ed00b3a1ee976581115bce7c090d36d427a418971eaf06cc12f95c8feb"
+    },
+    {
+      "path": "recovery/evidence/incompatible-generator-class.json",
+      "sha256": "3ff6ef80f376b0eefa081867defc9db25e6c34bca3b29ce1855767abb0791d65"
+    },
+    {
+      "path": "recovery/evidence/inventory.json",
+      "sha256": "93c32866f6aeb86dc6394b39cdd51ba8720d393b543f1199b920db55b5bba89e"
+    },
+    {
+      "path": "recovery/evidence/raox-package-original.log",
+      "sha256": "99bfce850cdb07acc5b6de5eff855692ade6b952f696037b3b516a169683ef67"
+    },
+    {
+      "path": "recovery/evidence/raox-validate-original.log",
+      "sha256": "2df9a3ff4565fac49df5cb74122da930ea176b5d04d4a6acbdc966f7981f5341"
+    },
+    {
+      "path": "recovery/evidence/stage1-clean-ascii-sources.json",
+      "sha256": "3ef36dd9b630f1bb83f05b6e600308c93a6cfd1d5bd37afebfa885d1a7265ab5"
+    },
+    {
+      "path": "recovery/evidence/stage1-clean-sources.json",
+      "sha256": "e5d92b16ab9af35d19c1b8ac344b4d4fa6c018af8d02bd967e98604dd8a5f9f9"
+    },
+    {
+      "path": "recovery/evidence/stage1-junit/TEST-ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest.xml",
+      "sha256": "9c18cc0892a950f570672f5d65ac273b0b9fe1db12b0ae90206e8d5c4833009c"
+    },
+    {
+      "path": "recovery/evidence/stage1-junit/TEST-ru.bmstu.rk9.rao.tests.unit.LinearProcessTest.xml",
+      "sha256": "3ce2a7321916769ac2986dea5f2bbe970ac88d6134492aa932317b7d891018ef"
+    },
+    {
+      "path": "recovery/evidence/stage1-junit/TEST-ru.bmstu.rk9.rao.tests.unit.QueueProcessTest.xml",
+      "sha256": "5abe9957333bb705b022527c9c60103b5d8aa764bd6f0197a51fc8d4c62ff9b9"
+    },
+    {
+      "path": "recovery/evidence/stage1-junit/TEST-ru.bmstu.rk9.rao.tests.unit.TracerUnitTest.xml",
+      "sha256": "ab64951eeae569d424ea6d427a030e7957b6512a97e8139d60f2645dcdc4e21a"
+    },
+    {
+      "path": "recovery/evidence/stage1-junit/TEST-ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest.xml",
+      "sha256": "eca54943d5322d5852a6061e68827cf22dd83f7f0f3b0756cfffbc116a92ff26"
+    },
+    {
+      "path": "recovery/evidence/stage1-path-guard.json",
+      "sha256": "3782ccdf79292357c2dd78ede3155a772effb254d838289f8ecddbee8c2fab24"
+    },
+    {
+      "path": "recovery/evidence/stage1-workspace-package.json",
+      "sha256": "9862bb677774f59853632e4834e79001b7ff9c082994b0379b2cd24c27acd37e"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest.xml",
+      "sha256": "55d4d5131ce4e79df95861499ccb530633c29fb46d82b13dbc35511705290d4f"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.LinearProcessTest.xml",
+      "sha256": "654d875511f6570bcffacc63d65beb6b924226b6c1c64904389ecf89231006d0"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest.xml",
+      "sha256": "b6d381d2c4e50de360f498d44b4772dca3f8c2f2bfb4c9a8eed0ab325d144ac8"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.QueueProcessTest.xml",
+      "sha256": "7237b9bffbee8417dde2d28c822f74495da26ca0217657bc55b8653d03fb7621"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.RcpttModelTest.xml",
+      "sha256": "089b77371d88eb28fcd0580eca7f63c9400410acce02356c1f2513f491cf4495"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest.xml",
+      "sha256": "722c89ddcfd034f73b4c7990ac7de7b7d6bc1b8552418b58c6c929ddcfd99cc4"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.TracerUnitTest.xml",
+      "sha256": "f88083eb788de8501c682238914ec768b116fa3a0c414d7bfa1b947c32a93846"
+    },
+    {
+      "path": "recovery/evidence/stage2-junit/TEST-ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest.xml",
+      "sha256": "396f654b4af8a7f799d44240657b5272db5672de07e467772c203d1b75b559b9"
+    },
+    {
+      "path": "recovery/evidence/stage2-model-corpus.json",
+      "sha256": "0eff6ce7618747b061187941ea0d287bd300003436d7d6e6851f181d8657e7e6"
+    },
+    {
+      "path": "recovery/evidence/stage2-package.json",
+      "sha256": "a6427c7da7c117db985bee8999d6a19a9a3d39abfaa48b2f8a9551dd61bacf20"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/aut-out-0_console.log",
+      "sha256": "a59080de3ee4cdec4b7dc455893045b59a38f66edfe882a953ee04d23afabca4"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/export-validation.json",
+      "sha256": "543911c280db7aed3bde3e57971004ced1cac72409b2aa61068e6baaf3d14781"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/results.html",
+      "sha256": "895359bf3dcbe56b116621079be782b5bbca0b8366be9ba863e31fe840f7a80a"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/results.junit.xml",
+      "sha256": "6a2df54f03b13c64bd2197f9f3647916282d6e202d02c1c19476c073124d607e"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/run.json",
+      "sha256": "51470bdd2e1053a6acd8c422ac8e66e67bc9d6d7b670bd66c8b39cf606ff27f1"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/runner.log",
+      "sha256": "845bada07e25514e099c382e6e3141f18346e55f197902971034c01488d27c2d"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/ui-exports.csv",
+      "sha256": "7c4da0081526cf6f2338dea823fc99771c161e387338ad74f1be6395544d98d1"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/ui-exports.json",
+      "sha256": "9acef0694b5953d57f9ac8e20d3585e5d6355a38ea3891718529efb474dc7539"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/ui-exports.trc",
+      "sha256": "0086620f519389ba6192df9e9e212927f81845c85a5319e355753111599d0b7f"
+    },
+    {
+      "path": "recovery/evidence/stage2-rcptt/ui-stop.trc",
+      "sha256": "eca26a10711ea09b5b1a65395063a2ff88a6c8b2f2d807f8235eb3438b2dd622"
+    },
+    {
+      "path": "recovery/evidence/stage2-release/results.html",
+      "sha256": "6053abc5d3479f32521ed4cc72165c405a375cff281de6f2a70a5f3856809233"
+    },
+    {
+      "path": "recovery/evidence/stage2-release/results.junit.xml",
+      "sha256": "19899cb3ec99991cec46b74a2a5f573837054bbcecc1c839b184301873e7a21a"
+    },
+    {
+      "path": "recovery/evidence/stage2-release/run.json",
+      "sha256": "12e7ad3b0b1cc4b20a6d0ae848fd60cb957925bacf94bfdbdab67e59dbecf095"
+    },
+    {
+      "path": "recovery/evidence/stage2-release/runner.log",
+      "sha256": "f1abbee62636799aecf02fc8d43881a7fc4c16bbe7299a88a39cb37dcbbfb9d6"
+    },
+    {
+      "path": "recovery/evidence/stage2-run-before-compile.txt",
+      "sha256": "2e1118c37dc7c85e232b3fbb480b8a3df3a397b3fb9dad33b1305fe791d9b167"
+    },
+    {
+      "path": "recovery/evidence/stage2-summary.json",
+      "sha256": "dfa71bdb07b1ba7e3ab28f06125ea47160f7952d444c07f07d245280bc6b8254"
+    },
+    {
+      "path": "recovery/evidence/stage2-timer-race.txt",
+      "sha256": "4b32dc924241296310c32ddbfa4a8d5249462c72723699d5b06be4635a950c02"
+    },
+    {
+      "path": "recovery/evidence/stage2-trace-paint-recursion.txt",
+      "sha256": "59e333c7bb4b77adf580b5f67f135daa7c379aa2a95a24272ff6144544820c03"
+    },
+    {
+      "path": "recovery/evidence/stage2-ui-tools.json",
+      "sha256": "d60658d47d34d7c4b99c9b6c2a8b07762303c08e03b50fc253989de8824ca683"
+    },
+    {
+      "path": "recovery/evidence/stage3-cache-guard.json",
+      "sha256": "cf021d479eacacbd5c7a2c32c25255170b7f5cdce48415ea6b81f6f06b6a7e5b"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-artifacts.json",
+      "sha256": "98aa63e05b055a6e7d075217e0602cba65e14ef7dd85696b728313d0b117c580"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-class-comparison.json",
+      "sha256": "d363f169232a9b62e7397204f83b291f077137b16bbaebd0b3226bda54e43553"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-cold-build.json",
+      "sha256": "e19ca3746e08112a3e947937e1bac51e6a9d4a60fd47b01313f0d832aff01605"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-cold-build.log",
+      "sha256": "cf239937a201a7f3718ab759524e5794034450ba44855cc53ba6334b7c0d026b"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-first-run.json",
+      "sha256": "09839f4d984f913ee3d982f40a04e67f2395963b782c458998524f85ee8cded8"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest.xml",
+      "sha256": "b4c3d750409f52ea3ae0e33ec33efdc87638c744067247e9a7faf2db02ee4a84"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.LinearProcessTest.xml",
+      "sha256": "1f5d04b6a87f44d4d720676e15b8c9bbefa95be90c36c629d544acf3f17e07be"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest.xml",
+      "sha256": "8b7f0f8682752577eabae6045709e8568af2c267731ed90d14eb31dc475e640d"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.QueueProcessTest.xml",
+      "sha256": "3e54fb6305d192b3066566d2997bcb969d5f1d1fd6889fd93c877832231bed1c"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.RcpttModelTest.xml",
+      "sha256": "1f93a3b8e4d456d31c36485a959af4f53b994315b1b8f830ddf301eb2d4d1ed0"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest.xml",
+      "sha256": "c89239f70ab9d45ec57fbd970342c50a7ebc3da5377032fabe347c47180463e5"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.TracerUnitTest.xml",
+      "sha256": "6891fb7e7715d687183f67915181b783c848940efecd13ba8c70df8f7d0d2760"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-junit/TEST-ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest.xml",
+      "sha256": "70c8feb30970440e71fc01d39f6af5c0f2af2777284226d83c21edec515bec64"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-offline-build.json",
+      "sha256": "a4b075bac19241995a10a4f7b6da9bbb9b8d3827b8417e481111800f6117a061"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-offline-build.log",
+      "sha256": "09a96c506b9bb05c81c4b22727ce4708920be91b1a4b7fb3438818356fb55c7a"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-run.json",
+      "sha256": "29aedb04351a1f5d36302fe631cd726f474037dacffd93ae53c374a19e07e280"
+    },
+    {
+      "path": "recovery/evidence/stage3-ci-success.jpg",
+      "sha256": "9dac9867626dfe61aab6598e8d163428da74c109e1c81e97930561db2e53647f"
+    },
+    {
+      "path": "recovery/evidence/stage3-class-comparison.json",
+      "sha256": "6d635b255559ad4b418ab6c22e5282412c83933e0e660c4bf0a24610fdb3e8fa"
+    },
+    {
+      "path": "recovery/evidence/stage3-cold-build.json",
+      "sha256": "9151db4a910ee735e54164435c44bf9adda1a7b9f4735703492482bfdbbaef6a"
+    },
+    {
+      "path": "recovery/evidence/stage3-cold-build.log",
+      "sha256": "f91337ec5ec08a7d562145a038a2c00484630d165d4b22b12e3cc01292d8716e"
+    },
+    {
+      "path": "recovery/evidence/stage3-cold-network-failure.json",
+      "sha256": "845606cf334087a9e86cea0d50db4cba3e356a36453d095face51d0319a1142a"
+    },
+    {
+      "path": "recovery/evidence/stage3-cold-network-failure.log",
+      "sha256": "dbff499a35b4c6c5a3bd592ea6c2c8f9c018646ac82726723a5a69cb3390765a"
+    },
+    {
+      "path": "recovery/evidence/stage3-created-repository.json",
+      "sha256": "669b4f0885568d1fedf50e55c0f5a27e1d92277a13d62ead6cb6c5a13e937fdc"
+    },
+    {
+      "path": "recovery/evidence/stage3-fork.jpg",
+      "sha256": "7a3bf1bbf5796ac7113ac9ae874d68cd81a52454fae402245de3ff0e51c27c24"
+    },
+    {
+      "path": "recovery/evidence/stage3-github-access.json",
+      "sha256": "0a1ff898763355e71b8849790e056141bad7aabb4d33fa488f59c358c51c5d14"
+    },
+    {
+      "path": "recovery/evidence/stage3-jar-content-guard.json",
+      "sha256": "01cdfbfa9c220edfb6480cfd0e46829af5529336cff513827862a8e656495576"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest.xml",
+      "sha256": "6cc9aed9c2d578004b314b93f480fd4bd1281413c68acff422f65ee8fb739714"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.LinearProcessTest.xml",
+      "sha256": "8b622c77b628a64761bdb154353b17a262c507595f5b919d540e1a9f220cb78e"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest.xml",
+      "sha256": "d24183b99e6d035bef274fc2578b0009ba8186dcf692350e2a0b65eae4736d03"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.QueueProcessTest.xml",
+      "sha256": "b80f06838f271e1ead1572ee617612a3aea96c2046c2b397ecd35fc00431e3b1"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.RcpttModelTest.xml",
+      "sha256": "6bae7c7edbf89dc0f436427a60b8e17a791acebc7b9db2a58a29f6a62807695f"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest.xml",
+      "sha256": "1a60ce028ed7b19498a1f2ba73045c0e253065c76b4fdaf6c5da9bc100d6b90d"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.TracerUnitTest.xml",
+      "sha256": "e666cc3ebd02c7fff88ddd90e79acebc9aabc23b79c921b90eb180cb630a61f9"
+    },
+    {
+      "path": "recovery/evidence/stage3-junit/TEST-ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest.xml",
+      "sha256": "fbafcfd67de1b112a39d0529b93460de25f6a84aede99889e9fa1e724ac7d2b7"
+    },
+    {
+      "path": "recovery/evidence/stage3-offline-build.json",
+      "sha256": "6176f73ee6414b0996d56f1c6b25c4560ee4a748cf9b0aa19a063be735231f7f"
+    },
+    {
+      "path": "recovery/evidence/stage3-offline-build.log",
+      "sha256": "bba798b331615952ae1f2b95370ee5edf89b127a1ad54b4e7b4fbe2bbb54fff3"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/export-validation.json",
+      "sha256": "543911c280db7aed3bde3e57971004ced1cac72409b2aa61068e6baaf3d14781"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/results.html",
+      "sha256": "45a3f682bb60888433f4cd5414b94ed4d872bac2cada9ea11ee19dc47012eb08"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/results.junit.xml",
+      "sha256": "a8a7faab3bb69cd3aaabb27ae57986cee2330e60321fa562c23537dd293eab61"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/run.json",
+      "sha256": "2a0d68a36e273c27a27203f24369176be74e6fa4960a75f4465291dd8bb038cf"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/runner.log",
+      "sha256": "b3845865e16216b69b12b2f8d05284e2ec0932a596e177e20e4c15d3f127d5b1"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/ui-exports.csv",
+      "sha256": "7c4da0081526cf6f2338dea823fc99771c161e387338ad74f1be6395544d98d1"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/ui-exports.json",
+      "sha256": "9acef0694b5953d57f9ac8e20d3585e5d6355a38ea3891718529efb474dc7539"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/ui-exports.trc",
+      "sha256": "0086620f519389ba6192df9e9e212927f81845c85a5319e355753111599d0b7f"
+    },
+    {
+      "path": "recovery/evidence/stage3-rcptt/ui-stop.trc",
+      "sha256": "eca26a10711ea09b5b1a65395063a2ff88a6c8b2f2d807f8235eb3438b2dd622"
+    },
+    {
+      "path": "recovery/evidence/stage3-script-validation.json",
+      "sha256": "dbf41a4809c1ce0aff388c9a16e4b8b759dfb97fc5f29b22446be6407c0cdd89"
+    },
+    {
+      "path": "recovery/evidence/stage3-source-snapshot.json",
+      "sha256": "ac1b013adc1580fd87fc89c1eb399500c6533dc1c57ba04f7009c4c0b7a93b9a"
+    },
+    {
+      "path": "recovery/evidence/stage3-summary.json",
+      "sha256": "7a161015ae67218e50f43b1af899bbbb2051bba7fad8b7f2815da1f6e68622bb"
+    },
+    {
+      "path": "recovery/evidence/stage3-toolchains.json",
+      "sha256": "a9b27c589c340be6d3822fbb87583ce9bc14130c9766af825ada6033e03fd818"
+    },
+    {
+      "path": "recovery/evidence/stage3-warm-build.json",
+      "sha256": "3e13f50f7b84e03016023d8d4246f6871afd3154a611f8980f98677a939d1437"
+    },
+    {
+      "path": "recovery/evidence/stage3-warm-build.log",
+      "sha256": "50fe7e9abfd51680149606d445a43a137666af1597c8fe3d91dd5abe039c7c31"
+    },
+    {
+      "path": "recovery/evidence/stage3-workflow-validation.json",
+      "sha256": "384b2045a0a2c7cff9b490b06fc5f73ac7ab053f3fbeb5828f9582dbea539449"
+    },
+    {
+      "path": "recovery/evidence/stage3-wrapper-guard.json",
+      "sha256": "08d2924094b0afa2e60a90d5cedc20a6302dde68ce939303d8c4436ffff9ddb5"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-build.log",
+      "sha256": "9215d3a7f11108cae5281ac0535b31712df58117261ad6b344114b83283c7040"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.BranchedProcessTest.xml",
+      "sha256": "1313d4216e9ae5b1defee27e6593aca3e06bd624ccbf680847461336d241ddff"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.LinearProcessTest.xml",
+      "sha256": "b0efd884ad2f797c1c4697d3d7ee88d815deb2784e20db1707b7f14067216288"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.ModelBehaviorTest.xml",
+      "sha256": "3987452dbbd23b35158111b8ea01f43826976d84407fbd16e823c88599d6d31d"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.QueueProcessTest.xml",
+      "sha256": "4f600834d4594803f7d893d1101d002117256afff1a3ccb5460515fd546373ca"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.RcpttModelTest.xml",
+      "sha256": "b854f666e356e444348679e1a2e9595df14ee0ece28654909f693aaad5ee8ea7"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.SequenceAndSchedulerTest.xml",
+      "sha256": "12c821c01793da6cf7844e6398af2c52583c060389f869057d127d75d978d2cb"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.TracerUnitTest.xml",
+      "sha256": "ec2339ad2721100e18b30ab2f75145d1e0f6c35933b3fb3e2236faf6fb582fef"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-junit/TEST-ru.bmstu.rk9.rao.tests.unit.UnicodeIdentifierTest.xml",
+      "sha256": "284f16ab2da0809255d338b8e2c59005980def7ac23f734d995001216768d438"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-migration.patch",
+      "sha256": "74b2e980620d9b6155cbfbcd4701c1ee6cf81f636a7a91fe6bbfc2fc97323ab7"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-rcptt/export-validation.json",
+      "sha256": "543911c280db7aed3bde3e57971004ced1cac72409b2aa61068e6baaf3d14781"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-rcptt/results.junit.xml",
+      "sha256": "42758a4ba096e32bd72ea2d81e7520e834542474285d1337e01a7678c86245fa"
+    },
+    {
+      "path": "recovery/evidence/stage4-generator-rcptt/run.json",
+      "sha256": "4bb4475006beda5729706fd6ea4c4969ed551a4a251a580b72dd604aaa5ec220"
+    },
+    {
+      "path": "recovery/evidence/toolchains.json",
+      "sha256": "479ef44355736267a3d1be09bca12da9a28074f14cc08370c7c4b46dec232dd8"
+    },
+    {
+      "path": "recovery/Export-PlatformLocks.ps1",
+      "sha256": "ba9607283a03e5959df1e7a5db3be67371006f31f8bc0309ff3b805eee5280c1"
+    },
+    {
+      "path": "recovery/Export-SourceSnapshot.ps1",
+      "sha256": "4a6b8e067c414fb0fd1fa82369d4adffd349affbca23cfc914a9f034560d7048"
+    },
+    {
+      "path": "recovery/Get-JarContentHash.ps1",
+      "sha256": "add167d2dbe6e30dcbf98107336e26235e78727e46383a7a35da8e6f84b36439"
+    },
+    {
+      "path": "recovery/Initialize-P2MetadataCache.ps1",
+      "sha256": "022e9e773f60730090b4e1a66ce0ca470e1f814843a1b5bdb18b53494d0850da"
+    },
+    {
+      "path": "recovery/Initialize-Platform.ps1",
+      "sha256": "9f2b65f7b1e05ef734c64304991e06557d93d555c51b34219343e0a087755cc5"
+    },
+    {
+      "path": "recovery/Initialize-Toolchains.ps1",
+      "sha256": "adee5f9de4619d86ef8d87ebd272ad8bd1df32c74e008581bf95d259f3ac8f84"
+    },
+    {
+      "path": "recovery/Invoke-LegacyBuild.ps1",
+      "sha256": "83a02ad17ea654a7a233737b3e1edf6f323069090301ae16ba4fe7f96ac89738"
+    },
+    {
+      "path": "recovery/Invoke-PlatformBuild.ps1",
+      "sha256": "174d6a1350052bc8654b23fe58f9f1e37175e9fe37a3b41098ab8e5b86724e95"
+    },
+    {
+      "path": "recovery/Invoke-RcpttTests.ps1",
+      "sha256": "0ac4f89d75b1561795ee2bbf1b9481ffe301e62adc24ecdd17b936574c482c87"
+    },
+    {
+      "path": "recovery/Invoke-SwtAwtProbe.ps1",
+      "sha256": "1bd3c193ce9d6636c0cbdc045a5646b53a31c7837e24060d1e6b23fc89765fdf"
+    },
+    {
+      "path": "recovery/maven-artifacts.lock.csv",
+      "sha256": "0f358c1d20a1ef73dd7c8f27a0438fc57fdb4b6d96fa20c35804db1d79138dd6"
+    },
+    {
+      "path": "recovery/maven-settings.xml",
+      "sha256": "849b110d2590d0da0d9a655ffae5ccf62bddfe5a79feccb47af2fe05cfc97123"
+    },
+    {
+      "path": "recovery/p2-bundles.lock.json",
+      "sha256": "10c68f17b5a279b5f84d33ff4aea8ac389a19ecf87c4b0e323059e7537f16d90"
+    },
+    {
+      "path": "recovery/p2-metadata.lock.json",
+      "sha256": "cd37f431f13403ce7bb2628d6d7c80041994bd4c6cc7ff8e7882bec5756ee5fc"
+    },
+    {
+      "path": "recovery/platform/eclipse-plugins.lock.csv",
+      "sha256": "69874c856b32969a285a77cfa1783d84158fa05289c71ac8bfadfd41dc9aab15"
+    },
+    {
+      "path": "recovery/platform/rcptt-plugins.lock.csv",
+      "sha256": "4a2446238b1b11cd70e3051572451d1a888f2e7e62dd4c5bc9c99a3939049f75"
+    },
+    {
+      "path": "recovery/platform/toolchains.lock.json",
+      "sha256": "beb0cc1ee6bde9473a8edc9e13bd2d2a10c42fbd168b5cd2cff92532a1acc970"
+    },
+    {
+      "path": "recovery/probes/SwtAwtProbe.java",
+      "sha256": "09933335a6dd4006fd9d25a418217df8d16d41e97faeb2b5a6ff9d482b7a8105"
+    },
+    {
+      "path": "recovery/rcptt-plugins.lock.csv",
+      "sha256": "90c329d24cf72f8fdbdb0d76ec62ae8f9144ee7a4cdc312485fac0bca739e80a"
+    },
+    {
+      "path": "recovery/ROADMAP.md",
+      "sha256": "1fa48c20382c4d28e178a10f0c4895d45b9e990be68c93904c9fa433863653a7"
+    },
+    {
+      "path": "recovery/STAGE1.md",
+      "sha256": "33ef214c2d16b4a58ab67985a98c0e04f1859afd0319e8ff99b05ebaf41c4ef3"
+    },
+    {
+      "path": "recovery/STAGE2.md",
+      "sha256": "242022fb48cc1bde55db92441fa2cddeabf3022b18e479f925d688a99a4779da"
+    },
+    {
+      "path": "recovery/STAGE3.md",
+      "sha256": "a2eef48ada7305c00ab39dfabd369035485f217449c620db94e74b8c4a258d06"
+    },
+    {
+      "path": "recovery/STATE.md",
+      "sha256": "f0239f23795cd49195a2709354ebed04b45bc2b1f50b84e38cec297c378447d6"
+    },
+    {
+      "path": "recovery/Test-DependencyLocks.ps1",
+      "sha256": "be83cbf99a0bdb348c673e979917b3a6c8bec381afbd08da7bb421e312975322"
+    },
+    {
+      "path": "recovery/Test-LegacyPackage.ps1",
+      "sha256": "5f7be1838ad079efa650deaea6f35fae8929d704d7445cbc252a4887dd1ff4cd"
+    },
+    {
+      "path": "recovery/Test-UiExports.ps1",
+      "sha256": "eabfd4fbd9f5852c85bd69bb3f9caead0fae8fee7c4d37b57972c78027cd2485"
+    },
+    {
+      "path": "recovery/Test-UiPlatform.ps1",
+      "sha256": "89989d1ebed0a6e970a6a320a53b6dcf7661da1730a531651596f35e05d02edd"
+    },
+    {
+      "path": "recovery/toolchains.lock.json",
+      "sha256": "d00b7ea9250cccd4844b017df669a5e150feda50f72919cd2f8861df7cdfa18a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/.classpath",
+      "sha256": "1c33b7c3726c75d96eaceb00cf6ef00eb85b9a18aa2530855ebc0cfbfcab0874"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/.project",
+      "sha256": "06f387d253eab3aa072288a5777997f6083a7820c79fe2be14de49cc9502a35f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/build.properties",
+      "sha256": "99f317aa105b6947f027d92c8b1573295326e8b077477f6379df57b78cb0ba1c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/META-INF/MANIFEST.MF",
+      "sha256": "d799d7e8f1d8a9020df22d283948bda947084cdd9a9796e0ec6ac09fbc8f5578"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/pom.xml",
+      "sha256": "fa55584749b679d76a06753facf2e4c6b096ed581dc49858fb5d62af7df7e3fc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/animation/Alignment.java",
+      "sha256": "66e87aac9bbc5da319bf507deaec15ebcc5a8edcee95463ed0c5b142aae2e51f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/animation/AnimationContext.java",
+      "sha256": "7f281764e9660a3b32c5a56a6367a43fbc00c1230ddec61fbf8c2408d24c0c8a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/animation/AnimationFrame.java",
+      "sha256": "9165e785e54c517f11209fa646c51be9097533acd15c12fe57d02c264a1d25a5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/animation/Background.java",
+      "sha256": "b732c996b567ab44ec7f889a120738293ebf3bb464be2f55c2be65aa9d8c3372"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/animation/RaoColor.java",
+      "sha256": "8ddf9ac2f854b5c267f82025225e9301a5592294f8901b0f2c6f48904a461412"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/CollectedDataNode.java",
+      "sha256": "56c722fa3e4c0dbbfaabae2028523d4042f87f7d9ee9273fdd0f78a2caff2e74"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/Database.java",
+      "sha256": "52729715d7787c1239ec4d4ed9ac8cde00f4f232ed15a9cba55ad3b5c5775b8e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/DatabaseException.java",
+      "sha256": "48ef71514ec20f3a5dc3096969aa123847e21d0abf136c7183d4043b56e65508"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/IndexHelper.java",
+      "sha256": "7c9dfe5abe65c20bb3f9cabc8c4d388b0cb39b816dd68b41fddc9d496aa5d613"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/Serializable.java",
+      "sha256": "0cefe97a7093a7edb5afd81cc80a90e64b7fe52ac13950e79c5f1090c8a500e0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/SerializationConstants.java",
+      "sha256": "b2f5e2b5f889dbb95f8a6871faa7d8a70e2402918edc0abcf906ac18fa3f5a75"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/database/SerializationObjectsNames.java",
+      "sha256": "89c758a66e2bbd15d15c6d849208f1c68725c0a7aab965c135c499b5d43f0892"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/AbstractActivity.java",
+      "sha256": "8a3b29f781a361fbe53ffa2575c961568c4e7efb2351ad06ed8bd73a4ae9fa5c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/AbstractDecisionPoint.java",
+      "sha256": "a5fb03c2311ffd51734be473bbbfbb5423d4c4f5fe922ed5859e0d80be2d2161"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/Activity.java",
+      "sha256": "ecfe9ed21f55e939c1cee6dff15a1e83294c927c716318a9552d987776b0dbdf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/ApplyOrder.java",
+      "sha256": "3919c7b17a4967258051a69eab3e278df5c4b4cf7a33ec8d1d5b2b91e59baeee"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/DPTManager.java",
+      "sha256": "961a4ef8a50244ae6cffe5b61b95835418ff0e16e25d404838cce50be6ee41db"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/Edge.java",
+      "sha256": "c4ebc8305f72f64678f2833beb3e2981a226ea055429388f26f74cc42c7810f9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/Logic.java",
+      "sha256": "863d7bf95e64babeae566038687f81a11e57527e305e135d9f47e969ef662855"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/dpt/Search.java",
+      "sha256": "42be4352939b32b0eee845b3740cb5e90774987d6df3f673d61a837effcaef2f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/event/Event.java",
+      "sha256": "08a44697fd56eff2063a387f4078226d72debc9ba82575908c678aa2ad18857a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/event/EventScheduler.java",
+      "sha256": "814b0fbf8dca1016a07ca25735760b4932412302bceec4aba76d6b572f49c99e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/exception/RaoLibException.java",
+      "sha256": "45b43c320cf0b961b13b1c29d98fb53f1bad155841ddafdd0ead87adf418e019"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/json/JSONArray.java",
+      "sha256": "96a30a7eba70899033140c315b22a072e4aeacb159cff9d340ef8622053064ac"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/json/JSONException.java",
+      "sha256": "4e667e97580103e73458695801f954de26d98a1b488c88df9682e3f8acbe5767"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/json/JSONObject.java",
+      "sha256": "0a74d30b4c96bcf7dd7bbc75274eeb6110cad76c896f51be7fd7336cd6e88004"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/json/JSONString.java",
+      "sha256": "6483c224a00e872b853f4c1d8f3063f26da3cbe1889400510b478e2bf102396a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/json/JSONTokener.java",
+      "sha256": "c2394fb8c0e2fd68fb61a0801cdc252aa3b928812ad42973fddc9ec145088835"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/logger/Logger.java",
+      "sha256": "49630cf26e8df6fbab89e7d66b927ccf1d5e653df98d7ca88daabb4c55c29b49"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/logger/LoggerSubscriberManager.java",
+      "sha256": "5ee1260b067d5a5e2b87036e38c3e66b28ed97d2511a30d0e955baa09c756503"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/modeldata/ModelStructureConstants.java",
+      "sha256": "7088a9dd89be9454d940bfc6ec37d0dc990d8fcb9ae75ed414a31096d99bef82"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/modeldata/StaticModelData.java",
+      "sha256": "8bd680da9ec309d95c73dd0481b9fab3e17e6d648be6edfec533615fc5d03c9f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/naming/NamingHelper.java",
+      "sha256": "6591eb34347762ab2a9db20f31d067edf8c20f995370032da89bbcf6592ef687"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/naming/RaoNameable.java",
+      "sha256": "9cd9d7bfeb6cabecff4f99216d3d3ddfaf2b4bbc85bb1f3991f3eafe8e325cd0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/notification/DefferedSubscriberManager.java",
+      "sha256": "d65c32305ff45beee355dcb2e8a59e2ee81851d8519166b128a5c634b39491e1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/notification/Notifier.java",
+      "sha256": "60b072f9ed9441fb97ff755e46cf161bdbfd5b58a7b940811163b282c7a64b98"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/notification/NotifierException.java",
+      "sha256": "ba9a4277c9c7ab603e13a67a66e04a0c326385da85a6986b1af295aac27dc456"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/notification/Subscriber.java",
+      "sha256": "cac8ca5035ba60195109cc6cfb54dad79c1d95eedd3ec02f79ceb82a843a8bfd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/notification/Subscription.java",
+      "sha256": "7ab2f657d6630178a60f5e89268401b49fda69817495ce12ae5b7c30d309f28a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/CombinationalChoiceFrom.java",
+      "sha256": "1125ad23bb236178d4c9895f510ddf1aded2e19265541b734e55c4079581ed24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/Converter.java",
+      "sha256": "93df55827ece376101fbe8ee904057d7696561a7090c32b2e39e82bd4a142c73"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/Operation.java",
+      "sha256": "94d8d3b81226bddc713c9135e531b6bbd3301407de02c9282aa2b18c3b6fa0d6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/Pattern.java",
+      "sha256": "62f2d745c3ea0857d7be92cfa8bc4ef142e500685df7e182710501799f329537"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/Rule.java",
+      "sha256": "d06acc79e40aad63860217f4dd109a7dcd6db9af681417b0bd7267ffdc798437"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/pattern/SimpleChoiceFrom.java",
+      "sha256": "b74410e81c25ee644d05e332a926d01f22ae50b8444bffab6ed13255d491aedf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Block.java",
+      "sha256": "d19f7c17194208a265b3ca83000b927874cab20e92587465ba3e8f6a838f7ed0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Connection.java",
+      "sha256": "b702024ab09c216fc08016cf8bdd876f24dd0988700bc8776725125ab9700d62"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Generate.java",
+      "sha256": "2054e63246d65832e2addf2bcd38e7113bde4c3177f26c15f9cd3c59b8b846c5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Hold.java",
+      "sha256": "af21fbbdbb97db958922f81d3a09d48d94d89863e38a8c7f2557dc9c6465cabb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/InputDock.java",
+      "sha256": "12e83183599e03d3ef746723eabe032698650a43f82b3b9ebcfe3b05c14da7ab"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/OutputDock.java",
+      "sha256": "b7cf531b91dce7bc7c13b3119558b0acba0b46e54a2b600c029d93909b378a70"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Process.java",
+      "sha256": "efa6bdfbf269161e91ad237d24ce572076b21365b632f1fa2f4dfe947ba7e593"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/ProcessException.java",
+      "sha256": "c22e7ea2d9591f1799d194db57a8704548ca2aa4e07e6e07c07bc7e9da207558"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Queue.java",
+      "sha256": "2fe8d0f0230f3bb9019e7b815bc5f37cb865c33b0bdf419610f5fd0cf1b29caf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Release.java",
+      "sha256": "fcc8422cf81b432db452399d8272fa4f9ef9612e5e3f46d303157e3e3dc3feb5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Seize.java",
+      "sha256": "9f549afbc3de7fedf4446f980cde9a9607bf3aea6e860b0ae9cfae4f38708a4c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/SelectPath.java",
+      "sha256": "7e2f482bf042d051a0108e92e8793fd377a6309166371fd67d65a4f3472e80ac"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Terminate.java",
+      "sha256": "19a2c082353b7915eb29a3339cff085c61a6b2b725719c39d96df951f8a07297"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/Transact.java",
+      "sha256": "917ecfea5f08b3e611293b78e2b6cfbe47aeb165a8685c5526f74a40893e8051"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/TransactQueue.java",
+      "sha256": "9b07214c8d069f80a8c3306dab5228ecfa789ea362fb26f05ef7497310f4ef0d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/process/TransactStorage.java",
+      "sha256": "2508435b34d5d68bd41dddbc7548a622cab2e01bf4424622593337dd54f68373"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/resource/ComparableResource.java",
+      "sha256": "f241935b2743882fc867f45016cdf2b7e385a465023268967ec9030919c56a67"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/resource/Resource.java",
+      "sha256": "0e009f8e9c48fbd567a7173521dc25bf5ea35fbedd768fc99b03867e09970830"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/resource/ResourceManager.java",
+      "sha256": "cd04f635bb5c6ddc535dca02692b2e6e72e17e007ecffd6d044275c4cef3999d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/resource/ResourceNotificationCategory.java",
+      "sha256": "ce313a208dc816b1c969899e631e27ddab2c22c7b385d0cc88fe97aaf9047c62"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/AbstractDataSource.java",
+      "sha256": "ec8e3c58fda5ad5289153bdc8e6833a443824b48abc1c4b93b3aa17383a46b1a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/AbstractResult.java",
+      "sha256": "aa92a09804991deced100c26d6de0e0672fbffdbe6605243fdf6bb4a4fe9584b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/CategoricalStatistics.java",
+      "sha256": "cf733082b109efb10fa90aad3babea2308f98311ec29dbcbe88b164903f68afd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/EvaluatableResult.java",
+      "sha256": "21866d706ee259f5e127cea01109a5523498e6b402c31c159a6d13228fcfd5cc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/LastValueStatistics.java",
+      "sha256": "1b712fd19defda68fd5a6fca0981665edf12784bf93182acba1d3fb0fea4773c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/LogStatistics.java",
+      "sha256": "474717f6dea330c970b8520ff5bb1d98aa8ce65b44de0d542d627b8342964441"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/Result.java",
+      "sha256": "4089733924b6a2af5b3c03544d54c6ceb0073b55e38ca3cffa228cb0fe9a181e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/ResultManager.java",
+      "sha256": "388052de1c6482361f328fb980dfd354f5afac8ef1372ba0aa78e7c2bbfb90ca"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/ResultMode.java",
+      "sha256": "129c4616487e41eab43068ae05d426f2caea7155d8c1d08268d754415d92ab53"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/Statistics.java",
+      "sha256": "246a680f9caae88c6744e6d74358c52c4ccc3995abb5f6ca18cfe2dc0581e367"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/StorelessNumericStatistics.java",
+      "sha256": "d5b1caf65331456ca51c79b5479eba6359fcd632eb2c6c3a542e0c5c5c805adc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/UpdatableResult.java",
+      "sha256": "45b958aeadaaef778d65bac79d565be3972906b14f320fd547c21ee988cfabee"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/result/WeightedStorelessNumericStatistics.java",
+      "sha256": "fc5f0a415fa3044c63e4df813107a1d202ad5356998f505cfc18c1644c2e9058"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/runtime/LoggerExtensions.java",
+      "sha256": "92fd51f1768133989172f85ce3010f43838bdb45476a5cac176bc34b2da2fc75"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/runtime/RaoCollectionExtensions.java",
+      "sha256": "51ad083dcc89854c02425f4172f98a6d009472eaaac134b92865001622040744"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/runtime/RaoFactory.java",
+      "sha256": "d57ee67f7b5e0c0a21b0562917d32a73c5ee6ea828b0908e5de2108f4305dc80"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/runtime/RaoObjectExtensions.java",
+      "sha256": "c54983f4ff2601dba7f3d24a47a86a8fbe5b290ddf3cc27fb7cdf8e757e92194"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/runtime/RaoRuntime.java",
+      "sha256": "a07eb22094997dda6b5cf184aa6430720c808d8e35b3fd7a71e70ff77c521084"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/ArbitraryTypeSequence.java",
+      "sha256": "c9eb9d6dc33b63a5b3f07d8344c6021accc026516fa4f98cf702eccef74d1b29"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/ContinuousHistogram.java",
+      "sha256": "8a5107177f1ed71bda68f625bb142b65c861229728845541d77ddc4505ebc3f6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/DiscreteHistogram.java",
+      "sha256": "3c868aabebfbd6f4fb9b6c032a45693aaad0817d7385448a2a7bf4cb05db6331"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Exponential.java",
+      "sha256": "ace0d6d86d9b80cc21e620af51043574feaa5ebf673d983b88e43d0d0b4ca87e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Generator.java",
+      "sha256": "8f180b1ae8ea2eb6743ba77eb801ec6d3e0ef968e9190b0f66dcb75a6971efb3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/InfiniteSequence.java",
+      "sha256": "31a43484f19cd9da9f63c42ad0c2661d16f2a2c5af2ef8bc754e9d7ad5f96362"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/LegacyRandom.java",
+      "sha256": "f0f6c3091a2f10c5a26e0b6445cbce7f292b86790c538fbd7e4008bceb957f34"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Normal.java",
+      "sha256": "1767b0275f1ab041ae2421c585fbdccdd3ea53f5fa70dab299df33dd1e8a5d0e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/NumericSequence.java",
+      "sha256": "b33aabedf3fe8384f0164f2f02649eb2632850e153b4be75354810d71c2b8edd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Poisson.java",
+      "sha256": "b7612eb00555a475855c058091c6aebdd8f224a7879f36b2522940bb56364c64"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Triangular.java",
+      "sha256": "7f2fff4db9277984a4583f6abf15fd37d27b51f327f76c31a47118a37cff4921"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Uniform.java",
+      "sha256": "f0d68ae10cd8373e6862c3d97a388adee48a48695ca8847ae433093f9c28d147"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/sequence/Values.java",
+      "sha256": "f2812b379ab07cc23e3432543b2aa3f9179e8a554701639c4a95e2708ae5f5de"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/CurrentSimulator.java",
+      "sha256": "4d926bfe730eb6c36d623762b1bb0ca34ea54c3c24989bbe36bd1ff29617bbd9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/ISimulator.java",
+      "sha256": "1dd3243ffbd124c0e5547d6135f5ed4e9893e5cf52c0c8158b398080b071b26a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/ModelState.java",
+      "sha256": "e9e1301d76e2e7af1e1e6483f1832ec39e33f7ce47d7987fcdc03e6b1c941fdc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/Simulator.java",
+      "sha256": "d8b2bf156bb9bda8db00ef07c8500ed2acf153b15d22c39a46c2d5a0b3798a7b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/SimulatorInitializationInfo.java",
+      "sha256": "e9f469a5bb281cde121311152e4673f89ca9fc0ee4f141585a3bc6fdffaebbdd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/SimulatorPreinitializationInfo.java",
+      "sha256": "0edfb63c6fc6a65e377ee0a26f0d013ce89659b5cf7971773735bfe037dbd7d8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/simulator/SimulatorSubscriberManager.java",
+      "sha256": "124afe7382df2252ac3aab7e2d867ba30cc4bab3a8361842047ca2a100d13ff8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/thirdparty/AbstractGenerator.java",
+      "sha256": "5b6d54de1cf1e6db6f145f11e3b225273e2366553ce2598c8a0d36f6af8d550f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/thirdparty/LICENSE.txt",
+      "sha256": "433130622c819ad036d5d5e2e0bbf7d6c6de89a9d7a0f94d9c8761d35b4f1b8c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/type/RangedDouble.java",
+      "sha256": "cb897109452530e2707aac8d4a77d54b3c73d12e28374362630ff60cc91e1874"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/src/ru/bmstu/rk9/rao/lib/type/RangedInteger.java",
+      "sha256": "1507fcf445a36c57c2c92799346fec9ade7d646c2d8fdc564f1061536f3bf050"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/thirdparty/apache-commons/lib/commons-math3-3.6.jar",
+      "sha256": "ec9d4def3fbd8d7e72206155799711db3272d45e099d08ea4c68001ad6d3054e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.lib/thirdparty/apache-commons/LICENSE.txt",
+      "sha256": "8ffe219562776eeb84b7a59906aa105fe5b07f0647a8cec1733f91cc5efce9b1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/pom.xml",
+      "sha256": "6976e5fefe0106da09875505ec5750df38de2f28d294cc04eb74f4e465d63780"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/.classpath",
+      "sha256": "484447b83953731030ab4348b80dbfddf0c8013931ab174a1852684f1f875336"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/.gitignore",
+      "sha256": "d3233c6a94a47c911d2b8a722c58517562ef1d5bd37ffa57c967f30fb003f7e3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/.project",
+      "sha256": "fd243bfae19dd7984a8f1ca73d7ae006903dd79bbfc410a8d78aec73fd89c7a0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/assembly/jars-only.xml",
+      "sha256": "6504e0fbeba4d6d756f2d8a0cdd5f38fd06fd9f5040af33c1c29f2caafb310f4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/assembly/pom.xml",
+      "sha256": "2c22fd5136a1725e39ee1334233b9f86e19156d6d077810f17b673a2d1f3fa07"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/build.properties",
+      "sha256": "33c0568674464eef84ac74824e527437a07e9970d25af89cd8a6df130af152ca"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/icons/raox-game5.png",
+      "sha256": "6b0832b34b194009ce81a171772868f4802efcc25d18bd1d659401fe61c88afb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/META-INF/MANIFEST.MF",
+      "sha256": "6482128e27fd17729f1cb12b73e111506e59af041a420700c5946869d9b2ad8f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/model_template/config.json",
+      "sha256": "2a1a6f55e3ac85cd28cf3ec40244bc87d4ef6f9251b6f6527501e647d53d7533"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/model_template/game_5.rao.template",
+      "sha256": "e0597452543669eb869850b83b8a7bd14075fc9a30ca110c38fff6ee875f689e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/plugin.xml",
+      "sha256": "4887673e431b1e8077a51248674a50796ca6dd0333d34813d600fb9514ce5445"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/pom.xml",
+      "sha256": "bc670533acf91af28ff3a8632307e3baa3cbd9b2b0cf9e822715eb59a872a0c4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/README.md",
+      "sha256": "1822199da5c01f7a63463f8b3565198048025d04a173958eaf0926c89a344710"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/ConfigurationParser.java",
+      "sha256": "2b56115a6542a7f40e8140cd897baffc9b92777d4565fbabea6a8e48eb3b5af9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5Activator.java",
+      "sha256": "e5e1b58914f466632c396e6c3ba95222fdb9814444eaa5d94bc1beb0d16196d6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5Exception.java",
+      "sha256": "720cbb2cef3cb7013ceaab012f8abc484468735b75c09f8f178caef306c48a31"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5Handler.java",
+      "sha256": "ef7ebfb23acbb8e08603462f51882318c9a9ac3e4e759251937e933b8ca87258"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5ProjectConfigurator.java",
+      "sha256": "853ec3fe52dd4d54173cfdd71b23304b2cadd1e3baae7fe44adc89337099fd13"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5View.java",
+      "sha256": "7f09af1a81a10157b5b24e30388dea82bea49f0d586c6247a2ea5459f4412227"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5Wizard.java",
+      "sha256": "d52637cb2eb5e063cc4d21d357530d7b700f77c547ede2dec641e56a6839466f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/Game5WizardPage.java",
+      "sha256": "87608b142d6792c2c4af930566e7cb214e8d1ef69a55b2712d97b3db6b9e4866"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/GraphManager.java",
+      "sha256": "11bc7c89121d6cc30bed62f417172945f8ca6ee1431fdf34e7f20bf6ba52147b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/OrderConfigurator.java",
+      "sha256": "87b20eb3ec232ab4cb085825ad54d327ead75d0368a7168cdf3d37badfeeb081"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/src/ru/bmstu/rk9/raox/plugins/game5/TileButton.java",
+      "sha256": "1155a2f2b89ca95cd69d17623e4e15bba4137f38b3184dc676e0c931396dafc0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/third-party/json-simple-1.1.1.jar",
+      "sha256": "108045c9675ebf6d6ec4d8dcc331693f9b944ac7c87de52dccff2c55e8dfa6f1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.plugins/raox-game5/user_manual.md",
+      "sha256": "b432bbfe2b88c11d88a1c99903d37d6aefefaf3867db450adab0ac9ecc115596"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/.project",
+      "sha256": "31d792dec63256095cfdcefb0ca03b526b685c9ffcd0620c7fc113259426dd24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/checks/ui_exports_animation.test",
+      "sha256": "a1b803653b66f240cf829073618767bb9497caa409fece8a76ede577b5b361ff"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/checks/ui_game5.test",
+      "sha256": "8e2f3ef0ca8b9c1d68b847c5ddfadcfac6415761555faad0c4ae8b6d1964edbf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/checks/ui_import.test",
+      "sha256": "d5e28f4878b329a21f85f894ff167a524dec4008275e8844d3c6abc3639b0742"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/checks/ui_stop.test",
+      "sha256": "a9d14787f30d59aeaede15873cd1a60bdbc91d948ceb06b6f8d1ba6fc10e094c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/clear_workspace.ctx",
+      "sha256": "a1b69d6c02791783913975bebf84dcb192433a659115e7520e8937b007b0a76c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/fixtures/ui_import/.classpath.template",
+      "sha256": "1c8ce6e6482b0398ec5884f0fe9efd70c964257cb2955d479a48654defa831b6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/fixtures/ui_import/.project",
+      "sha256": "cdc1852c8dd107b8009ef0eacf3f54e5f232b9c8b622ac493d9647c401f52f60"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/fixtures/ui_import/ui_import.rao",
+      "sha256": "fdce35e7cb36c2440004ed0fb9b99aaa32f41f808d2ce7eb8c0dc8196c61ca80"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/rcptt.properties",
+      "sha256": "2dfd7b2b3bd458e06d2f8e065a889d9dc85fa7785084571f69cb82483ebc6c35"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/run_tests.bat",
+      "sha256": "24f41bd60b01ee58d15ea756908da0c8c6b83cdffee94833be2ec4bd5502b7df"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/run_tests.sh",
+      "sha256": "daba509cb2a35f678441f99bb290b17fe80256c2d46a771678caafc7d2b3d880"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/base_java_project.test",
+      "sha256": "d82c57b55a69e84be03231b9d0d38bbf06096f9a563eeb532e1f75c7dbbfa728"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/common_procedures.ctx",
+      "sha256": "05221266976ce4b012752032f827ab3189daac379cec5918bf7c4984afe48e9f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/accessible_all_conflict.rao.template",
+      "sha256": "6361cffbd48bdb9f10770bd62438a7c782de3a5f601d3e291d41beb97e2d6e1d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/accessible_all_conflict.trc.etalon",
+      "sha256": "fd9f8abd9a7e8a51eb087b7199bcb7c402e4039344d1a863170f4c82dc75d11e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/model_accessible_all_conflict_notrace.test",
+      "sha256": "f10b95496f7a65624be328bfa2f95fd68f3ed13880875eebaaa408526e13582c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/model_accessible_all_conflict_prepare.ctx",
+      "sha256": "3c07e9dadaad522abd31e778164b259f7583eecdd8d072a8c81ba284a558c87f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_all_conflict/model_accessible_all_conflict.test",
+      "sha256": "2b3cb7c6d3e6d09e813747edbd30e775c61fbfd82e984ae01afb24c954535e11"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/accessible_resources.rao.template",
+      "sha256": "ac41ba4a86df978ef143f4f591510d8f096c08dd2106974386991175d44890cb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/accessible_resources.trc.etalon",
+      "sha256": "ab8d9a51128741170b1f170ed1f3f066c1b87db657aa08455bfd370398a61d73"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/model_accessible_resources_notrace.test",
+      "sha256": "ef003aec7636051c49a60e0b3097ca610b9b58625a9e7849b9db77e5329f3a92"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/model_accessible_resources_prepare.ctx",
+      "sha256": "046a2f7596f2216a1c3c43136e7777129c2693e8e930315f614c5bf69cedb07f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_accessible_resources/model_accessible_resources.test",
+      "sha256": "4b0fd8e149f036a335e917a40cab1b604fddcd316f1acbead177e2fc679c54e3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_clients/barber_clients.trc.etalon",
+      "sha256": "23e47d3b5b91f8cf937d5677b0875d4d48f656b4a95b6f32a715956c30c11bcd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_clients/model_barber_clients_notrace.test",
+      "sha256": "2c5caf88e496ffbd85247ed4f0c5f14032374bb412c455173ea87e7c58776283"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_clients/model_barber_clients_prepare.ctx",
+      "sha256": "035f5ac318223aac143ed0250815935df85667e98739495eb23f4849b0d948dd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_clients/model_barber_clients.test",
+      "sha256": "63783c8f2409441e98efc4e6b4ed1bed3e9470fddb0311d966e8bdc5f7f4e4fe"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_events/barber_events.trc.etalon",
+      "sha256": "53f280ffb1330a46a14d148a86195895d3abb1a3faf80701462f706447b8a7fb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_events/model_barber_events_notrace.test",
+      "sha256": "77f66b6e351701d7ecbd4677ac8ed949cfc7e1f72a1b20588dd8012b2438c34b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_events/model_barber_events_prepare.ctx",
+      "sha256": "5baf83d78d1bab2d75a87c652aa7b7f8f9662d2f6fe5bdda11de670822bbad21"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_events/model_barber_events.test",
+      "sha256": "798d0fbf77f7af155a7077b2c540a0b7e688c160ef51f2e8dbfd6013cf7f59f6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_simple/barber_simple.trc.etalon",
+      "sha256": "fedd189d180eb19df0da36bb936c63ab41a16eb28f54505e1a3005a091e4ea40"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_simple/model_barber_simple_notrace.test",
+      "sha256": "fff0d2b71f7625e5dfbcb8747f794c01947ef4ecd833fc33d1f024360944e5e4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_simple/model_barber_simple_prepare.ctx",
+      "sha256": "8bd3310832cbe1af901e0c17afc2a9e64a125c7e1225458b495d59886a3055a3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_barber_simple/model_barber_simple.test",
+      "sha256": "461bee2509149b1bb0f9c5ed3576a5c18d1a96133aa126d4a58f5c53f953f6e9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence_notrace.test",
+      "sha256": "e998c7f65d923fa03bc80829ca1a246f5b144c58b0facbb531d5a30add3d7247"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence.rao.template",
+      "sha256": "1539e9d9ee45f09d17561cbd93add78ddb91c90e567973230d135f283f3ad38d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence.test",
+      "sha256": "6e5ecf8122682de1e8bea80dcb0047a8a4db26a659f7281b1ccfcfd654b546ab"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/continuous_histogram_sequence.trc.etalon",
+      "sha256": "f94e551378c7805311ea0991c6029df45e289db067bad9d688afa785fac06fe3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_continuous_histogram_sequence/model_continuous_histogram_sequence_prepare.ctx",
+      "sha256": "3c66ae78deacfe7979737be14a90b807fa9e495fcca28f834f99cd3c2c54fec8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/discrete_histogram_sequence.rao.template",
+      "sha256": "eed4be1d0d41f6ebff072c85ee00d9eeee6068f42bd2668113fce318c796470a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/discrete_histogram_sequence.trc.etalon",
+      "sha256": "228c5ccd4b243eaadab56a28f51fd0ef6296594798df94b68db8254703b507ec"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/model_discrete_histogram_sequence_notrace.test",
+      "sha256": "5cbc973a443ed7a3c3e0f55412cd1dbdd6aeec24129032aebf24a20cfa58bc6c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/model_discrete_histogram_sequence_prepare.ctx",
+      "sha256": "0bac110e6f691e4e9dfca2fe738e012624db9536dd824127a9151605c70519c9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_discrete_histogram_sequence/model_discrete_histogram_sequence.test",
+      "sha256": "fc3d6f1f84c59917bca8480d437c4697a53ad6f510fad19fc2392620bae8d965"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_empty.test",
+      "sha256": "2752685c37d4876305adaebdb99840e23f7b47d1f7aa94e5cec613d71bdafeed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/exponential_sequence.rao.template",
+      "sha256": "c7a95c8828307fe791587473c371cd0a520454d0c81f5f4c2af95001387144a1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/exponential_sequence.trc.etalon",
+      "sha256": "90bdd64b2a501c918703c47e0a8257956a2e01fd9dcc21ba0cca5b8e41135897"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/model_exponential_sequence_notrace.test",
+      "sha256": "d06ec5a4e0a8321de9dd8a29131467f7381386d89092c5ea38d0d331990661cb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/model_exponential_sequence.ctx",
+      "sha256": "93476d624e24443b72312389518a454e98884405d9912d55e581a93e01f0d630"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_exponential_sequence/model_exponential_sequence.test",
+      "sha256": "3c6ef1711523b5c14a1b7c44b1810aaf07bcb6db4c9b8ba9fbb3d603424e33bd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/game5.rao.template",
+      "sha256": "76416d21776e006dd6965616011691f5f9bed4994f6808315a62342efe1d28a6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/game5.trc.etalon",
+      "sha256": "8511c7304166bcc108308bff4e17371629951c0b307bb217b36e205e792bcae8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/model_game5_notrace.test",
+      "sha256": "99c12fb718aa77a575c7c4b4b13df2fa27bfb452ea7332d78422cc4925ca2d62"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/model_game5_prepare.ctx",
+      "sha256": "eee8630a505f704c97c19e72eeca6badfb8d7087e041da365ba3f3339c177684"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_game5/model_game5.test",
+      "sha256": "f779a3ff88ed1df3a05e5cf81e99267229ffe44948beaa38d4633ef5de5f5003"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/generator_sequence.rao.template",
+      "sha256": "7573bb2daee5c893bf21d47b7b2153703f43ec5d87f8662b9a71d683a4933d40"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/generator_sequence.trc.etalon",
+      "sha256": "f87ef1a14714cde2a90ada18f1d7e4029dab0d043f3a952c3d718f12a9e84f34"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/model_generator_sequence_notrace.test",
+      "sha256": "ba8001a0432917dbf437ce403e1cedb58f918f05ae5b1da6dea311008ee051bc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/model_generator_sequence_prepare.ctx",
+      "sha256": "7b100038354e74437e9d7771a804e9a78a7742f368d02a7df04901b122633d67"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_generator_sequence/model_generator_sequence.test",
+      "sha256": "6538c615eee6e443920002c8e3cb091dc77f78146b155745da8697e8de02d8be"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/list_sequence.rao.template",
+      "sha256": "3ffec8b0da5fabcdbd919ca679053dbed14fc58ae2e1c431af858aa025f284d6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/list_sequence.trc.etalon",
+      "sha256": "b699625a2cfeb45e239aae594839c935649dbd475b90c117eec8f1a448a84d3f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/model_list_sequence_notrace.test",
+      "sha256": "1f6ad7c28b2c93ef9217c3fd0abd3015f4559afc4dd6d8934ef3a6b84ab91e00"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/model_list_sequence_prepare.ctx",
+      "sha256": "30d4e0ea06eda30d346d5ea341a912318cee672a429eef99a4e73af27fcd4c8c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_list_sequence/model_list_sequence.test",
+      "sha256": "665931a34b61ebff0d33e0a2e9d34754bb362976ea765f0ef7ef379561bf2bf2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/model_normal_sequence_notrace.test",
+      "sha256": "779c020cb399ebbbbd4a520996c5ba00fec6d9b8e2add1ddefa64c7b46fd436c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/model_normal_sequence_prepare.ctx",
+      "sha256": "02891034caa6758a5fa6681b42298990e4f2b2aaf209e7ce2503b81bf7be6792"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/model_normal_sequence.test",
+      "sha256": "d9ef0b800f3f5fa7296f54a2f82d9e7342614de6ccdf7a10c971bc3261c520ac"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/normal_sequence.rao.template",
+      "sha256": "6c5253ea5a4314274b8bea0e5d51c00aa8929275466fb1bec426736db788142f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_normal_sequence/normal_sequence.trc.etalon",
+      "sha256": "521681c606c6f2376da23239e627f78ccea90650542e31532bd580257974c30d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/model_relevants_combination_notrace.test",
+      "sha256": "34b943cc7946afe883155f033c747da3e7f5a9532312d27d9b52bea2d6f2569d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/model_relevants_combination.ctx",
+      "sha256": "6825b9a6bcd2c73021f93b11be58853617b01f91c16470c866ce82a39bf396a6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/model_relevants_combination.test",
+      "sha256": "4f4c1c777a607e17e5b1e75ae56c51da7ba291f868c5e15e65048c86448adf4a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/relevants_combination.rao.template",
+      "sha256": "011234d166abc0c6dd424e92f91f57132e1ad99bc00bb2e58fdb2f93a6e5fd20"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_combination/relevants_combination.trc.etalon",
+      "sha256": "0ac274debc799b0ebff0d83d669fdab0514a90a11451bd515f4582b7cc2cc4a3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/model_relevants_no_combination_notrace.test",
+      "sha256": "601d1984bd7488201b3abee2140b5b2179b903483e7416b4b1d02549168612f2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/model_relevants_no_combination.ctx",
+      "sha256": "afc29acc6b618bfbcc263dc053ff8d16a4408439443718176884e290145da103"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/model_relevants_no_combination.test",
+      "sha256": "38ad9323624dc4d149fe004ccbd04c0049ed66fd9513b8486402254e382a5540"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/relevants_no_combination.rao.template",
+      "sha256": "04075b810d9b75bb17e982fbca437a98b22c7cbfb689f1e1954ae7ede3843aa8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_relevants_no_combination/relevants_no_combination.trc.etalon",
+      "sha256": "c649099728e817f40a94e540c1b449ca837e62de9b6a495ed4f1485c92e3a48a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/model_results_notrace.test",
+      "sha256": "7bedda26ae55cd2ce09997cb1a9d98d528db56bcc687dffe28ca7ad6261cff99"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/model_results_prepare.ctx",
+      "sha256": "50a53d7986bebad965bb6f6948f9a170532113045632b20aaf51eea6840e6e54"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/model_results_results.test",
+      "sha256": "bf939a2fa6170b8ed89bea8e424e6768046098cab30a71336b8777f726db66c6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/model_results.test",
+      "sha256": "bdd3f732ffa41ae54a316cb1655def2b637954f63045facfbc174ada25b6f861"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/results.rao.template",
+      "sha256": "d9142d612dcb1cb091cfd29690447fe2591b353440af688bbf14c74efab81d2c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/results.res.etalon",
+      "sha256": "63c015fce5f6533546204e5c7b2beda966b5fcee518dd1669ea71bfc47cf385c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_results/results.trc.etalon",
+      "sha256": "fc93682a6841f5cd62f6d97bfdf69c9605aac7d1cded7110ed81a84205ec05f7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/model_triangular_sequence_notrace.test",
+      "sha256": "1d4918ec3416efefdfa0746406cd178901290e5c16b736c79401b6c91b6acd77"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/model_triangular_sequence_prepare.ctx",
+      "sha256": "0c01971e503d69611ea5546be8fd14adb1daafd54058196225a4f32d60c6975e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/model_triangular_sequence.test",
+      "sha256": "1c4ae146c0b99367fd17398b2cfc01fca96944c4a4ac0a56217867f4692ae4dc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/triangular_sequence.rao.template",
+      "sha256": "3cce0b435c2a75608bee8cfd0ad246a2a789eed312972db7587dfa0b8278886d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_triangular_sequence/triangular_sequence.trc.etalon",
+      "sha256": "80e08ce2246b7b26da1dc57aae810aa17f5c7d8a9ea76e6baf607bebc3657f3c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/model_uniform_sequence_notrace.test",
+      "sha256": "079de1e4f06362706c515401637fe8875e058ad3a2c3ef89adea715d9055c9d4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/model_uniform_sequence_prepare.ctx",
+      "sha256": "ed79815e79eb1af5d279aa64cee40d3f10f09cfdf0a58a32885c3e5523430a2e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/model_uniform_sequence.test",
+      "sha256": "e9903676454be301884a3ebe122474df3e3a01e33f70b3382f793a2ae70a129c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/uniform_sequence.rao.template",
+      "sha256": "8b7f9c178c8a96a80fecaa772c140da3929f3bd9e4e3f43a989bee4760767dfd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/model_uniform_sequence/uniform_sequence.trc.etalon",
+      "sha256": "f1ed22117e36fd4213478a952f6838c4157c38b2ce169fe23e2c2b1ff4c683d9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/tests/rao_perspective.test",
+      "sha256": "aeda4fd598908e2154060bd7545a3fc0f5881492ed7d8eb6a7548da8cbc0c545"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/verify_trace.verification",
+      "sha256": "2ef07b71ffc2ecfbbaf401702bcb5a3801a827365a5e5c024a80fa4f5c34d4ee"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.sdk/.project",
+      "sha256": "a820b6a35a673c362497c44e7af3f3f35e3cd4212acfdb123a0fa721c25834a8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.sdk/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.sdk/build.properties",
+      "sha256": "a6db935d35e469e81af8923945ef4d312f95c42a85c3907d117575c5874a7280"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.sdk/feature.xml",
+      "sha256": "11d0dbc4bdd7f92e6a927cdc291019c508e266644767e11c5128c593afce9e5c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.sdk/pom.xml",
+      "sha256": "cdd55d3352653ee14f56cb2b4d9473f412b8a6be0668d8085adc12c09868b263"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/.classpath",
+      "sha256": "f487e767b605369553d4000a510ca58de1e120b888f8f45127b3b5e8e043e4b2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/.project",
+      "sha256": "2623a6665d1a22c9249775b52aed109eabafac462cad199b6a2ba5f6e5c5847b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/build.properties",
+      "sha256": "0bb715c865fd0f8a038af2100a488a891a59736728c5cb8bfd10c552cf5f8677"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/META-INF/MANIFEST.MF",
+      "sha256": "c65e1712d9dda942c3f37e14b2c1617c387553b954ed1337ffdbdbb8e16434b7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/models/русская_модель.rao",
+      "sha256": "0d8d2f82e576809c957e72ecea85457b6d4f6054b6f22451324f1a5973f67da7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/pom.xml",
+      "sha256": "4821cfe22583c886ee78a740a28fb9bd012b19e5459c37183dcd84bb41da5cc3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/.gitignore",
+      "sha256": "3ee6db16b7bf8d349d22f4defa5688c3c923e9fc4f84b75945df0ac30cabdc02"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/BranchedProcessTest.java",
+      "sha256": "69661ce293eb2139475d69071407f718b336fe238dd2b8ff3d4c66896c7d8c13"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/HeadlessModel.java",
+      "sha256": "8fcb9b1dcfc3f23ebb5a1cf801858202e80f981ac2535043825db1aee2f1a64a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/LinearProcessTest.java",
+      "sha256": "77d755c9e48bd7502d7f47ca541e671c5359e1e3f94d3089df0e374a4b3f3140"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/ModelBehaviorTest.java",
+      "sha256": "21ee0d4659474f3d352bbe30bdd6354ecae7b01cbaae1048b114ae590f25d2d7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/ProcessTestSuite.java",
+      "sha256": "2d54c1bf50dd4ed2787ed43d09024d07bb909ba66299b8dca5570d333cd9dab8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/QueueProcessTest.java",
+      "sha256": "58e45cf990ec1cc3341adba1e2b1f2e3d4c6e374538f5501ffe9ff0e6677d5b9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/RcpttModelTest.java",
+      "sha256": "20365a88fd39cdf56954675866976a3a6d196a744f1483ea0be9b4f25ee86e0e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/SequenceAndSchedulerTest.java",
+      "sha256": "69e7385095034c1560827ef000d9b986250e3f12267cdf56164e4ede23ffd1bd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/TestResource.java",
+      "sha256": "e45a99c71b5ec92309a253bf48bddf3031941f14684935e7b459231c42216a63"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/TracerUnitTest.java",
+      "sha256": "2be5c7a1e14b9f8661cb98b288092f5ecd35695a4a12061ab5905c011404d040"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/src/ru/bmstu/rk9/rao/tests/unit/UnicodeIdentifierTest.java",
+      "sha256": "bd68a5766f6aef944a508a88bfe61c3cd80c5216166d25bfcefe7758a9646df5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.tests/xtend-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/.classpath",
+      "sha256": "7269225df7877cb970f20ffaaef9a471847d9562aca833dc62a9c15cc364a8b7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/.project",
+      "sha256": "66c23e5425e5c533946ebdd1d74863b30b70663f2c0520c17391209ee3c9345b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/build.properties",
+      "sha256": "ee71679732167cf648effbaf2d0584d058496d496deb138f64be3e550b9eac46"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/block_prior.gif",
+      "sha256": "93959bcc52d24ecbe1286003906b3adac1d0493676cb40dfc7a13eab6f04cb5b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/block.gif",
+      "sha256": "4caabf6760819799eddd747bd8cab88cc5b8280283ea33b4c17a35401738b0ad"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/calc_arrow.gif",
+      "sha256": "d69b7d766ca10eecfe7fdbd9ef4c2a1926ef3ea2d916f3790b466affeb1bcb15"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/chart.gif",
+      "sha256": "2217a53d71d668cc426bb8eb70c92b2dd6b76839ffc066f239b2e3c8cb735a79"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/clipboard-list.png",
+      "sha256": "05a51e5e773b6b4fae17b8b519f7f063abdb5b53149f807fd9708f8b0f894c42"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/clipboard.gif",
+      "sha256": "c8a9f4dc372f0bacf4ee5562309f24fb53cf3be3d1331029d335ff9ab1f61bed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/compile.gif",
+      "sha256": "c55a4a2c4018d4c44f21426d1a729e13c0edbbd505fc46654efa38e874ae4f9f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/constant.gif",
+      "sha256": "998670eb5202c36cceedd1ac38edf7a03dc334a2e3907d1a87e4c030829526c7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/constant2.gif",
+      "sha256": "ce837a0537ccde589caa0c93b8fa690055d9d8ac0716f799a73dc25a02141832"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/cross-small-white.png",
+      "sha256": "63921770b21a07f35b6584fbd66e63e0c0a27a6408a8c781a7cbbc05e41ed54d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/cross.png",
+      "sha256": "cee7ed8601de316a2b961d3d78b07cdfdd10bd04266d366ce5e77b425513f515"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/event.gif",
+      "sha256": "febbe90f61ea90c65d5b5401f7ec3aaa8f9075e9b8bdfdf45ddd0958391e8788"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/floppy.gif",
+      "sha256": "bb3b0885ef1fa553a13a2314fd4aedd8de2fae0f4f5a5f2ef6ca30a9a82be7c9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/globe-small.png",
+      "sha256": "a2f0b1b656aac9a72fe91ac4ff1a1152672dbe8798365d6450dceddfe0670f97"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/LICENSE.txt",
+      "sha256": "15fc317597753cadbed07db39c0f96f6d4f953d09145b66753ee3f80f0f298b7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/model.gif",
+      "sha256": "4a67772d39c67a4d4ff2390127075bd7b462706292d9eeb9c07191a5826d8396"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/parameter.gif",
+      "sha256": "cd30ad253aa730a0fbe384af0be01ccfc6b8f8eb5bd62032435ea49e9caa1d71"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/plus.gif",
+      "sha256": "e92d7992cb5be41429a7d81f249d5d54e220d2e5ee6cee8af4c35bc26e1d6f58"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/process.gif",
+      "sha256": "05bbcec4746bdb8cd956feb4630add9c34fc4a4834b3a6709b4f6fd257ccb42d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/processor.gif",
+      "sha256": "9a2431f79e6a894a3e7f7792dcd4c052e445998ae749894bbfec04bd570af1e1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/puzzle_plus_gray.gif",
+      "sha256": "56b69cfc866e92c6a680029b37775e173cb4b4caef9eb54bddd98e17a2bf053f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/puzzle_plus.gif",
+      "sha256": "45e5c43850f202f1a9e025e540ad9ad16602302e0519f3aa7b1bd542799cf3da"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/puzzle.gif",
+      "sha256": "5c0c7e68f7859589e37f88bbad658aa2c1c70ce80af8420fd3a9cf44f1ea1dde"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_fastforward.gif",
+      "sha256": "efad94a612f2179533a2af9e674b8298d2b6721f14d65c30643a528fb324d658"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_model_run.gif",
+      "sha256": "c9796cdeaca6335979fa5d8ac3e85f4500cad0ab1ac92c574ab4b33a5b991f9d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_noanimation.gif",
+      "sha256": "68bf2acc3beddf7af2528b7668b6f3df8c94b2a3ccf97369096b8d3394b944c4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_normalspeed.gif",
+      "sha256": "e0ea2b0b454da03ca55cd206f2f53e565992414ebecc8ee01909790c0db7a425"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_old.gif",
+      "sha256": "9656b89e991f31ead4ad71fbfc8b86523a231113ff6117e4912283017c0c6662"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_pause.gif",
+      "sha256": "2ae7a77f5ece4c4f06abe92c9ab65a76aec86cf35af9976244e1ad77c1f50cf9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/rao_stop.gif",
+      "sha256": "98aea5f024e9cf1de929def34e51ed94f968cf891319e63cac4e41f56b5c92c0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/run.gif",
+      "sha256": "e83e9f8000b4ccc43da402e2945e6e85e01d026a0e1935ef0c8c2e77a755fbbb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/script_block.gif",
+      "sha256": "6e69cf8ff9b4b882a868f97ffc9e1c60cc56436a3653ff8233fcd817968d50e4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/script-text.png",
+      "sha256": "162ddf47852c866ccc06fb067b7f2d590b2e5545813801dacd770adfb401d80e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/search.gif",
+      "sha256": "cd54e1ea216bbb74e9f0266a9739573831f51e169c93ae9e8d6aaccfc719a747"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/sim_rate_dec_four.png",
+      "sha256": "dd6fb30c4802bd3a092af747edb1d36c5949a28a1dfaa817a0006f9ca4da3944"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/sim_rate_dec.png",
+      "sha256": "fbb539ff50ea1544ed4f406c7f9b5ac692b4655c554ebec0f6d010d3364814f6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/sim_rate_inc_four.png",
+      "sha256": "9214101a2a6bda07d5b13ba304fe3e16cb5b9bee8312fb8f93816ca8a1b1b9ff"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/sim_rate_inc.png",
+      "sha256": "f6869218b305b850b4cd109f58570b34dbeee5029cccbd855e908f08f2599645"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/status.png",
+      "sha256": "7fe7dcb85b873a4eaee494855dfb013d79dc91d2ec37876694fb1846ad0c470d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/system-monitor.png",
+      "sha256": "7c92fc20e06e2b4fdf5e656892f2cb8c50ca446abb905e1b729369bce145add2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/tag.gif",
+      "sha256": "83af844129bfbc8f35e210cbcb48ecee4495a32eaa2b8cf86caeb1d3feea3fa1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/tree.png",
+      "sha256": "bb061094a229b3d696554db951c089b9810fceed36c97ee89de61f7a8e9f752c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/zone-medium.png",
+      "sha256": "5ac44cf47e9b874bb513f4da238c3f5281feef75911c00c5f16a889cc6003bb7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/zones-stack.png",
+      "sha256": "7d1a344bf4b316b53cd83e2b2188310120f0ea116a62001742ed24f1be4bb58f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/icons/zones.png",
+      "sha256": "386179fc7f10964bbecc2584b1c3dab84ad843e761136c6c7c9d35ce737cf729"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/META-INF/MANIFEST.MF",
+      "sha256": "ce35d921d75e432c537e62023cc8d8b6d1fdd951140a9db44a05ee2c873170b3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/model_templates/barber_clients.rao.template",
+      "sha256": "d59a294fe30300c553264df70aed251fd5634f05a9b61fa982f94832d4aa6131"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/model_templates/barber_events.rao.template",
+      "sha256": "453596dd18072dec56a64d2f9e3de264563245ed3f3df8d618e933a34f5739a6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/model_templates/barber_simple.rao.template",
+      "sha256": "15e21555b6c5a4ed7ec791bdeb37deba4ce6ccc65938b54e79bce0281ed68442"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/plugin.xml",
+      "sha256": "4b5f7ae1eaeb20b472018fbcfa617f40d0fef0383b3287230ac9ae6563728aa4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/pom.xml",
+      "sha256": "63f4d6695319b68af8fb008dbe8e23a3b677456776fa401c352a14c021ce3d16"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ide/RaoIdeModule.java",
+      "sha256": "da9d07f780ed7713b8a5ce66f08a1ba20cef2b6a0c994f6eda04b9e9e9871f8f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ide/RaoIdeSetup.java",
+      "sha256": "4ad94859526a8cca9f0cfb0cc7d0c1637e00178a787bc24562ca09620ef575c8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/animation/AnimationContextSWT.java",
+      "sha256": "6f8fa5d9a7047dfb871666352fb6452f0188d119dd839c547edc6ccc1615dec3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/animation/AnimationView.java",
+      "sha256": "ef634802fc82f6b1e2e85df337b3021f1202518ff5adea8df4874f2508991b4a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/console/ConsoleView.java",
+      "sha256": "b644de28914b4dedd7c48b20d60efbf64409dac5029142103b9ee85cfc96db6a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/contentassist/RaoProposalProvider.xtend",
+      "sha256": "4b8f7cd78a11473acf165f34842318d3afe3245240e75a1a684e4f159cf33b14"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/AbstractUIElementUpdatingHandler.java",
+      "sha256": "8be329af29aa29066aefbc36ef8ccda75f1cc146595ec785f2e7c52186c9da9e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/BuildHandler.java",
+      "sha256": "9a0392d38f651b53b6216f876d7d302d2240cb8a869f2173c7e8bdea2b85908c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/BuildJobProvider.java",
+      "sha256": "e0aae62326bf30722396421e95f29648d7a1cd4671ff681385c9d1251cbb6155"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/BuildUtil.java",
+      "sha256": "28e3fec0605e86be623cd2e7ff53136dc3db4171062c39a49532b523716f0eb7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/ExecutionJobProvider.java",
+      "sha256": "f3cd3234a1e3ef03265e8b9a43d37d51b0bcd6ee8070bf90ddc4b78fac9f25bf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/ExecutionManager.java",
+      "sha256": "90a7209322f9416f58857bcef40488473d3552c50e295d46574a03e223e8598c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/ModelContentsInfo.java",
+      "sha256": "3f23b087b67bf55ab0af4029c838bc6b4d3fb9549308554699e9b511eb9e48b9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/ModelInternalsParser.java",
+      "sha256": "532789bf6ad5b571d99f2e64e85cc2754cdefd694ce0a4f44f825922d4a9f6b8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/ModelParserException.java",
+      "sha256": "0de80722e8787049a4d0f6502af83c8bd9c1172414f0acf629694555273ba751"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/StartExecutionHandler.java",
+      "sha256": "e142d310e9c676e88f95d7690e623be1859e4736636c07e02065368d6fee614b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/execution/StopExecutionHandler.java",
+      "sha256": "efa071d5da7d58298422e69a0c6ff4b8b6a97009aa5ce68686efe89fda3c6535"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/export/ExportPrintWriter.java",
+      "sha256": "6fd2e846c298c0f2fd9cf908c5681beabc5afb010ec4fe41af9f70d1a0dde5b3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/export/ExportResultsHandler.java",
+      "sha256": "c23a3dc6f209a48184943a4b1850a59e8132be3e6ffcf169e9bc67f921150b47"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/export/ExportTraceException.java",
+      "sha256": "d8c7a8abef75c79c34e73557f4cfa495aa1b1ed9826a6f10f09a6eb47ea23fd7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/export/ExportTraceHandler.java",
+      "sha256": "61ae4e9d73b4b07e6952ea87e3b346e11ef408e812e7965ae85746f86eee4032"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/AntialiasedLayer.java",
+      "sha256": "e0bbf713c7097250cd3c04cbe2b6d5f941ff7c13a6305329fd7085226761c402"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/CheckboxPropertyDescriptor.java",
+      "sha256": "55f6853d579cd5bc9b15f2a26f5ec754298c366b52cf1ea32d5063fcf71377bd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/commands/ChangeConstraintCommand.java",
+      "sha256": "7e4c285ce69bdd9c21d6e1d972588d77e7ce15c9437ae094952d2f56ec1dd37f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/commands/CommandDelete.java",
+      "sha256": "d5f29e282f839a463291dcc54a3bd538945e54d3370ec16a40d651a272648086"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/commands/CreateCommand.java",
+      "sha256": "73aae05e0a831f6a2aca73f6563105a17f1cdec7417cdb6a807ddaff1e1def1b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/DefaultColors.java",
+      "sha256": "6f1ace04282f8bd97351a71d8d86778e3d00be19fe130345b7d29714c15b09c6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/DeletePolicy.java",
+      "sha256": "c1154785444a8defe494a9ed064b827c27d9f87fdbc6d3272ac79706d47a9b55"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/EditPart.java",
+      "sha256": "87a72f952df75ceefce0b77f38cc39bf8c6bfdffa537367ed6646f3b2db45847"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/EnumComboBoxPropertyDescriptor.java",
+      "sha256": "c591072b351e48cb53179ee19552f504a892bb7a5b584b4dbb6358a6783fd669"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/INodeFigure.java",
+      "sha256": "77c61574851553c11d6f75f336da43b58ea41787a4c5d70d8ec6751919808009"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/label/LabelEditPart.java",
+      "sha256": "4dd1ebfd434008c10c1fa7286d06a88a4227ed939ced6cd96dbe0da414ca8657"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/label/LabelFigure.java",
+      "sha256": "7b71ffb81168142b05ea532436ac23728807473f0cbce4493c2ae8781967d1c7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/label/LabelNode.java",
+      "sha256": "c49fb69c8fe4ecb71be9039aa6c911c3498ec3ba5874c2e2291ae25af00da78b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/model/ModelBackgroundLayer.java",
+      "sha256": "f73b1f27871109e57c8df9be54bcea36ed5f752576eb299a1ef3f9aed8da1446"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/model/ModelEditPart.java",
+      "sha256": "16eb4d86194b18e1522017cbfb1f47aab93054bb2716bb58b763931ad5d0942b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/model/ModelLayer.java",
+      "sha256": "b31af6150a88bd55de12db5f895f70fd87ecc15335544c83bc9453d9f1bef307"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/model/ModelNode.java",
+      "sha256": "935d04663a344458e9be2bb2ee22fcb02593a8f0800fa5d8bd4f94993443291a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/Node.java",
+      "sha256": "1b26bece7b591231be329b31d98fb516b5bccb056cb2db7c4a79c733ad4e09e8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/NodeInfo.java",
+      "sha256": "4e1588729b7bb498885b2a71488023ffca2f7418ed2e80c26b730dff185c4139"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/NodePropertySource.java",
+      "sha256": "f0d81645f1bd961f6cd0f83b3b9e329acbd2a4e45517e2407acf86e07a936371"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/BlockConverter.java",
+      "sha256": "5d2b036af487585fa840356825d91a872feecf7b926e01b1ced06427df5ea940"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/BlockConverterInfo.java",
+      "sha256": "4397253183f37d1c00f0b3123646b1dc0eb3f022e4c7ffcd66314784b40945e1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockEditPart.java",
+      "sha256": "465077efdf25d6808fea60937e3fbc5fb64927caed5bb7afbcc642bcf79016c3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockFigure.java",
+      "sha256": "4e15cde564ba67f32a9a1317e60af88d96d4bee8c7205df36d800cd20708715d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockNode.java",
+      "sha256": "bad03e804f3ae7a40feabfddffb6a8eda8268d02ca7e6331ffc4a4ac5607c709"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockNodeCreateCommand.java",
+      "sha256": "c55ca94d207c5a966ffdcfcb3bbf8910d5f24ee2590db005407a122eebb26f0b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockNodeFactory.java",
+      "sha256": "fde4dd8e5363a3849b9ab77b8953f203217d664d72ccd989a28afb8d2c979d4d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockNodeWithResource.java",
+      "sha256": "10e49c48aea6e23af841abef1e781564d9aad02879363331994b9453ea92dc95"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockTitleEditPart.java",
+      "sha256": "ab0e170865f5679020fd57c16cf2204e345bd0c04fc0da87eb7cb0423d0e236b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockTitleFigure.java",
+      "sha256": "0891ff6b91cc7a317add378f9c42a63ea5c5b9b4727f7473ed4f89754e23e331"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/BlockTitleNode.java",
+      "sha256": "0e07938ea63d2c988de50a76ce815dd34d9f55325c5322643a8d2f6ed1fc8c63"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/generate/GenerateEditPart.java",
+      "sha256": "f44728051abd985a22c9c2e774e3c39733c097f809f3cfbb4f628309e6b27a94"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/generate/GenerateFigure.java",
+      "sha256": "e21e8855367a0f3743fc3b638517e56ae85b865092ba4283055b03b0ecf99cdb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/generate/GenerateNode.java",
+      "sha256": "643aec30b9fc233eb599d019d3aac273dbed5976645dde4a06f5555c7b535b1c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/hold/HoldEditPart.java",
+      "sha256": "be1ecd76077f635d25ab4104e9fa413c786fb4794cdc105e7c2eda69a685b7f3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/hold/HoldFigure.java",
+      "sha256": "0a3028c99e57fbd8c0159f68abedfbe64ffe94767a55dc470d71150082822128"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/hold/HoldNode.java",
+      "sha256": "98024d4cbeb3bb7f10c31a2058d720aab54ee207d0bb6bd650f5ee142a0667ad"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/queue/QueueEditPart.java",
+      "sha256": "c18364481da4f7ad6eed1691502addab8ecbf6a0519fd46d12f75a546d92a22f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/queue/QueueFigure.java",
+      "sha256": "43877ed6c52d10768040d9a2677c543537e8ac66edd64783e6087fb743614bcf"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/queue/QueueNode.java",
+      "sha256": "9328539999975ef997f8347fd4a63742261285ff7739db86015ad6405d29efa2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/release/ReleaseEditPart.java",
+      "sha256": "5d1347628e32d451ff4815e211f3ab54083549792c606ccff2faf7aaf7538b10"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/release/ReleaseFigure.java",
+      "sha256": "3fec55d9d2cc8cc0e8a791b2d26530a014b4cea24d4864edc0a3d7e42e6b90ba"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/release/ReleaseNode.java",
+      "sha256": "d7dc34334aec8bab40f59360bb788399510ada107731612142183bd03d940f0f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/seize/SeizeEditPart.java",
+      "sha256": "e9adecb7ebfd58741391591e130f24a7123a2a2574dbfd240ad7c0c48af36555"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/seize/SeizeFigure.java",
+      "sha256": "1d83dfa6ea9936684ffb14cf2093f270e85857eb2b00fafb5c968c9782eecb02"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/seize/SeizeNode.java",
+      "sha256": "0e8eacda9853e305567922e6b15f38494d164924c9f9e1216a18bf9cfd6027c3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/selectpath/SelectPathEditPart.java",
+      "sha256": "261f98fb47f806dee5a4e2eff4ccf4eaa4a2a805443c55af17492a52d2cc77f9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/selectpath/SelectPathFigure.java",
+      "sha256": "28283ba9a513c085faa3c2c7c1962a2ee835b994798ff47b6c7a2cd1afef6867"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/selectpath/SelectPathNode.java",
+      "sha256": "f6741c8ba3c876184b5e86927e2c45f8a8f25239fcb0024fd22602b622a68aaa"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/terminate/TerminateEditPart.java",
+      "sha256": "76139ac29735a10763667e3187a0f17545151d5ca829a9c437b5820861e0e5de"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/terminate/TerminateFigure.java",
+      "sha256": "364ded9424c4db3be56259895104a5a1174dd7f0d8e002702591e9de1c5e43d7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/blocks/terminate/TerminateNode.java",
+      "sha256": "ae7e1efd0a5b86e49119f4412bd7266bbf1f9f83732d586d8aaee5b48a11c4f4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/commands/DeleteBlockCommand.java",
+      "sha256": "adc3664fdc8740a49432944577d8524e993dccd27df2a7249b46a502cfb96824"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/Connection.java",
+      "sha256": "0c5c5adb694af44da6827155ae0b145853f3cf86373fc3c4ccbb015841c525f3"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionAnchor.java",
+      "sha256": "c97cbd6bc04f3bbb0263a81804d14f07edf30e91607a29972877b23e787febf8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionCreateCommand.java",
+      "sha256": "a3fde30d83d04acb07b571cc05d00cde36b8d2f27cb6b19480398f6386656e66"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionCreationFactory.java",
+      "sha256": "66925f5952c68732f0c1c14b9c8c34c2321494970f799ad15f45bde33db508f4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionDeleteCommand.java",
+      "sha256": "8220fca3ff0f41473925742859809c18381670abc35aacc047b84afa71040b26"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionDeleteEditPolicy.java",
+      "sha256": "6b0f8889445d00dfe9286e23fd51399ba756e4f84698af5a98fac029c12250d6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionEditPart.java",
+      "sha256": "e7879c85512bfbf5611ec0e279fc0891095d32aa83ff35cd813919abf240a264"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionPolicy.java",
+      "sha256": "7f6305be757888e8213b28382605c1e23c651af9ed0cf48b5f944b8230d3e77e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/connection/ConnectionReconnectCommand.java",
+      "sha256": "b228cd94aa9d7f5ef10000ae52073c20b74f95c5c465e02aab6358e19328b7c0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/EResourceRetriever.java",
+      "sha256": "518f10d51650d46b7be5fafacce252467848f070fad200261ca3b5354aadf07a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/model/ProcessModelEditPart.java",
+      "sha256": "07b564462e1dfcf674a0b6e2949cd45815e87654e25dad60787a514ba0ad915a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/model/ProcessModelNode.java",
+      "sha256": "2862fa2488dae3af0cc244ce7a5e9a562a6b267808a332e946fbaf956fa252da"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessColors.java",
+      "sha256": "34c9bd123773b476fe481cefd2b96d9deab0c0a1f9a7f2b23b32ef0816ddc39f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessDeletePolicy.java",
+      "sha256": "487fefe27857bbce32a2c99c4685297c9ba8ea45c883c1fc1e20d54e3aca8612"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessDropTargetListener.java",
+      "sha256": "ba8eb745d71fa9265b3d1dc30a998b85fb8a4bb852c3131c496fcc31da4de284"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessEditor.java",
+      "sha256": "011dbc667141f9f67e9d2580531b2ca292449a4b0012ae7c65e9dd150e51a9f7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessEditPartFactory.java",
+      "sha256": "a15d63f6f7a4f0eb262f6c2aed0f08cc85043d50f753b3290df74505c768ea22"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessEditPolicy.java",
+      "sha256": "c8a3b293b233ee12c81c6ab040d2c4af6859663b0128a8f085d0f74c41abb658"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessGridLayer.java",
+      "sha256": "9036fba711b9e019b79598915f063df3077b31bd3485ee111725368b6a1007ab"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessLayoutEditPolicy.java",
+      "sha256": "274a44eb35cf629e2bcceb493ecb03c26a2d63eb71d840eefbfe23d84ea89567"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessLogicException.java",
+      "sha256": "e217df9d2dd8a8bd952624ee50703c6c5b6f4d86faf31cc8ce7f801ed625d18e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessParsingException.java",
+      "sha256": "9abd4e40b80c3f9db64b1098d95174f5781cb02312e377c2f69467c3ce7ac7d4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessSelectedRectangle.java",
+      "sha256": "d982c7d6536dbdd8ece99e9916705e00320611d5106914669e870429d8e0fe6f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/gef/process/ProcessSelectionTool.java",
+      "sha256": "31089872e30e2dd2a174fa9b493b32f1377ebde60e7a3d274a6721c348899725"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphApi.java",
+      "sha256": "366defb6a0b5932022ba6ffdf0a8be907861ce37d549939888f5352905a3d4b9"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphControl.java",
+      "sha256": "8b11378911f4137dd4756149a4011be8842734b5cb7ebb99ab599beb88fea89d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphInfoWindow.java",
+      "sha256": "bcc5098e8b4bfdc3df4b136fbb706d7694a61a1866fae7c422dbfc716e01d779"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphPanel.java",
+      "sha256": "a83f007409f21b6a0c5f0ba27e7c0c76229a15e2566f4fa10b9e1b1950abdfe7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphShell.java",
+      "sha256": "3403aeee870a1bf187d0eb57b774033784c61ef1ffc319077b78904d75d706ff"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/GraphUtil.java",
+      "sha256": "800a90b656dd29dd38523cd13c92a2e73fd6e3240427ee7ad2928a35bfb429ca"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/graph/TreeBuilder.java",
+      "sha256": "6349dcd58deea1c4e117e45da0ccf103271332f8e8e5044c7c41bb774f9aaea0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/highlightning/RaoHighlightningCalculator.java",
+      "sha256": "aa4cf5e84e3394ce7789e8107e0f1d0e7cd50fa25dc0ad81ccbc52d8bd1330ca"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/labeling/RaoDescriptionLabelProvider.xtend",
+      "sha256": "38ac17cc24200680d6a1a864f18aa1fcc995d10e4918c548f20ed48255ab034b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/labeling/RaoLabelProvider.xtend",
+      "sha256": "463aa64b2447fbcb79293c7349dc6e0fa7dfb118f25f5256fde5017984b47429"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/notification/RealTimeSubscriberManager.java",
+      "sha256": "454e6bef3ca04879ef8048b31451bdae099c8a6f03a76db4dc63aad1ae7ba1a5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/notification/RealTimeUpdater.java",
+      "sha256": "d8176482e026b4e919f254b0935507fd3a81713063690f4a567fad24a074ecac"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/outline/RaoOutlineTreeProvider.xtend",
+      "sha256": "a4aae5dc4e387a4b8190df6c972b11773e3be4c8d8cd7b9372aa3f6684d9447f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/FilteringPlotFactory.java",
+      "sha256": "612e694987a4dc3506acddc33c5ef6a3bc5162e48cda867a6f73cd8ad5bcd0c8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/PlotDataParser.java",
+      "sha256": "0c9a9f83f049e81abe117dc92bd7b903a4232484039927cf24486cbc1b6547d8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/PlotDataParserException.java",
+      "sha256": "de7d95b6365f5f6055a63f07b61b379069ff29d20c0668dc569a616f36012f33"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/PlotFrame.java",
+      "sha256": "3fe75949820404d35261ae8751db46e68c722c79180d7c1cbff793efda720a44"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/PlotView.java",
+      "sha256": "71ddc60572452b1fdcc723f73b50e1cec12b3063b5eea23756c3cdc7e8b28fce"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/XYFilteringStepRenderer.java",
+      "sha256": "de3ed0a2131d3174473c89710867d476fc2ec7657b3b2b26ff9f4275ad83ed6c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/plot/XYPlotWithFiltering.java",
+      "sha256": "fe28837dd56e300688913dd5a34976b7b0d8ac5209ffca70bb0247a2df2acf24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/quickfix/RaoQuickfixProvider.xtend",
+      "sha256": "7bc541808ecc80b296fcb5a0f82fce7764c5b4286f958b105905b911058db07d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/RaoActivatorExtension.java",
+      "sha256": "6d7130c569f3eed021e1db799ab90f7aef483c62f5ed39b16b67684186633770"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/RaoPerspective.java",
+      "sha256": "087a965a61cecca5ec2cff4ea0b4d72410c39b3f4ebc160b8ba6777b18509873"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/RaoPerspectiveAdapter.java",
+      "sha256": "1fc1d12b2793423598ea8f329b6213f6dfcf7a046d9b66a97f7cdf455ee1e022"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/RaoPerspectiveSourceProvider.java",
+      "sha256": "6a4f833e66d93e4ea2b4737c9820dc733380ac8d318c23cdac73f6393b548d31"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/RaoUiModule.java",
+      "sha256": "2edfc729fa7d933032f2f9b4a5dd93bf348b7b7e21fa96f4f117e695bc17683a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/results/ResultsParser.java",
+      "sha256": "61ef560572d207ebdc6b51bdd0405f13da818e351555839613b5998bb1579aab"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/results/ResultsView.java",
+      "sha256": "2aba03fc47413b538fc3b6df79749769d0de7d7de02e4ac0ac82d4b877d321f0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/serialization/SerializationConfig.java",
+      "sha256": "04245c16c15aaecb35dae224bde4bf8aeff084919c8847cad04d281cf7aad464"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/serialization/SerializationConfigurator.java",
+      "sha256": "26e481a176aca2be24ce2efc7ebf22f156fed8a97ea8ec9316f8be728b6e66ca"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/serialization/SerializationConfigView.java",
+      "sha256": "b8049840675e81720e002e80444e777d26deb7b46543a18d403e8a646dcc3017"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/serialization/SerializationException.java",
+      "sha256": "42bccb08f4970b5c4bb64bc1284585e484367dbbd351ac145a1105170da57308"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/serialization/SerializedObjectsView.java",
+      "sha256": "f385310538b4fca6a98986ed80b8fa0f0da3beba5089a9df5dd134c0170ac832"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/ModelExecutionSourceProvider.java",
+      "sha256": "bc6409285d084c3bdeede6d7c1110d7ed4d983eff6c6fbaecb0959eb83ef060b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/RuntimeComponents.java",
+      "sha256": "d9e17be92c0611bf8bdcb75e0f9321e2e48b44300458e1fb3706104cb181214b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SetSimulationModeHandler.java",
+      "sha256": "bd31a58abdbf799bf0b63b1adedaef80d8ada4fad9526664460fd663d97213c8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SetSimulationScaleHandler.java",
+      "sha256": "3a9e09f29fddc3f1a406ce780aa511465746067c2857db6221c83b781d96b375"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SimulationComponentsException.java",
+      "sha256": "020427bb49ae5cc267acab3fc78cce30c140aab46dd85a7bbfcf8859cd6554f2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SimulationModeDispatcher.java",
+      "sha256": "35b33cf5c561981e85939484c51e09cd6f85193007eb0202c601e3b4d8673b94"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SimulationSynchronizer.java",
+      "sha256": "318ecd22fa0f7d5855a9de1da39b4039068eb7ac7aff70b7537690a773c07316"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/SpeedSelectionToolbar.java",
+      "sha256": "ae9f9e8d81d30c26f940fe0229e4d9833f84d9d69fd7373eb2ef2b93f2eb92d7"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/simulation/StatusView.java",
+      "sha256": "a225d013e610385e383f5b852275fcf8eb38f72f5c96aee6d5dc02ab7c96fb36"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/toolbar/ToolbarSeparator.java",
+      "sha256": "47276124aff69b362aed33f5ae1e89431df02fcef03ab2e484673660ce56f7f1"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/trace/LegacyTracer.java",
+      "sha256": "57ac020ded7bbd2be768b3aa1d8315c458c6ecff9795a51540dff891f2964f6e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/trace/StringJoiner.java",
+      "sha256": "41d400e0f8d850bb75133df1524efdb7315b27f2e12db508c79ce7b0efd27b4f"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/trace/Tracer.java",
+      "sha256": "5b4e64abb460738c325978fe5b478cf0cb792be7fc1128527ba4223c34ae9c1c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/trace/TracerException.java",
+      "sha256": "09166205baec61f0b13a65b1ef81b51c9dc490cfc756f690f7cd820442c6c58d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/trace/TraceView.java",
+      "sha256": "dc474e62fc9ef3c2684102b5309a19884ce09c7b1f30c74fe65ab2cdaedfc9ed"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/wizard/ProjectConfigurator.java",
+      "sha256": "9acbabae5542c91231fd30db3d8b943d79a649d8b03c139dd2d0c6e46be0d6a5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/wizard/ProjectInfo.java",
+      "sha256": "1bbafa3373b537702235895bbf0012ae8b90e00c977ea8b29acf939169bd2cde"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/wizard/RaoWizard.java",
+      "sha256": "85258d19442860e6740b028bab555d50b123b627f0d50fc68ee7047c97badbcb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/wizard/RaoWizardException.java",
+      "sha256": "e5c178e6fe6737066143619d9ab58ef21a51c717a3055382ef83d9044047bd1c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/src/ru/bmstu/rk9/rao/ui/wizard/RaoWizardPage.java",
+      "sha256": "1088aae9b911ab069cacabba8c1c539a67a55d08ccf211d42ff377c97baeb791"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/get_thirparty_libraries.sh",
+      "sha256": "098096ccf218078d424864e77c9f7396fc05c2c097e40bda87b62586e883acb2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/gson/lib/gson-2.6.2.jar",
+      "sha256": "b8545ba775f641f8bba86027f06307152279fee89a46a4006df1bf2f874d4d9d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jcommon-1.0.23.jar",
+      "sha256": "1e670402809484c71ec74d55b40022a4c4939c7911bd39ee5a0cfb3aaf56397c"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19-experimental.jar",
+      "sha256": "ab1a50722c7ad3c6b053f5f0e8016fbc836615f1cd09cdf16eac73445e2496ea"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19-swt.jar",
+      "sha256": "2a8f8066332fe5e23f102e31f1ddc917ffc7bc46bb603a84a5eacdb88ac593a6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/lib/jfreechart-1.0.19.jar",
+      "sha256": "db320aa73898e2743d33437dac0ff612d3e7614df96a8f2e591499d34fa4814e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/source/experimental.zip",
+      "sha256": "55c094913dd41c3a7902e6a81ddf89582907057df626c55c18777bf8b450fe49"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/source/source.zip",
+      "sha256": "790c622455a5d9a7684bb8050300add909b35d03b9eb1a86c99eadfc877c1e08"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jfreechart/source/swt.zip",
+      "sha256": "b42588cf9a37c9cce7f55c7d1ebf45d235c280094467b62ffa7101c0d57986e4"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jgraphx/lib/jgraphx.jar",
+      "sha256": "de821194dbf6abbc27911cb0c91bad8977d0d700169afe3618b0e71f2b2384a6"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/thirdparty/jgraphx/source/src.zip",
+      "sha256": "28f67b2cf2cecb4e18886cbf46f34abe84649444d975f9d88b408367ad6288bc"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.ui/xtend-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/.classpath",
+      "sha256": "b1c6f7b5cf035ba898100d3ba3a9eb0444f911146fd221fe11a4429dd236004a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/.project",
+      "sha256": "46496f61dc8d0a8ed934dad15a340c4250e452ec47e811fae3445665874aa6d5"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/.settings/org.eclipse.core.resources.prefs",
+      "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/build.properties",
+      "sha256": "94bf6647bf0f7d1e5dee126c08791efdfc8a7f9f55924abbae8013151a6d6a6e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/META-INF/MANIFEST.MF",
+      "sha256": "43e5f87f3b22ecf61997136b6018551a3f1c466d80f9113ffd9122a50ce68f53"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/plugin.xml",
+      "sha256": "77c536ca0e6002fdc2c31048e73dacbd5d31ca977ef0121c676d2276d0d38185"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/pom.xml",
+      "sha256": "7df4cd7bcd77250234a16930297608e53945e2f02bb8f8101fb5934bb7a2bf79"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/compiler/RaoCompiler.java",
+      "sha256": "6227c50621cb3ba8d5311d59e4816c2175b60291a57e7b903ce034ef4abb5879"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/formatting2/RaoFormatter.xtend",
+      "sha256": "6e18381b88038669daba9545f0586211aaa3407777208f50f0994584304264f2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/GenerateRao.mwe2",
+      "sha256": "938d9a81fd23b0f10201396ebf8793c7645f1bb85f781ee004651781932f641a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/DefaultMethodCompiler.xtend",
+      "sha256": "1516855910d433a4109af6b61f57c4bcd562931833ebe18df7e525b27b32095e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/EntityCreationCompiler.xtend",
+      "sha256": "148d5c8e7776a64336de95490e191c6bf09547f9b00eaf6896b12687d3449abb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/EnumCompiler.xtend",
+      "sha256": "365125d1d47609cb26fe67f73920e1d06d2b044d0226c8134ad9788ac9d9a40d"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/EventCompiler.xtend",
+      "sha256": "013e4fa56b95320f7a0cbe2136ec75bba373223ba9bc2ec356dfa121fe3cd10a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/FrameCompiler.xtend",
+      "sha256": "dd9bb8890cd229b2b9c75cf0d34684d04a2620d0fe6ccbb635848ac1eec2944e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/FunctionCompiler.xtend",
+      "sha256": "b9fb6d62236f057137b563b6bb802e4da7a277bc66cb416bfb770ea36ce86675"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/GeneratorCompiler.xtend",
+      "sha256": "5ae126c5137425bc73eaf75392d1113937c7a4a592c2b2a1d82cd7e6914df297"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/LogicCompiler.xtend",
+      "sha256": "f3c9d0acbdc072f2266295aff1bbf4e240f1f396d1add2bbf570565e0c40e8e2"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/PatternCompiler.xtend",
+      "sha256": "c3ef481bb35fc3da1acb5da6c796ee38b7441ff05d76f1f24702ce752a3f03dd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/RaoEntityCompiler.xtend",
+      "sha256": "3782107c44463f4b71e5cd4cd573392457e94c6efd9b48810dcc43aa836e8078"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/RaoJvmModelInferrer.xtend",
+      "sha256": "537c8a25f5b2b7bf97c3358f9a75a739a5c1cd0f6db46f17cabe4c93ba892605"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/ResourceDeclarationCompiler.xtend",
+      "sha256": "0725eed31ea2defeeb1e27bf96339fffc15b20cdc2fc60aafc39953bc0610126"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/ResourceTypeCompiler.xtend",
+      "sha256": "32d10e1cde21962b4652cafce08522d8ba8f28e239e9cc1ae53e20ac6962912a"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/ResultCompiler.xtend",
+      "sha256": "c9bb7fdc15f93aabed43ee85127198c050a677c091f2b78226c479409dd4524e"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/SearchCompiler.xtend",
+      "sha256": "2b848a8919b065651aea4742df5a1ad676b6070e52b0b2a4c6af09b65fe2e95b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/TupleInfoFactory.xtend",
+      "sha256": "28475f5e8626b5343fb596ec36617653804bf016f7a45c6dc897c13694ced9de"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/jvmmodel/TupleInfoManager.java",
+      "sha256": "320d71e8eed0cb93a660797696b4b578fb6834d00e0d18eee5d9f682e4f0fc96"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/naming/RaoNaming.xtend",
+      "sha256": "99f62ad9b1b197fe3ee4581e66614abb2d96ba81e4e9770ba0f5f947a4f16cdb"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/Rao.xtext",
+      "sha256": "d280aeac5b5eaf278b7d53a4d46ab1a88aaf392b706d0c77a7b99dd43d64c518"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/RaoImplicitlyImportedFeatures.java",
+      "sha256": "6521f5b4fa1018afffa910a135a09901807abfba99836eb3957021a241a5f2c8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/RaoRuntimeModule.java",
+      "sha256": "63c1c3702fc46b64c960372b2d01f03f6c62974880dcab67d5318db4dc54c387"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/RaoStandaloneSetup.java",
+      "sha256": "29dbaedcbd5c6f143ba5e453457d893d58a1b53c74bb9cecd180dbadc40d58cd"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/RaoXImportSectionNamespaceScopeProvider.java",
+      "sha256": "d6d27481d2b29d1a071440d63b1fce5754a6f02decfede9f349a6571ef4d7762"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/scoping/RaoScopeProvider.java",
+      "sha256": "a42cc18d95accdce68664dea18465149e7110d221d0ccb07ac1adf37b9073b1b"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/typesystem/RaoTypeComputer.java",
+      "sha256": "bd3ae6f29d34e602169758ed175e29f1dce0bd9a3574d2fa17a51d09af38ed83"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/validation/DefaultMethodsHelper.java",
+      "sha256": "6c9ed65ab59f042ae0a87c4b629560cc9230f66e47b3df368da52a33e4dd73e8"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/src/ru/bmstu/rk9/rao/validation/RaoValidator.xtend",
+      "sha256": "4d1ac84570d424e8ebba2a0b8bc1633cb9806be39dbc0f6cdccc7c4d06b8cfee"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao/xtend-gen/.gitignore",
+      "sha256": "59ffec20f5a9a47ae40621f6e288036b6cb4ca664c44ff9c28f32a48f4ce4e24"
+    }
+  ]
+}

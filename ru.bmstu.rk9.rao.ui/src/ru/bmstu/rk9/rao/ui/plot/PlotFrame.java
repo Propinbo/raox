@@ -25,9 +25,9 @@ import org.jfree.chart.annotations.XYShapeAnnotation;
 import org.jfree.chart.axis.SymbolAxis;
 import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.RendererUtilities;
+import org.jfree.chart.renderer.RendererUtils;
 import org.jfree.data.xy.XYDataset;
-import org.jfree.experimental.chart.swt.ChartComposite;
+import org.jfree.chart.swt.ChartComposite;
 
 public class PlotFrame extends ChartComposite {
 	private Slider horizontalSlider;
@@ -123,7 +123,7 @@ public class PlotFrame extends ChartComposite {
 			java.awt.Color backgroundColor = (java.awt.Color) getChart().getXYPlot().getBackgroundPaint();
 			int upperSeriesBound = dataset.getItemCount(0);
 			int lowerSeriesBound = 0;
-			int[] itemBounds = RendererUtilities.findLiveItems(dataset, 0, domainAxis.getLowerBound(),
+			int[] itemBounds = RendererUtils.findLiveItems(dataset, 0, domainAxis.getLowerBound(),
 					domainAxis.getUpperBound());
 			lowerSeriesBound = Math.max(itemBounds[0] - 1, 0);
 			upperSeriesBound = Math.min(itemBounds[1] + 1, upperSeriesBound);

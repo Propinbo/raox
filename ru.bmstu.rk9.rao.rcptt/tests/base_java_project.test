@@ -16,19 +16,11 @@ Entry-Name: .content
 
 get-menu "Window/Perspective/Open Perspective/Other..." | click
 with [get-window "Open Perspective"] {
-    get-table | select "Java (default)"
+    get-table | select "Java( [(]default[)])?"
     get-button Open | click
 }
 
-get-menu "File/New/Project..." | click
-with [get-window "New Project"] {
-    with [get-editbox -after [get-label "Wizards:"]] {
-        key-type Enter
-        set-text "type filter text"
-    }
-    get-tree | select "Java Project"
-    get-button "Next >" | click
-}
+get-menu "File/New/Java Project" | click
 with [get-window "New Java Project"] {
     get-editbox -after [get-label "Project name:"] | set-text empty
     get-button Finish | click

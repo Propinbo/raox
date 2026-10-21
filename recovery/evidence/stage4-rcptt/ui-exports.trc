@@ -1,0 +1,17 @@
+ES 0.0 Tracing started
+RC 0.0 r = {0}
+ES 0.0 Simulation started
+V  0.0 total = 0.0
+EI 0.0 Tick[0]
+RK 0.0 r = {1}
+V  0.0 total = 1.0
+EI 1.0 Tick[1]
+RK 1.0 r = {2}
+V  1.0 total = 2.0
+EI 2.0 Tick[2]
+RK 2.0 r = {3}
+V  2.0 total = 3.0
+EI 3.0 Tick[3]
+RK 3.0 r = {4}
+V  3.0 total = 4.0
+ES 3.0 Simulation finished: terminate condition

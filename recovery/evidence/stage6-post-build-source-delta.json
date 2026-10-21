@@ -1,0 +1,42 @@
+{
+  "compiled_inputs_unchanged": true,
+  "tested_html_models_unchanged": true,
+  "changes_after_build": [
+    {
+      "path": ".github/workflows/legacy-build.yml",
+      "sha256": "96674be30adb3782efac19f9adc1caef9466403e58af5a1ddfd4ad12be6bde0b"
+    },
+    {
+      "path": "build-with-maven.md",
+      "sha256": "93600e904cdcfd2908a4f368d77f2f6f2e4e716223c63ff70e7f97ac154b35d2"
+    },
+    {
+      "path": "docs/development.md",
+      "sha256": "ce010c38effd5f29cc4fcb8b4f6330cff4559d7f22d7a4a0bd20d5344a119ace"
+    },
+    {
+      "path": "docs/user_guide/quick_start.html",
+      "sha256": "c6916479545ab1f32c136383d2e27a8c8e4a19f10622773470a7f451b9c6b442"
+    },
+    {
+      "path": "recovery/ROADMAP.md",
+      "sha256": "33fdfe093843e47f210eaece89049dc648cca1f57eec4eff3dce7bab3ce8a2a1"
+    },
+    {
+      "path": "recovery/STAGE6.md",
+      "sha256": "ba094404a29f5d14ab9254ab6e3bde185a74827a7898c36af520b037617f5cbd"
+    },
+    {
+      "path": "recovery/STATE.md",
+      "sha256": "c03ea6d9911f2fdf4bf0fa0aacf693a8f0da53f228dcf870bdc1e3fc106b6c2b"
+    },
+    {
+      "path": "recovery/Test-QuickStartExports.ps1",
+      "sha256": "99f798f6d6da12ef556f08cd1be4609787f0f1d8aa3f8dec11f0e138bc582508"
+    },
+    {
+      "path": "ru.bmstu.rk9.rao.rcptt/checks/ui_import.test",
+      "sha256": "f9ba118dd347ccea665cb10f64950bfdf9076060a708b1ccbcdac554cdc74655"
+    }
+  ]
+}

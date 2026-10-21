@@ -1,0 +1,53 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _uIJHwByGEea5c-Q90PErIw
+Element-Name: docs_quickstart
+Element-Type: testcase
+Element-Version: 3.0
+Id: _stage6DocsQuickstart
+Runtime-Version: 2.2.0.201706152316
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+open_rao_perspective
+create_rao_project "Пустая модель" "hello"
+with [get-editor "hello.rao"] {
+    get-editbox | set-text [read-file -uri [uri-from-path [concat [get-workspace-location] "/../import-source/quickstart.rao"]]]
+    get-text-viewer | key-type "M1+s"
+}
+enable_monitoring "hello"
+execute_model "hello"
+get-menu "Model/Export Results" | click
+get-menu "Model/Export Trace Output/Regular" | click
+read-file "workspace:/hello/hello.res" | contains "hello.hello.total" | verify-true
+read-file "workspace:/hello/hello.res" | contains "Last value: 4" | verify-true
+read-file "workspace:/hello/hello.trc" | contains "EI 0.0 Tick[0]" | verify-true
+read-file "workspace:/hello/hello.trc" | contains "EI 3.0 Tick[3]" | verify-true
+read-file "workspace:/hello/hello.trc" | contains "ES 3.0 Simulation finished: terminate condition" | verify-true
+with [get-view "Collected Objects" | get-tree] {
+    select "hello/Results/total"
+    get-menu Plot | click
+}
+get-view total | get-canvas
+set-dialog-result File [concat [get-workspace-location] "/hello/quickstart.csv"]
+with [get-view "Collected Objects" | get-tree] {
+    select "hello/Results/total"
+    get-menu "Export to CSV" | click
+}
+set-dialog-result File [concat [get-workspace-location] "/hello/quickstart.json"]
+with [get-view "Collected Objects" | get-tree] {
+    select "hello/Results/total"
+    get-menu "Export to JSON" | click
+}
+get-view "Project Explorer" | get-tree | select "hello"
+get-view "Project Explorer" | get-tree | get-menu Refresh | click
+copy-file -source "workspace:/hello/quickstart.csv" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "docs-quickstart.csv"
+copy-file -source "workspace:/hello/quickstart.json" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "docs-quickstart.json"
+copy-file -source "workspace:/hello/hello.res" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "docs-quickstart.res"
+copy-file -source "workspace:/hello/hello.trc" -destination [uri-from-path [concat [get-workspace-location] "/.."]] -name "docs-quickstart.trc"
+take-screenshot "Windows quick start result in a fresh workspace"
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
