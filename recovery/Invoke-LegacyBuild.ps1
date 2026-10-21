@@ -59,6 +59,7 @@ $startedAt = [DateTime]::UtcNow
 $exitCode = $null
 $artifact = $null
 $unitTests = $null
+$dependencyVerification = $null
 $succeeded = $false
 $failure = $null
 $locationPushed = $false
@@ -118,7 +119,7 @@ try {
         if ($unitTests.tests -ne 32 -or $unitTests.failures -ne 0 -or $unitTests.errors -ne 0 -or $unitTests.skipped -ne 0) {
             throw "Expected 32 passing JUnit checks with no skips; got $($unitTests | ConvertTo-Json -Compress)"
         }
-        & (Join-Path $PSScriptRoot 'Test-DependencyLocks.ps1') -CacheRoot $CacheRoot
+        $dependencyVerification = & (Join-Path $PSScriptRoot 'Test-DependencyLocks.ps1') -CacheRoot $CacheRoot
     }
     $succeeded = $exitCode -eq 0
 } catch {
@@ -147,6 +148,7 @@ try {
         target_platform_sha256 = (Get-FileHash -LiteralPath (Join-Path $RepoRoot 'raox.target/raox.target.target')).Hash.ToLowerInvariant()
         log = $logFile
         unit_tests = $unitTests
+        dependency_verification = $dependencyVerification
         artifact = $artifact
     } | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $resultFile -Encoding utf8
 }

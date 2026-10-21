@@ -4,913 +4,1065 @@
       "repository": "xtext",
       "sha256": "4b4790f3d522c2849e5b5911ac33f37f034319836642ffd5d0e3ea0ae84465b6",
       "id": "com.google.guava",
-      "version": "15.0.0.v201403281430"
+      "version": "15.0.0.v201403281430",
+      "content_sha256": "0e5dc42e310432e3476cd7d2851300d7cc7c3d4d49f28ae081bd2217adf88377"
     },
     {
       "repository": "xtext",
       "sha256": "4173d4768276c57a613d63adb09b1360cb27346024a0d2765849b56c0dced696",
       "id": "com.google.inject",
-      "version": "3.0.0.v201312141243"
+      "version": "3.0.0.v201312141243",
+      "content_sha256": "3095715ad66c62860be54135e82618e60ff5a0458234f2968ec1dac895342227"
     },
     {
       "repository": "mars",
       "sha256": "4f6efb589c3f52aa44ce237b7ca871fdccb7eae97e65fb02ee51f972f5a1c7a2",
       "id": "com.ibm.icu",
-      "version": "54.1.1.v201501272100"
+      "version": "54.1.1.v201501272100",
+      "content_sha256": "d469cdcb0c7caefa964fcad7751bbdb1b0647d521eef212e286520d754cc0264"
     },
     {
       "repository": "mars",
       "sha256": "05a480ab44501671b9b411a27eccdf447d004105226fde252303116f60c6f1d4",
       "id": "javax.annotation",
-      "version": "1.2.0.v201401042248"
+      "version": "1.2.0.v201401042248",
+      "content_sha256": "062dd78a015e74fec7f9380582a2991500686cbea02cb9e26c54566884f62cff"
     },
     {
       "repository": "xtext",
       "sha256": "635b1e5c299ebafd9dd0fa51449883eb4a0574352032c7f0f6d5c2a3488fab47",
       "id": "javax.inject",
-      "version": "1.0.0.v20091030"
+      "version": "1.0.0.v20091030",
+      "content_sha256": "7881db950a9429bbdc5bfbf1ee62b194f13102ae46029ae8f26a36404b04150b"
     },
     {
       "repository": "mars",
       "sha256": "25c423ef79fa90393078350d80ed3677beea599790fc7965c43bddf36d972e71",
       "id": "javax.xml",
-      "version": "1.3.4.v201005080400"
+      "version": "1.3.4.v201005080400",
+      "content_sha256": "c2d45470aa15f618348e8f1d8e5e011d7ce05bfc7fc9e361c609f6bc71e83163"
     },
     {
       "repository": "xtext",
       "sha256": "872020e59f858e32b0a33aa93322aaf9b1a8877dd606c8a323e99c585d5ab1f2",
       "id": "org.antlr.runtime",
-      "version": "3.2.0.v201101311130"
+      "version": "3.2.0.v201101311130",
+      "content_sha256": "2e0af6a517e7fee8ceb0f1b4798a2e56413ad716a1a429f8cb3972a6ef487edd"
     },
     {
       "repository": "mars",
       "sha256": "98eaa6692a31a93b33b4d68c4ad3c5587d57b7a5a16a39291380aaa4bdbf8ee8",
       "id": "org.apache.ant",
-      "version": "1.9.4.v201504302020"
+      "version": "1.9.4.v201504302020",
+      "content_sha256": "9caf7a09d796ca787bba0a585c9a1af1ea7742508e2e8f25792459b7621425ab"
     },
     {
       "repository": "mars",
       "sha256": "898bdad08389a54d0083f66932116f546c519dcae55a9003fd33c5a4bf58eb3d",
       "id": "org.apache.batik.css",
-      "version": "1.7.0.v201011041433"
+      "version": "1.7.0.v201011041433",
+      "content_sha256": "07fd67d73886aee37000eb384cdb4b9118dd429f03cb7bbcae754084de9acb94"
     },
     {
       "repository": "mars",
       "sha256": "52c717647191b2ab4fa2fb3346b620e435c500e285431fe25bf96679cacef78e",
       "id": "org.apache.batik.util",
-      "version": "1.7.0.v201011041433"
+      "version": "1.7.0.v201011041433",
+      "content_sha256": "120adf254b468aebd6624d162e7097e9546fb95920507d8cd5e0b36f9ea6a5ec"
     },
     {
       "repository": "mars",
       "sha256": "2b1b12e9007756b37a26fc047ece3ad6f5993a3196b33a74a9b2f80a898dbc29",
       "id": "org.apache.batik.util.gui",
-      "version": "1.7.0.v200903091627"
+      "version": "1.7.0.v200903091627",
+      "content_sha256": "bf0ab5ede6be54c7ba35bc683884b1a4bdb463b1746e474d1c97abbbcd09da30"
     },
     {
       "repository": "mars",
       "sha256": "856245d8c6bf7c5d4cf3d50d1a3877d6aea8ee819084c166ba8fe10283177977",
       "id": "org.apache.commons.cli",
-      "version": "1.2.0.v201404270220"
+      "version": "1.2.0.v201404270220",
+      "content_sha256": "9f4bacf50816bbcfe31e6cea72100b88e0734b327d700c95c6e47ab1d3cfff3c"
     },
     {
       "repository": "mars",
       "sha256": "693436e23e7f4b7f10113e94a7e05c6c9e345a6af814e5171a8ff0ab60b0b13a",
       "id": "org.apache.commons.jxpath",
-      "version": "1.3.0.v200911051830"
+      "version": "1.3.0.v200911051830",
+      "content_sha256": "5be81d747fda5bf75d9c5b8f2a26ac47d2150bcfbd97e306e47c305c0a6acbe1"
     },
     {
       "repository": "xtext",
       "sha256": "b37d5583dd3c73c69030bb7433509cc2f00bf4de282e90f6d9f724528da13b2a",
       "id": "org.apache.commons.lang",
-      "version": "2.6.0.v201404270220"
+      "version": "2.6.0.v201404270220",
+      "content_sha256": "33bfdc6418b552f9868e0a306dc27e6c86ead9444c1f80be0afa2a85e63d46a1"
     },
     {
       "repository": "mars",
       "sha256": "2cd12da1f1f0c33334923a57af35a38207dade1a357c8a962deaac93a2e07151",
       "id": "org.apache.commons.logging",
-      "version": "1.1.1.v201101211721"
+      "version": "1.1.1.v201101211721",
+      "content_sha256": "bfed7669f1f5a5d6f3dfffea9ca8c3e287598d621f02484ed8ee700d9f4a5ab1"
     },
     {
       "repository": "xtext",
       "sha256": "ebdd359b9380dd324d4339b872cf40d928a1cb472f1a4a2794fb28de4a2e0dc8",
       "id": "org.apache.log4j",
-      "version": "1.2.15.v201012070815"
+      "version": "1.2.15.v201012070815",
+      "content_sha256": "5050d94f9ee34947c8c72579a652233fbddb1a93d0bcaa5db8e4db41545ae383"
     },
     {
       "repository": "mars",
       "sha256": "547885a661d537f32494a330d42ac8a0ae4cb791b0e1a91733851369a47aca80",
       "id": "org.eclipse.compare",
-      "version": "3.5.600.v20150420-1449"
+      "version": "3.5.600.v20150420-1449",
+      "content_sha256": "f2e6a38804447ed3ed92e80da7998d7c0b6465790f3fc9517ceb8f106f4000fc"
     },
     {
       "repository": "mars",
       "sha256": "282309a7b18f03303ae35dbe41f0a29b1d5bfae0e36f2ccc024445688d3c3782",
       "id": "org.eclipse.compare.core",
-      "version": "3.5.500.v20150505-1058"
+      "version": "3.5.500.v20150505-1058",
+      "content_sha256": "c157e190df9222c4f61e042208b6e01319d59004b949bde994dcc94070523974"
     },
     {
       "repository": "mars",
       "sha256": "9c95174f8fa18807fb5178a593fca96ce4ce6cdc07eca52ab919da07173a24ce",
       "id": "org.eclipse.core.commands",
-      "version": "3.7.0.v20150422-0725"
+      "version": "3.7.0.v20150422-0725",
+      "content_sha256": "423797219a72aa3f0e286c775a5ede0fe354190a3891a0f8f9871c43efe787f6"
     },
     {
       "repository": "mars",
       "sha256": "ffc1f25c33933ad8b9f2616674b7ebdcc72cdacc04c4940cef04c8e13f768929",
       "id": "org.eclipse.core.contenttype",
-      "version": "3.5.0.v20150421-2214"
+      "version": "3.5.0.v20150421-2214",
+      "content_sha256": "097c9f33ea4a00f827e943080111b7259254c22c5076fdb65d633270d5e3cb9f"
     },
     {
       "repository": "mars",
       "sha256": "ba6793645be55c0b5d8dab8b8edcf346730deaff01f4cd7d4c504c0fdfe27e1b",
       "id": "org.eclipse.core.databinding",
-      "version": "1.5.0.v20150422-0725"
+      "version": "1.5.0.v20150422-0725",
+      "content_sha256": "244b744006610ae11c5d1533edf86c5113ce86f9716271a733443a40c43e631d"
     },
     {
       "repository": "mars",
       "sha256": "570aaf615cb90d6eb44e081c9ccb3861fe196430c7ec6048ec4b86169664e069",
       "id": "org.eclipse.core.databinding.observable",
-      "version": "1.5.0.v20150422-0725"
+      "version": "1.5.0.v20150422-0725",
+      "content_sha256": "6879f5ebd21439223aa274490cfc3524eea96d35108a23a2a8e2d4b1163eaad3"
     },
     {
       "repository": "mars",
       "sha256": "8629eea29e28042a152864619b0e0a7a6d6fa0aa80424e9fda273d8e07c5cd7d",
       "id": "org.eclipse.core.databinding.property",
-      "version": "1.5.0.v20150422-0725"
+      "version": "1.5.0.v20150422-0725",
+      "content_sha256": "88bc362786cfc265a90cee8857565b05ff7065d759504490f5026d0ad55f5869"
     },
     {
       "repository": "mars",
       "sha256": "6e22db4b00beef1d002961ca7383341988c92afaa5d1a5aea45df8a315432e2d",
       "id": "org.eclipse.core.expressions",
-      "version": "3.5.0.v20150421-2214"
+      "version": "3.5.0.v20150421-2214",
+      "content_sha256": "4d77d8f4346fe6cebbff24f83277aed4f170149c89766e434b652a607c5c98e6"
     },
     {
       "repository": "mars",
       "sha256": "0c88c3cdca1a61dfff067d7c60fe6afb1dbfe41cd8a7589e966acdbfead607f2",
       "id": "org.eclipse.core.filebuffers",
-      "version": "3.5.500.v20140723-1040"
+      "version": "3.5.500.v20140723-1040",
+      "content_sha256": "6c382af13dc66deb1fd5eb5166a16ce6e2ec3b310138d62cb9ad0b2a9aadfc0d"
     },
     {
       "repository": "mars",
       "sha256": "501485b4710e8aea875a6d7c7f52b87936936b941578dd65cfc28594e6ec1ceb",
       "id": "org.eclipse.core.filesystem",
-      "version": "1.5.0.v20150421-0713"
+      "version": "1.5.0.v20150421-0713",
+      "content_sha256": "5ffc018e94e1b5106decba6a000917962600fd518a1cd734605e38adc273682e"
     },
     {
       "repository": "mars",
       "sha256": "94487b7192cd48f7bb6ce1c821892c3110943e521b4f5600fd9c4059e8b3531d",
       "id": "org.eclipse.core.jobs",
-      "version": "3.7.0.v20150330-2103"
+      "version": "3.7.0.v20150330-2103",
+      "content_sha256": "ac5cd0a8a8cde47be81ea7ca88dbbf3cbe8a298a958f4a9066996ac1a67adaa5"
     },
     {
       "repository": "mars",
       "sha256": "59cb919e2d5cfabb522977524ed9c82ed7218909eaa1d48c9f940858c1cb4c49",
       "id": "org.eclipse.core.net",
-      "version": "1.2.300.v20141118-1725"
+      "version": "1.2.300.v20141118-1725",
+      "content_sha256": "b9bdfd99cf37fd478f96b1d8ce44f7e198bb50329215bbf426a6534f4fdbd6f5"
     },
     {
       "repository": "mars",
       "sha256": "a0f18d5360c750d6dad79bbdc783f2109e48c02ada16fd244ee74a21f5ff147c",
       "id": "org.eclipse.core.resources",
-      "version": "3.10.0.v20150423-0755"
+      "version": "3.10.0.v20150423-0755",
+      "content_sha256": "4d4f220af8668e0a3eddba3fff699e964981c04fe1e92a459de30c177e5c9ac9"
     },
     {
       "repository": "mars",
       "sha256": "afaec68b24ba56d13107bf8a82a895444c0baec649d1edbf9486aa0ae2e3411b",
       "id": "org.eclipse.core.runtime",
-      "version": "3.11.0.v20150405-1723"
+      "version": "3.11.0.v20150405-1723",
+      "content_sha256": "4d52f19c0ed91fca70f82f5fef346dcf0cc92e4ab423a81ce9de8f2409053348"
     },
     {
       "repository": "mars",
       "sha256": "d34d30ab5b2bc9e0d91a651ee8eca8913d1d041e6ebbb8ba18e842826fca7c80",
       "id": "org.eclipse.core.variables",
-      "version": "3.2.800.v20130819-1716"
+      "version": "3.2.800.v20130819-1716",
+      "content_sha256": "52c408cddbd9258f58a22bb34045fec36c9b688b017e1510502581fe818cc205"
     },
     {
       "repository": "mars",
       "sha256": "46fafb99f697394c7260946f6249985d5b8b86eb8ac0c94cc1bc079ecd9e36fd",
       "id": "org.eclipse.debug.core",
-      "version": "3.10.0.v20150303-1130"
+      "version": "3.10.0.v20150303-1130",
+      "content_sha256": "49f6235e5705cc3ad1816255c866b4f63dcf8cd96b8cc80359acce55832885e6"
     },
     {
       "repository": "mars",
       "sha256": "d5ed801e8cc892591a301c6b4868ab6f95dd16056dbcad60b7069b3024aefd75",
       "id": "org.eclipse.debug.ui",
-      "version": "3.11.0.v20150514-0917"
+      "version": "3.11.0.v20150514-0917",
+      "content_sha256": "99e0a98cbee5334ebcc95c222d0d3149a8c71f0000faaf8adb050abca587d775"
     },
     {
       "repository": "mars",
       "sha256": "1bd0858773ab71b1969227ee2507b2f0186cdb65c62af3aa2759fececc8404d0",
       "id": "org.eclipse.draw2d",
-      "version": "3.10.0.201506010206"
+      "version": "3.10.0.201506010206",
+      "content_sha256": "f57b25e6e7986a9f0078efb1915199c72405add312b17ebb913a3c4c05832943"
     },
     {
       "repository": "mars",
       "sha256": "4b09bbd66b90292de2ad566c8c9602cc99d096fc445011dfe743661470726564",
       "id": "org.eclipse.e4.core.commands",
-      "version": "0.11.0.v20150422-0725"
+      "version": "0.11.0.v20150422-0725",
+      "content_sha256": "f6e0b2a664a0d2cf6467d23c5774605fea34d22902e4097e29e623198d463226"
     },
     {
       "repository": "mars",
       "sha256": "468bfe4a2374254bd4c2e054c299f0be79a94ce2f281e710a05dfdaf2e527adf",
       "id": "org.eclipse.e4.core.contexts",
-      "version": "1.4.0.v20150421-2214"
+      "version": "1.4.0.v20150421-2214",
+      "content_sha256": "6dc9646b3d8b50982620d80d6b15868a82407b37f06cfb7b85123889e3915c4a"
     },
     {
       "repository": "mars",
       "sha256": "932d71002366d4034e4a06ebeb0ffc9ef4206382814227cee305fc3e8cb419df",
       "id": "org.eclipse.e4.core.di",
-      "version": "1.5.0.v20150421-2214"
+      "version": "1.5.0.v20150421-2214",
+      "content_sha256": "542ed80dab443209c4f04b72ca9bc94acfd158a75052ed4ffb71039f726675eb"
     },
     {
       "repository": "mars",
       "sha256": "ca3d994f62d9efc2e796183ec0745610ce1e8af35b849912df526bc56f5cf81a",
       "id": "org.eclipse.e4.core.di.annotations",
-      "version": "1.4.0.v20150528-1451"
+      "version": "1.4.0.v20150528-1451",
+      "content_sha256": "39b399039d3c909e7040057186183ee3dd6dac2e282eb07a6525144e307b0fbd"
     },
     {
       "repository": "mars",
       "sha256": "5ad0828f1167286e863dd2ed254ee9d0d39913dd02d28e6d26a3447322dde3f1",
       "id": "org.eclipse.e4.core.di.extensions",
-      "version": "0.13.0.v20150421-2214"
+      "version": "0.13.0.v20150421-2214",
+      "content_sha256": "f2c3f7174443292dcf88360f46a034be736f4e2eb3df50fca4f3402084981ef2"
     },
     {
       "repository": "mars",
       "sha256": "a32e4bfdcee383c0aa6b978724a6060ee5f3eec47ca739b42e704063c250199c",
       "id": "org.eclipse.e4.core.services",
-      "version": "2.0.0.v20150403-1912"
+      "version": "2.0.0.v20150403-1912",
+      "content_sha256": "b2aedcc61eddbbb2449fc11bf0e3808015027a59845e95f8a9df901fa98b0e4a"
     },
     {
       "repository": "mars",
       "sha256": "036682e48e4f3bf5648fa45311d1b6270a0b8daa82679800c9f2fa2cff2789e8",
       "id": "org.eclipse.e4.emf.xpath",
-      "version": "0.1.100.v20150513-0856"
+      "version": "0.1.100.v20150513-0856",
+      "content_sha256": "7e499cfc122bc00f1c25871348006dde021cefdcf871b08c88bf10994a53e06a"
     },
     {
       "repository": "mars",
       "sha256": "73ce8064a491b30b8c737227f84b9b992e49d0074c8deab8fd1def2776586206",
       "id": "org.eclipse.e4.ui.bindings",
-      "version": "0.11.0.v20150422-0725"
+      "version": "0.11.0.v20150422-0725",
+      "content_sha256": "b8e8bd275a2decf9aa85f187ec87bef4886b8928b9aee2f9a0a478b01f2d20cb"
     },
     {
       "repository": "mars",
       "sha256": "2f4f188740d1d5ea99f8d6649fbd32d85768716a775d9fc7e2cdf1fea38273b1",
       "id": "org.eclipse.e4.ui.css.core",
-      "version": "0.11.0.v20150511-1937"
+      "version": "0.11.0.v20150511-1937",
+      "content_sha256": "206c50382ac9048b303435bf171d50ef871f22cfe9810962684df3cf20f113f2"
     },
     {
       "repository": "mars",
       "sha256": "34a24b964ddf83d783194415ac8f13c8891c54ca6291d9ccc9a10661130a11f1",
       "id": "org.eclipse.e4.ui.css.swt",
-      "version": "0.12.0.v20150511-1003"
+      "version": "0.12.0.v20150511-1003",
+      "content_sha256": "1a9d683a9a17e03312e32e0c527eb891d566fbbf9ecb605c0e291a832cffe6d9"
     },
     {
       "repository": "mars",
       "sha256": "03ecdeb8e96c13efc8db660b033d38d378d87819af61a6d255d1509477b9d61c",
       "id": "org.eclipse.e4.ui.css.swt.theme",
-      "version": "0.10.0.v20150422-0725"
+      "version": "0.10.0.v20150422-0725",
+      "content_sha256": "15de72296640cc432b4c7a14be118249a4a5812665c5ad2c2ae11c61e75d90b5"
     },
     {
       "repository": "mars",
       "sha256": "d8f43cb1be8cec56a40545f89f28be7e6d5410e1fc9ae2ff92aac663a5eeb7de",
       "id": "org.eclipse.e4.ui.di",
-      "version": "1.1.0.v20150422-0725"
+      "version": "1.1.0.v20150422-0725",
+      "content_sha256": "a6edb39d16bdbe2aa03b4fa87f98cfee14b8b01f6c9385973441bc60d661c500"
     },
     {
       "repository": "mars",
       "sha256": "93587372595d0df945db72327943d87c1fe5ba68f8b2601a2e764e017ed89152",
       "id": "org.eclipse.e4.ui.model.workbench",
-      "version": "1.1.100.v20150407-1430"
+      "version": "1.1.100.v20150407-1430",
+      "content_sha256": "e052fe13c42453eb1bbfeb426b7d09f2213c0a20298fded469bdf687bc47cb7d"
     },
     {
       "repository": "mars",
       "sha256": "7ac7701fa905632959b6dff05d4977b49e8fdb81a683f30f21eab8883f130252",
       "id": "org.eclipse.e4.ui.services",
-      "version": "1.2.0.v20150422-0725"
+      "version": "1.2.0.v20150422-0725",
+      "content_sha256": "efe9725d6b74b6b5d38184feaf7f97da5df60f66a9566e46eac223a862e4c2c3"
     },
     {
       "repository": "mars",
       "sha256": "d1784fd6980ec4824b2d9d65b00c2adf5f2e515eeb20c06ce89815d61ff49c62",
       "id": "org.eclipse.e4.ui.widgets",
-      "version": "1.1.0.v20150427-1751"
+      "version": "1.1.0.v20150427-1751",
+      "content_sha256": "a6414fea00e6720a0114c5b272e6099125634cae40510faeae6c3645bbd65505"
     },
     {
       "repository": "mars",
       "sha256": "1b0cc97082caf6d20df9ac43e12306b0f561b6e020f683e32b644cbfdcef8717",
       "id": "org.eclipse.e4.ui.workbench",
-      "version": "1.3.0.v20150531-1948"
+      "version": "1.3.0.v20150531-1948",
+      "content_sha256": "eafd95299ac4fdf4bf6996fed2373588a6f337ed9ac56a07bd9400afc0e25a4e"
     },
     {
       "repository": "mars",
       "sha256": "d5282104055dad12d9b04b6cf72081d78ce651b0baaf9634e7d262c62b703b62",
       "id": "org.eclipse.e4.ui.workbench.addons.swt",
-      "version": "1.2.0.v20150512-1414"
+      "version": "1.2.0.v20150512-1414",
+      "content_sha256": "ffcf7a3edf09950a263a90791c47fc6b89d3170aec1af3fbfe5b9a4306800a2b"
     },
     {
       "repository": "mars",
       "sha256": "4c25a0c673251d853b2a8924847ec1e7d0c36e75282f5d5b449796af1141e82f",
       "id": "org.eclipse.e4.ui.workbench.renderers.swt",
-      "version": "0.13.0.v20150603-0857"
+      "version": "0.13.0.v20150603-0857",
+      "content_sha256": "70ce5ba6def4f961ddf7f0f3ebab672d2be991906af2b1389899fc7acb3b4144"
     },
     {
       "repository": "mars",
       "sha256": "0ceab110628449badb31571eb3a7aa5007f3db513d8dbf5480aab60433d9c6b1",
       "id": "org.eclipse.e4.ui.workbench.swt",
-      "version": "0.13.0.v20150504-0621"
+      "version": "0.13.0.v20150504-0621",
+      "content_sha256": "f1f1996c87dface7cec3b35d8aa6683a6ab5a38dc4f833e6146f3a206f1fc1f1"
     },
     {
       "repository": "mars",
       "sha256": "6ca4ce710e10fad7c48fe6978f7a1b05bd20f6fa4bffbbc6c1409b87c65e02b1",
       "id": "org.eclipse.e4.ui.workbench3",
-      "version": "0.13.0.v20150422-0725"
+      "version": "0.13.0.v20150422-0725",
+      "content_sha256": "fc1256d2f5ed8d66302ced89f0b6506a2264c7e0b8b7b493c5f453c23d814dea"
     },
     {
       "repository": "mars",
       "sha256": "d0981861cb86bb277cf9d1eefa3ca833335eb1f6ff8ba9de6cea07871a69aae1",
       "id": "org.eclipse.emf.codegen",
-      "version": "2.11.0.v20150601-0402"
+      "version": "2.11.0.v20150601-0402",
+      "content_sha256": "b18207910d96f0dd23946e334eb75a7b4f6667f79a0f262bf4fbdd382f70dcc3"
     },
     {
       "repository": "mars",
       "sha256": "5b76b7da570575524a420cb4ffa62cdf990bcf74c0808ee1c1c51a044d80ff17",
       "id": "org.eclipse.emf.codegen.ecore",
-      "version": "2.11.0.v20150601-0402"
+      "version": "2.11.0.v20150601-0402",
+      "content_sha256": "5fcb071b274d73ee7fb792be796b258739d65c73ccf7be41b83d105fc6f176ce"
     },
     {
       "repository": "mars",
       "sha256": "25aecfda0c434b015535006da81344a10a449a55746f1127c5dfd03b8626403d",
       "id": "org.eclipse.emf.common",
-      "version": "2.11.0.v20150512-0501"
+      "version": "2.11.0.v20150512-0501",
+      "content_sha256": "c041702fc0668de383ec53e9310659f362ec3c217087c9a45fa78db6648120f9"
     },
     {
       "repository": "mars",
       "sha256": "f416cb7204fe45f6a52bd7cde818f2a6e0a7dc3d816f698c9a0327358d039e9b",
       "id": "org.eclipse.emf.common.ui",
-      "version": "2.10.0.v20150601-0402"
+      "version": "2.10.0.v20150601-0402",
+      "content_sha256": "f8146e7008db2470caebcbd7ffdebe0b559fc7aa60d68571440d925b3b77fa4a"
     },
     {
       "repository": "mars",
       "sha256": "a6690f5a4214e8b8360baf11018b0f5dc312054b690fdf44bd0b0a267313746d",
       "id": "org.eclipse.emf.ecore",
-      "version": "2.11.0.v20150512-0501"
+      "version": "2.11.0.v20150512-0501",
+      "content_sha256": "411fa25c63375d91437bb494627983a585b738fbc8443f3f9bdf81c985c4cc64"
     },
     {
       "repository": "mars",
       "sha256": "455c1bc1cc412f1c2c0d64d5b8c3555e549f97477ae5150fadb88bd1df30ba02",
       "id": "org.eclipse.emf.ecore.change",
-      "version": "2.11.0.v20150512-0501"
+      "version": "2.11.0.v20150512-0501",
+      "content_sha256": "20ccc89ab82205c8640643bac5761aa7ac1425dd233f1465547703932f62a90f"
     },
     {
       "repository": "mars",
       "sha256": "317c29d81fb0c1e0c33ebcdf55defda59989a4d825103019f2a70e6bbf1cc2aa",
       "id": "org.eclipse.emf.ecore.edit",
-      "version": "2.9.0.v20150601-0402"
+      "version": "2.9.0.v20150601-0402",
+      "content_sha256": "f88c8a5342a8c00724af4a059a4b084b6f5e85f38878e5e013552bb3b343eef0"
     },
     {
       "repository": "mars",
       "sha256": "5a4882bd5658ff222c45c55c1fb24a2cf720316919f3e4de7a30bfc8e3b078eb",
       "id": "org.eclipse.emf.ecore.editor",
-      "version": "2.11.0.v20150601-0402"
+      "version": "2.11.0.v20150601-0402",
+      "content_sha256": "7a928bb83657b65d4552b50470b0aa43e3a4be60954f614681c1c4dc9cf1a49d"
     },
     {
       "repository": "mars",
       "sha256": "5bd5a05017aa86c040040581aaa5d3b4ad22f1d4266eea88723903cf9b5de2cf",
       "id": "org.eclipse.emf.ecore.xmi",
-      "version": "2.11.0.v20150512-0501"
+      "version": "2.11.0.v20150512-0501",
+      "content_sha256": "e46084a2e07de17e384ea9a7b230d5dcb77a75d9c6762a5ace3b75dd1d9e4a1e"
     },
     {
       "repository": "mars",
       "sha256": "d3b9b07d01f201945ebb351066afdf730eaf38e9918fc9b5320d61d9495a1409",
       "id": "org.eclipse.emf.edit",
-      "version": "2.11.0.v20150601-0402"
+      "version": "2.11.0.v20150601-0402",
+      "content_sha256": "ed0f9741079c80e691ebf69a684e3bcc3839006d23d5e3878bf16010ade7c61c"
     },
     {
       "repository": "mars",
       "sha256": "137a07dd4e8ee600aafb0be848f86d70ce6f31e62b947bd4b31b37b1f5bad13c",
       "id": "org.eclipse.emf.edit.ui",
-      "version": "2.11.0.v20150601-0402"
+      "version": "2.11.0.v20150601-0402",
+      "content_sha256": "f8686d7f058d9343b6e69102b11a4b7af1c6fdedc6a09d60bf0a80d3f27438f4"
     },
     {
       "repository": "mars",
       "sha256": "72065dfbf6e264912bf753510cc58956e86f64d46f0ca6de73d957d96982bd5a",
       "id": "org.eclipse.emf.mwe.core",
-      "version": "1.3.10.v201505260335"
+      "version": "1.3.10.v201505260335",
+      "content_sha256": "50aadbcc4f156168c9f5b1be1813a03ad941b589fe94e513890c63bf659c6c61"
     },
     {
       "repository": "mars",
       "sha256": "5de892dc97d5cbeecdf36538772c5fe68e763d54efb6e02221a04d9311581571",
       "id": "org.eclipse.emf.mwe.utils",
-      "version": "1.3.10.v201505260335"
+      "version": "1.3.10.v201505260335",
+      "content_sha256": "448a2f730f0d69d1a4a8b9a2b814a30519036bac3cc57b7e6b376d385cf7d872"
     },
     {
       "repository": "mars",
       "sha256": "6bae6413b89bc6c7c2e47d9f8d1672161aa476a5a37f7262a7969b11b932e473",
       "id": "org.eclipse.emf.mwe2.language",
-      "version": "2.8.0.v201505260456"
+      "version": "2.8.0.v201505260456",
+      "content_sha256": "2e728b617018940cbbed13a3d9decf435f5257c3acdea194a3148b1b367a9c06"
     },
     {
       "repository": "mars",
       "sha256": "241cc25c289185c1eb043e1536808686b8931016ddb65a04e18fb39309240532",
       "id": "org.eclipse.emf.mwe2.launch",
-      "version": "2.8.0.v201505260456"
+      "version": "2.8.0.v201505260456",
+      "content_sha256": "0dade74bba318611d308e4de811d143f1aa1489c27ba693cf7b2b87860fd43ec"
     },
     {
       "repository": "mars",
       "sha256": "3bba6172c302e6e637984d6fe7a501d3dcf26ab090deb2d4c524345303e2671e",
       "id": "org.eclipse.emf.mwe2.lib",
-      "version": "2.8.0.v201505260335"
+      "version": "2.8.0.v201505260335",
+      "content_sha256": "77ae8bed3e297f3f3d1da0d42d982e44980c2a376d35ea7f0c661c2ddb560d73"
     },
     {
       "repository": "mars",
       "sha256": "0de1999f37f1b4998176be1ec2822bd084dd42189d255e8fe71339099926ac68",
       "id": "org.eclipse.emf.mwe2.runtime",
-      "version": "2.8.0.v201505260335"
+      "version": "2.8.0.v201505260335",
+      "content_sha256": "ac2601c397b0d9ab52bcd6af9f6e403826775bf8b5d11cbaccff8c0b1f45e1ca"
     },
     {
       "repository": "mars",
       "sha256": "31bb56f6e75b97a71acea00a1af7fa811801c813c97c5adbb032d79c5e4678e9",
       "id": "org.eclipse.equinox.app",
-      "version": "1.3.300.v20150423-1356"
+      "version": "1.3.300.v20150423-1356",
+      "content_sha256": "6f3162843d724180c1e43eae334f6bb402fe44018fde0a1baf79d62c7bdc8ae7"
     },
     {
       "repository": "mars",
       "sha256": "f65cc9d7a4d0a180c238efc272f6eda26c928d94c97e8595d0ac7df45882f1a5",
       "id": "org.eclipse.equinox.bidi",
-      "version": "0.10.0.v20130327-1442"
+      "version": "0.10.0.v20130327-1442",
+      "content_sha256": "c6ce7686d544065e892cc708d988d61341337a7ef0d51ed4dd1c8b44f7d1924d"
     },
     {
       "repository": "mars",
       "sha256": "29a04a822149b28bac0eef2e71e15406ad56742a17b0e19d22e7a71363b94583",
       "id": "org.eclipse.equinox.common",
-      "version": "3.7.0.v20150402-1709"
+      "version": "3.7.0.v20150402-1709",
+      "content_sha256": "398d5b1b3de3ff44224a0b421bbb197cc4faf5369c3cb8c5907c5348a600967d"
     },
     {
       "repository": "mars",
       "sha256": "46ec6fa51a5d92ee915d26f27d0e4e615c54134a7e304b63c260b5581318a63e",
       "id": "org.eclipse.equinox.ds",
-      "version": "1.4.300.v20150423-1356"
+      "version": "1.4.300.v20150423-1356",
+      "content_sha256": "a8fa3c60584eb1372df03fa2acb3c65c6d156345b7f1908c777a38046baf2701"
     },
     {
       "repository": "mars",
       "sha256": "cfe35b6f781ddc75564f7e17843507bc880b6579cd9f1a9f10866abf821e2c1a",
       "id": "org.eclipse.equinox.launcher",
-      "version": "1.3.100.v20150511-1540"
+      "version": "1.3.100.v20150511-1540",
+      "content_sha256": "87fdc43aa34b715a23c1dbbed41aa180dd1531c1d6fa5fb2145e7d7b2cc251d0"
     },
     {
       "repository": "mars",
       "sha256": "f31b7a7afa15d259ade0d1a5b37fe1e07b5c983b1ba939f4ba95524a531e217e",
       "id": "org.eclipse.equinox.p2.core",
-      "version": "2.4.0.v20150527-1706"
+      "version": "2.4.0.v20150527-1706",
+      "content_sha256": "b56079947e771cfae9fa70bfd96a513f5d4f1ec1fa734f6bebeae081b56cc4ba"
     },
     {
       "repository": "mars",
       "sha256": "fc163b90578741d92e7e1d18f0162d6755f5f385ad22f32458e8a2850b369712",
       "id": "org.eclipse.equinox.p2.engine",
-      "version": "2.4.0.v20150511-1532"
+      "version": "2.4.0.v20150511-1532",
+      "content_sha256": "1d19892559ab67e8efa97d27883f82ce6de86ef4eb0d47dcea8bc4918a1b1ecb"
     },
     {
       "repository": "mars",
       "sha256": "d9dd657943bd01a56ea4b4af9ff49abc788d570a97179959c47709c1b7e57c24",
       "id": "org.eclipse.equinox.p2.metadata",
-      "version": "2.3.0.v20150511-1532"
+      "version": "2.3.0.v20150511-1532",
+      "content_sha256": "24a5cd9a68a60bcb6ad108569f576696ae973970b30355eb95a8ccca932a2210"
     },
     {
       "repository": "mars",
       "sha256": "a8b68b374e1f4c1862ba6655323a9eeb8ed6d57575b03cd4e102fae94d7eb46f",
       "id": "org.eclipse.equinox.p2.metadata.repository",
-      "version": "1.2.200.v20150428-1613"
+      "version": "1.2.200.v20150428-1613",
+      "content_sha256": "d0f381fa9b5bd0fb46a986e04eb790bfedef16c6f6fc85a249d088241248b623"
     },
     {
       "repository": "mars",
       "sha256": "165e48bac2bc84d4100f92cb3c817b8bb3f18e14c1d4dd9a1c0ce664dc0a0579",
       "id": "org.eclipse.equinox.p2.repository",
-      "version": "2.3.100.v20150428-1613"
+      "version": "2.3.100.v20150428-1613",
+      "content_sha256": "a1abd655bf6608256908a97e25f842f3374fdcd3b4c9a924290e7efaa9d93234"
     },
     {
       "repository": "mars",
       "sha256": "db7ccdc6d62e659511c7c41767deea59a471cbc0e12adb37f2a393446e4dfacc",
       "id": "org.eclipse.equinox.preferences",
-      "version": "3.5.300.v20150408-1437"
+      "version": "3.5.300.v20150408-1437",
+      "content_sha256": "dc6d14a8c444d4beda61b1bf68be2fc1697ea7ded83346586fc2f2e95319e699"
     },
     {
       "repository": "mars",
       "sha256": "68e19e0ee190f66ec1552b6ec4e0190d1059cb2487382974875d1fb84f44639c",
       "id": "org.eclipse.equinox.registry",
-      "version": "3.6.0.v20150318-1503"
+      "version": "3.6.0.v20150318-1503",
+      "content_sha256": "a0bc3b3628f0cacec4a2fdea7dcd6a4f4b920747b378b8eeafebbe418d1f9481"
     },
     {
       "repository": "mars",
       "sha256": "9dc6753fcfa26de8c81822a695cc1497298b2571a70b24afb1f1f724b54b480b",
       "id": "org.eclipse.equinox.security",
-      "version": "1.2.100.v20150423-1356"
+      "version": "1.2.100.v20150423-1356",
+      "content_sha256": "51c0c53415b59162262b49f7eb155f1795d7a3ba4a500087531e34e75db68148"
     },
     {
       "repository": "mars",
       "sha256": "5100e4d4b389f461eba9d0f80cbd0a4b2c6d8fa67d0908d9d9431a5d28edd87c",
       "id": "org.eclipse.equinox.util",
-      "version": "1.0.500.v20130404-1337"
+      "version": "1.0.500.v20130404-1337",
+      "content_sha256": "a35fd7185641ebdd231686748adffb0659d9b8af21fdc661c4476e115fcb30d7"
     },
     {
       "repository": "mars",
       "sha256": "6f0ce23e5c7440c07f3b88e3f9324ada52972fbe87467c39ad22f065bf190e44",
       "id": "org.eclipse.gef",
-      "version": "3.10.0.201506010206"
+      "version": "3.10.0.201506010206",
+      "content_sha256": "1743178c87bac8431ffc8cc0085997585c2e87d7ac371ce84bc7379efec023c1"
     },
     {
       "repository": "mars",
       "sha256": "e8b8cc7048815373300ac6dd3c3205099fed40fe725d046c562b916ffe120aea",
       "id": "org.eclipse.help",
-      "version": "3.6.0.v20130326-1254"
+      "version": "3.6.0.v20130326-1254",
+      "content_sha256": "41354c794cf0d318aa81aefa5b9e2c22a052e9cf597cace1b1a0e763a50658ca"
     },
     {
       "repository": "mars",
       "sha256": "a3afeae19bc77a4c1bd171ee2a4b8c637bd8a7f629618a56246538933be34510",
       "id": "org.eclipse.jdt.core",
-      "version": "3.11.0.v20150602-1242"
+      "version": "3.11.0.v20150602-1242",
+      "content_sha256": "63984d9dfd2a35ff8ff9e2f27be2dab71e2b3be427f6d1181299f40dfbc934ec"
     },
     {
       "repository": "mars",
       "sha256": "9f4cd6ba739c5b2bb9353ed1b0f70c147ec1549cfc8fd4fa10e02dee1638ebae",
       "id": "org.eclipse.jdt.core.manipulation",
-      "version": "1.5.100.v20141002-1241"
+      "version": "1.5.100.v20141002-1241",
+      "content_sha256": "22ea85397b80edd9cbd04344d51e8726fc2939ec1d455f56971550183870ff5a"
     },
     {
       "repository": "mars",
       "sha256": "8fab295c16977e2ba297fd1b27a70559f336506bf3ffd42b358f5c7828627f68",
       "id": "org.eclipse.jdt.debug",
-      "version": "3.9.0.v20150528-1838"
+      "version": "3.9.0.v20150528-1838",
+      "content_sha256": "74ac7a0d26d4c2e1b86e315683d30553a973581237e2ad133bd5b04d330cc803"
     },
     {
       "repository": "mars",
       "sha256": "3081a6ca23dce44fd11ef1ac5feacaf457b0ae5fada9dac1692a727431945b81",
       "id": "org.eclipse.jdt.debug.ui",
-      "version": "3.7.0.v20150505-1916"
+      "version": "3.7.0.v20150505-1916",
+      "content_sha256": "869469028aa4b26257b1342e53f59422a27e51f63c65b9cbc8df1ab5a2b856a8"
     },
     {
       "repository": "mars",
       "sha256": "dd313319855bf08fc820b828ff907c391dc0cb1f9e91a94f9ba691d1fc0469aa",
       "id": "org.eclipse.jdt.launching",
-      "version": "3.8.0.v20150527-0946"
+      "version": "3.8.0.v20150527-0946",
+      "content_sha256": "e3ddfed535b15152df329d31a502f432c8329b7f04e63c6a46c0ac74eb4ec6fa"
     },
     {
       "repository": "mars",
       "sha256": "c55b76ddb4c632962089b66a9d8d1028e5fee50b5fe154ad5c3cc17a5145bee2",
       "id": "org.eclipse.jdt.ui",
-      "version": "3.11.0.v20150527-0925"
+      "version": "3.11.0.v20150527-0925",
+      "content_sha256": "777a3b6f60bf9f76c293a68065d671e86d862828bfe30d5c379edc5de99cbaf8"
     },
     {
       "repository": "mars",
       "sha256": "92d28e09f4a552d9d62fb00f213df86adbaeddeef3a200be8c4e512e50b27a4e",
       "id": "org.eclipse.jface",
-      "version": "3.11.0.v20150602-1400"
+      "version": "3.11.0.v20150602-1400",
+      "content_sha256": "0db945dda028d3bccc9fbdeb03f3efe4ff16f6341521274a1661eef71c2941bd"
     },
     {
       "repository": "mars",
       "sha256": "dbb952128de68c60a5fcba631f80abed6b33b849f105f536bbc1249ce55dae5b",
       "id": "org.eclipse.jface.databinding",
-      "version": "1.7.0.v20150406-2148"
+      "version": "1.7.0.v20150406-2148",
+      "content_sha256": "e8d484308f631f9a0cf23dc4763e497cc4bc61e00599a3439da33ad1e15951c7"
     },
     {
       "repository": "mars",
       "sha256": "276ee6cc0454e3df37ef91e4a22829afc9c7f17532f51255665ccf89c7118938",
       "id": "org.eclipse.jface.text",
-      "version": "3.10.0.v20150603-1752"
+      "version": "3.10.0.v20150603-1752",
+      "content_sha256": "fc835fdda6030567707af195192364dc9189a1bee2f91c39155d601646a80248"
     },
     {
       "repository": "mars",
       "sha256": "95a2ee3eb2cc82e25bec60870c58ecd5412ed010665c1789efcb4927dc4eec11",
       "id": "org.eclipse.ltk.core.refactoring",
-      "version": "3.6.200.v20140826-0859"
+      "version": "3.6.200.v20140826-0859",
+      "content_sha256": "e3134c77124f92e9363492d6a5af8ff53e527244c48c541d2f80bff36f992d92"
     },
     {
       "repository": "mars",
       "sha256": "76d1bb17135dbccc94fdd5fea19acefcab63a0d634d74e24f7a158ca2c67589b",
       "id": "org.eclipse.ltk.ui.refactoring",
-      "version": "3.7.200.v20140625-1835"
+      "version": "3.7.200.v20140625-1835",
+      "content_sha256": "ba5d073cfe316980c973b9f03eb25dce11f2d3b5ce150747350fd8108f00ddca"
     },
     {
       "repository": "mars",
       "sha256": "c818e0254c947d671afaa66f7e88142c3c379b6a326d5456fbfe107334430efb",
       "id": "org.eclipse.osgi",
-      "version": "3.10.100.v20150529-1857"
+      "version": "3.10.100.v20150529-1857",
+      "content_sha256": "f72643ec65dca40b97be58976f27a45b7d481d9e28f4728580a813f9a8329775"
     },
     {
       "repository": "mars",
       "sha256": "f8d46ae3fb494688eb98d204fd98a93670ae4228db5acb9f59eb0f38b8eeff13",
       "id": "org.eclipse.osgi.services",
-      "version": "3.5.0.v20150519-2006"
+      "version": "3.5.0.v20150519-2006",
+      "content_sha256": "9280e8414330622f595735a4929d5aadabb2503ef688ac32974ce2e24a6fe603"
     },
     {
       "repository": "mars",
       "sha256": "610400cf82b8956428ca91e35591c5dd8bb1ac5396a078ee3824996f1c59061f",
       "id": "org.eclipse.search",
-      "version": "3.10.0.v20150318-0856"
+      "version": "3.10.0.v20150318-0856",
+      "content_sha256": "15bebdcb5ce93d79b40e2e1957a9ea6013b044305bc591281c5b8dd12f2a912d"
     },
     {
       "repository": "mars",
       "sha256": "54e1cba575ae14da474b7ec77ff0cb6d9afa9cb009d71c541a93be449d685c3f",
       "id": "org.eclipse.swt",
-      "version": "3.104.0.v20150528-0211"
+      "version": "3.104.0.v20150528-0211",
+      "content_sha256": "39417451c05d50475e142e6c60f2b808aa1e82f4643726546d63eac2096e152d"
     },
     {
       "repository": "mars",
       "sha256": "4d0d6b4eadf8ba30d117a8159865aa32acd8b194e17294c56c22172c52dd2995",
       "id": "org.eclipse.swt.win32.win32.x86_64",
-      "version": "3.104.0.v20150528-0211"
+      "version": "3.104.0.v20150528-0211",
+      "content_sha256": "878ad53f251fcd075eb1995bce45269d75c2eda9c191bbb2b06ea11fa463d26a"
     },
     {
       "repository": "mars",
       "sha256": "39620b7389e26e6070fc240c33c203c3807a50c68081e9a9f3b3a99e7b6b4c32",
       "id": "org.eclipse.team.core",
-      "version": "3.7.100.v20150203-1452"
+      "version": "3.7.100.v20150203-1452",
+      "content_sha256": "6e6108875b3ab5ace8ab7794baa6fdbb00dc4a5a26c1b1d3de04d0018d53b2e6"
     },
     {
       "repository": "mars",
       "sha256": "2c14de3f486cc67ef1e0b9df959ba34c4f13585873e39b87cc11a53678a6a263",
       "id": "org.eclipse.team.ui",
-      "version": "3.7.200.v20150203-1452"
+      "version": "3.7.200.v20150203-1452",
+      "content_sha256": "0d96fc27f3478c35d3d96756522593f2addca51c7fc24e516bd8128c78bfb0ef"
     },
     {
       "repository": "mars",
       "sha256": "d4e5907807ac0cb7d6bf2bbb819c601b96e7a31725e8c1aee64f641156e57a86",
       "id": "org.eclipse.text",
-      "version": "3.5.400.v20150505-1044"
+      "version": "3.5.400.v20150505-1044",
+      "content_sha256": "a97cc6211a9003f8f8f1c2033c750c2bf6cfb4c54f0a466690ea91bf9e46cb33"
     },
     {
       "repository": "mars",
       "sha256": "7065cc38c9738e02b59df73727c16947a43456876cbb2a6e3ac4925783ee9a16",
       "id": "org.eclipse.ui",
-      "version": "3.107.0.v20150507-1945"
+      "version": "3.107.0.v20150507-1945",
+      "content_sha256": "f7200daa252d9533a7432f1601f7d7e2c8ee6958f7b0052502ba6b3154c1d7cf"
     },
     {
       "repository": "mars",
       "sha256": "a73ce4c1da545b6fd4453b671f1a17af0179587745a8c9bc5439161bacc4477e",
       "id": "org.eclipse.ui.console",
-      "version": "3.6.0.v20150512-1341"
+      "version": "3.6.0.v20150512-1341",
+      "content_sha256": "a91a9b544252d5b04bca0897f621a181b860523d5fdb988e51b3df1514c67cad"
     },
     {
       "repository": "mars",
       "sha256": "8ccf035396ca946db3ef857b621695d4e7d7541dda88d0883bcf8b59b2908c63",
       "id": "org.eclipse.ui.editors",
-      "version": "3.9.0.v20150213-1939"
+      "version": "3.9.0.v20150213-1939",
+      "content_sha256": "5fd54c01acced1412e382fedef2e6ee23f12168990e7126dd8c18bda75475313"
     },
     {
       "repository": "mars",
       "sha256": "d066e9e4355c9f167dec6126e3d43d512feba79b9c759584316e5f321e12ec43",
       "id": "org.eclipse.ui.forms",
-      "version": "3.6.200.v20150506-2029"
+      "version": "3.6.200.v20150506-2029",
+      "content_sha256": "2cd2fc3b85b8c29b2043056b56894d3efe9ac575a77ea92de37237351f1638e1"
     },
     {
       "repository": "mars",
       "sha256": "1337c15c93aa482554df8e5fe7c651e88404af10221a34861b568b1b16380dba",
       "id": "org.eclipse.ui.ide",
-      "version": "3.11.0.v20150510-1749"
+      "version": "3.11.0.v20150510-1749",
+      "content_sha256": "cf55aed44e6d6aa709069f51a87885969f4dc5fef5b5e4c282d3f59a2c186702"
     },
     {
       "repository": "mars",
       "sha256": "24f0cded962e788b5835dce98f4126661bfe6653ab6f0b0f604bfa1bf72d19ab",
       "id": "org.eclipse.ui.ide.application",
-      "version": "1.1.0.v20150422-0725"
+      "version": "1.1.0.v20150422-0725",
+      "content_sha256": "bc7c082939e0d962da2f297ed25451d5a23e673060ee3f4a67bb485e2459d973"
     },
     {
       "repository": "mars",
       "sha256": "ad932d794bc31be1cf213f094a94fdcd678554583b394b239a0220d842e20c4a",
       "id": "org.eclipse.ui.navigator",
-      "version": "3.6.0.v20150422-0725"
+      "version": "3.6.0.v20150422-0725",
+      "content_sha256": "886075c143657bb75412ceefcb5d7048b01d13c989b30ec0b0ed8dc4199297f2"
     },
     {
       "repository": "mars",
       "sha256": "3f49dd29185ff4127ed3938a6ebbddafb5cd9f0159316ee0d4557b365c433da7",
       "id": "org.eclipse.ui.navigator.resources",
-      "version": "3.5.0.v20150422-0725"
+      "version": "3.5.0.v20150422-0725",
+      "content_sha256": "e136d8ffd2a3181ccb900af4f3eaaf3d9b1ac75236ab60fbffd1f98b22f98e9a"
     },
     {
       "repository": "mars",
       "sha256": "88ad985876bc1effe3e465868e4fe82aa2cd512ea228c8028206546a1628683a",
       "id": "org.eclipse.ui.views",
-      "version": "3.8.0.v20150422-0725"
+      "version": "3.8.0.v20150422-0725",
+      "content_sha256": "b5fd073c934754f0cfdeef275d3d41c150712c32e1ca9af97084ea03ab83a772"
     },
     {
       "repository": "mars",
       "sha256": "3fda944eddb524700762660b077337e924806df423f541682347c11b252fcc24",
       "id": "org.eclipse.ui.views.properties.tabbed",
-      "version": "3.6.100.v20150423-0822"
+      "version": "3.6.100.v20150423-0822",
+      "content_sha256": "da1b36fd313d6d6491676e51184c329cfd4d257ac50892bcd836a084bc9bf7bd"
     },
     {
       "repository": "mars",
       "sha256": "7cf1843d46fe88fb180dc3f27eaf3aae3b03d56ab4144538240d9e91fce1224f",
       "id": "org.eclipse.ui.workbench",
-      "version": "3.107.0.v20150510-1732"
+      "version": "3.107.0.v20150510-1732",
+      "content_sha256": "04fe54d89d529e8dc45387779912495d6a840e06dff7144752c7c92a17759d1a"
     },
     {
       "repository": "mars",
       "sha256": "16a0f482c376b69b1d42395a1d11707bdcbcf5cc9fc65ba16dfa2c2a49a41a27",
       "id": "org.eclipse.ui.workbench.texteditor",
-      "version": "3.9.100.v20141023-1946"
+      "version": "3.9.100.v20141023-1946",
+      "content_sha256": "44ab84b1a5d2185cff0138ec5083d9bc0d9e64dac1e5b3e4d47728422ae23881"
     },
     {
       "repository": "mars",
       "sha256": "6f7b4c5f39449550aa2e9ef065aac6580d8802ddf1b7c760dbb7e7b564e55322",
       "id": "org.eclipse.xpand",
-      "version": "2.1.0.v201505260349"
+      "version": "2.1.0.v201505260349",
+      "content_sha256": "dfab2b9b55458376d8c84a448153485536b767679029b78672193d8f007f8202"
     },
     {
       "repository": "mars",
       "sha256": "4508411e786d187b2272e5e0e9838d0179a0918a87f40ab8fa30b66186dc8abb",
       "id": "org.eclipse.xtend",
-      "version": "2.1.0.v201505260349"
+      "version": "2.1.0.v201505260349",
+      "content_sha256": "99f4e74c6739ead67864c6e08570eb9a618780bb2a70ccf24e85f0d0a96f7de4"
     },
     {
       "repository": "xtext",
       "sha256": "6b4fe3cc39f8ba84e03d6c21955aa9171b158391e454d5bbc235581b9c1e9d46",
       "id": "org.eclipse.xtend.lib",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "6cafed3f07f09a76e0dab09a81835747d2f96d66d9f6bbc3ff088b56210a2d3d"
     },
     {
       "repository": "xtext",
       "sha256": "8b1efd2299620332318d5f8185fc0440fd863a539f555a60d47a41abf19de394",
       "id": "org.eclipse.xtend.lib.macro",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "b004629ff06be6f15e7fe2e93f967b16abd298fbfead712c453081653e323e95"
     },
     {
       "repository": "mars",
       "sha256": "3c2ddb161a1c68ded7e15087412679ef96cc60a4c6ed349e3bab42fa3215556e",
       "id": "org.eclipse.xtend.typesystem.emf",
-      "version": "2.1.0.v201505260349"
+      "version": "2.1.0.v201505260349",
+      "content_sha256": "995cc216d26e99314e27841ee9e29966d259b7de5aa8f18ef08416f4765a38f3"
     },
     {
       "repository": "xtext",
       "sha256": "c08b8fa621ccd13337a0a15077f84f56e5ab1b68ef6d18640b67c3f71bf121c1",
       "id": "org.eclipse.xtext",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "958b3f6f9b00cb8d430ae031d765c045f7d0110f00836fcc79d509faf2e67427"
     },
     {
       "repository": "xtext",
       "sha256": "141c4607ad66a61a5da98e2cedf766f7c271f3f8a78d4411f66224ec3b0740d0",
       "id": "org.eclipse.xtext.builder",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "c964194d5f9e2181c9a23c8435475d255944b6b3a1980b8a1c75f645d9cb22a9"
     },
     {
       "repository": "xtext",
       "sha256": "ca5715460c01dd59fce979626f2c6fec309b3a324e9718ecdbab21dc3da9f216",
       "id": "org.eclipse.xtext.builder.standalone",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "7b98d148abf996ef9cb58def0af6cd5aed3d00b7ca28f4442280de0653eccb4a"
     },
     {
       "repository": "xtext",
       "sha256": "838520318785ab05c3ace2384346ad5f4267cae0d30b44f0fad3341332235b44",
       "id": "org.eclipse.xtext.common.types",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "a55e61adfdd39cbce03184c390c79c2f3a8332a9d61d18396cf2e8895804b131"
     },
     {
       "repository": "xtext",
       "sha256": "53745a24ad9f151eb6f36d7a4ba8647f2a402c39314a2bf18fd9f16a91bf1301",
       "id": "org.eclipse.xtext.common.types.edit",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "2a432242df8e883233243729547ce52aa12077364fa139c8f42074fabb977559"
     },
     {
       "repository": "xtext",
       "sha256": "bf095fb2fc84fba6d8c34dd60f0acc6a3eb10b484ff08221552b0b6cc4546c94",
       "id": "org.eclipse.xtext.common.types.ui",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "257209a9261a5dcfb041db33775d0f1dd644cf4f42a775288174a21f66f7386e"
     },
     {
       "repository": "xtext",
       "sha256": "93e7889d104f36b0e4f6c748dc650d12f25207aa75ff4ab3cbe4eabaf3d81e97",
       "id": "org.eclipse.xtext.ecore",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "a4d49d88b1e154844212cd314c60956818695f8d97a30a754fb32090d3cf869f"
     },
     {
       "repository": "xtext",
       "sha256": "daf596b061137c8c07e8f1ad18ad442821d08dcb326aae9a17c3f4ddd8749a87",
       "id": "org.eclipse.xtext.generator",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "e3af197a6028f359d85d4adf4babb9542911d5e7019f4f4bbe1ff37189ba7451"
     },
     {
       "repository": "xtext",
       "sha256": "1ade480c41fea5616ed123ea61bab569dfd93da784317221901c82e06f57778b",
       "id": "org.eclipse.xtext.ide",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "f3426035c0b75f74fc1857e76f5baf977bdab93252ccc6de4e7ada5f9b5f82af"
     },
     {
       "repository": "xtext",
       "sha256": "5b57cbcd0297ed4e9fe937802e903a9eabce66040edf5de77483efb6bea678a1",
       "id": "org.eclipse.xtext.junit4",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "efc30e6fad7ed926ce493ae388f117cba4ef1ff877b686009fc2d4de35dc42ea"
     },
     {
       "repository": "xtext",
       "sha256": "acbe45360ef3201e8c2bc5956fbb3813eb5c6e09015a4a6b4c08ac40d2adc05e",
       "id": "org.eclipse.xtext.smap",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "98ded36875ca80bbdb571d4aafee3862af317d5acf105206122bcc988641885f"
     },
     {
       "repository": "xtext",
       "sha256": "371d828e4c6be5f59bafc26abe5fae988e6650ab0803673639236500dea3da9a",
       "id": "org.eclipse.xtext.ui",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "e913d701ae88cd50ca24982c3495e58e20bfb63b152c94d787ada39350ebe82c"
     },
     {
       "repository": "xtext",
       "sha256": "eeb903980fbdd48485a7257eaa3daaca7a7ab68e390f053526e9311e900cf6eb",
       "id": "org.eclipse.xtext.ui.codetemplates",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "a5fa65459d6edf3a19a603e3f9976c70a38b80e57f3fb1162d2454eb209b685a"
     },
     {
       "repository": "xtext",
       "sha256": "6c1e4033d18cedfedcbfc90b59d9f8cce70de3adee8ec7669ac9df7e3fe13468",
       "id": "org.eclipse.xtext.ui.codetemplates.ui",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "d3249283391a8a910f22a91a29670130fcf1543f3b53128327c97d8d414550b8"
     },
     {
       "repository": "xtext",
       "sha256": "b0136d0b7e7c4a01a9b33ea121c52484d872cec0375aea432afc06aac5b1681a",
       "id": "org.eclipse.xtext.ui.shared",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "dcdd33de2ba7afe3f20adb5afd2b12a95a204e75c92043c4c40319d608971d16"
     },
     {
       "repository": "xtext",
       "sha256": "dfc327589820fdaa29060fff88e9462f9cd26f5df8cd7b3d986254737fa2a03c",
       "id": "org.eclipse.xtext.util",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "265be17f4b86d1455568c42cb0116d59a155970f18b081507cbfac3a60d5f93c"
     },
     {
       "repository": "xtext",
       "sha256": "61f682cb272c44b07bffbe521fb10b26a376b05a5dfa5ab710bcc582f1c3912c",
       "id": "org.eclipse.xtext.xbase",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "ed0096459c2972fa1534128c5e1ee866581cfdd9b2951d053852c4232d6a37a4"
     },
     {
       "repository": "xtext",
       "sha256": "f70cd3668383b0aa11801d7f6f1902a38dd0a6719af10ec45fbfe29a0f7a4ac6",
       "id": "org.eclipse.xtext.xbase.ide",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "232c6e5758295045e0e8c229253a2affa00ac9604d1c432bb2d23797b79113c4"
     },
     {
       "repository": "xtext",
       "sha256": "010c2f4c4185a82d11d858b69a3b3483765965337717c7e70e2ef4e69a552a9f",
       "id": "org.eclipse.xtext.xbase.lib",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "617952c8d4fc8fb09df9c88da0635089b1ae77b24c85b196f903c85e34137896"
     },
     {
       "repository": "xtext",
       "sha256": "1ee055c97230e4a5810c2f83c6c71b655a36664b976125d460fc79e29d1f713f",
       "id": "org.eclipse.xtext.xbase.ui",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "de34667ab218664cd5f4af39a9a27d89d83434156974a34b4a3d351af0b6ea1b"
     },
     {
       "repository": "xtext",
       "sha256": "51ef14b2b5844aa355721c09a012a5fe4cde3aeef1aefaf7cfa520392c0ee1bc",
       "id": "org.eclipse.xtext.xtext.generator",
-      "version": "2.9.2.v201603040440"
+      "version": "2.9.2.v201603040440",
+      "content_sha256": "ffde23b3a0113e98038f7baf4b4414b12084adfd683616d610fee86df1078f3a"
     },
     {
       "repository": "mars",
       "sha256": "8a6dd3a965c97e5311920d2806be29d9e0f092ebb92a5c0944d80f6bc92f3d6d",
       "id": "org.hamcrest.core",
-      "version": "1.3.0.v201303031735"
+      "version": "1.3.0.v201303031735",
+      "content_sha256": "b23ba97e3e43d8c16a9309be4994786ab26c5e96b8ef1ec8fed9c13d1818cc9e"
     },
     {
       "repository": "mars",
       "sha256": "05eef1e0ac3949cdbe970c749940d93a379f0f30fdf2d4a17fc5d78e3f53cb01",
       "id": "org.junit",
-      "version": "4.12.0.v201504281640"
+      "version": "4.12.0.v201504281640",
+      "content_sha256": "7a8a981bb9561ef8507677ccc063c73537f594224b9af5131c639d3a824fb232"
     },
     {
       "repository": "xtext",
       "sha256": "4adeabe834eda79abb3449d16eaaf23f3ce6408ba2946f508e32e1dee0fd3919",
       "id": "org.objectweb.asm",
-      "version": "5.0.1.v201404251740"
+      "version": "5.0.1.v201404251740",
+      "content_sha256": "1c971b78b10480a884d3cd7339e7548d70b76daae74b0228bfc5d964a47efcb5"
     },
     {
       "repository": "mars",
       "sha256": "3f1dc9a476dae2747fd63947bf1a05bebe00133ea457452bcf4b02cee3840df6",
       "id": "org.tukaani.xz",
-      "version": "1.3.0.v201308270617"
+      "version": "1.3.0.v201308270617",
+      "content_sha256": "4c60c3f562bc8160191e2f5ae339f3c4d04f06413036b9f3047b912b4d905ef5"
     },
     {
       "repository": "mars",
       "sha256": "fe45143687432bcf05ef8a75b7e97920a38fac09d35433fe7dd0b4428a084119",
       "id": "org.w3c.css.sac",
-      "version": "1.3.1.v200903091627"
+      "version": "1.3.1.v200903091627",
+      "content_sha256": "0c91d7f094fdf93b53d442aa5c47abbab2ddc39efe9ae9cf3341898e31b25ffb"
     },
     {
       "repository": "mars",
       "sha256": "194a676cf0d06000d467d1f824ce11772a0eb77eca845aa533c6fc0ed53546f7",
       "id": "org.w3c.dom.events",
-      "version": "3.0.0.draft20060413_v201105210656"
+      "version": "3.0.0.draft20060413_v201105210656",
+      "content_sha256": "a5f69f562bdb2ae1ced0cdc94dffdf56c0e902f5bb3092efc5c91ca6b6b2e755"
     },
     {
       "repository": "mars",
       "sha256": "4913af9a957d92603436daed708c0d5cd075b482ad269ccd7468b8d05a760e3f",
       "id": "org.w3c.dom.smil",
-      "version": "1.0.1.v200903091627"
+      "version": "1.0.1.v200903091627",
+      "content_sha256": "c4bc64ac6f93951b1fd65930891c7176724e18e5f31dbe1ea599802b680fec5f"
     },
     {
       "repository": "mars",
       "sha256": "a8cbbe38cf3b0de36cbe8dd68062ba422b7054e893a798f76badd2ceb91ced45",
       "id": "org.w3c.dom.svg",
-      "version": "1.1.0.v201011041433"
+      "version": "1.1.0.v201011041433",
+      "content_sha256": "2e1be6d00a9f5875402a24cef8d4000d1e86a92e472906f9a92187dd3680a2ca"
     }
   ],
   "platform": "win32/win32/x86_64"

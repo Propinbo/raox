@@ -9,16 +9,23 @@ foreach ($bundle in $lock.bundles) {
     $known["$($bundle.id)/$($bundle.version)"] = $bundle
 }
 $checked = 0
+$repacked = @()
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $CacheRoot 'p2/osgi/bundle') -Filter '*.jar' -Recurse) {
     $key = "$($file.Directory.Parent.Name)/$($file.Directory.Name)"
     if (-not $known.ContainsKey($key)) { throw "Unpinned p2 bundle: $key" }
     if ((Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash -ne $known[$key].sha256) {
-        throw "p2 bundle checksum mismatch: $key"
+        $contentHash = & (Join-Path $PSScriptRoot 'Get-JarContentHash.ps1') -Path $file.FullName
+        if ($contentHash -ne $known[$key].content_sha256) {
+            throw "p2 bundle checksum mismatch (including entry contents): $key"
+        }
+        $repacked += $key
     }
     $checked++
 }
-if ($checked -eq 0) { throw 'No p2 bundles were verified.' }
-Write-Output "Verified SHA-256 of $checked pinned p2 bundles."
+if ($checked -ne $lock.bundles.Count) {
+    throw "Expected all $($lock.bundles.Count) pinned p2 bundles; found $checked."
+}
+Write-Host "Verified SHA-256 of $checked pinned p2 bundles ($($repacked.Count) equivalent ZIP representations)."
 
 # Maven generator/plugin dependencies form a separate classpath from p2. Lock their
 # immutable binaries too; range discovery may download additional candidate POMs.
@@ -40,4 +47,5 @@ foreach ($file in $mavenFiles) {
         throw "Maven artifact checksum mismatch: $relative"
     }
 }
-Write-Output "Verified SHA-256 of $($mavenFiles.Count) pinned Maven artifacts."
+Write-Host "Verified SHA-256 of $($mavenFiles.Count) pinned Maven artifacts."
+[pscustomobject]@{ p2_bundles = $checked; p2_equivalent_zip_representations = @($repacked); maven_binaries = $mavenFiles.Count }

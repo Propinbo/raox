@@ -1,0 +1,66 @@
+{
+  "id": 39587840773,
+  "status": "completed",
+  "conclusion": "failure",
+  "url": "https://github.com/Propinbo/raox/actions/runs/39587840773",
+  "head_sha": "feb7c15c7a2ae68051131ff0e60814054dce92f2",
+  "created_at": "2026-10-21T10:53:07Z",
+  "updated_at": "2026-10-21T10:57:39Z",
+  "jobs": [
+    {
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Download and verify JDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build from an empty Maven, p2 and wrapper cache",
+          "status": "completed",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Rebuild with Maven offline",
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Upload plugins, JUnit reports and build evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "status": "completed",
+      "id": 119181082962,
+      "conclusion": "failure",
+      "name": "build"
+    },
+    {
+      "steps": [],
+      "status": "completed",
+      "id": 119182888924,
+      "conclusion": "skipped",
+      "name": "ui"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "verified_fixture": {
+    "p2_bundles": 152,
+    "p2_equivalent_zip_representations": [
+      "org.eclipse.equinox.p2.metadata.repository/1.2.200.v20150428-1613"
+    ],
+    "maven_binaries": 354
+  },
+  "changed_entry_rejected": true,
+  "equivalent_zip_accepted": true
+}
