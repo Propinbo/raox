@@ -1,0 +1,32 @@
+{
+  "exit_code": 0,
+  "java": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-071813\\raox\\jre\\bin\\java.exe",
+  "runner": "C:\\Users\\propinbo\\Documents\\raox\\.build\\platform-tools\\rcptt",
+  "aut": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-071813\\raox",
+  "installed_distribution": true,
+  "plugins": [
+    {
+      "name": "ru.bmstu.rk9.rao_3.9.0.jar",
+      "sha256": "F2907CCB54B9FE91E769FCE9230F9547C590DE53094D54CFF73C161813BDD2F8"
+    },
+    {
+      "name": "ru.bmstu.rk9.rao.lib_3.9.0.jar",
+      "sha256": "7F3D5D108BCD25C70B6D3424827E778450D2954701AD3349CE78E7846BFDE8B1"
+    },
+    {
+      "name": "ru.bmstu.rk9.rao.ui_3.9.0.jar",
+      "sha256": "35DE1904F343E37BE6CE5E6FB10189A5399C408E0FD207EB4DEC40D209968BFA"
+    },
+    {
+      "name": "ru.bmstu.rk9.raox.plugins.game5_3.9.0.jar",
+      "sha256": "A40E3E789C7254397B0C6DE69A89A6C44ADC46F5402C48A9BC3812CED69ED7C8"
+    }
+  ],
+  "counts": {
+    "tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "log": "C:\\Users\\propinbo\\Documents\\raox\\.build\\release-3.9.0-java21\\verification\\rcptt\\20261022-071827-417-rcptt\\runner.log"
+}

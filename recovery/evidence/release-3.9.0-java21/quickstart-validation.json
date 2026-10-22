@@ -1,0 +1,10 @@
+[
+  "{",
+  "  \"points\": 5,",
+  "  \"csv_json_equal\": true,",
+  "  \"samples_match_guide\": true,",
+  "  \"events\": 4,",
+  "  \"trace_stop_time\": 3.0,",
+  "  \"last_value\": 4",
+  "}"
+]

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/Propinbo/raox",
+  "tag": "3.9.0-java21",
+  "source_commit": "b3230cfef43bc384460597000597a3dac775e0dd",
+  "build_workflow": "https://github.com/Propinbo/raox/actions/runs/39680593584",
+  "ci_artifact_id": 12384327310,
+  "ci_artifact_sha256": "106b9329399481f0ff0b028584d266b90eb3dde3e23718c9068aebc6ea4e68b8",
+  "source_files": 1008,
+  "unit_tests": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "rcptt": {
+    "tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "rcptt_runs": 1,
+  "native_smoke": {
+    "archive_sha256": "33b90973b7fa6c687303f6457463a5688c837ca45a96f92beb97205b6a09565c",
+    "application": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-071813\\raox",
+    "working_directory": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-071813",
+    "java_home_removed": true,
+    "path_contains_java": false,
+    "native_exit_code": 0,
+    "installed_roots": "org.eclipse.jdt.feature.group/3.20.300.v20250905-1111\r\norg.eclipse.platform.ide/4.37.0.I20250905-0730\r\norg.eclipse.xtend.sdk.feature.group/2.40.0.v20250825-0355\r\nru.bmstu.rk9.rao.sdk.feature.group/3.9.0\r\nOperation completed in 20 ms.\r\nWARNING: Using incubator modules: jdk.incubator.vector\r\nOct 22, 2026 7:18:17 AM org.apache.aries.spifly.BaseActivator log\r\nINFO: Registered provider org.slf4j.simple.SimpleServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle slf4j.simple",
+    "verified": {
+      "application": "C:\\Users\\propinbo\\AppData\\Local\\Temp\\Rao X проверка 20261022-071813\\raox",
+      "files_verified": 1362,
+      "mutable_state_files": 0,
+      "platform": "win32/win32/x86_64"
+    }
+  },
+  "swt_awt": {
+    "passed": true,
+    "java": "21.0.12.1",
+    "swt": 4970
+  },
+  "class_comparison": {
+    "reference_classes": 811,
+    "candidate_classes": 811,
+    "identical": true,
+    "differences": []
+  },
+  "exports": [
+    "{",
+    "  \"points\": 5,",
+    "  \"csv_json_equal\": true,",
+    "  \"samples_match_model\": true,",
+    "  \"trace_stop_time\": 3.0",
+    "}"
+  ],
+  "quick_start": [
+    "{",
+    "  \"points\": 5,",
+    "  \"csv_json_equal\": true,",
+    "  \"samples_match_guide\": true,",
+    "  \"events\": 4,",
+    "  \"trace_stop_time\": 3.0,",
+    "  \"last_value\": 4",
+    "}"
+  ],
+  "assets": [
+    {
+      "name": "distribution.json",
+      "bytes": 385,
+      "sha256": "eed1f1cf41fbbdab2cbdd0946792b7d4faaf4bdec96540cab222aee1547d7a3d"
+    },
+    {
+      "name": "raox-3.9.0-java21-source.zip",
+      "bytes": 14169152,
+      "sha256": "dba02009bbd81011c32a040dc8961a51a7dff67fc2cf14aa729ab67ec91b2ff9"
+    },
+    {
+      "name": "raox-3.9.0-java21-verification.zip",
+      "bytes": 309790,
+      "sha256": "062ccd2bdba44ec01062593bcf75dd48d7b39aaed5593da09ca2c7c2aa63cba8"
+    },
+    {
+      "name": "raox-3.9.0-plugins.zip",
+      "bytes": 8559327,
+      "sha256": "2d3310031344eb95ae02848ca14554bb7fe0204016fd84b996d5e79ab1424130"
+    },
+    {
+      "name": "raox-3.9.0-windows-x86_64.zip",
+      "bytes": 385449957,
+      "sha256": "33b90973b7fa6c687303f6457463a5688c837ca45a96f92beb97205b6a09565c"
+    },
+    {
+      "name": "raox.repository-3.9.0.zip",
+      "bytes": 213902491,
+      "sha256": "680ad045a69089305c716c0cd09e07083f06db5a72de2325764ab0a1c119aaa0"
+    }
+  ]
+}
