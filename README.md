@@ -3,6 +3,10 @@
 Rao X — среда дискретно-событийного моделирования на Eclipse и Xtext/Xbase.
 Поддерживаемая и проверенная цель — Windows x64 / Java 21.
 
+Готовое приложение, исходники, p2 и контрольные суммы —
+в [выпуске 3.9.0-java21](https://github.com/Propinbo/raox/releases/tag/3.9.0-java21).
+[Состав и происхождение выпуска](recovery/RELEASE-3.9.0-java21.md).
+
 Начните с [Windows quick start](docs/user_guide/quick_start.html): инструменты,
 сборка, установка, первая модель и ожидаемый результат.
 Откройте [docs/index.html](docs/index.html) с диска для чтения всей HTML-справки без сети.
